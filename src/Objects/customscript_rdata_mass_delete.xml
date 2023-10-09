@@ -1,0 +1,10 @@
+<massupdatescript scriptid="customscript_rdata_mass_delete">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>R-DATAGRAM: Mass delete</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/rdata-tools/rdata_mass_delete.js]</scriptfile>
+</massupdatescript>
