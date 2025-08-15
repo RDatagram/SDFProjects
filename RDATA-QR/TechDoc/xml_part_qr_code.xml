@@ -1,0 +1,6 @@
+<#if record.custbody_rdata_invoice_qr_code?has_content>
+<tr>
+<td><@filecabinet nstype="image" style="float: left; margin: 7px; height:125px; width:125px" src="${record.custbody_rdata_invoice_qr_code}" />
+</td>
+</tr>
+</#if>
