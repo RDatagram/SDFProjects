@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_109_5702194_sb1_822" standard="STDTMPLEMPTY">
+  <description></description>
+  <displaysourcecode>F</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>*ECS Quote PDF/HTML Template</title>
+  <trantype>ESTIMATE</trantype>
+</advancedpdftemplate>

@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_117_5702194_785_new" standard="STDTMPLQUOTE">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>Quote PDF/HTML Template - INA (2025)</title>
+  <trantype>ESTIMATE</trantype>
+</advancedpdftemplate>

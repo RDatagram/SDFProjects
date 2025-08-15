@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_114_5702194_663" standard="STDTMPLEMPTY">
+  <description></description>
+  <displaysourcecode>F</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>T</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>*Siltworm Quote PDF/HTML Template</title>
+  <trantype>ESTIMATE</trantype>
+</advancedpdftemplate>

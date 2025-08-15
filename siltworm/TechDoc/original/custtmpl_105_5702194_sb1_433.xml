@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_105_5702194_so_new" standard="STDTMPLEMPTY">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>*Siltworm Sales Order PDF/HTML Template (2025)</title>
+  <trantype>SALESORD</trantype>
+</advancedpdftemplate>

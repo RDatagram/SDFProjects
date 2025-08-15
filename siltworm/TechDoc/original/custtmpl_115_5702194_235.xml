@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_115_5702194_235" standard="STDTMPLEMPTY">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>*Siltworm Invoice PDF/HTML Template W/Link</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>
