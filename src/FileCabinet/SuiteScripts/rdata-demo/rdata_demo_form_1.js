@@ -45,19 +45,31 @@ define(['N/ui/serverWidget'], (serverWidget) => {
             });
 
             let sublist = form.addSublist({
-                id: 'sublist',
-                type: serverWidget.SublistType.INLINEEDITOR,
-                label: 'Inline Editor Sublist'
+                id: 'custpage_sublist',
+                type: serverWidget.SublistType.LIST,
+                label: 'Sublist'
             });
             sublist.addField({
-                id: 'sublist1',
-                type: serverWidget.FieldType.DATE,
+                id: 'sublist_date',
+                type: serverWidget.FieldType.TEXT,
                 label: 'Date'
             });
             sublist.addField({
                 id: 'sublist2',
                 type: serverWidget.FieldType.TEXT,
                 label: 'Text'
+            });
+
+            sublist.setSublistValue({
+                id: 'sublist_date',
+                line: 0,
+                value: (new Date()).toISOString(),
+            });
+
+            sublist.setSublistValue({
+                id: 'sublist2',
+                line: 0,
+                value: 'My text'
             });
 
             form.addSubmitButton({
@@ -71,11 +83,23 @@ define(['N/ui/serverWidget'], (serverWidget) => {
             const dateField = scriptContext.request.parameters.datefield;
             const currencyField = scriptContext.request.parameters.currencyfield;
             const selectField = scriptContext.request.parameters.selectfield;
-            const sublistData = scriptContext.request.parameters.sublistdata.split(delimiter);
-            const sublistField1 = sublistData[0];
-            const sublistField2 = sublistData[1];
-
-            scriptContext.response.write(`You have entered: ${textField} ${dateField} ${currencyField} ${selectField} ${sublistField1} ${sublistField2}`);
+            let lineCount = scriptContext.request.getLineCount('custpage_sublist');
+            let field1;
+            let field2;
+            for (let i = 0; i < lineCount; i++)
+            {
+                field1 = scriptContext.request.getSublistValue({
+                    group : 'custpage_sublist',
+                    name : 'sublist_date',
+                    line : i
+                }); // "F"
+                field2 = scriptContext.request.getSublistValue({
+                    group : 'custpage_sublist',
+                    name : 'sublist2',
+                    line : i
+                })
+            }
+            scriptContext.response.write(`You have entered: ${textField} ${dateField} ${currencyField} ${selectField} ${field1} ${field2}`);
         }
     }
 
