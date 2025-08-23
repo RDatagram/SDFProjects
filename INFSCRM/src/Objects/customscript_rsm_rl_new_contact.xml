@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_rsm_rl_new_contact">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>INFS : Create Contact - integracija</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/INFS/CRM2ERP/rsm_rl_new_contact.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_rl_new_contact">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>INFS : Create Contact - integracija</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

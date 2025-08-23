@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_rsm_rl_new_notifylist">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>INFS : Create Customer NotifyList</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/INFS/CRM2ERP/rsm_rl_new_notifylist.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_rl_new_notifylist">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>INFS : Create Customer NotifyList</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

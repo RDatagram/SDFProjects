@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_rl_new_customer">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>INFS : Restlet New Customer</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/INFS/CRM2ERP/snt_rl_new_customer.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_rl_new_customer">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>INFS : Restlet New Customer</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

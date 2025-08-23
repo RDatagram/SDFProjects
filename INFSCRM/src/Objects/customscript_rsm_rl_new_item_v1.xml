@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_rsm_rl_new_item_v1">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>INFS : Integration - new item V1</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/INFS/CRM2ERP/rsm_rl_new_item_v1.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_rl_new_item_v1">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>INFS : Integration - new item V1</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

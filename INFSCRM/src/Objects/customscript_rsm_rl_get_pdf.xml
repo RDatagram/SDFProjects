@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_rsm_rl_get_pdf">
+  <description>Get PDF File from FileCabinet</description>
+  <isinactive>F</isinactive>
+  <name>INFS : Restlet Get PDF File</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/INFS/CRM2ERP/rsm_rl_get_pdf.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_rl_get_pdf">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>INFS : Restlet Get PDF File</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

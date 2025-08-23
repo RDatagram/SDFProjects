@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_rsm_update_so">
+  <description>Update SO through integration</description>
+  <isinactive>F</isinactive>
+  <name>INFS : Update SO Restlet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/INFS/CRM2ERP/rsm_rl_update_so.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_update_so">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>INFS : Update SO Restlet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

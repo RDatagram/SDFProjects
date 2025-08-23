@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_snt_rl_items_ss">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>INFS : Restlet Items search</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/INFS/CRM2ERP/snt_ss_items.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_snt_rl_items_ss">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>INFS : Restlet Items search</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>
