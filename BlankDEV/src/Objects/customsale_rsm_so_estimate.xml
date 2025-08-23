@@ -1,0 +1,27 @@
+<customtransactiontype scriptid="customsale_rsm_so_estimate">
+  <cancloseorder>F</cancloseorder>
+  <iscredit>F</iscredit>
+  <isposting>F</isposting>
+  <isvoidable>F</isvoidable>
+  <name>Sales Order Estimate</name>
+  <showstatus>F</showstatus>
+  <transactionstyle>SALES</transactionstyle>
+  <accounting>
+    <filterbyaccounttype>ACCTREC</filterbyaccounttype>
+    <filterbyaccounttypeall>F</filterbyaccounttypeall>
+    <specifyaccountontransaction>T</specifyaccountontransaction>
+  </accounting>
+  <permissions>
+    <permission>
+      <permittedlevel>FULL</permittedlevel>
+      <permittedrole>ADMINISTRATOR</permittedrole>
+    </permission>
+  </permissions>
+  <links>
+    <link>
+      <linkcategory>BASICTRANSACTIONSSALES</linkcategory>
+      <linklabel>Sales Order Estimates</linklabel>
+      <linktasktype>LIST</linktasktype>
+    </link>
+  </links>
+</customtransactiontype>

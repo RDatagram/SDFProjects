@@ -1,0 +1,332 @@
+/**
+ * @NApiVersion 2.0
+ * @NScriptType Restlet
+ * @NModuleScope SameAccount
+ */
+define(['N/record', 'N/search', 'N/runtime'],
+
+    function (record, search, runtime) {
+
+        function addDays(date, days) {
+            var result = new Date(date);
+            result.setDate(result.getDate() + days);
+            return result;
+        }
+
+        function addMonths(d1, n) {
+
+            var d1obj = {
+                day: d1.getDate(),
+                month: d1.getMonth(),
+                year: d1.getFullYear()
+            };
+
+            const d2 = new Date(d1.setMonth(d1.getMonth() + n));
+
+            var d2obj = {
+                day: d2.getDate(),
+                month: d2.getMonth(),
+                year: d2.getFullYear()
+            }
+
+            var diff = (d2obj.year * 12 + d2obj.month) - (d1obj.year * 12 + d1obj.month);
+
+            var resdate;
+            if (diff > n) {
+                resdate = new Date(d2obj.year, d2obj.month, 0);
+            } else {
+                resdate = d2;
+            }
+
+            return resdate;
+        }
+
+        function _delete_old(soRecId) {
+            var transactionSearchObj = search.create({
+                type: "customsale_rsm_so_estimate",
+                filters: [["mainline", "is", "T"], "AND", ["custbody_rsm_est_from_so", "is", soRecId]],
+                columns: [search.createColumn({
+                    name: "tranid",
+                    label: "Document Number"
+                })]
+            });
+
+            var searchResultCount = transactionSearchObj.runPaged({
+                pageSize: 50
+            }).count;
+
+            log.debug({title: "transactionSearchObj result count", detail: searchResultCount});
+            transactionSearchObj.run().each(function (result) {
+                record["delete"]({
+                    type: "customsale_rsm_so_estimate",
+                    id: result.id
+                })
+                return true;
+            });
+
+            return true;
+        }
+
+        /**
+         *
+         * @param {Record} _soRec
+         * @param {Number} nRemaining
+         * @returns {Array}
+         * @private
+         */
+        function _make_soe_items(_soRec, nRemaining) {
+            log.debug({
+                title: '_soRec',
+                detail: _soRec
+            });
+            var salesOrderItems = []; // stavke sales order
+            var oneSoi = {}; // temp jedna stavka sales order-a
+
+            var soeItems = []; // stavke po ratama za svaku stavku sa
+            var oneSoe = [];
+
+            var _counter = _soRec.getLineCount({
+                sublistId: 'item'
+            });
+            log.debug({
+                title: '_soRec counter',
+                detail: _counter
+            });
+
+            for (var _i = 0; _i < _counter; _i++) {
+                var vItem = _soRec.getSublistValue({
+                    sublistId: 'item',
+                    fieldId: 'item',
+                    line: _i
+                });
+                var vQty = _soRec.getSublistValue({
+                    sublistId: 'item',
+                    fieldId: 'quantity',
+                    line: _i
+                });
+                var vtAmount = _soRec.getSublistValue({
+                    sublistId: 'item',
+                    fieldId: 'grossamt',
+                    line: _i
+                });
+                var vtOsnovica = _soRec.getSublistValue({
+                    sublistId: 'item',
+                    fieldId: 'amount',
+                    line: _i
+                });
+                var vDesc = _soRec.getSublistValue({
+                    sublistId: 'item',
+                    fieldId: 'description',
+                    line: _i
+                });
+                var vPorez = vtAmount - vtOsnovica;
+
+                oneSoi = {
+                    "vItem": vItem,
+                    "vQty": vQty,
+                    "vtAmount": vtAmount,
+                    "vDesc": vDesc,
+                    "vPorez": vPorez,
+                    "vtOsnovica": vtOsnovica
+                };
+
+                salesOrderItems.push(oneSoi);
+            }
+
+            for (var j1 = 0; j1 < nRemaining; j1++) {
+                soeItems[j1] = {
+                    "rata": j1 + 1,
+                    "stavke": []
+                };
+            }
+
+            for (var i = 0; i < salesOrderItems.length; i++) {
+
+                var sumAmount = 0;
+                var sumOsnovica = 0;
+
+                for (var j = 0; j < nRemaining; j++) {
+
+                    var vAmount;
+                    var vOsnovica;
+                    if (j < (nRemaining - 1)) {
+                        vAmount = parseFloat((salesOrderItems[i].vtAmount / nRemaining).toFixed(2));
+                        sumAmount += vAmount;
+                        vOsnovica = parseFloat((salesOrderItems[i].vtOsnovica / nRemaining).toFixed(2));
+                        sumOsnovica += vOsnovica;
+                    } else {
+                        vAmount = parseFloat((salesOrderItems[i].vtAmount - sumAmount).toFixed(2));
+                        vOsnovica = parseFloat((salesOrderItems[i].vtOsnovica - sumOsnovica).toFixed(2));
+                    }
+                    // TODO : check this
+                    var vPorezSoe = parseFloat((vAmount - vOsnovica).toFixed(2));
+
+                    oneSoe = {
+                        "vItem": salesOrderItems[i].vItem,
+                        "vQty": salesOrderItems[i].vQty,
+                        "vDesc": salesOrderItems[i].vDesc,
+                        "vAmount": vAmount,
+                        "vOsnovica": vOsnovica,
+                        "vPorez": vPorezSoe
+                    };
+
+                    soeItems[j].stavke.push(oneSoe);
+
+                }
+            }
+
+            return soeItems;
+        }
+
+        function doPost(requestBody) {
+            var retVal;
+
+            var soRec = record.load({
+                type: "salesorder",
+                id: requestBody.idSO,
+                isDynamic: true
+            });
+
+            // Obrisi stare podatke
+            _delete_old(soRec.id);
+
+            /**
+             * Just for reminder - if script depends on subsidiaries feature
+             * @type {boolean}
+             */
+            var subcheck = runtime.isFeatureInEffect({
+                feature: 'SUBSIDIARIES'
+            });
+
+            if (subcheck) {
+                // hothing for now
+            }
+
+            var bsEst = soRec.getValue('custbody_rsm_bs_estimates');
+            var bsCount = soRec.getValue('custbody_rsm_so_brojrata');
+            var soTranId = soRec.getValue('tranid');
+            var soMemo = soRec.getValue('memo');
+            var soTaxNapomena = soRec.getValue('custbody_napomenaporezoslobodjen') || '';
+
+            var bsDef = record.load({
+                type: "billingschedule",
+                id: bsEst
+            });
+
+            // var nRemaining = bsDef.getValue('numberremaining');
+            var nRemaining = bsCount;
+            var nRepeatevery = bsDef.getValue('repeatevery');
+            var sFrequency = bsDef.getValue('frequency');
+
+            //var soeItems = _make_soe_items(salesorderSearchObj, nRemaining);
+            var soeItems = _make_soe_items(soRec, nRemaining);
+            log.audit({title: "SO Items", details: soeItems});
+
+            // rata[r].item
+            for (var r = 0; r < nRemaining; r++) {
+
+                var soeRec = record.create({
+                    type: "customsale_rsm_so_estimate",
+                    isDynamic: true
+                });
+                soeRec.setValue("entity", soRec.getValue("entity"));
+                soeRec.setValue("subsidiary", soRec.getValue('subsidiary'));
+
+                var tmpDate = soRec.getValue("trandate");
+                if (sFrequency === 'MONTHLY') {
+
+                    tmpDate = addMonths(tmpDate, r * nRepeatevery);
+
+                    // tmpDate.setMonth(tmpDate.getMonth() + r * nRepeatevery);
+                }
+                if (sFrequency === 'WEEKLY') {
+                    tmpDate = addDays(tmpDate, r * nRepeatevery * 7)
+                    // tmpDate.setMonth(tmpDate.getMonth() + r *
+                    // nRepeatevery);
+                }
+
+                soeRec.setValue("trandate", tmpDate);
+                soeRec.setValue("tranid", soTranId + '-' + (r + 1).toString());
+                soeRec.setValue("custbody_poziv_na_broj", soTranId + '-' + (r + 1).toString());
+                soeRec.setValue("terms", soRec.getValue("terms"));
+                soeRec.setValue("duedate", tmpDate);
+                soeRec.setValue("currency", soRec.getValue("currency"));
+                soeRec.setValue("exchangerate", soRec.getValue("exchangerate"));
+                soeRec.setValue("department", soRec.getValue("department"));
+                soeRec.setValue("class", soRec.getValue("class"));
+                soeRec.setValue("location", soRec.getValue("location"));
+                soeRec.setValue("custbody_rsm_est_from_so", soRec.id);
+
+                soeRec.setValue("custbody_rsm_additional_bcc_email", soRec.getValue("custbody_rsm_additional_bcc_email"));
+                soeRec.setValue("custbody_rsm_additional_cc_email", soeRec.getValue("custbody_rsm_additional_cc_email"));
+
+                soeRec.setValue("custbody_rsm_napomena_za_print", (r + 1).toString() + ". rata od ukupno " + nRemaining.toString());
+                soeRec.setValue('memo',soMemo);
+                soeRec.setValue('custbody_napomenaporezoslobodjen',soTaxNapomena);
+
+                soeItems[r]["stavke"].forEach(function (result) {
+
+                    var vItem = result.vItem;
+                    var vQty = result.vQty;
+                    var vAmount = result.vAmount;
+                    var vDesc = result.vDesc;
+                    var vPorez = result.vPorez;
+                    var vOsnovica = result.vOsnovica;
+
+                    soeRec.selectNewLine({
+                        sublistId: 'item'
+                    });
+                    soeRec.setCurrentSublistValue({
+                        sublistId: 'item',
+                        fieldId: 'item',
+                        value: vItem
+                    });
+                    soeRec.setCurrentSublistValue({
+                        sublistId: 'item',
+                        fieldId: 'quantity',
+                        value: vQty
+                    });
+                    soeRec.setCurrentSublistValue({
+                        sublistId: 'item',
+                        fieldId: 'amount',
+                        value: vAmount
+                    });
+                    soeRec.setCurrentSublistValue({
+                        sublistId: 'item',
+                        fieldId: 'custcol_rsm_porez_iznos_soe',
+                        value: vPorez
+                    });
+                    soeRec.setCurrentSublistValue({
+                        sublistId: 'item',
+                        fieldId: 'custcol_rsm_osnovica_soe',
+                        value: vOsnovica
+                    });
+                    soeRec.setCurrentSublistValue({
+                        sublistId: 'item',
+                        fieldId: 'description',
+                        value: vDesc
+                    });
+                    soeRec.commitLine({
+                        sublistId: 'item'
+                    });
+
+                    return true;
+                });
+
+                var soeId = soeRec.save();
+                // log.debug("Breakpoint", "SOE created : " + soeId);
+
+            }
+
+            retVal = {
+                "result": "ok",
+                "soeId": soeId
+            };
+            return retVal;
+        }
+
+        return {
+            post: doPost
+        };
+
+    });

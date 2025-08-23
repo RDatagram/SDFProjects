@@ -1,0 +1,13 @@
+<customglplugin scriptid="customscript_rdata_cgli_nondeduct_pdv">
+  <description></description>
+  <isinactive>F</isinactive>
+  <loglevel>DEBUG</loglevel>
+  <name>CROWE : NonDeductible PDV</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <runasrole></runasrole>
+  <scriptfile>[/SuiteScripts/PDV/pdv_src/rdata_cgli_nondeduct_pdv.js]</scriptfile>
+  <status>RELEASED</status>
+</customglplugin>

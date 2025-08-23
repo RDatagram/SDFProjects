@@ -1,0 +1,39 @@
+<centercategory scriptid="custcentercategory_rsm_rslp_poreski">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_rsm_rslp]</centertab>
+  <label>Poreski Izveštaji</label>
+  <links>
+    <link>
+      <linklabel>PDV EVIDENCIJA IZLAZNIH/ULAZNIH DOKUMENATA</linklabel>
+      <linkobject>[scriptid=customscript_kif_kuf_form_su.customdeploy_kif_kuf_form_su]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>POPDV forma</linklabel>
+      <linkobject>[scriptid=customscript_rsm_popdv_form_su.customdeploy_rsm_popdv_form_su]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_369</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_370</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_375</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_376</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

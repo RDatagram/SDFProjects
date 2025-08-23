@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_lokacija_zgrada">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Lokacija_zgrada</name>
+  <customvalues>
+    <customvalue scriptid="val_86639_t2274808_244">
+      <isinactive>F</isinactive>
+      <value>Zgrada A</value>
+    </customvalue>
+    <customvalue scriptid="val_86640_t2274808_954">
+      <isinactive>F</isinactive>
+      <value>Zgrada B</value>
+    </customvalue>
+  </customvalues>
+</customlist>

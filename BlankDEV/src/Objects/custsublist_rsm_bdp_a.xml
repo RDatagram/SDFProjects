@@ -1,0 +1,23 @@
+<sublist scriptid="custsublist_rsm_bdp_a">
+  <assemblybuild>F</assemblybuild>
+  <customtransactions></customtransactions>
+  <deposit>T</deposit>
+  <depositapplication>F</depositapplication>
+  <expensereport>F</expensereport>
+  <field></field>
+  <fulfillmentrequest>F</fulfillmentrequest>
+  <inventoryadjustment>F</inventoryadjustment>
+  <itemfulfillment>F</itemfulfillment>
+  <itemreceipt>F</itemreceipt>
+  <journal>F</journal>
+  <label>Applied Bank Payments</label>
+  <opportunity>F</opportunity>
+  <payment>T</payment>
+  <purchase>F</purchase>
+  <sale>F</sale>
+  <savedsearch>[scriptid=customsearch_rsm_bdp_sublist_a]</savedsearch>
+  <storepickup>F</storepickup>
+  <sublisttype>TRANSACTION</sublisttype>
+  <tab>[scriptid=custtab_rsm_bdp_tablist_a]</tab>
+  <vendorpayment>F</vendorpayment>
+</sublist>

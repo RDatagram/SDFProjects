@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory_rsm_sdf_1">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_snt_links]</centertab>
+  <label>Bilansi</label>
+  <links>
+    <link>
+      <linklabel>PL Serbia</linklabel>
+      <linkobject>[scriptid=customrecord_snt_pl_report]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>PL AOP kodovi</linklabel>
+      <linkobject>[scriptid=customrecord_snt_aop_pl_code]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

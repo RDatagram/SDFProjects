@@ -1,0 +1,13 @@
+<customglplugin scriptid="customscript_rsm_gl_lines_map">
+  <description>Map prihoda</description>
+  <isinactive>F</isinactive>
+  <loglevel>DEBUG</loglevel>
+  <name>RSM : GL Lines MAP</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <runasrole></runasrole>
+  <scriptfile>[/SuiteScripts/BlueGrid/Custom GL Lines plug-in/rsm_map_gl_impact_1.js]</scriptfile>
+  <status>RELEASED</status>
+</customglplugin>

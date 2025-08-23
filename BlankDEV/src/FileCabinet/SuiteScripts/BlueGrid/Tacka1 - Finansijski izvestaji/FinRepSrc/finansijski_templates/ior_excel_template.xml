@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Vladimir Popovic</Author>
+  <LastAuthor>Vladimir Popovic</LastAuthor>
+  <Created>2021-09-27T08:29:02Z</Created>
+  <LastSaved>2021-10-10T11:14:42Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12285</WindowHeight>
+  <WindowWidth>24855</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>90</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m95952996">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s21">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s31">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s35">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s37">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s38">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s39">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s41">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s43">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s45">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="183"/>
+   <Column ss:AutoFitWidth="0" ss:Width="54" ss:Span="1"/>
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="84" ss:Span="1"/>
+   <Row ss:Index="2">
+    <Cell ss:MergeAcross="5" ss:StyleID="s45"><Data ss:Type="String">IZVEŠTAJ O OSTALOM REZULTATU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeAcross="5" ss:StyleID="s45"><Data ss:Type="String">za period do godine</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75"/>
+   <Row>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Grupa</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s28"><Data ss:Type="String">POZICIJA</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s28"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Napomena</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m95952996"><Data ss:Type="String">Iznos</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.8125">
+    <Cell ss:StyleID="s31"><Data ss:Type="String">računa, račun</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s19"><Data ss:Type="String">broj</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Tekuća godina</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Prethodna godina</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="2" ss:StyleID="s43"/>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">A. NETO REZULTAT IZ POSLOVANJA</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">I. NETO DOBITAK (AOP 1055)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2001</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2001.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2001.last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">II. NETO GUBITAK (AOP 1056)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2002</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2002.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2002.last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:MergeDown="1" ss:StyleID="s43"/>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">B. OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row ss:Height="45">
+    <Cell ss:Index="2" ss:StyleID="s23"><Data ss:Type="String">a) Stavke koje neće biti reklasifikovane u Bilansu uspeha u budućim periodima</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row ss:Height="45">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">330</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">1. Promene revalorizacije nematerijalne imovine, nekretnina, postrojenja i opreme</Data></Cell>
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) povećanje revalorizacionih rezervi</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2003</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2003.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2003.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) smanjenje revalorizacionih rezervi</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2004</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2004.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2004.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">331</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">2. Aktuarski dobici ili gubici po osnovu planova definisanih primanja</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) dobici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2005</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2005.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2005.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) gubici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2006</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2006.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2006.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="45">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">333</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">3. Dobili ili gubici po osnovu udela u ostalom sveobuhvatnom dobitku ili gubitku pridruženih društava</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) dobici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2007</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2007.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2007.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) gubici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2008</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2008.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2008.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">b) Stavke koje naknadno mogu biti reklasifikovane u Bilans uspeha u budućim periodima</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">332</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">1. Dobici ili gubici po osnovu ulaganja u vlasničke instrumente kapitala</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) dobici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2009</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2009.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2009.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) gubici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2010</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2010.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2010.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="45">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">334</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">2. Dobili ili gubici po osnovu preračuna finansijskih izveštaja inostranog poslovanja</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) dobici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2011</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2011.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2011.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) gubici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2012</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2012.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2012.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="45">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">335</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">3. Dobici ili gubici od instrumenata zaštite neto ulaganja u inostrano poslovanje</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) dobici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2013</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2013.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2013.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) gubici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2014</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2014.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2014.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="45">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">336</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">4. Dobici ili gubici po osnovu instrumenata zaštite rizika (hedžinga) novčanog toka</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) dobici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2015</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2015.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2015.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) gubici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2016</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2016.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2016.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:MergeDown="2" ss:StyleID="s33"><Data ss:Type="Number">337</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">5. Dobici ili gubici po osnovu instrumenata zaštite </Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">a) dobici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2017</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2017.credit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2017.credit_last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s17"><Data ss:Type="String">b) gubici</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2018.debit_current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2018.debit_last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="78.5625">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">I. OSTALI BRUTO SVEOBUHVATNI DOBITAK (2003 + 2005 + 2007 + 2009 + 2011 + 2013 + 2015 + 2017) - (2004 + 2006 + 2008 + 2010 + 2012 + 2014 + 2016 + 2018) ≥ 0</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2019.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2019.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="78.5625">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">II. OSTALO BRUTO SVEOBUHVATNI GUBITAK (2004 + 2006 + 2008 + 2010 + 2012 + 2014 + 2016 + 2018) - (2003 + 2005 + 2007 + 2009 + 2011 + 2013 + 2015 + 2017) ≥ 0</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2020</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2020.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2020.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">III. ODLOŽENI PORESKI RASHOD NA OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK PERIODA</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2021</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2021.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2021.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">IV. ODLOŽENI PORESKI PRIHOD NA OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK PERIODA</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2022</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2022.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2022.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">V. NETO OSTALI SVEOBUHVATNI DOBITAK (2019 - 2020 - 2021 +2022 ) ≥ 0</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2023</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2023.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2023.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">VI. NETO OSTALI SVEOBUHVATNI GUBITAK (2020 - 2019 + 2021 - 2022) ≥ 0</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2024</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2024.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2024.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">V. UKUPAN NETO SVEOBUHVATNI REZULTAT PERIODA</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">I. UKUPAN NETO SVEOBUHVATNI GUBITAK (2001 - 2002 + 2023 -2024) ≥ 0</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2025.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2025.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">II. UKUPAN NETO SVEOBUHVATNI GUBITAK (2002 - 2001 + 2024 - 2023) ≥ 0</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2026</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2026.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2026.last_year}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s25"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">G. UKUPAN NETO SVEOBUHVATNI DOBITAK ILI GUBITAK (2028 + 2029) =  AOP 2025 ≥ 0 ili AOP 2026 &gt; 0 </Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2027</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2027.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2027.last_year}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">1. Pripisan matičnom pravnom licu</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">2028</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2028.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2028.last_year}</Data></Cell>
+   </Row>
+   <Row ss:Height="30.75">
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s39"><Data ss:Type="String">2. Pripisan učešćima bez prava kontrole</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">2029</Data></Cell>
+    <Cell ss:StyleID="s41"/>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.iorScheme._2029.current_year}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.iorScheme._2029.last_year}</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>43</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <Table x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

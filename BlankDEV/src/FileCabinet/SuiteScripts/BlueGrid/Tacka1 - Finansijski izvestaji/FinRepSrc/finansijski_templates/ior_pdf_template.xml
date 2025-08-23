@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+    <head>
+        <link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+        <#if .locale == "zh_CN">
+            <link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+        <#elseif .locale == "zh_TW">
+            <link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+        <#elseif .locale == "ja_JP">
+            <link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+        <#elseif .locale == "ko_KR">
+            <link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+        <#elseif .locale == "th_TH">
+            <link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+        </#if>
+            
+        <style>
+            * {
+                <#if .locale=="zh_CN">font-family: NotoSans, NotoSansCJKsc, sans-serif;
+                <#elseif .locale=="zh_TW">font-family: NotoSans, NotoSansCJKtc, sans-serif;
+                <#elseif .locale=="ja_JP">font-family: NotoSans, NotoSansCJKjp, sans-serif;
+                <#elseif .locale=="ko_KR">font-family: NotoSans, NotoSansCJKkr, sans-serif;
+                <#elseif .locale=="th_TH">font-family: NotoSans, NotoSansThai, sans-serif;
+                <#else>font-family: NotoSans, sans-serif;
+                </#if>
+            }
+            .title {
+                font-size:20px;
+                font-weight: 700;
+                align:center;
+            }
+            .subtitle {
+                font-size:14px;
+                font-weight: 700;
+                align:center;
+            }
+            .note {
+                font-size: 10px;
+                align: right;
+            }
+            table {
+                margin-bottom: 20px;
+            }
+            td {
+                font-size: 10px !important;
+            }
+            td p {
+                text-align: left;
+            }
+            .center {
+                align: center;
+                valign: middle;
+            }
+            .cell1 {
+                width:80px;
+                align: center;
+                valign: middle;
+            }
+            .cell2 {
+                width:270px;
+                valign: middle;
+            }
+            .cell3 {
+                width:80px;
+                align: center;
+                valign: middle;
+            }
+            .cell4 {
+                width:90px;
+                align: center;
+                valign: middle;
+            }
+            .cell5 {
+                width:142.5px;
+                align: center;
+                valign: middle;
+            }
+            .cell6 {
+                width:142.5px;
+                align: center;
+                valign: middle;
+            }
+        </style>
+    </head>
+    <body padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
+        <table border="0.5" bordercolor="#ccc" cellborder="0.5" cellpadding="5" cellspacing="0" id="heading-table"
+            style="border-collapse:collapse; text-align: center;">
+            <tr>
+            <td style="align:center;" colspan="3"><strong>Popunjava pravno lice - preduzetnik</strong></td>
+            </tr>
+            <tr>
+            <td style="width: 261px;"><strong>Matični broj:</strong> <#if JSON?has_content>${JSON.maticniBroj}</#if></td>
+            <td style="width: 287px;"><strong>Šifra delatnosti:</strong> <#if JSON?has_content>${JSON.sifraDelatnosti}</#if></td>
+            <td style="width: 287px;"><strong>PIB:</strong> <#if JSON?has_content>${JSON.pib}</#if></td>
+            </tr>
+            <tr>
+            <td style="width: 261px;" colspan="3"><strong>Naziv: </strong><#if JSON?has_content>${JSON.naziv}</#if></td>
+            </tr>
+            <tr>
+            <td style="width: 261px;" colspan="3"><strong>Sedište: </strong><#if JSON?has_content>${JSON.sediste}</#if></td>
+            </tr>
+        </table>
+
+        <p class="title">
+        IZVESTAJ O OSTALOM REZULTATU
+        </p>
+        <p class="subtitle">
+        za period od <#if JSON?has_content>${JSON.datum_od}</#if> do <#if JSON?has_content>${JSON.datum_do}</#if> godine
+        </p>
+        <p class="note">
+        -u hiljadam dinara-
+        </p>
+
+        <table border="0.5" bordercolor="#ccc" cellborder="0.5" cellpadding="5" cellspacing="0" id="heading-table"
+            style="border-collapse:collapse; text-align: center;">
+            <tr>
+                <td rowspan="2" class="cell1 center"><strong>Grupa <br/>računa,<br/>račun</strong></td>
+                <td rowspan="2" class="cell2 center"><strong>Pozicija</strong></td>
+                <td rowspan="2" class="cell3 center"><strong>AOP</strong></td>
+                <td rowspan="2" class="cell4 center"><strong>Napomena<br/>broj</strong></td>
+                <td colspan="2" class="center"><strong>Iznos</strong></td>
+            </tr>
+            <tr>
+                <td class="cell5 center"><strong>Tekuća<br/>godina</strong></td>
+                <td class="cell6 center"><strong>Prethodna godina</strong></td>
+            </tr>
+            <tr>
+                <td class="cell1">1</td>
+                <td class="cell2 center">2</td>
+                <td class="cell3">3</td>
+                <td class="cell4">4</td>
+                <td class="cell5">5</td>
+                <td class="cell6">6</td>
+            </tr>
+        <tr>
+			<td class="cell1"></td>
+			<td class="cell2">A. NETO REZULTAT IZ POSLOVANJA</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">I. NETO DOBITAK (AOP 1055)</td>
+			<td class="cell3">2001</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2001.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2001.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">II. NETO GUBITAK (AOP 1056)</td>
+			<td class="cell3">2002</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2002.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2002.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">B. OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">a) Stavke koje neće biti reklasifikovane u Bilansu uspeha u budućim periodima</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">330</td>
+			<td class="cell2">1. Promene revalorizacije nematerijalne imovine, nekretnina, postrojenja i opreme</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">330</td>
+			<td class="cell2">a) povećanje revalorizacionih rezervi</td>
+			<td class="cell3">2003</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2003.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2003.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">330</td>
+			<td class="cell2">b) smanjenje revalorizacionih rezervi</td>
+			<td class="cell3">2004</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2004.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2004.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">331</td>
+			<td class="cell2">2. Aktuarski dobici ili gubici po osnovu planova definisanih primanja</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">331</td>
+			<td class="cell2">a) dobici</td>
+			<td class="cell3">2005</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2005.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2005.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">331</td>
+			<td class="cell2">b) gubici</td>
+			<td class="cell3">2006</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2006.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2006.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">333</td>
+			<td class="cell2">3. Dobili ili gubici po osnovu udela u ostalom sveobuhvatnom dobitku ili gubitku pridruženih društava</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">333</td>
+			<td class="cell2">a) dobici</td>
+			<td class="cell3">2007</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2007.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2007.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">333</td>
+			<td class="cell2">b) gubici</td>
+			<td class="cell3">2008</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2008.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2008.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">b) Stavke koje naknadno mogu biti reklasifikovane u Bilans uspeha u budućim periodima</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">332</td>
+			<td class="cell2">1. Dobici ili gubici po osnovu ulaganja u vlasničke instrumente kapitala</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">332</td>
+			<td class="cell2">a) dobici</td>
+			<td class="cell3">2009</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2009.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2009.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">332</td>
+			<td class="cell2">b) gubici</td>
+			<td class="cell3">2010</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2010.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2010.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">334</td>
+			<td class="cell2">2. Dobili ili gubici po osnovu preračuna finansijskih izveštaja inostranog poslovanja</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">334</td>
+			<td class="cell2">a) dobici</td>
+			<td class="cell3">2011</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2011.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2011.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">334</td>
+			<td class="cell2">b) gubici</td>
+			<td class="cell3">2012</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2012.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2012.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">335</td>
+			<td class="cell2">3. Dobici ili gubici od instrumenata zaštite neto ulaganja u inostrano poslovanje</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">335</td>
+			<td class="cell2">a) dobici</td>
+			<td class="cell3">2013</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2013.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2013.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">335</td>
+			<td class="cell2">b) gubici</td>
+			<td class="cell3">2014</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2014.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2014.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">336</td>
+			<td class="cell2">4. Dobici ili gubici po osnovu instrumenata zaštite rizika (hedžinga) novčanog toka</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">336</td>
+			<td class="cell2">a) dobici</td>
+			<td class="cell3">2015</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2015.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2015.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">336</td>
+			<td class="cell2">b) gubici</td>
+			<td class="cell3">2016</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2016.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2016.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">337</td>
+			<td class="cell2">5. Dobici ili gubici po osnovu instrumenata zaštite</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1">337</td>
+			<td class="cell2">a) dobici</td>
+			<td class="cell3">2017</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2017.credit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2017.credit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1">337</td>
+			<td class="cell2">b) gubici</td>
+			<td class="cell3">2018</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2018.debit_current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2018.debit_last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">I. OSTALI BRUTO SVEOBUHVATNI DOBITAK (2003 + 2005 + 2007 + 2009 + 2011 + 2013 + 2015 + 2017) - (2004 + 2006 + 2008 + 2010 + 2012 + 2014 + 2016 + 2018) ≥ 0</td>
+			<td class="cell3">2019</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2019.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2019.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">II. OSTALO BRUTO SVEOBUHVATNI GUBITAK (2004 + 2006 + 2008 + 2010 + 2012 + 2014 + 2016 + 2018) - (2003 + 2005 + 2007 + 2009 + 2011 + 2013 + 2015 + 2017) ≥ 0</td>
+			<td class="cell3">2020</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2020.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2020.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">III. ODLOŽENI PORESKI RASHOD NA OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK PERIODA</td>
+			<td class="cell3">2021</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2021.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2021.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">IV. ODLOŽENI PORESKI PRIHOD NA OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK PERIODA</td>
+			<td class="cell3">2022</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2022.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2022.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">V. NETO OSTALI SVEOBUHVATNI DOBITAK (2019 - 2020 - 2021 +2022 ) ≥ 0</td>
+			<td class="cell3">2023</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2023.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2023.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">VI. NETO OSTALI SVEOBUHVATNI GUBITAK (2020 - 2019 + 2021 - 2022) ≥ 0</td>
+			<td class="cell3">2024</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2024.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2024.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">V. UKUPAN NETO SVEOBUHVATNI REZULTAT PERIODA</td>
+			<td class="cell3"></td>
+			<td class="cell4"></td>
+			<td class="cell5"></td>
+			<td class="cell6"></td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">I. UKUPAN NETO SVEOBUHVATNI GUBITAK (2001 - 2002 + 2023 -2024) ≥ 0</td>
+			<td class="cell3">2025</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2025.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2025.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">II. UKUPAN NETO SVEOBUHVATNI GUBITAK (2002 - 2001 + 2024 - 2023) ≥ 0</td>
+			<td class="cell3">2026</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2026.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2026.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">G. UKUPAN NETO SVEOBUHVATNI DOBITAK ILI GUBITAK (2028 + 2029) =  AOP 2025 ≥ 0 ili AOP 2026 &gt; 0</td>
+			<td class="cell3">2027</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2027.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2027.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">1. Pripisan matičnom pravnom licu</td>
+			<td class="cell3">2028</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2028.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2028.last_year}</td>
+		</tr>
+		<tr>
+			<td class="cell1"></td>
+			<td class="cell2">2. Pripisan učešćima bez prava kontrole</td>
+			<td class="cell3">2029</td>
+			<td class="cell4"></td>
+			<td class="cell5">${JSON.iorScheme._2029.current_year}</td>
+			<td class="cell6">${JSON.iorScheme._2029.last_year}</td>
+		</tr>
+  </table>    
+</body>
+</pdf>

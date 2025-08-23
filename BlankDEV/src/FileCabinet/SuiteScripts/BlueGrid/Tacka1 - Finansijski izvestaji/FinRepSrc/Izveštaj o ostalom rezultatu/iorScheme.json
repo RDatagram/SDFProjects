@@ -1,0 +1,377 @@
+{
+  "_2001": {
+    "GRUPA": "",
+    "description": "I. NETO DOBITAK (AOP 1055)",
+    "aops": [
+      "+ 1055"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2002": {
+    "GRUPA": "",
+    "description": "II. NETO GUBITAK (AOP 1056)",
+    "aops": [
+      "+ 1056"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2003": {
+    "GRUPA": "330",
+    "description": "Povećanje revalorizacije nematerijalne imovine, nekretnina, postrojenja i opreme",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2004": {
+    "GRUPA": "330",
+    "description": "Smanjenje  revalorizacije nematerijalne imovine, nekretnina, postrojenja i opreme",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2005": {
+    "GRUPA": "331",
+    "description": "Dobici po osnovu planova definisanih primanja",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2006": {
+    "GRUPA": "331",
+    "description": "Gubici po osnovu planova definisanih primanja",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2007": {
+    "GRUPA": "333",
+    "description": "Dobici po osnovu udela u ostalom sveobuhvatnom dobitku ili gubitku pridruženih društava",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2008": {
+    "GRUPA": "333",
+    "description": "Gubici po osnovu udela u ostalom sveobuhvatnom dobitku ili gubitku pridruženih društava",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2009": {
+    "GRUPA": "332",
+    "description": "Dobici po osnovu ulaganja u vlasničke instrumente kapitala",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2010": {
+    "GRUPA": "332",
+    "description": "Gubici po osnovu ulaganja u vlasničke instrumente kapitala",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2011": {
+    "GRUPA": "334",
+    "description": "Dobici po osnovu preračuna finansijskih izveštaja inostranog poslovanja",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2012": {
+    "GRUPA": "334",
+    "description": "Gubici po osnovu preračuna finansijskih izveštaja inostranog poslovanja",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2013": {
+    "GRUPA": "335",
+    "description": "Dobici od instrumenata zaštite neto ulaganja u inostrano poslovanje",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2014": {
+    "GRUPA": "335",
+    "description": "Gubici od instrumenata zaštite neto ulaganja u inostrano poslovanje",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2015": {
+    "GRUPA": "336",
+    "description": "Dobici po osnovu instrumenata zaštite rizika (hedžinga) novčanog toka",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2016": {
+    "GRUPA": "336",
+    "description": "Gubici po osnovu instrumenata zaštite rizika (hedžinga) novčanog toka",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2017": {
+    "GRUPA": "337",
+    "description": "Dobici po osnovu hartija od vrednosti koje se vrednuju po fer vrednosti kroz ostali ukupan rezultat",
+    "fieldToUse": "credit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2018": {
+    "GRUPA": "337",
+    "description": "Gubici po osnovu hartija od vrednosti koje se vrednuju po fer vrednosti kroz ostali ukupan rezultat",
+    "fieldToUse": "debit",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2019": {
+    "GRUPA": "",
+    "description": "I. OSTALI BRUTO SVEOBUHVATNI DOBITAK (2003 + 2005 + 2007 + 2009 + 2011 + 2013 + 2015 + 2017) - (2004 + 2006 + 2008 + 2010 + 2012 + 2014 + 2016 + 2018) ≥ 0",
+    "aops": [
+      "+ 2003",
+      "+ 2005",
+      "+ 2007",
+      "+ 2009",
+      "+ 2011",
+      "+ 2013",
+      "+ 2015",
+      "+ 2017",
+      "- 2004",
+      "- 2006",
+      "- 2008",
+      "- 2010",
+      "- 2012",
+      "- 2014",
+      "- 2016",
+      "- 2018"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2020": {
+    "GRUPA": "",
+    "description": "II. OSTALI BRUTO SVEOBUHVATNI GUBITAK (2004 + 2006 + 2008 + 2010 + 2012 + 2014 + 2016 + 2018) - (2003 + 2005 + 2007 + 2009 + 2011 + 2013 + 2015 + 2017) ≥ 0",
+    "aops": [
+      "+ 2004",
+      "+ 2006",
+      "+ 2008",
+      "+ 2010",
+      "+ 2012",
+      "+ 2014",
+      "+ 2016",
+      "+ 2018",
+      "- 2003",
+      "- 2005",
+      "- 2007",
+      "- 2009",
+      "- 2011",
+      "- 2013",
+      "- 2015",
+      "- 2017"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2021": {
+    "GRUPA": "",
+    "description": "III. ODLOŽENI PORESKI RASHOD NA OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK PERIODA",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2022": {
+    "GRUPA": "",
+    "description": "IV. ODLOŽENI PORESKI PRIHOD NA OSTALI SVEOBUHVATNI DOBITAK ILI GUBITAK PERIODA",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2023": {
+    "GRUPA": "",
+    "description": "V. NETO OSTALI SVEOBUHVATNI DOBITAK (2019 - 2020 - 2021 + 2022) ≥ 0",
+    "aops": [
+      "+ 2019",
+      "- 2020",
+      "- 2021",
+      "+ 2022"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2024": {
+    "GRUPA": "",
+    "description": "VI. NETO OSTALI SVEOBUHVATNI GUBITAK (2020 - 2019 + 2021 - 2022) ≥ 0",
+    "aops": [
+      "+ 2020",
+      "- 2019",
+      "+ 2021",
+      "- 2022"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2025": {
+    "GRUPA": "",
+    "description": "I. UKUPAN NETO SVEOBUHVATNI DOBITAK (2001 - 2002 + 2023 - 2024) ≥ 0",
+    "aops": [
+      "+ 2001",
+      "- 2002",
+      "+ 2023",
+      "- 2024"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2026": {
+    "GRUPA": "",
+    "description": "II. UKUPAN NETO SVEOBUHVATNI GUBITAK (2002 - 2001 + 2024 - 2023) ≥ 0",
+    "aops": [
+      "+ 2002",
+      "- 2001",
+      "+ 2024",
+      "- 2023"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2027": {
+    "GRUPA": "",
+    "description": "G. UKUPAN NETO SVEOBUHVATNI DOBITAK ILI GUBITAK (2028 + 2029) = AOP 2025 ≥ 0 ili AOP 2026 > 0",
+    "aops": [
+      "+ 2026"
+    ],
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2028": {
+    "GRUPA": "",
+    "description": "1. Neto sveobuhvatni dobitak ili gubitak pripisan matičnom licu",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_2029": {
+    "GRUPA": "",
+    "description": "2. Neto sveobuhvatni dobitak ili gubitak pripisan učešćima bez prava kontrole",
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  }
+}

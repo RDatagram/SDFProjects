@@ -1,0 +1,79 @@
+<!-- Do not modify the contents of the SDF XML definition structure located under "CDATA" section of this XML, as this may corrupt the Workbook/Dataset data when you deploy the modified object to your NetSuite account. !-->
+<dataset scriptid="custdataset_crw_popdv_code">
+  <name translate="T">[scriptid=custcollectiontranslations_dataset_4_60341e2bcd4848e0a342d0.dataset_name_12_2]</name>
+  <dependencies>
+    <dependency>[scriptid=customrecord_crw_popdv_code]</dependency>
+  </dependencies>
+  <definition><![CDATA[<root>
+<_T_>dataSet</_T_>
+<id type="null"/>
+<scriptId type="null"/>
+<applicationId type="null"/>
+<version type="string">0.1</version>
+<name>
+  <translationScriptId>custcollectiontranslations_dataset_4_60341e2bcd4848e0a342d0.dataset_name_12_2</translationScriptId>
+</name>
+<audience>
+  <AudienceItems type="array"/>
+  <isPublic type="boolean">true</isPublic>
+</audience>
+<ownerId>2910</ownerId>
+<description type="null"/>
+<baseRecord>
+  <id>customrecord_crw_popdv_code</id>
+  <label>CRW : POPDV Code</label>
+</baseRecord>
+<columns type="array">
+  <_ITEM_>
+    <columnId>1</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>name</id>
+      <label>Name</label>
+      <joinTrail>
+        <baseRecord>
+          <id>customrecord_crw_popdv_code</id>
+          <label>CRW : POPDV Code</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>name</uniqueId>
+    </field>
+    <alias>name</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>2</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>id</id>
+      <label>Internal ID</label>
+      <joinTrail>
+        <baseRecord>
+          <id>customrecord_crw_popdv_code</id>
+          <label>CRW : POPDV Code</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>id</uniqueId>
+    </field>
+    <alias>id</alias>
+  </_ITEM_>
+</columns>
+<criteria>
+  <_T_>condition</_T_>
+  <operator>
+    <code>AND</code>
+  </operator>
+  <children type="array"/>
+  <meta type="null"/>
+  <field type="null"/>
+  <targetFieldContext>
+    <name>DEFAULT</name>
+  </targetFieldContext>
+  <fieldStateName type="null"/>
+</criteria>
+<formulas type="array"/>
+</root>]]></definition>
+</dataset>

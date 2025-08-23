@@ -1,0 +1,482 @@
+{
+    "_1001": {
+        "GRUPA": "",
+        "description": "A. POSLOVNI PRIHODI (1002 + 1005 + 1008 + 1009 - 1010 + 1011 + 1012)",
+        "aops": [
+            "+ 1002",
+            "+ 1005",
+            "+ 1008",
+            "+ 1009",
+            "- 1010",
+            "+ 1011",
+            "+ 1012"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1002": {
+        "GRUPA": "60",
+        "description": "I. PRIHODI OD PRODAJE ROBE (1003 + 1004)",
+        "aops": [
+            "+ 1003",
+            "+ 1004"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1003": {
+        "GRUPA": "600, 602 i 604",
+        "description": "1. Prihodi od prodaje robe na domaćem tržištu",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1004": {
+        "GRUPA": "601, 603 i 605",
+        "description": "2. Prihodi od prodaje roba na inostranom tržištu",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1005": {
+        "GRUPA": "61",
+        "description": "II. PRIHODI OD PRODAJE PROIZVODA I USLUGA (1006 + 1007)",
+        "aops": [
+            "+ 1006",
+            "+ 1007"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1006": {
+        "GRUPA": "610, 612 i 614",
+        "description": "1. Prihodi od prodaje proizvoda i usluga na domaćem tržištu",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1007": {
+        "GRUPA": "611, 613 i 615",
+        "description": "2. Prihodi od prodaje proizvoda i usluga na inostranom tržištu",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1008": {
+        "GRUPA": "62",
+        "description": "III. PRIHODI OD AKTIVIRANJA UČINAKA I ROBE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1009": {
+        "GRUPA": "630",
+        "description": "IV. POVEĆANJE VREDNOSTI ZALIHA NEDOVRŠENIH I GOTOVIH PROIZVODA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1010": {
+        "GRUPA": "631",
+        "description": "V. SMANJENJE VREDNOSTI ZALIHA NEDOVRŠENIH I GOTOVIH PROIZVODA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1011": {
+        "GRUPA": "64 i 65",
+        "description": "VI. OSTALI POSLOVNI PRIHODI",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1012": {
+        "GRUPA": "68, osim 683, 685 i 686",
+        "description": "VII. PRIHODI OD USKLAĐIVANJA VREDNOSTI IMOVINE (OSIM FINANSIJSKE)",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1013": {
+        "GRUPA": "",
+        "description": "B. POSLOVNI RASHODI (1014 + 1015 + 1016 + 1020 + 1021 + 1022 + 1023 + 1024)",
+        "aops": [
+            "+ 1014",
+            "+ 1015",
+            "+ 1016",
+            "+ 1020",
+            "+ 1021",
+            "+ 1022",
+            "+ 1023",
+            "+ 1024"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1014": {
+        "GRUPA": "50",
+        "description": "I. NABAVNA VREDNOST PRODATE ROBE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1015": {
+        "GRUPA": "51",
+        "description": "II. TROŠKOVI MATERIJALA, GORIVA I ENERGIJE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1016": {
+        "GRUPA": "52",
+        "description": "III. TROŠKOVI ZARADA, NAKNADA ZARADA I OSTALI LIČNI RASHODI (1017 + 1018 + 1019)",
+        "aops": [
+            "+ 1017",
+            "+ 1018",
+            "+ 1019"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1017": {
+        "GRUPA": "520",
+        "description": "1. Troškovi zarada i naknada zarada",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1018": {
+        "GRUPA": "521",
+        "description": "2. Troškovi poreza i doprinosa na zarade i naknade zarada",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1019": {
+        "GRUPA": "52 osim 520 i 521",
+        "description": "3. Ostali lični rashodi i naknade",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1020": {
+        "GRUPA": "540",
+        "description": "IV. TROŠKOVI AMORTIZACIJE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1021": {
+        "GRUPA": "58, osim 583, 585 i 586",
+        "description": "V. RASHODI OD USKLAĐIVANJA VREDNOSTI IMOVINE (OSIM FINANSIJSKE)",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1022": {
+        "GRUPA": "53",
+        "description": "VI. TROŠKOVI PROIZVODNIH USLUGA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1023": {
+        "GRUPA": "54, osim 540",
+        "description": "VII. TROŠKOVI REZERVISANJA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1024": {
+        "GRUPA": "55",
+        "description": "VIII. NEMATERIJALNI TROŠKOVI",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1025": {
+        "GRUPA": "",
+        "description": "V. POSLOVNI DOBITAK (1001 - 1013) ≥ 0",
+        "aops": [
+            "+ 1001",
+            "- 1013"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1026": {
+        "GRUPA": "",
+        "description": "G. POSLOVNI GUBITAK (1013 - 1001) ≥ 0",
+        "aops": [
+            "+ 1013",
+            "- 1001"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1027": {
+        "GRUPA": "",
+        "description": "D. FINANSIJSKI PRIHODI (1028 + 1029 + 1030 + 1031)",
+        "aops": [
+            "+ 1028",
+            "+ 1029",
+            "+ 1030",
+            "+ 1031"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1028": {
+        "GRUPA": "660 i 661",
+        "description": "I. FINANSIJSKI PRIHODI IZ ODNOSA SA MATIČNIM, ZAVISNIM I OSTALIM POVEZANIM LICIMA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1029": {
+        "GRUPA": "662",
+        "description": "II. PRIHODI OD KAMATA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1030": {
+        "GRUPA": "663 i 664",
+        "description": "III. POZITIVNE KURSNE RAZLIKE I POZITIVNI EFEKTI VALUTNE KLAUZULE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1031": {
+        "GRUPA": "665 i 669",
+        "description": "IV. OSTALI FINANSIJSKI PRIHODI",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1032": {
+        "GRUPA": "",
+        "description": "Đ. FINANSIJSKI RASHODI (1033 + 1034 + 1035 + 1036)",
+        "aops": [
+            "+ 1033",
+            "+ 1034",
+            "+ 1035",
+            "+ 1036"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1033": {
+        "GRUPA": "560 i 561",
+        "description": "I. FINANSIJSKI RASHODI IZ ODNOSA SA MATIČNIM, ZAVISNIM I OSTALIM POVEZANIM LICIMA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1034": {
+        "GRUPA": "562",
+        "description": "II. RASHODI KAMATA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1035": {
+        "GRUPA": "563 i 564",
+        "description": "III. NEGATIVNE KURSNE RAZLIKE I NEGATIVNI EFEKTI VALUTNE KLAUZULE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1036": {
+        "GRUPA": "565 i 569",
+        "description": "IV. OSTALI FINANSIJSKI RASHODI",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1037": {
+        "GRUPA": "",
+        "description": "E. DOBITAK IZ FINANSIRANJA (1027 - 1032) ≥ 0",
+        "aops": [
+            "+ 1027",
+            "- 1032"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1038": {
+        "GRUPA": "",
+        "description": "Ž. GUBITAK IZ FINANSIRANJA (1032 - 1027) ≥ 0",
+        "aops": [
+            "+ 1032",
+            "- 1027"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1039": {
+        "GRUPA": "683, 685 i 686",
+        "description": "Z. PRIHODI OD USKLAĐIVANJA VREDNOSTI FINANSIJSKE IMOVINE KOJA SE ISKAZUJE PO FER VREDNOSTI KROZ BILANS USPEHA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1040": {
+        "GRUPA": "583, 585 i 586",
+        "description": "I. RASHODI OD USKLAĐIVANJA VREDNOSTI FINANSIJSKE IMOVINE KOJA SE ISKAZUJE PO FER VREDNOSTI KROZ BILANS USPEHA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1041": {
+        "GRUPA": "67",
+        "description": "J. OSTALI PRIHODI",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1042": {
+        "GRUPA": "57",
+        "description": "K. OSTALI RASHODI",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1043": {
+        "GRUPA": "",
+        "description": "L. UKUPNI PRIHODI (1001 + 1027 + 1039 + 1041)",
+        "aops": [
+            "+ 1001",
+            "+ 1027",
+            "+ 1039",
+            "+ 1041"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1044": {
+        "GRUPA": "",
+        "description": "LJ. UKUPNI RASHODI (1013 + 1032 + 1040 + 1042)",
+        "aops": [
+            "+ 1013",
+            "+ 1032",
+            "+ 1040",
+            "+ 1042"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1045": {
+        "GRUPA": "",
+        "description": "M. DOBITAK IZ REDOVNOG POSLOVANJA PRE OPOREZIVANJA (1043 - 1044) ≥ 0",
+        "aops": [
+            "+ 1043",
+            "- 1044"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1046": {
+        "GRUPA": "",
+        "description": "N. GUBITAK IZ REDOVNOG POSLOVANJA PRE OPOREZIVANJA (1044 - 1043) ≥ 0",
+        "aops": [
+            "+ 1044",
+            "- 1043"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1047": {
+        "GRUPA": "69-59",
+        "description": "NJ. POZITIVAN NETO EFEKAT NA REZULTAT PO OSNOVU DOBITKA POSLOVANJA KOJE SE OBUSTAVLJA, PROMENA RAČUNOVODSTVENIH POLITIKA I ISPRAVKI GREŠAKA IZ RANIJIH PERIODA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1048": {
+        "GRUPA": "59- 69",
+        "description": "O. NEGATIVAN NETO EFEKAT NA REZULTAT PO OSNOVU GUBITKA POSLOVANJA KOJE SE OBUSTAVLJA, PROMENA RAČUNOVODSTVENIH POLITIKA I ISPRAVKI GREŠAKA IZ RANIJIH PERIODA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1049": {
+        "GRUPA": "",
+        "description": "P. DOBITAK PRE OPOREZIVANJA (1045 - 1046 + 1047- 1048) ≥ 0",
+        "aops": [
+            "+ 1045",
+            "- 1046",
+            "+ 1047",
+            "- 1048"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1050": {
+        "GRUPA": "",
+        "description": "R. GUBITAK PRE OPOREZIVANJA (1046 - 1045 + 1048 - 1047) ≥ 0",
+        "aops": [
+            "+ 1046",
+            "- 1045",
+            "+ 1048",
+            "- 1047"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1051": {
+        "GRUPA": "721",
+        "description": "I. PORESKI RASHOD PERIODA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1052": {
+        "GRUPA": "722 dug. saldo",
+        "description": "II. ODLOŽENI PORESKI RASHODI PERIODA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1053": {
+        "GRUPA": "722 pot. saldo",
+        "description": "III. ODLOŽENI PORESKI PRIHODI PERIODA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1054": {
+        "GRUPA": "723",
+        "description": "T. ISPLAĆENA LIČNA PRIMANJA POSLODAVCA",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1055": {
+        "GRUPA": "",
+        "description": "Ć. NETO DOBITAK (1049 - 1050 - 1051 - 1052 + 1053 - 1054) ≥ 0",
+        "aops": [
+            "+ 1049",
+            "- 1050",
+            "- 1051",
+            "- 1052",
+            "+ 1053",
+            "- 1054"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1056": {
+        "GRUPA": "",
+        "description": "U. NETO GUBITAK (1050 - 1049 + 1051 + 1052 - 1053 + 1054) ≥ 0",
+        "aops": [
+            "+ 1050",
+            "- 1049",
+            "+ 1051",
+            "+ 1052",
+            "- 1053",
+            "+ 1054"
+        ],
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1057": {
+        "GRUPA": "",
+        "description": "I. NETO DOBITAK KOJI PRIPADA UČEŠĆIMA BEZ PRAVA KONTROLE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1058": {
+        "GRUPA": "",
+        "description": "II. NETO DOBITAK KOJI PRIPADA MATIČNOM PRAVNOM LICU",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1059": {
+        "GRUPA": "",
+        "description": "III. NETO GUBITAK KOJI PRIPADA UČEŠĆIMA BEZ PRAVA KONTROLE",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1060": {
+        "GRUPA": "",
+        "description": "IV. NETO GUBITAK KOJI PRIPADA MATIČNOM PRAVNOM LICU",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1061": {
+        "GRUPA": "",
+        "description": "1. Osnovna zarada po akciji",
+        "current_year": 0,
+        "last_year": 0
+    },
+    "_1062": {
+        "GRUPA": "",
+        "description": "2. Umanjena (razvodnjena) zarada po akciji",
+        "current_year": 0,
+        "last_year": 0
+    }
+}

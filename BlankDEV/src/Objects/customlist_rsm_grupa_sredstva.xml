@@ -1,0 +1,40 @@
+<customlist scriptid="customlist_rsm_grupa_sredstva">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>RSM Grupa sredstva</name>
+  <customvalues>
+    <customvalue scriptid="val_73844_t2262346_796">
+      <isinactive>F</isinactive>
+      <value>1 grupa</value>
+    </customvalue>
+    <customvalue scriptid="val_73845_t2262346_687">
+      <isinactive>F</isinactive>
+      <value>2 grupa</value>
+    </customvalue>
+    <customvalue scriptid="val_73846_t2262346_841">
+      <isinactive>F</isinactive>
+      <value>3 grupa</value>
+    </customvalue>
+    <customvalue scriptid="val_73847_t2262346_160">
+      <isinactive>F</isinactive>
+      <value>4 grupa</value>
+    </customvalue>
+    <customvalue scriptid="val_73848_t2262346_810">
+      <isinactive>F</isinactive>
+      <value>5 grupa</value>
+    </customvalue>
+    <customvalue scriptid="val_73856_t2262346_137">
+      <isinactive>F</isinactive>
+      <value>Nematerijalna 2018</value>
+    </customvalue>
+    <customvalue scriptid="val_74181_t2274808_879">
+      <isinactive>F</isinactive>
+      <value>PoA</value>
+    </customvalue>
+    <customvalue scriptid="val_90861_t2274808_468">
+      <isinactive>F</isinactive>
+      <value>PoAN</value>
+    </customvalue>
+  </customvalues>
+</customlist>

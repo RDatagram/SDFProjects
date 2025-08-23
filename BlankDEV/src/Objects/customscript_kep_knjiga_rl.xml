@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_kep_knjiga_rl">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM : KEP Knjiga RESTlet Script</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/BlueGrid/KEP_KNJIGA/kep_knjiga_src/kep_knjiga_rl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_kep_knjiga_rl">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>RSM : KEP Knjiga RESTlet Script</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

@@ -1,0 +1,373 @@
+{
+  "_3001": {
+    "description": "A. TOKOVI GOTOVINE IZ POSLOVNIH AKTIVNOSTI I. Prilivi gotovine iz poslovnih aktivnosti (1 do 4)",
+    "aops": [
+      "+ 3002",
+      "+ 3003",
+      "+ 3004",
+      "+ 3005"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3002": {
+    "description": "1. Prodaja i primljeni avansi u zemlji",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3003": {
+    "description": "2. Prodaja i primljeni avansi u inostranstvu",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3004": {
+    "description": "3. Primljene kamate iz poslovnih aktivnosti",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3005": {
+    "description": "4. Ostali prilivi iz redovnog poslovanja",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3006": {
+    "description": "II. Odlivi gotovine iz poslovnih aktivnosti (1 do 8)",
+    "aops": [
+      "+ 3007",
+      "+ 3008",
+      "+ 3009",
+      "+ 3010",
+      "+ 3011",
+      "+ 3012",
+      "+ 3013",
+      "+ 3014"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3007": {
+    "description": "1. Isplate dobavljačima i dati avansi u zemlji",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3008": {
+    "description": "2. Isplate dobavljačima i dati avansi u inostranstvu",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3009": {
+    "description": "3. Zarade, naknade zarada i ostali lični rashodi",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3010": {
+    "description": "4. Plaćene kamate u zemlji",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3011": {
+    "description": "5. Plaćene kamate u inostranstvu",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3012": {
+    "description": "6. Porez na dobitak",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3013": {
+    "description": "7. Odlivi po osnovu ostalih javnih prihoda",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3014": {
+    "description": "8. Ostali odlivi iz poslovnih aktivnosti",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3015": {
+    "description": "III. Neto priliv gotovine iz poslovnih aktivnosti (I - II)",
+    "aops": [
+      "+ 3001",
+      "- 3006"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3016": {
+    "description": "IV. Neto odliv gotovine iz poslovnih aktivnosti (II - I)",
+    "aops": [
+      "+ 3006",
+      "- 3001"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3017": {
+    "description": "B. TOKOVI GOTOVINE IZ AKTIVNOSTI INVESTIRANJA I. Prilivi gotovine iz aktivnosti investiranja (1 do 5)",
+    "aops": [
+      "+ 3018",
+      "+ 3019",
+      "+ 3020",
+      "+ 3021",
+      "+ 3022"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3018": {
+    "description": "1. Prodaja akcija i udela",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3019": {
+    "description": "2. Prodaja nematerijalne imovine, nekretnina, postrojenja, opreme i bioloških sredstava",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3020": {
+    "description": "3. Ostali finansijski plasmani",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3021": {
+    "description": "4. Primljene kamate iz aktivnosti investiranja",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3022": {
+    "description": "5. Primljene dividende",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3023": {
+    "description": "II. Odlivi gotovine iz aktivnosti investiranja (1 do 3)",
+    "aops": [
+      "+ 3024",
+      "+ 3025",
+      "+ 3026"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3024": {
+    "description": "1. Kupovina akcija i udela",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3025": {
+    "description": "2. Kupovina nematerijalne imovine, nekretnina, postrojenja, opreme i bioloških sredstava",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3026": {
+    "description": "3. Ostali finansijski plasmani",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3027": {
+    "description": "III. Neto priliv gotovine iz aktivnosti investiranja (I - II)",
+    "aops": [
+      "+ 3017",
+      "- 3023"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3028": {
+    "description": "IV. Neto odliv gotovine iz aktivnosti investiranja (II - I)",
+    "aops": [
+      "+ 3017",
+      "- 3023"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3029": {
+    "description": "V. TOKOVI GOTOVINE IZ AKTIVNOSTI FINANSIRANJA I. Prilivi gotovine iz aktivnosti finansiranja (1 do 7)",
+    "aops": [
+      "+ 3030",
+      "+ 3031",
+      "+ 3032",
+      "+ 3033",
+      "+ 3034",
+      "+ 3035",
+      "+ 3036"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3030": {
+    "description": "1. Uvećanje osnovnog kapitala",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3031": {
+    "description": "2. Dugoročni krediti u zemlji",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3032": {
+    "description": "3. Dugoročni krediti u inostranstvu",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3033": {
+    "description": "4. Kratkoročni krediti u zemlji",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3034": {
+    "description": "5. Kratkoročni krediti u inostranstvu",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3035": {
+    "description": "6. Ostale dugoročne obaveze",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3036": {
+    "description": "7. Ostale kratkoročne obaveze",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3037": {
+    "description": "II. Odlivi gotovine iz aktivnosti finansiranja (1 do 8)",
+    "aops": [
+      "+ 3038",
+      "+ 3039",
+      "+ 3040",
+      "+ 3041",
+      "+ 3042",
+      "+ 3043",
+      "+ 3044",
+      "+ 3045"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3038": {
+    "description": "1. Otkup sopstvenih akcija i udela",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3039": {
+    "description": "2. Dugoročni krediti u zemlji",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3040": {
+    "description": "3. Dugoročni krediti u inostranstvu",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3041": {
+    "description": "4. Kratkoročni krediti u zemlji",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3042": {
+    "description": "5. Kratkoročni krediti u inostranstvu",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3043": {
+    "description": "6. Ostale obaveze",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3044": {
+    "description": "7. Finansijski lizing",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3045": {
+    "description": "8. Isplaćene dividende",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3046": {
+    "description": "III. Neto priliv gotovine iz aktivnosti finansiranja (I - II)",
+    "aops": [
+      "+ 3029",
+      "- 3037"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3047": {
+    "description": "IV. Neto odliv gotovine iz aktivnosti finansiranja (II - I)",
+    "aops": [
+      "+ 3037",
+      "- 3029"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3048": {
+    "description": "G. SVEGA PRILIV GOTOVINE (3001 + 3017 + 3029)",
+    "aops": [
+      "+ 3001",
+      "+ 3017",
+      "+ 3029"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3049": {
+    "description": "D. SVEGA ODLIV GOTOVINE (3006 + 3023 + 3037)",
+    "aops": [
+      "+ 3006",
+      "+ 3023",
+      "+ 3037"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3050": {
+    "description": "Đ. NETO PRILIV GOTOVINE (3048 - 3049) ≥ 0",
+    "aops": [
+      "+ 3048",
+      "- 3049"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3051": {
+    "description": "E. NETO ODLIV GOTOVINE (3049 - 3048) ≥ 0",
+    "aops": [
+      "+ 3049",
+      "- 3048"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3052": {
+    "description": "Ž. GOTOVINA NA POČETKU OBRAČUNSKOG PERIODA",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3053": {
+    "description": "Z. POZITIVNE KURSNE RAZLIKE PO OSNOVU PRERAČUNA GOTOVINE",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3054": {
+    "description": "I. NEGATIVNE KURSNE RAZLIKE PO OSNOVU PRERAČUNA GOTOVINE",
+    "current_year": 0,
+    "last_year": 0
+  },
+  "_3055": {
+    "description": "J. GOTOVINA NA KRAJU OBRAČUNSKOG PERIODA (3050 - 3051 + 3052 + 3053 - 3054)",
+    "aops": [
+      "+ 3050",
+      "- 3051",
+      "+ 3052",
+      "+ 3053",
+      "- 3054"
+    ],
+    "current_year": 0,
+    "last_year": 0
+  }
+}

@@ -1,0 +1,13 @@
+<customglplugin scriptid="customscript_crw_rev_map">
+  <description></description>
+  <isinactive>F</isinactive>
+  <loglevel>DEBUG</loglevel>
+  <name>CROWE : Revenue Mapping</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <runasrole></runasrole>
+  <scriptfile>[/SuiteScripts/RS_LOCAL/local_src/crw_map_gl_impact_1.js]</scriptfile>
+  <status>RELEASED</status>
+</customglplugin>

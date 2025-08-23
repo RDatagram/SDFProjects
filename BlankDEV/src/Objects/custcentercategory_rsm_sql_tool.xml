@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory_rsm_sql_tool">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_snt_links]</centertab>
+  <label>SQL TOOL</label>
+  <links>
+    <link>
+      <linklabel>iSQL</linklabel>
+      <linkobject>[scriptid=customscript_rsm_isql.customdeploy_rsm_isql]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>RESTLET tester</linklabel>
+      <linkobject>[scriptid=customscript_rsm_test_restlet.customdeploy_rsm_test_restlet]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,1603 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+    <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+        <Author>R-DATAGRAM</Author>
+        <LastAuthor>R-DATAGRAM</LastAuthor>
+        <Created>2022-07-06T19:36:35Z</Created>
+        <LastSaved>2022-07-06T20:23:27Z</LastSaved>
+        <Version>12.00</Version>
+    </DocumentProperties>
+    <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+        <WindowHeight>12285</WindowHeight>
+        <WindowWidth>24855</WindowWidth>
+        <WindowTopX>240</WindowTopX>
+        <WindowTopY>90</WindowTopY>
+        <ProtectStructure>False</ProtectStructure>
+        <ProtectWindows>False</ProtectWindows>
+    </ExcelWorkbook>
+    <Styles>
+        <Style ss:ID="Default" ss:Name="Normal">
+            <Alignment ss:Vertical="Bottom"/>
+            <Borders/>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+            <Interior/>
+            <NumberFormat/>
+            <Protection/>
+        </Style>
+        <Style ss:ID="s16" ss:Name="Normal 2">
+            <Alignment ss:Vertical="Bottom"/>
+            <Borders/>
+            <Font ss:FontName="Arial"/>
+            <Interior/>
+            <NumberFormat/>
+            <Protection/>
+        </Style>
+        <Style ss:ID="m104901900" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="m104901920" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s19" ss:Parent="s16">
+            <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s20" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s21" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s22" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s23" ss:Parent="s16">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s24" ss:Parent="s16">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s25" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="@"/>
+        </Style>
+        <Style ss:ID="s26" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="@"/>
+        </Style>
+        <Style ss:ID="s27" ss:Parent="s16">
+            <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s28" ss:Parent="s16">
+            <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="@"/>
+        </Style>
+        <Style ss:ID="s29" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="@"/>
+        </Style>
+        <Style ss:ID="s30" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s31" ss:Parent="s16">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s40" ss:Parent="s16">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s41" ss:Parent="s16">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s42" ss:Parent="s16">
+            <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s43" ss:Parent="s16">
+            <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s44" ss:Parent="s16">
+            <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Bold="1"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s45" ss:Parent="s16">
+            <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Bold="1"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s46" ss:Parent="s16">
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="8"/>
+            <NumberFormat ss:Format="Fixed"/>
+            <Protection ss:Protected="0"/>
+        </Style>
+        <Style ss:ID="s47" ss:Parent="s16">
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="8"/>
+            <NumberFormat ss:Format="Fixed"/>
+            <Protection ss:Protected="0"/>
+        </Style>
+        <Style ss:ID="s48" ss:Parent="s16">
+            <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s49" ss:Parent="s16">
+            <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s50" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s51" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="s52" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s54" ss:Parent="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+                        ss:Color="#5A5A5A"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+                        ss:Color="#5A5A5A"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss"/>
+        </Style>
+    </Styles>
+    <Worksheet ss:Name="Sheet1">
+        <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="126" x:FullColumns="1"
+               x:FullRows="1" ss:DefaultRowHeight="15">
+            <Column ss:AutoFitWidth="0" ss:Width="69"/>
+            <Column ss:AutoFitWidth="0" ss:Width="250.5"/>
+            <Column ss:AutoFitWidth="0" ss:Width="33"/>
+            <Column ss:AutoFitWidth="0" ss:Width="57.75"/>
+            <Column ss:AutoFitWidth="0" ss:Width="70.5" ss:Span="2"/>
+            <Row>
+                <Cell ss:MergeAcross="5" ss:StyleID="s50"><Data ss:Type="String">BILANS STANJA </Data></Cell>
+                <Cell ss:StyleID="s16"/>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="5" ss:StyleID="s50"><Data ss:Type="String">na dan ${JSON.datum}</Data></Cell>
+                <Cell ss:StyleID="s16"/>
+            </Row>
+            <Row ss:Height="15.75">
+                <Cell ss:StyleID="s19"/>
+                <Cell ss:StyleID="s16"/>
+                <Cell ss:StyleID="s16"/>
+                <Cell ss:StyleID="s16"/>
+                <Cell ss:MergeAcross="2" ss:StyleID="s51"/>
+            </Row>
+            <Row>
+                <Cell ss:MergeDown="2" ss:StyleID="s52"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeDown="2" ss:StyleID="s54"><Data ss:Type="String">POZICIJA</Data></Cell>
+                <Cell ss:MergeDown="2" ss:StyleID="s54"><Data ss:Type="String">AOP</Data></Cell>
+                <Cell ss:MergeDown="2" ss:StyleID="s54"><Data ss:Type="String">Napomena broj</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="m104901900"><Data ss:Type="String">Iznos</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="m104901920"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s20"><Data ss:Type="String">Krajnje stanje ${JSON.datumKrajnji}</Data></Cell>
+                <Cell ss:StyleID="s21"><Data ss:Type="String">Početno stanje ${JSON.datumPocetni}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s22"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:StyleID="s20"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s20"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s20"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s20"><Data ss:Type="Number">5</Data></Cell>
+                <Cell ss:StyleID="s20"><Data ss:Type="Number">6</Data></Cell>
+                <Cell ss:StyleID="s21"><Data ss:Type="Number">7</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s22"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">AKTIVA</Data></Cell>
+                <Cell ss:StyleID="s20"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s40"/>
+                <Cell ss:StyleID="s40"/>
+                <Cell ss:StyleID="s41"/>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">00</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0001.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0001</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0001.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0001.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0001.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0002.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0002</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0002.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0002.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0002.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">01</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0003.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0003</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0003.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0003.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0003.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">010</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0004.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0004</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0004.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0004.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0004.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">011, 012 i 014</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0005.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0005</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0005.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0005.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0005.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">013</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0006.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0006</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0006.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0006.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0006.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">017</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0007.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0007</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0007.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0007.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0007.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">017</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0008.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0008</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0008.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0008.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0008.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0009.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0009</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0009.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0009.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0009.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">020, 021 i 022</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0010.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0010</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0010.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0010.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0010.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">023</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0011.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0011</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0011.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0011.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0011.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">024</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0012.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0012</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0012.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0012.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0012.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">025 i 027</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0013.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0013</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0013.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0013.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0013.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">026 I 028</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0014.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0014</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0014.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0014.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0014.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">029 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0015.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0015</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0015.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0015.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0015.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">028 i deo 029</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0016.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0016</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0016.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0016.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0016.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0017.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0017</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0017.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0017.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0017.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">04 i 05</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0018.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0018</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0018.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0018.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0018.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="38.25">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">040  (deo), 041 (deo) i  042 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0019.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0019</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0019.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0019.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0019.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="38.25">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">040  (deo), 041 (deo) i  042 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0020.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0020</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0020.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0020.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0020.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">043, 050 (deo) I  051 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0021.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0021</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0021.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0021.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0021.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">044, 050 (deo) I  051 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0022.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0022</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0022.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0022.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0022.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 045  I  deo 053</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0023.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0023</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0023.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0023.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0023.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 045  I  deo 053</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0024.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0024</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0024.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0024.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0024.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">046</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0025.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0025</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0025.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0025.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0025.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">047</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0026.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0026</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0026.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0026.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0026.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">048,  052, 054, 055 i 056</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0027.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0027</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0027.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0027.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0027.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">28 (deo) , osim 288</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0028.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0028</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0028.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0028.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0028.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">288</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0029.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0029</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0029.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0029.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0029.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s28"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0030.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0030</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0030.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0030.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0030.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">Klasa 1 (osim  14)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0031.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0031</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0031.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0031.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0031.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">10</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0032.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0032</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0032.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0032.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0032.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">11 i 12</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0033.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0033</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0033.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0033.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0033.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">13</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0034.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0034</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0034.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0034.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0034.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">150, 152 i 154</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0035.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0035</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0035.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0035.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0035.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">151, 153 i 155</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0036.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0036</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0036.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0036.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0036.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">14</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0037.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0037</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0037.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0037.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0037.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">20</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0038.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0038</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0038.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0038.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0038.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">204</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0039.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0039</Data></Cell>
+                <Cell ss:StyleID="s27"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0039.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0039.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0039.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">205</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0040.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0040</Data></Cell>
+                <Cell ss:StyleID="s27"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0040.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0040.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0040.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">200 I 202</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0041.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0041</Data></Cell>
+                <Cell ss:StyleID="s27"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0041.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0041.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0041.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">201 I 203</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0042.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0042</Data></Cell>
+                <Cell ss:StyleID="s27"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0042.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0042.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0042.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">206</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0043.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0043</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0043.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0043.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0043.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">21, 22 i 27</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0044.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0044</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0044.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0044.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0044.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">21, 22 osim 223 I 224, I 27</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0045.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0045</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0045.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0045.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0045.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">223</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0046.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0046</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0046.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0046.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0046.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">224</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0047.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0047</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0047.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0047.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0047.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">23 </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0048.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0048</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0048.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0048.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0048.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">230 </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0049.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0049</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0049.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0049.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0049.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">231</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0050.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0050</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0050.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0050.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0050.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">232, 234 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0051.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0051</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0051.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0051.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0051.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">233, 234 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0052.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0052</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0052.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0052.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0052.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">235</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0053.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0053</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0053.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0053.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0053.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">236 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0054.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0054</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0054.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0054.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0054.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">237</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0055.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0055</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0055.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0055.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0055.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">236 (deo), 238 I 239</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0056.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0056</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0056.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0056.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0056.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">24</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0057.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0057</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0057.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0057.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0057.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">28 (deo) osim 288</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0058.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0058</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0058.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0058.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0058.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0059.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0059</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0059.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0059.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0059.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">88</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0060.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0060</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0060.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0060.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0060.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">PASIVA</Data></Cell>
+                <Cell ss:StyleID="s26"/>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"></Cell>
+                <Cell ss:StyleID="s42"></Cell>
+                <Cell ss:StyleID="s43"></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0401.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0401</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0401.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0401.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0401.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">30, osim 306</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0402.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0402</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0402.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0402.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0402.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">31</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0403.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0403</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0403.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0403.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0403.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">306</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0404.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0404</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0404.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0404.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0404.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">32</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0405.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0405</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0405.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0405.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0405.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="63.75">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">330 I potražni saldo računa 331,  332, 333, 334, 335, 336 I 337</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0406.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0406</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0406.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0406.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0406.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="51">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">dugovni saldo računa 331,  332, 333, 334, 335, 336 I 337</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0407.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0407</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0407.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0407.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0407.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">34</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0408.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0408</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0408.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0408.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0408.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">340</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0409.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0409</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0409.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0409.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0409.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">341</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0410.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0410</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0410.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0410.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0410.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0411.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0411</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0411.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0411.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0411.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">35</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0412.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0412</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0412.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0412.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0412.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">350</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0413.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0413</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0413.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0413.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0413.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">351</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0414.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0414</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0414.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0414.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0414.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0415.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0415</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0415.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0415.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0415.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">40</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0416.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0416</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0416.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0416.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0416.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">404</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0417.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0417</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0417.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0417.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0417.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">400</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0418.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0418</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0418.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0418.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0418.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">40 osim 400 I 404</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0419.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0419</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0419.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0419.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0419.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">41</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0420.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0420</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0420.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0420.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0420.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">410</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0421.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0421</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0421.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0421.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0421.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">411 (deo) i 412 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0422.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0422</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0422.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0422.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0422.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">411 (deo) i 412 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0423.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0423</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0423.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0423.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0423.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">414 I 416 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0424.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0424</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0424.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0424.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0424.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">415 I 416 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0425.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0425</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0425.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0425.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0425.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">413</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0426.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0426</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0426.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0426.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0426.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">419</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0427.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0427</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0427.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0427.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0427.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="38.25">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">49 (deo), osim 498 I 495  (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0428.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0428</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0428.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0428.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0428.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">498</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0429.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0429</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0429.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0429.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0429.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">495 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0430.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0430</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0430.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0430.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0430.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0431.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0431</Data></Cell>
+                <Cell ss:StyleID="s27"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0431.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0431.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0431.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">467</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0432.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0432</Data></Cell>
+                <Cell ss:StyleID="s27"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0432.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0432.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0432.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">42, osim 427</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0433.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0433</Data></Cell>
+                <Cell ss:StyleID="s27"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0433.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0433.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0433.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">420 (deo) I  421 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0434.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0434</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0434.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0434.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0434.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">420 (deo) I  421 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0435.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0435</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0435.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0435.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0435.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="51">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">422 (deo), 424 (deo), 425 (deo) I 429 (deo) </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0436.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0436</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0436.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0436.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0436.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="51">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">422 (deo), 424 (deo), 425 (deo) I 429 (deo) </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0437.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0437</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0437.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0437.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0437.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="38.25">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">423, 424 (deo), 425 (deo) i 429 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0438.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0438</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0438.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0438.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0438.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">426</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0439description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0439</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0439.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0439.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0439.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">428</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0440.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0440</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0440.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0440.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0440.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">430</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0441.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0441</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0441.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0441.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0441.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">43 osim 430</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0442.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0442</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0442.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0442.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0442.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">431 i 433 </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0443.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0443</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0443.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0443.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0443.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">432 i 434</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0444.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0444</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0444.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0444.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0444.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">435</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0445.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0445</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0445.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0445.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0445.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">436</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0446.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0446</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0446.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0446.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0446.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">439 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0447.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0447</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0447.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0447.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0447.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">439 (deo)</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0448.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0448</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0448.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0448.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0448.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="38.25">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">44, 45 i 46 osim 467, 47 I 48</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0449.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0449</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0449.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0449.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0449.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">44, 45 i 46 osim 467</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0450.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0450</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0450.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0450.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0450.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">47, 48 osim 481</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0451.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0451</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0451.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0451.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0451.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">481</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0452.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0452</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0452.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0452.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0452.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">427</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0453.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0453</Data></Cell>
+                <Cell ss:StyleID="s24"/>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0453.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0453.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0453.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="25.5">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">49 (deo) osim 498</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0454.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0454</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0454.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0454.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0454.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0455.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0455</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0455.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0455.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0455.balance3}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0456.description}</Data></Cell>
+                <Cell ss:StyleID="s26"><Data ss:Type="String">0456</Data></Cell>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0456.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0456.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0456.balance3}</Data></Cell>
+            </Row>
+            <Row ss:Height="15.75">
+                <Cell ss:StyleID="s29"><Data ss:Type="Number">89</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">${JSON.bsScheme._0457.description}</Data></Cell>
+                <Cell ss:StyleID="s30"><Data ss:Type="String">0457</Data></Cell>
+                <Cell ss:StyleID="s31"><Data ss:Type="String">&#160; </Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0457.balance1}</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="Number">${JSON.bsScheme._0457.balance2}</Data></Cell>
+                <Cell ss:StyleID="s43"><Data ss:Type="Number">${JSON.bsScheme._0457.balance3}</Data></Cell>
+            </Row>
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <PageSetup>
+                <Header x:Margin="0.3"/>
+                <Footer x:Margin="0.3"/>
+                <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+            </PageSetup>
+            <Print>
+                <ValidPrinterInfo/>
+                <HorizontalResolution>600</HorizontalResolution>
+                <VerticalResolution>600</VerticalResolution>
+            </Print>
+            <Selected/>
+            <Panes>
+                <Pane>
+                    <Number>3</Number>
+                    <ActiveRow>8</ActiveRow>
+                    <ActiveCol>1</ActiveCol>
+                </Pane>
+            </Panes>
+            <ProtectObjects>False</ProtectObjects>
+            <ProtectScenarios>False</ProtectScenarios>
+        </WorksheetOptions>
+    </Worksheet>
+    <Worksheet ss:Name="Sheet2">
+        <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+               x:FullRows="1" ss:DefaultRowHeight="15">
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <PageSetup>
+                <Header x:Margin="0.3"/>
+                <Footer x:Margin="0.3"/>
+                <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+            </PageSetup>
+            <ProtectObjects>False</ProtectObjects>
+            <ProtectScenarios>False</ProtectScenarios>
+        </WorksheetOptions>
+    </Worksheet>
+    <Worksheet ss:Name="Sheet3">
+        <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+               x:FullRows="1" ss:DefaultRowHeight="15">
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <PageSetup>
+                <Header x:Margin="0.3"/>
+                <Footer x:Margin="0.3"/>
+                <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+            </PageSetup>
+            <ProtectObjects>False</ProtectObjects>
+            <ProtectScenarios>False</ProtectScenarios>
+        </WorksheetOptions>
+    </Worksheet>
+</Workbook>

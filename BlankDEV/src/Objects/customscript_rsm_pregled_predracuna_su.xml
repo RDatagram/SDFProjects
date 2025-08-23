@@ -1,0 +1,31 @@
+<suitelet scriptid="customscript_rsm_pregled_predracuna_su">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Pregled predracuna</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/BlueGrid/Pregled predracuna/pregled_predracuna_src/rsm_pregled_predracuna_su.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_pregled_predracuna_su">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>Pregled predracuna</title>
+      <links>
+        <link>
+          <linkcategory>BASICREPORTSCUSTOM</linkcategory>
+          <linklabel>Pregled predračuna</linklabel>
+        </link>
+      </links>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

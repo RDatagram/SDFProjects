@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_oan_form_su">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM OAN form suitelet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/RSM FAM scripts/rsm_oan_form_su.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_oan_form_su">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>RSM OAN form suitelet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

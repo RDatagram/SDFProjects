@@ -1,0 +1,7 @@
+<FiForma xmlns="http://schemas.datacontract.org/2004/07/Domain.Model" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<Naziv>Bilans uspeha</Naziv>
+<NumerickaPoljaForme xmlns:a="http://schemas.datacontract.org/2004/07/AppDef">
+</NumerickaPoljaForme>
+<TekstualnaPoljaForme>
+</TekstualnaPoljaForme>
+</FiForma>

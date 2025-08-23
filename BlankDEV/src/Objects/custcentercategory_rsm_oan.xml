@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_rsm_oan">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_amortizacija_tab_rsm]</centertab>
+  <label>OAN</label>
+  <links>
+    <link>
+      <linklabel>OAN Forma</linklabel>
+      <linkobject>[scriptid=customscript_oan_form_su.customdeploy_oan_form_su]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>                                                                                                                                                                                                        
+<Client>
+	<PaketZaSlanje>                                                                                                                                                                                                                                               
+		<Nalog ImeFajla="20211118_Nalog 1">
+			<Data>                                                                                                                                                                                                                                                      
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>221</SifraPlacanja>
+				<SvrhaDoznake>Promet robe i usluga - finalna potrošnja</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>5000.00</Iznos>
+				<DatumValute>18.11.2021</DatumValute>
+				<DatumValuteDo>18.11.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160000000001317724</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika></ModelKorisnika>
+				<PozivNaBrojKorisnika></PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>RSM Serbia d.o.o. Beograd</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>                                                                                                                                                                                                                                                     
+		</Nalog>                                                                                                                                                                                                                                                     
+	</PaketZaSlanje>
+	<Potpisi>Potpisi</Potpisi>
+</Client>                                                                                                                                                                                                                                                      

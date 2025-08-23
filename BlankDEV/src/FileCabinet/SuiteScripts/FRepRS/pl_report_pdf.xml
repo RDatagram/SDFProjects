@@ -1,0 +1,823 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+<head>
+	<link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+
+    <macrolist>
+        <macro id="nlheader">
+            <p class="nlheaderText" align="right">Страна <pagenumber/> oд <totalpages/></p>            
+        </macro>
+    </macrolist>
+    <style type="text/css">
+    	.nlheaderText { font-family:NotoSans,sans-serif; font-size: 7pt;}
+    	table { font-family:NotoSans,sans-serif; font-size: 7pt; table-layout: fixed; width: 100%; border-collapse: collapse;}
+		th { font-weight: bold; font-family:NotoSans,sans-serif; font-size: 7pt; vertical-align: middle; padding: 5px 6px 3px; background-color: #f3f3f3; color: #333333; border-bottom: 1px solid black; padding-bottom: 10px; padding-top: 10px; border-collapse: collapse;}
+		td { padding: 4px 6px; font-family:NotoSans,sans-serif; text-align: center;  border-collapse: collapse;}
+		b { font-weight: bold; color: #333333; }
+		td p {align:center}
+		th p {align:center}
+		
+		.acenter {align:center}
+		
+		.title {font-family:NotoSans,sans-serif; font-size: 16pt; align:center}
+    	table .tbTitle { font-family:NotoSans,sans-serif; font-size: 7pt; table-layout: fixed; width: 100%; border-collapse: collapse;}
+    	
+		.tdTitle {font-family:NotoSans,sans-serif; font-size: 8pt; align:center}
+		
+		.tc1 {width: 58px; border-left : 1px solid black; border-bottom: 1px solid black;}
+		.tc1 p { align: center; }
+		
+		.tc2-c {width : 348px; border-left : 1px solid black; border-bottom: 1px solid black;}
+		.tc2-l {width : 348px; border-left : 1px solid black; border-bottom: 1px solid black;}
+		.tc2-r {width : 348px; border-left : 1px solid black; border-bottom: 1px solid black;}
+		
+		.tc2-c p {align: center;}
+		.tc2-l p {align: left;}
+		.tc2-l .small p {align: left; font-size: 6pt;}
+		.tc2-r p {align: right;}
+
+		.tc3 {width: 35px; border-left : 1px solid black; border-bottom: 1px solid black;}
+
+		.tc3-c p {align: center;}
+		.tc3-l p {width: 35px; align: left;}
+		.tc3-r p {width: 35px; align: right;}
+		
+		.tc4 {width: 80px; border-left : 1px solid black; border-bottom: 1px solid black;}
+		.tc4 p {align: center;}
+		
+		.tc5 {border-left : 1px solid black; border-bottom: 1px solid black;}
+		.tc5 p {align: right;}
+
+		.tc6 {border-left : 1px solid black; border-right : 1px solid black; border-bottom: 1px solid black;}
+		.tc6 p {align: right;}
+		
+  		.acenter p {align: center;}
+		.aleft p {align: left}
+		.aright p {align: right}
+		.fsUnder { text-decoration: underline; }
+		
+		.tbbLeft { border-left : 1px solid black; }
+		.tbbRight { border-right : 1px solid black; }
+		.tbbTop { border-top : 1px solid black; }
+		.tbbBottom { border-bottom : 1px solid black; }
+		
+	</style>
+</head>
+<body header="nlheader" header-height="5%" padding="0.5in 0.5in 0.5in 0.5in" size="A4">
+
+<table class="tbTile">
+<#list JSON.header as headerdata>
+<tr>
+<td class="tdTitle" style="width: 40%;">&nbsp;</td>
+<td class="tdTitle">&nbsp;</td>
+<td class="tdTitle">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle">Прилог 2</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle tbbLeft tbbTop tbbRight">Попуњава правно лице - предузетник</td>
+</tr>
+<tr>
+<td class="tdTitle aleft tbbLeft" style="width: 500px;">Матични број</td>
+<td class="tdTitle aleft">Шифра делатности</td>
+<td class="tdTitle aleft tbbRight">ПИБ</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle aleft tbbLeft tbbTop tbbRight">Назив</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle aleft tbbLeft tbbTop tbbRight">Седиште</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle aleft tbbLeft tbbTop tbbRight tbbBottom">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle">БИЛАНС УСПЕХА</td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle"><span>за период од </span><span class="fsUnder"> ${headerdata.datOd} </span><span> до </span><span class="fsUnder"> ${headerdata.datDo} </span><span> године</span></td>
+</tr>
+<tr>
+<td colspan="3" class="tdTitle aright">- у хиљадама динара -</td>
+</tr>
+</#list>
+</table>
+
+<table>
+<thead>
+	<tr>
+	<th rowspan="2" scope="col" style="width: 58px;"><b>Група рачуна, рачун</b></th>
+	<th rowspan="2" scope="col" style="width: 348px;">ПОЗИЦИЈА</th>
+	<th rowspan="2" scope="col" style="width: 35px;">АОП</th>
+	<th rowspan="2" scope="col" style="width: 80px;">Напомена број</th>
+	<th colspan="2" scope="col" style="text-align: center;">Износ</th>
+	</tr>
+	<tr>
+	<th>Текућа година</th>
+	<th>Претходна година</th>
+	</tr>
+	<tr>
+	<th class="tc1">1</th>
+	<th class="tc2-c">2</th>
+	<th class="tc3 acenter">3</th>
+	<th class="tc4 acenter">4</th>
+	<th class="tc5 acenter">5</th>
+	<th class="tc6 acenter">6</th>
+	</tr>	
+</thead>
+<#list JSON.podaci as item>
+	<tr>
+	<td class="tc1">&nbsp;</td>
+	<td class="tc2-l"><b>ПРИХОДИ ИЗ РЕДОВНОГ ПОСЛОВАЊА</b></td>
+	<td class="tc3 acenter">&nbsp;</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">&nbsp;</td>
+	<td class="tc6">&nbsp;</td>
+	</tr>
+	<tr>
+	<td class="tc1">${item.aop1001accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1001desc}</b></td>
+	<td class="tc3 acenter">1001</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1001cy}</td>
+	<td class="tc6">${item.aop1001py}</td>
+	</tr>
+	<tr>
+	<td class="tc1">${item.aop1002accgrp}</td>
+	<td class="tc2-l">${item.aop1002desc}</td>
+	<td class="tc3 acenter">1002</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1002cy}</td>
+	<td class="tc6">${item.aop1002py}</td>
+	</tr>
+	<tr>
+	<td class="tc1">${item.aop1003accgrp}</td>
+	<td class="tc2-l small">${item.aop1003desc}</td>
+	<td class="tc3 acenter">1003</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1003cy}</td>
+	<td class="tc6">${item.aop1003py}</td>
+	</tr>
+	<tr>
+	<td class="tc1">${item.aop1004accgrp}</td>
+	<td class="tc2-l">${item.aop1004desc}</td>
+	<td class="tc3 acenter">1004</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1004cy}</td>
+	<td class="tc6">${item.aop1004py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1005accgrp}</td>
+	<td class="tc2-l">${item.aop1005desc}</td>
+	<td class="tc3 acenter">1005</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1005cy}</td>
+	<td class="tc6">${item.aop1005py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1006accgrp}</td>
+	<td class="tc2-l">${item.aop1006desc}</td>
+	<td class="tc3 acenter">1006</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1006cy}</td>
+	<td class="tc6">${item.aop1006py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1007accgrp}</td>
+	<td class="tc2-l small">${item.aop1007desc}</td>
+	<td class="tc3 acenter">1007</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1007cy}</td>
+	<td class="tc6">${item.aop1007py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1008accgrp}</td>
+	<td class="tc2-l small">${item.aop1008desc}</td>
+	<td class="tc3 acenter">1008</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1008cy}</td>
+	<td class="tc6">${item.aop1008py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1009accgrp}</td>
+	<td class="tc2-l">${item.aop1009desc}</td>
+	<td class="tc3 acenter">1009</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1009cy}</td>
+	<td class="tc6">${item.aop1009py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1010accgrp}</td>
+	<td class="tc2-l">${item.aop1010desc}</td>
+	<td class="tc3 acenter">1010</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1010cy}</td>
+	<td class="tc6">${item.aop1010py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1011accgrp}</td>
+	<td class="tc2-l">${item.aop1011desc}</td>
+	<td class="tc3 acenter">1011</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1011cy}</td>
+	<td class="tc6">${item.aop1011py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1012accgrp}</td>
+	<td class="tc2-l">${item.aop1210desc}</td>
+	<td class="tc3 acenter">1012</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1012cy}</td>
+	<td class="tc6">${item.aop1012py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1013accgrp}</td>
+	<td class="tc2-l">${item.aop1013desc}</td>
+	<td class="tc3 acenter">1013</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1013cy}</td>
+	<td class="tc6">${item.aop1013py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1014accgrp}</td>
+	<td class="tc2-l">${item.aop1014desc}</td>
+	<td class="tc3 acenter">1014</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1014cy}</td>
+	<td class="tc6">${item.aop1014py}</td>
+	</tr>
+	<tr>
+	<td class="tc1">${item.aop1015accgrp}</td>
+	<td class="tc2-l">${item.aop1015desc}</td>
+	<td class="tc3 acenter">1015</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1015cy}</td>
+	<td class="tc6">${item.aop1015py}</td>
+	</tr>
+	<tr>
+	<td class="tc1">${item.aop1016accgrp}</td>
+	<td class="tc2-l">${item.aop1016desc}</td>
+	<td class="tc3 acenter">1016</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1016cy}</td>
+	<td class="tc6">${item.aop1016py}</td>
+	</tr>
+	<tr>
+	<td class="tc1">${item.aop1017accgrp}</td>
+	<td class="tc2-l">${item.aop1017desc}</td>
+	<td class="tc3 acenter">1017</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1017cy}</td>
+	<td class="tc6">${item.aop1017py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1"></td>
+	<td class="tc2-l"><b>РАСХОДИ ИЗ РЕДОВНОГ ПОСЛОВАЊА</b></td>
+	<td class="tc3 acenter">&nbsp;</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">&nbsp;</td>
+	<td class="tc6">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1018accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1018desc}</b></td>
+	<td class="tc3 acenter">1018</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1018cy}</td>
+	<td class="tc6">${item.aop1018py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1019accgrp}</td>
+	<td class="tc2-l">${item.aop1019desc}</td>
+	<td class="tc3 acenter">1019</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1019cy}</td>
+	<td class="tc6">${item.aop1019py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1020accgrp}</td>
+	<td class="tc2-l">${item.aop1020desc}</td>
+	<td class="tc3 acenter">1020</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1020cy}</td>
+	<td class="tc6">${item.aop1020py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1021accgrp}</td>
+	<td class="tc2-l">${item.aop1021desc}</td>
+	<td class="tc3 acenter">1021</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1021cy}</td>
+	<td class="tc6">${item.aop1021py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1022accgrp}</td>
+	<td class="tc2-l">${item.aop1022desc}</td>
+	<td class="tc3 acenter">1022</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1022cy}</td>
+	<td class="tc6">${item.aop1022py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1023accgrp}</td>
+	<td class="tc2-l">${item.aop1023desc}</td>
+	<td class="tc3 acenter">1023</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1023cy}</td>
+	<td class="tc6">${item.aop1023py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1024accgrp}</td>
+	<td class="tc2-l">${item.aop1024desc}</td>
+	<td class="tc3 acenter">1024</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1024cy}</td>
+	<td class="tc6">${item.aop1024py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1025accgrp}</td>
+	<td class="tc2-l">${item.aop1025desc}</td>
+	<td class="tc3 acenter">1025</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1025cy}</td>
+	<td class="tc6">${item.aop1025py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1026accgrp}</td>
+	<td class="tc2-l">${item.aop1026desc}</td>
+	<td class="tc3 acenter">1026</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1026cy}</td>
+	<td class="tc6">${item.aop1026py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop10127accgrp}</td>
+	<td class="tc2-l">${item.aop1027desc}</td>
+	<td class="tc3 acenter">1027</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1027cy}</td>
+	<td class="tc6">${item.aop1027py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1028accgrp}</td>
+	<td class="tc2-l">${item.aop1028desc}</td>
+	<td class="tc3 acenter">1028</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1028cy}</td>
+	<td class="tc6">${item.aop1028py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1029accgrp}</td>
+	<td class="tc2-l">${item.aop1029desc}</td>
+	<td class="tc3 acenter">1029</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1029cy}</td>
+	<td class="tc6">${item.aop1029py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1030accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1030desc}</b></td>
+	<td class="tc3 acenter">1030</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1030cy}</td>
+	<td class="tc6">${item.aop1030py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1031accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1031desc}</b></td>
+	<td class="tc3 acenter">1031</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1031cy}</td>
+	<td class="tc6">${item.aop1031py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1032accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1032desc}</b></td>
+	<td class="tc3 acenter">1032</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1032cy}</td>
+	<td class="tc6">${item.aop1032py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1033accgrp}</td>
+	<td class="tc2-l">${item.aop1033desc}</td>
+	<td class="tc3 acenter">1033</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1033cy}</td>
+	<td class="tc6">${item.aop1033py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1034accgrp}</td>
+	<td class="tc2-l">${item.aop1034desc}</td>
+	<td class="tc3 acenter">1034</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1034cy}</td>
+	<td class="tc6">${item.aop1034py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1035accgrp}</td>
+	<td class="tc2-l">${item.aop1035desc}</td>
+	<td class="tc3 acenter">1035</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1035cy}</td>
+	<td class="tc6">${item.aop1035py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1036accgrp}</td>
+	<td class="tc2-l">${item.aop1036desc}</td>
+	<td class="tc3 acenter">1036</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1036cy}</td>
+	<td class="tc6">${item.aop1036py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1037accgrp}</td>
+	<td class="tc2-l">${item.aop1037desc}</td>
+	<td class="tc3 acenter">1037</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1037cy}</td>
+	<td class="tc6">${item.aop1037py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1038accgrp}</td>
+	<td class="tc2-l">${item.aop1038desc}</td>
+	<td class="tc3 acenter">1038</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1038cy}</td>
+	<td class="tc6">${item.aop1038py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1039accgrp}</td>
+	<td class="tc2-l">${item.aop1039desc}</td>
+	<td class="tc3 acenter">1039</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1039cy}</td>
+	<td class="tc6">${item.aop1039py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1040accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1040desc}</b></td>
+	<td class="tc3 acenter">1040</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1040cy}</td>
+	<td class="tc6">${item.aop1040py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1041accgrp}</td>
+	<td class="tc2-l">${item.aop1041desc}</td>
+	<td class="tc3 acenter">1041</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1041cy}</td>
+	<td class="tc6">${item.aop1041py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1042accgrp}</td>
+	<td class="tc2-l">${item.aop1042desc}</td>
+	<td class="tc3 acenter">1042</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1042cy}</td>
+	<td class="tc6">${item.aop1042py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1043accgrp}</td>
+	<td class="tc2-l">${item.aop1043desc}</td>
+	<td class="tc3 acenter">1043</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1043cy}</td>
+	<td class="tc6">${item.aop1043py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1044accgrp}</td>
+	<td class="tc2-l">${item.aop1044desc}</td>
+	<td class="tc3 acenter">1044</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1044cy}</td>
+	<td class="tc6">${item.aop1044py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1045accgrp}</td>
+	<td class="tc2-l">${item.aop1045desc}</td>
+	<td class="tc3 acenter">1045</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1045cy}</td>
+	<td class="tc6">${item.aop1045py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1046accgrp}</td>
+	<td class="tc2-l">${item.aop1046desc}</td>
+	<td class="tc3 acenter">1046</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1046cy}</td>
+	<td class="tc6">${item.aop1046py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1047accgrp}</td>
+	<td class="tc2-l">${item.aop1047desc}</td>
+	<td class="tc3 acenter">1047</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1047cy}</td>
+	<td class="tc6">${item.aop1047py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1048accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1048desc}</b></td>
+	<td class="tc3 acenter">1048</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1048cy}</td>
+	<td class="tc6">${item.aop1048py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1049accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1049desc}</b></td>
+	<td class="tc3 acenter">1049</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1049cy}</td>
+	<td class="tc6">${item.aop1049py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1050accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1050desc}</b></td>
+	<td class="tc3 acenter">1050</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1050cy}</td>
+	<td class="tc6">${item.aop1050py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1051accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1051desc}</b></td>
+	<td class="tc3 acenter">1051</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1051cy}</td>
+	<td class="tc6">${item.aop1051py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1052accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1052desc}</b></td>
+	<td class="tc3 acenter">1052</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1052cy}</td>
+	<td class="tc6">${item.aop1052py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1053accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1053desc}</b></td>
+	<td class="tc3 acenter">1053</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1053cy}</td>
+	<td class="tc6">${item.aop1053py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1054accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1054desc}</b></td>
+	<td class="tc3 acenter">1054</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1054cy}</td>
+	<td class="tc6">${item.aop1054py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1055accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1055desc}</b></td>
+	<td class="tc3 acenter">1055</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1055cy}</td>
+	<td class="tc6">${item.aop1055py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1056accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1056desc}</b></td>
+	<td class="tc3 acenter">1056</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1056cy}</td>
+	<td class="tc6">${item.aop1056py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1057accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1057desc}</b></td>
+	<td class="tc3 acenter">1057</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1057cy}</td>
+	<td class="tc6">${item.aop1057py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1058accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1058desc}</b></td>
+	<td class="tc3 acenter">1058</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1058cy}</td>
+	<td class="tc6">${item.aop1058py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1059accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1059desc}</b></td>
+	<td class="tc3 acenter">1059</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1059cy}</td>
+	<td class="tc6">${item.aop1059py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1"></td>
+	<td class="tc2-l"><b>П. ПОРЕЗ НА ДОБИТАК</b></td>
+	<td class="tc3 acenter"></td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">&nbsp;</td>
+	<td class="tc6">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1060accgrp}</td>
+	<td class="tc2-l">${item.aop1060desc}</td>
+	<td class="tc3 acenter">1060</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1060cy}</td>
+	<td class="tc6">${item.aop1060py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1061accgrp}</td>
+	<td class="tc2-l">${item.aop1061desc}</td>
+	<td class="tc3 acenter">1061</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1061cy}</td>
+	<td class="tc6">${item.aop1061py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1062accgrp}</td>
+	<td class="tc2-l">${item.aop1062desc}</td>
+	<td class="tc3 acenter">1062</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1062cy}</td>
+	<td class="tc6">${item.aop1062py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1063accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1063desc}</b></td>
+	<td class="tc3 acenter">1063</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1063cy}</td>
+	<td class="tc6">${item.aop1063py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1064accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1064desc}</b></td>
+	<td class="tc3 acenter">1064</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1064cy}</td>
+	<td class="tc6">${item.aop1064py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1065accgrp}</td>
+	<td class="tc2-l"><b>${item.aop1065desc}</b></td>
+	<td class="tc3 acenter">1065</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1065cy}</td>
+	<td class="tc6">${item.aop1065py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1066accgrp}</td>
+	<td class="tc2-l">${item.aop1066desc}</td>
+	<td class="tc3 acenter">1066</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1066cy}</td>
+	<td class="tc6">${item.aop1066py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1067accgrp}</td>
+	<td class="tc2-l">${item.aop1067desc}</td>
+	<td class="tc3 acenter">1067</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1067cy}</td>
+	<td class="tc6">${item.aop1067py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1068accgrp}</td>
+	<td class="tc2-l">${item.aop1068desc}</td>
+	<td class="tc3 acenter">1068</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1068cy}</td>
+	<td class="tc6">${item.aop1068py}</td>
+	</tr>
+
+	<tr>
+	<td class="tc1">${item.aop1069accgrp}</td>
+	<td class="tc2-l">${item.aop1069desc}</td>
+	<td class="tc3 acenter">1069</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1069cy}</td>
+	<td class="tc6">${item.aop1069py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">&nbsp;</td>
+	<td class="tc2-l">V. ЗАРАДА ПО АКЦИЈИ</td>
+	<td class="tc3 acenter">&nbsp;</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">&nbsp;</td>
+	<td class="tc6">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1070accgrp}</td>
+	<td class="tc2-l">${item.aop1070desc}</td>
+	<td class="tc3 acenter">1070</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1070cy}</td>
+	<td class="tc6">${item.aop1070py}</td>
+	</tr>
+	
+	<tr>
+	<td class="tc1">${item.aop1071accgrp}</td>
+	<td class="tc2-l">${item.aop1071desc}</td>
+	<td class="tc3 acenter">1071</td>
+	<td class="tc4 acenter">&nbsp;</td>
+	<td class="tc5">${item.aop1071cy}</td>
+	<td class="tc6">${item.aop1071py}</td>
+	</tr>
+
+</#list>
+</table>
+<p/>
+<table>
+<tr>
+<td class="aleft">У ______________________________ </td>
+<td></td>
+<td>Законски заступник</td>
+</tr>
+<tr>
+<td></td>
+<td class="aright">М.П.</td>
+<td></td>
+</tr>
+<tr>
+<td class="aleft">дана ___________ 20 __ године</td>
+<td></td>
+<td>______________________________</td>
+</tr>
+
+</table>
+</body>
+</pdf>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+   <Styles>
+      <Style ss:ID="s63">
+         <Font x:CharSet="204" ss:Size="12" ss:Color="#000000" ss:Bold="1" ss:Underline="Single" />
+      </Style>
+   </Styles>
+   <Worksheet ss:Name="Sheet1">
+      <Table>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">Interni ID Transakcije</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Tran ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Tran Date</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">POPDV Datum</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Tax Code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Poreska Stopa</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Osnovica</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">PDV</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Ukupno</Data>
+            </Cell>
+         </Row>
+         <#list JSON.transactions as tran>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">${tran.internalid}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.tranid}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.trandate}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.custbody_popdv_datum}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.taxcode}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.rate}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.grossamount}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.taxamount}</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">${tran.ukupno}</Data>
+            </Cell>
+         </Row>
+         </#list>
+      </Table>
+   </Worksheet>
+</Workbook>

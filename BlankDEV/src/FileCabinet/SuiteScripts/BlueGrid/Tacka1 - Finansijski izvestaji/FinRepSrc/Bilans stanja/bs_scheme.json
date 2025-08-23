@@ -1,0 +1,982 @@
+{
+    "_0001": {
+        "GRUPA": "00",
+        "description": "A. UPISANI NEUPLAĆENI KAPITAL",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0002": {
+        "GRUPA": "",
+        "description": "B. STALNA IMOVINA (0003 + 0009 + 0017 + 0028)",
+        "aops": [
+            "+ 0003",
+            "+ 0009",
+            "+ 0017",
+            "+ 0028"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0003": {
+        "GRUPA": "01",
+        "description": "I. NEMATERIJALNA IMOVINA (0004 + 0005 + 0006 + 0007 + 0008)",
+        "aops": [
+            "+ 0004",
+            "+ 0005",
+            "+ 0006",
+            "+ 0007",
+            "+ 0008"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0004": {
+        "GRUPA": "010",
+        "description": "1. Ulaganja u razvoj",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0005": {
+        "GRUPA": "011, 012 i 014",
+        "description": "2. Koncesije, patenti, licence, robne i uslužne marke, softver i ostala nematerijalna imovina",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0006": {
+        "GRUPA": "013",
+        "description": "3. Gudvil",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0007": {
+        "GRUPA": "015 i 016",
+        "description": "4. Nematerijalna imovina uzeta u lizing i nematerijalna imovina u pripremi",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0008": {
+        "GRUPA": "017",
+        "description": "5. Avansi za nematerijalnu imovinu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0009": {
+        "GRUPA": "02",
+        "description": "II. NEKRETNINE, POSTROJENJA I OPREMA (0010 + 0011 + 0012 + 0013 + 0014 + 0015 + 0016)",
+        "aops": [
+            "+ 0010",
+            "+ 0011",
+            "+ 0012",
+            "+ 0013",
+            "+ 0014",
+            "+ 0015",
+            "+ 0016"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0010": {
+        "GRUPA": "020, 021 i 022",
+        "description": "1. Zemljište i građevinski objekti",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0011": {
+        "GRUPA": "023",
+        "description": "2. Postrojenja i oprema",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0012": {
+        "GRUPA": "024",
+        "description": "3. Investicione nekretnine",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0013": {
+        "GRUPA": "025 i 027",
+        "description": "4. Nekretnine, postrojenja i oprema uzeti u lizing i nekretnine, postrojenja i oprema u pripremi",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0014": {
+        "GRUPA": "026 i 028",
+        "description": "5. Ostale nekretnine, postrojenja i oprema i ulaganja na tuđim nekretninama, postrojenjima i opremi",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0015": {
+        "GRUPA": "029 (deo)",
+        "description": "6. Avansi za nekretnine, postrojenja i opremu u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0016": {
+        "GRUPA": "029 (deo)",
+        "description": "7. Avansi za nekretnine, postrojenja i opremu u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0017": {
+        "GRUPA": "03",
+        "description": "III. BIOLOŠKA SREDSTVA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0018": {
+        "GRUPA": "04 i 05",
+        "description": "IV. DUGOROČNI FINANSIJSKI PLASMANI I DUGOROČNA POTRAŽIVANJA (0019 + 0020 + 0021 + 0022 + 0023 + 0024 + 0025 + 0026 + 0027)",
+        "aops": [
+            "+ 0019",
+            "+ 0020",
+            "+ 0021",
+            "+ 0022",
+            "+ 0023",
+            "+ 0024",
+            "+ 0025",
+            "+ 0026",
+            "+ 0027"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0019": {
+        "GRUPA": "040 (deo), 041 (deo) i 042 (deo)",
+        "description": "1. Učešća u kapitalu pravnih lica (osim učešća u kapitalu koja se vrednuju metodom učešća)",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0020": {
+        "GRUPA": "040 (deo), 041 (deo), 042 (deo)",
+        "description": "2. Učešća u kapitalu koja se vrednuju metodom učešća",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0021": {
+        "GRUPA": "043, 050 (deo) i 051 (deo)",
+        "description": "3. Dugoročni plasmani matičnom, zavisnim i ostalim povezanim licima i dugoročna potraživanja od tih lica u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0022": {
+        "GRUPA": "044, 050 (deo), 051 (deo)",
+        "description": "4. Dugoročni plasmani matičnom, zavisnim i ostalim povezanim licima i dugoročna potraživanja od tih lica u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0023": {
+        "GRUPA": "045 (deo) i 053 (deo)",
+        "description": "5. Dugoročni plasmani (dati krediti i zajmovi) u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0024": {
+        "GRUPA": "045 (deo) i 053 (deo)",
+        "description": "6. Dugoročni plasmani (dati krediti i zajmovi) u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0025": {
+        "GRUPA": "046",
+        "description": "7. Dugoročna finansijska ulaganja (hartije od vrednosti koje se vrednuju po amortizovanoj vrednosti)",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0026": {
+        "GRUPA": "047",
+        "description": "8. Otkupljene sopstvene akcije i otkupljeni sopstveni udeli",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0027": {
+        "GRUPA": "048, 052, 054, 055 i 056",
+        "description": "9. Ostali dugoročni finansijski plasmani i ostala dugoročna potraživanja",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0028": {
+        "GRUPA": "28 (deo), osim 288",
+        "description": "V. DUGOROČNA AKTIVNA VREMENSKA RAZGRANIČENJA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0029": {
+        "GRUPA": "288",
+        "description": "V. ODLOŽENA PORESKA SREDSTVA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0030": {
+        "GRUPA": "",
+        "description": "G. OBRTNA IMOVINA (0031 + 0037 + 0038 + 0044 + 0048 + 0057+ 0058)",
+        "aops": [
+            "+ 0031",
+            "+ 0037",
+            "+ 0038",
+            "+ 0044",
+            "+ 0048",
+            "+ 0057",
+            "+ 0058"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0031": {
+        "GRUPA": "Klasa 1, osim grupe računa 14",
+        "description": "I. ZALIHE (0032 + 0033 + 0034 + 0035 + 0036)",
+        "aops": [
+            "+ 0032",
+            "+ 0033",
+            "+ 0034",
+            "+ 0035",
+            "+ 0036"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0032": {
+        "GRUPA": "10",
+        "description": "1. Materijal, rezervni delovi, alat i sitan inventar",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0033": {
+        "GRUPA": "11 i 12",
+        "description": "2. Nedovršena proizvodnja i gotovi proizvodi",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0034": {
+        "GRUPA": "13",
+        "description": "3. Roba",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0035": {
+        "GRUPA": "150, 152 i 154",
+        "description": "4. Plaćeni avansi za zalihe i usluge u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0036": {
+        "GRUPA": "151, 153 i 155",
+        "description": "5. Plaćeni avansi za zalihe i usluge u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0037": {
+        "GRUPA": "14",
+        "description": "II. STALNA IMOVINA KOJA SE DRŽI ZA PRODAJU I PRESTANAK POSLOVANJA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0038": {
+        "GRUPA": "20",
+        "description": "III. POTRAŽIVANJA PO OSNOVU PRODAJE(0039 + 0040 + 0041 + 0042 + 0043)",
+        "aops": [
+            "+ 0039",
+            "+ 0040",
+            "+ 0041",
+            "+ 0042",
+            "+ 0043"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0039": {
+        "GRUPA": "204",
+        "description": "1. Potraživanja od kupaca u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0040": {
+        "GRUPA": "205",
+        "description": "2. Potraživanja od kupaca u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0041": {
+        "GRUPA": "200 i 202",
+        "description": "3. Potraživanja od matičnog, zavisnih i ostalih povezanih lica u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0042": {
+        "GRUPA": "201 i 203",
+        "description": "4. Potraživanja od matičnog, zavisnih i ostalih povezanih lica u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0043": {
+        "GRUPA": "206",
+        "description": "5. Ostala potraživanja po osnovu prodaje",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0044": {
+        "GRUPA": "21, 22 i 27",
+        "description": "IV. OSTALA KRATKOROČNA POTRAŽIVANJA (0045 + 0046 + 0047)",
+        "aops": [
+            "+ 0045",
+            "+ 0046",
+            "+ 0047"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0045": {
+        "GRUPA": "21, 22 osim 223 i 224, i 27",
+        "description": "1. Ostala potraživanja",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0046": {
+        "GRUPA": "223",
+        "description": "2. Potraživanja za više plaćen porez na dobitak",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0047": {
+        "GRUPA": "224",
+        "description": "3. Potraživanja po osnovu preplaćenih ostalih poreza i doprinosa",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0048": {
+        "GRUPA": "23",
+        "description": "V. KRATKOROČNI FINANSIJSKI PLASMANI (0049 + 0050 + 0051 + 0052 + 0053 + 0054 + 0055 + 0056)",
+        "aops": [
+            "+ 0049",
+            "+ 0050",
+            "+ 0051",
+            "+ 0052",
+            "+ 0053",
+            "+ 0054",
+            "+ 0055",
+            "+ 0056"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0049": {
+        "GRUPA": "230",
+        "description": "1. Kratkoročni krediti i plasmani - matično i zavisna pravna lica",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0050": {
+        "GRUPA": "231",
+        "description": "2. Kratkoročni krediti i plasmani - ostala povezana lica",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0051": {
+        "GRUPA": "232, 234 (deo)",
+        "description": "3. Kratkoročni krediti, zajmovi i plasmani u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0052": {
+        "GRUPA": "233, 234 (deo)",
+        "description": "4. Kratkoročni krediti, zajmovi i plasmani u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0053": {
+        "GRUPA": "235",
+        "description": "5. Hartije od vrednosti koje se vrednuju po amortizovanoj vrednosti",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0054": {
+        "GRUPA": "236 (deo)",
+        "description": "6. Finansijska sredstva koja se vrednuju po fer vrednosti kroz Bilans uspeha",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0055": {
+        "GRUPA": "237",
+        "description": "7. Otkupljene sopstvene akcije i otkupljeni sopstveni udeli",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0056": {
+        "GRUPA": "236 (deo), 238 i 239",
+        "description": "8. Ostali kratkoročni finansijski plasmani",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0057": {
+        "GRUPA": "24",
+        "description": "VI. GOTOVINA I GOTOVINSKI EKVIVALENTI",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0058": {
+        "GRUPA": "28 (deo), osim 288",
+        "description": "VII. KRATKOROČNA AKTIVNA VREMENSKA RAZGRANIČENJA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0059": {
+        "GRUPA": "",
+        "description": "D. UKUPNA AKTIVA = POSLOVNA IMOVINA (0001 + 0002 + 0029 + 0030)",
+        "aops": [
+            "+ 0001",
+            "+ 0002",
+            "+ 0029",
+            "+ 0030"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0060": {
+        "GRUPA": "88",
+        "description": "Đ. VANBILANSNA AKTIVA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0401": {
+        "GRUPA": "",
+        "description": "A. KAPITAL (0402 + 0403 + 0404 + 0405 + 0406 - 0407 + 0408 + 0411 - 0412) ≥ 0",
+        "aops": [
+            "+ 0402",
+            "+ 0403",
+            "+ 0404",
+            "+ 0405",
+            "+ 0406",
+            "- 0407",
+            "+ 0408",
+            "+ 0411",
+            "- 0412"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0402": {
+        "GRUPA": "30, osim 306",
+        "description": "I. OSNOVNI KAPITAL",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0403": {
+        "GRUPA": "31",
+        "description": "II. UPISANI A NEUPLAĆENI KAPITAL",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0404": {
+        "GRUPA": "306",
+        "description": "III. EMISIONA PREMIJA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0405": {
+        "GRUPA": "32",
+        "description": "IV. REZERVE",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0406": {
+        "GRUPA": "330 i potražni saldo računa 331,332, 333, 334, 335, 336 i 337",
+        "description": "V. POZITIVNE REVALORIZACIONE REZERVE I NEREALIZOVANI DOBICI PO OSNOVU FINANSIJSKIH SREDSTAVA I DRUGIH KOMPONENTI OSTALOG SVEOBUHVATNOG REZULTATA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0407": {
+        "GRUPA": "dugovni saldo računa 331, 332, 333, 334, 335, 336 i 337",
+        "description": "VI. NEREALIZOVANI GUBICI PO OSNOVU FINANSIJSKIH SREDSTAVA I DRUGIH KOMPONENTI OSTALOG SVEOBUHVATNOG REZULTATA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0408": {
+        "GRUPA": "34",
+        "description": "VII. NERASPOREĐENI DOBITAK (0409 + 0410)",
+        "aops": [
+            "+ 0409",
+            "+ 0410"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0409": {
+        "GRUPA": "340",
+        "description": "1. Neraspoređeni dobitak ranijih godina",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0410": {
+        "GRUPA": "341",
+        "description": "2. Neraspoređeni dobitak tekuće godine",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0411": {
+        "GRUPA": "",
+        "description": "VIII. UČEŠĆE BEZ PRAVA KONTROLE",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0412": {
+        "GRUPA": "35",
+        "description": "IX. GUBITAK (0413 + 0414)",
+        "aops": [
+            "+ 0413",
+            "+ 0414"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0413": {
+        "GRUPA": "350",
+        "description": "1. Gubitak ranijih godina",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0414": {
+        "GRUPA": "351",
+        "description": "2. Gubitak tekuće godine",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0415": {
+        "GRUPA": "",
+        "description": "B. DUGOROČNA REZERVISANJA I DUGOROČNE OBAVEZE (0416 + 0420 + 0428)",
+        "aops": [
+            "+ 0416",
+            "+ 0420",
+            "+ 0428"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0416": {
+        "GRUPA": "40",
+        "description": "I. DUGOROČNA REZERVISANJA(0417+0418+0419)",
+        "aops": [
+            "+ 0417",
+            "+ 0418",
+            "+ 0419"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0417": {
+        "GRUPA": "404",
+        "description": "1. Rezervisanja za naknade i druge beneficije zaposlenih",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0418": {
+        "GRUPA": "400",
+        "description": "2. Rezervisanja za troškove u garantnom roku",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0419": {
+        "GRUPA": "40, osim 400 i 404",
+        "description": "3. Ostala dugoročna rezervisanja",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0420": {
+        "GRUPA": "41",
+        "description": "II. DUGOROČNE OBAVEZE (0421 + 0422 + 0423 + 0424 + 0425 + 0426 + 0427)",
+        "aops": [
+            "+ 0421",
+            "+ 0422",
+            "+ 0423",
+            "+ 0424",
+            "+ 0425",
+            "+ 0426",
+            "+ 0427"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0421": {
+        "GRUPA": "410",
+        "description": "1. Obaveze koje se mogu konvertovati u kapital",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0422": {
+        "GRUPA": "411 (deo) i 412 (deo)",
+        "description": "2. Dugoročni krediti i ostale dugoročne obaveze prema matičnom, zavisnim i ostalim povezanim licima u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0423": {
+        "GRUPA": "411 (deo) i 412 (deo)",
+        "description": "3. Dugoročni krediti i ostale dugoročne obaveze prema matičnom, zavisnim i ostalim povezanim licima u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0424": {
+        "GRUPA": "414 i 416 (deo)",
+        "description": "4. Dugoročni krediti, zajmovi i obaveze po osnovu lizinga u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0425": {
+        "GRUPA": "415 i 416 (deo)",
+        "description": "5. Dugoročni krediti, zajmovi i obaveze po osnovu lizinga u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0426": {
+        "GRUPA": "413",
+        "description": "6. Obaveze po emitovanim hartijama od vrednosti",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0427": {
+        "GRUPA": "419",
+        "description": "7. Ostale dugoročne obaveze",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0428": {
+        "GRUPA": "49 (deo), osim 498 i 495 (deo)",
+        "description": "III. DUGOROČNA PASIVNA VREMENSKA RAZGRANIČENJA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0429": {
+        "GRUPA": "498",
+        "description": "V. ODLOŽENE PORESKE OBAVEZE",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0430": {
+        "GRUPA": "495 (deo)",
+        "description": "G. DUGOROČNI ODLOŽENI PRIHODI I PRIMLJENE DONACIJE",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0431": {
+        "GRUPA": "",
+        "description": "D. KRATKOROČNA REZERVISANJA I KRATKOROČNE OBAVEZE (0432 + 0433 + 0441 + 0442 + 0449 + 0453 + 0454)",
+        "aops": [
+            "+ 0432",
+            "+ 0433",
+            "+ 0441",
+            "+ 0442",
+            "+ 0449",
+            "+ 0453",
+            "+ 0454"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0432": {
+        "GRUPA": "467",
+        "description": "I. KRATKOROČNA REZERVISANJA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0433": {
+        "GRUPA": "42, osim 427",
+        "description": "II. KRATKOROČNE FINANSIJSKE OBAVEZE (0434 + 0435 + 0436 + 0437 + 0438 + 0439 + 0440)",
+        "aops": [
+            "+ 0434",
+            "+ 0435",
+            "+ 0436",
+            "+ 0437",
+            "+ 0438",
+            "+ 0439",
+            "+ 0440"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0434": {
+        "GRUPA": "420 (deo) i 421 (deo)",
+        "description": "1. Obaveze po osnovu kredita prema matičnom, zavisnim i ostalim povezanim licima u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0435": {
+        "GRUPA": "420 (deo) i 421 (deo)",
+        "description": "2. Obaveze po osnovu kredita prema matičnom, zavisnim i ostalim povezanim licima u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0436": {
+        "GRUPA": "422 (deo), 424 (deo), 425 (deo), i 429 (deo)",
+        "description": "3. Obaveze po osnovu kredita i zajmova od lica koja nisu domaće banke",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0437": {
+        "GRUPA": "422 (deo), 424 (deo), 425 (deo) i 429 (deo)",
+        "description": "4. Obaveze po osnovu kredita od domaćih banaka",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0438": {
+        "GRUPA": "423, 424 (deo), 425 (deo) i 429 (deo)",
+        "description": "5. Krediti, zajmovi i obaveze iz inostranstva",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0439": {
+        "GRUPA": "426",
+        "description": "6. Obaveze po kratkoročnim hartijama od vrednosti",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0440": {
+        "GRUPA": "428",
+        "description": "7. Obaveze po osnovu finansijskih derivata",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0441": {
+        "GRUPA": "430",
+        "description": "III. PRIMLJENI AVANSI, DEPOZITI I KAUCIJE",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0442": {
+        "GRUPA": "43, osim 430",
+        "description": "IV. OBAVEZE IZ POSLOVANJA (0443 + 0444 + 0445 + 0046 + 0447 + 0448)",
+        "aops": [
+            "+ 0443",
+            "+ 0444",
+            "+ 0445",
+            "+ 0446",
+            "+ 0447",
+            "+ 0448"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0443": {
+        "GRUPA": "431 i 433",
+        "description": "1. Obaveze prema dobavljačima - matična, zavisna pravna lica i ostala povezana lica u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0444": {
+        "GRUPA": "432 i 434",
+        "description": "2. Obaveze prema dobavljačima - matična, zavisna pravna lica i ostala povezana lica u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0445": {
+        "GRUPA": "435",
+        "description": "3. Obaveze prema dobavljačima u zemlji",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0446": {
+        "GRUPA": "436",
+        "description": "4. Obaveze prema dobavljačima u inostranstvu",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0447": {
+        "GRUPA": "439 (deo)",
+        "description": "5. Obaveze po menicama",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0448": {
+        "GRUPA": "439 (deo)",
+        "description": "6. Ostale obaveze iz poslovanja",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0449": {
+        "GRUPA": "44,45,46, osim 467, 47 i 48",
+        "description": "V. OSTALE KRATKOROČNE OBAVEZE (0450 + 0451 + 0452)",
+        "aops": [
+            "+ 0450",
+            "+ 0451",
+            "+ 0452"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0450": {
+        "GRUPA": "44, 45 i 46 osim 467",
+        "description": "1. Ostale kratkoročne obaveze",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0451": {
+        "GRUPA": "47,48 osim 481",
+        "description": "2. Obaveze po osnovu poreza na dodatu vrednost i ostalih javnih prihoda",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0452": {
+        "GRUPA": "481",
+        "description": "3. Obaveze po osnovu poreza na dobitak",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0453": {
+        "GRUPA": "427",
+        "description": "VI. OBAVEZE PO OSNOVU SREDSTAVA NAMENJENIH PRODAJI I SREDSTAVA POSLOVANJA KOJE JE OBUSTAVLJENO",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0454": {
+        "GRUPA": "49 (deo) osim 498",
+        "description": "VII. KRATKOROČNA PASIVNA VREMENSKA RAZGRANIČENJA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0455": {
+        "GRUPA": "",
+        "description": "Đ. GUBITAK IZNAD VISINE KAPITALA (0415 + 0429 + 0430 + 0431 - 0059) ≥ 0 = 0407 + 0412 - 0402 - 0403 - 0404 - 0405 - 0406 - 0408 - 0411) ≥ 0",
+        "aops": [
+            "+ 0415",
+            "+ 0429",
+            "+ 0430",
+            "+ 0431",
+            "- 0059"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0456": {
+        "GRUPA": "",
+        "description": "E. UKUPNA PASIVA (0401 + 0415 + 0429 + 0430 + 0431 - 0455)",
+        "aops": [
+            "+ 0401",
+            "+ 0415",
+            "+ 0429",
+            "+ 0430",
+            "+ 0431",
+            "- 0455"
+        ],
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    },
+    "_0457": {
+        "GRUPA": "89",
+        "description": "Ž. VANBILANSNA PASIVA",
+        "balance1": 0,
+        "balance2": 0,
+        "balance3": 0
+    }
+}

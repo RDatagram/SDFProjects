@@ -1,0 +1,1557 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+    <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+        <Author>Vladimir Popovic</Author>
+        <LastAuthor>Vladimir Popovic</LastAuthor>
+        <Created>2021-12-09T13:23:16Z</Created>
+        <LastSaved>2021-12-15T02:04:01Z</LastSaved>
+        <Version>12.00</Version>
+    </DocumentProperties>
+    <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+        <WindowHeight>12795</WindowHeight>
+        <WindowWidth>28695</WindowWidth>
+        <WindowTopX>120</WindowTopX>
+        <WindowTopY>60</WindowTopY>
+        <ProtectStructure>False</ProtectStructure>
+        <ProtectWindows>False</ProtectWindows>
+    </ExcelWorkbook>
+    <Styles>
+        <Style ss:ID="Default" ss:Name="Normal">
+            <Alignment ss:Vertical="Bottom"/>
+            <Borders/>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+            <Interior/>
+            <NumberFormat/>
+            <Protection/>
+        </Style>
+        <Style ss:ID="s16">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+        </Style>
+        <Style ss:ID="s17">
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="s18">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="s19">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+        </Style>
+        <Style ss:ID="s20">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+        </Style>
+        <Style ss:ID="s22">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="s23">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="s24">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <NumberFormat/>
+        </Style>
+        <Style ss:ID="s25">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="s33">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+                  ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s34">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <NumberFormat ss:Format="@"/>
+        </Style>
+        <Style ss:ID="s35">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+        </Style>
+        <Style ss:ID="s36">
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+                  ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s42">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="s43">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+                  ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s44">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+                  ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s47">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="s48">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+                  ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s49">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+            <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+                  ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s50">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+        </Style>
+        <Style ss:ID="s54">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+        </Style>
+        <Style ss:ID="s55">
+            <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+            <Borders>
+                <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+                <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+            </Borders>
+        </Style>
+    </Styles>
+    <Worksheet ss:Name="Sheet1">
+        <Table x:FullColumns="1"
+               x:FullRows="1" ss:DefaultRowHeight="15">
+            <Column ss:AutoFitWidth="0" ss:Width="89.25"/>
+            <Column ss:AutoFitWidth="0" ss:Width="43.5"/>
+            <Column ss:AutoFitWidth="0" ss:Width="260.25"/>
+            <Column ss:AutoFitWidth="0" ss:Width="63.75" ss:Span="1"/>
+            <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="75.75"/>
+            <Column ss:AutoFitWidth="0" ss:Width="77.25"/>
+            <Row ss:Index="2">
+                <Cell ss:MergeAcross="2" ss:StyleID="s54"><Data ss:Type="String">STATISTIČKI ANEKS</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s54"><Data ss:Type="String">STATISTIČKI ANEKS ZA JSON GODINU</Data></Cell>
+            </Row>
+            <Row ss:Index="5">
+                <Cell ss:MergeAcross="5" ss:StyleID="s49"><Data ss:Type="String">I. OPŠTI PODACI O PRAVNOM LICU I PREDUZETNIKU</Data></Cell>
+            </Row>
+            <Row ss:Index="7">
+                <Cell ss:MergeAcross="2" ss:StyleID="s55"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="String">Ozn. za  AOP</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="String">Tekuća</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="String">Prethodna</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">1. Broj meseci poslovanja (oznaka 1 do 12)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9001</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9001.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9001.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">2. Oznaka za vlasništvo (oznaka od 1 do 5)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9002</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9002.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9002.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">3. Broj stranih (pravnih ili fizičkih) lica koja imaju učešće u kapitalu</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9003</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9003.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9003.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">4. Broj stranih (pravnih ili fizičkih) lica čije je učešće u kapitalu 10% ili više od 10%</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9004</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9004.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9004.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">5. Prosečan broj zaposlenih na osnovu stanja krajem svakog meseca (ceo broj)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9005</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9005.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9005.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">6. Prosečan broj zaposlenih preko agencija i organizacija za zapošljavanje (omladinske i studentske zadruge) na osnovu stanja krajem svakog meseca (ceo broj)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9006</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9006.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9006.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">7. Prosečan broj volontera na osnovu stanja krajem svakog meseca (ceo broj)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9007</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9007.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9007.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="18">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">II. BRUTO PROMENE NEMATERIJALNE IMOVINE, NEKRETNINA, POSTOJENJA, OPREMA I BIOLOŠKIH SREDSTAVA</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="6" ss:StyleID="s54"/>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">-iznosi u hiljadama dinara-</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s19"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s16"/>
+                <Cell ss:StyleID="s16"/>
+                <Cell ss:StyleID="s16"/>
+                <Cell ss:StyleID="s20"/>
+                <Cell ss:StyleID="s16"/>
+            </Row>
+            <Row ss:Height="30">
+                <Cell ss:StyleID="s22"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Bruto</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Ispravka vrednosti</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Neto (kol. 4-5)</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s24"><Data ss:Type="String">1</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">6</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s34"><Data ss:Type="String">01</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">1. Nematerijalna imovina</Data></Cell>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.1 Stanje na početku godine</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9008</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9008.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9008.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9008.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">1.2 Povećanja u toku godine (nabavke, rekonstrukcije i dr. bez avansa i softvera) </Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9009</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9009.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9009.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9009.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.3 Povećanja u toku godine - softveri</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9010</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9010.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9010.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9010.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.4 Povećanja u toku godine - avansi</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9011</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9011.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9011.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9011.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.5 Smanjenja u toku godine (prodaja, rashodovanje i dr.)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9012</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9012.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9012.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9012.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.6 Amortizacija i obezvređenje</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9013</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9013.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9013.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9013.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.7 Revalorizacija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9014</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9014.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9014.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9014.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s43"><Data ss:Type="String">1.8 Stanje na kraju godine (9008 + 9009 + 9010 + 9011 + 9012 + 9013 + 9014)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9015</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9015.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9015.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9015.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">02 (deo)</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">2. Građevinski objekti, postrojenja i oprema</Data></Cell>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2.1 Stanje na početku godine</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9016</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9016.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9016.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9016.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">2.2 Povećanja u toku godine (nabavke, rekonstrukcije i dr. bez avansa)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9017</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9017.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9017.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9017.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2.3 Povećanja u toku godine - avansi</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9018</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9018.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9018.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9018.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2.4 Smanjenja u toku godine (prodaja, rashodovanje i dr.)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9019</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9019.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9019.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9019.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2.5 Amortizacija i obezvređenje</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9020</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9020.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9020.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9020.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2.6 Revalorizacija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9021</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9021.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9021.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9021.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">2.7 Stanje na kraju godine ( 9016 + 9017 + 9018 -9019 + 9020 +9021)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9022</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9022.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9022.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9022.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s35"><Data ss:Type="String">02 (deo)</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">3. Zemljište</Data></Cell>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3.1 Stanje na početku godine</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9023</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9023.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9023.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9023.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3.2 Povećanja u toku godine - nabavke (bez avansa)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9024</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9024.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9024.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9024.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">3.3 Povećanja u toku godine - značajnija poboljšanja zemljišta (krčenje, melioracija i dr.)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9025</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9025.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9025.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9025.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3.4 Povećanje u toku godine - avansi</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9026</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9026.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9026.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9026.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3.5 Smanjenja u toku godine (prodaja i dr.)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9027</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9027.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9027.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9027.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3.6 Amortizacija i obezvređenje</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9028</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9028.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9028.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9028.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3.7 Revalorizacija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9029</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9029.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9029.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9029.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s43"><Data ss:Type="String">3.8 Stanje na kraju godine (9023 + 9024 + 9025 +9026 - 9027 + 9028 + 9029</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9030</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9030.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9030.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9030.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s34"><Data ss:Type="String">03</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">4. Biološka sredstva </Data></Cell>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">4.1 Stanje na početku godine</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9031</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9031.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9031.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9031.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">4.2 Povećanja u toku godine (nabavke, rekonstrukcija i dr. Bez avansa) </Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9032</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9032.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9032.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9032.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0">
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">4.3 Povećanja u toku godine - avansi</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9033</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9033.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9033.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9033.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">4.4 Smanjenja u toku godine (prodaja, rashodovanje i dr.)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9034</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9034.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9034.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9034.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">4.5 Amortizacija i obezvređenje</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9035</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9035.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9035.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9035.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">4.6 Revalorizacija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9036</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9036.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9036.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9036.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">4.7 Stanje na kraju godine (9031 + 9032 + 9033 -9034 + 9035 + 9036)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9037</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9037.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9037.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9037.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s54"/>
+            </Row>
+            <Row ss:Index="60">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">III. STRUKTURA ZALIHA</Data></Cell>
+            </Row>
+            <Row ss:Index="62">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">-iznosi u hiljadama dinara-</Data></Cell>
+            </Row>
+            <Row ss:Index="64" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">10</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1. Materijal, rezervni delovi, alat i sitan inventar</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9038</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9038.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9038.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">11</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2. Nedovršena proizvodnja i usluge</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9039</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9039.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9039.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">12</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3. Gotovi proizvodi</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9040</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9040.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9040.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">13</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">4. Roba</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9041</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9041.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9041.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">14</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">5. Stalna imovina koja se drži za prodaju i prestanak poslovanja</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9042</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9042.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9042.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">15</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">6. Plaćeni avansi za zalihe i usluge</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9043</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9043.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9043.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">7. SVEGA (9038 + 9039 + 9040 + 9041 + 9042 + 9043 = 9031 + 9037)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9044</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9044.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9044.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="75">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">IV. STURKUTA OSNOVNOG KAPITALA</Data></Cell>
+            </Row>
+            <Row ss:Index="77">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">-iznosi u hiljadama dinara-</Data></Cell>
+            </Row>
+            <Row ss:Index="79" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s22"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">300</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1. Akcijski kapital</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9045</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9045.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9045.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">u tome: strani kapital</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9046</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9046.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9046.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">301</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2. Udeli društava sa ograničenom odgovornošću</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9047</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9047.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9047.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">u tome: strani kapital</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9048</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9048.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9048.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">302</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">3. Ulozi</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9049</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9049.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9049.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">u tome: strani kapital</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9050</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9050.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9050.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">303</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">4. Državni kapital</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9051</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9051.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9051.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">304</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">5. Društveni kapital</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9052</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9052.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9052.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">305</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">6. Zadružni udeli</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9053</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9053.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9053.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">306</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">7. Emisiona premija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9054</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9054.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9054.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">307</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">8. Ulozi - sopstveni izvori drugih pravnih lica - ulozi osnivača i drugih lica</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9055</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9055.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9055.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">309</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">9. Ostali osnovni kapital</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9056</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9056.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9056.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s43"><Data ss:Type="String">10. SVEGA (9045 + 9047 + 9049 + 9051 + 9052 + 9053 + 9054 + 9055 + 9056 = 0402 + 0404)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9057</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9057.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9057.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="96">
+                <Cell ss:MergeAcross="5" ss:StyleID="s49"><Data ss:Type="String">V. STRUKTURA AKCIJSKOG KAPITALA</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="5" ss:StyleID="s54"/>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="5" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- broj akcija kao ceo broj -</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="5" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="101" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">1. Obične akcije</Data></Cell>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.1 Broj običnih akcija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9058</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9058.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9058.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 300</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">1.2 Nominalna vrednost običnih akcija - ukupno</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9059</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9059.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9059.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">2. Prioritetne akcije</Data></Cell>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:StyleID="s17"/>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2.1 Broj prioritetnih akcija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9060</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9060.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9060.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 300</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s47"><Data ss:Type="String">2.2 Nominalna vrednost prioritetnih akcija - ukupno</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9061</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9061.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9061.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">300</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">3. SVEGA - nominalna vrednost (9059 + 9061 = 9045)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9062</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9062.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9062.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="112">
+                <Cell ss:MergeAcross="5" ss:StyleID="s49"><Data ss:Type="String">VI. STRUKTURA ISPLAĆENIH DIVIDENDI I UČEŠĆA U DOBITKU, PO SEKTORIMA</Data></Cell>
+            </Row>
+            <Row ss:Index="114">
+                <Cell ss:MergeAcross="5" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="116" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">1. Privredna društva (domaća pravna lica)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9063</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9063.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9063.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">2. Fizička lica</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9064</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9064.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9064.current_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">3. Država i institucije i organizacije koje se finansiraju iz budžeta</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9065</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9065.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9065.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">4. Finansijske institucije</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9066</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9066.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9066.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">5. Neprofitne organizacije, fondacije i fondovi neprofitnog karaktera</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9067</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9067.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9067.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">6. Strana fizička lica</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9068</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9068.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9068.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">7. Strana pravna lica</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9069</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9069.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9069.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">8. Evropske finansijske i razvojne institucije</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9070</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9070.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9070.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s48"><Data ss:Type="String">9. SVEGA (9063 + 9064 + 9065 + 9066 + 9067 + 9068 +9069 + 9070 = 3045)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9071</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9071.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9071.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="129">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">VII. POTRAŽIVANJA I OBAVEZE</Data></Cell>
+            </Row>
+            <Row ss:Index="131">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="133" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0">
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">226 (deo)</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">1. Potraživanja u toku godine od društava za osiguranje za naknadu štete (dugovni promet bez početnog stanja)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9072</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9072.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9072.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">43</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="String">2. Obaveze iz poslovanja (potražni promet bez početnog stanja)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9073</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9073.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9073.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">450</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">3. Obaveze za neto zarade i naknade zarada, osim naknada zarada koje se refundiraju (potražni promet bez početnog stanja)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9074</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9074.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9074.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">451</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">4. Obaveze za porez na zarade i naknade zarada na teret zaposlenog (potražni promet bez početnog stanja)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9075</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9075.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9075.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">452</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">5. Obaveze za doprinose na zarade i naknade zarada na teret zaposlenog (potražni promet bez početnog stanja)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9076</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9076.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9076.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">465</Data></Cell>
+                <Cell ss:MergeAcross="1" ss:StyleID="s42"><Data ss:Type="String">6. Obaveze prema fizičkim licima za naknade po ugovorima (potražni promet bez početnog stanja)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9077</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9077.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9077.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="1" ss:StyleID="s48"><Data ss:Type="String">7. Kontrolni zbir (9072 + 9073 + 9074 + 9075 + 9076 + 9077)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9078</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9078.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9078.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="144">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">VIII. DRUGI TROŠKOVI I RASHODI</Data></Cell>
+            </Row>
+            <Row ss:Index="146">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="148" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">513</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">1. Troškovi goriva i energije</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9079</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9079.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9079.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">520</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">2. Troškovi zarada i naknada zarada (bruto)</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9080</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9080.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9080.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">521</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">3. Troškovi poreza i doprinosa na zarade i naknade zarada na teret poslodavca</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9081</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9081.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9081.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">522, 523 i 525</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">4. Troškovi naknada fizičkim licima (bruto) po osnovu ugovora</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9082</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9082.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9082.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">524</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">5. Troškovi naknada po ugovoru o privremenim i povremenim poslovima zaključenim sa fizičkim licem</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9083</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9083.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9083.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">526</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">6. Troškovi naknada direktoru, odnosno članovima organa upravljanja i nadzora</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9084</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9084.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9084.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">528</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">7. Troškovi angažovanja zaposlenih preko agencija i zadruga</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9085</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9085.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9085.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 529</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">8. Naknade troškova zaposlenima</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9086</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9086.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9086.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 529</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">9. Ostala davanja zaposlenima i lična primanja koja se ne smatraju zaradom - otpremnine, jubilarne nagrade, pomoć zaposlenom, stipendije i dr.</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9087</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9087.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9087.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 529</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">10. Naknade troškova i druga davanja poslodavcima i drugim fizičkim licima koja nisu zaposlena</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9088</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9088.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9088.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s22"><Data ss:Type="String">deo 525, 533 i deo 54</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">11. Troškovi zakupnina</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9089</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9089.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9089.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s22"><Data ss:Type="String">deo 525, 533 i deo 54</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">12. Troškovi zakupnina zemljišta</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9090</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9090.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9090.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">536 i 537</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">13. Troškovi istraživanja i razvoja</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9091</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9091.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9091.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">552</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">14. Troškovi premija osiguranja</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9092</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9092.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9092.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">553</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">15. Troškovi platnog prometa</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9093</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9093.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9093.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">554</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">16. Troškovi članarina</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9094</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9094.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9094.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">555</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">17. Troškovi poreza i naknada</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9095</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9095.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9095.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">556</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">18. Troškovi doprinosa</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9096</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9096.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9096.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 579</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">19. Rashodi za humanitarne, naučne, verske, kulturne, zdravstvene, obrazovne i za sportske namene, kao i za zaštitu čovekove sredine</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9097</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9097.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9097.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="2" ss:StyleID="s43"><Data ss:Type="String">20. Kontrolni zbir (9079 + 9080 + 9081 + 9082 + 9083 + 9084 + 9085 + 9086 + 9087 + 9088 + 9089 + 9090 + 9091 + 9092 + 9093 + 9094 + 9095 + 9096 + 9097)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9098</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9098.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9098.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="172">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">IX. RASHODI KAMATA</Data></Cell>
+            </Row>
+            <Row ss:Index="174">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="176" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeDown="4" ss:StyleID="s23"><Data ss:Type="String">Grupa računa 56 (deo)</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">1. Kamate po kreditima i zajmovima od poslovnih banaka u zemlji</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9099</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9099.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9099.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="2" ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">2. Kamate po osnovu finansijskog lizinga u zemlji</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9100</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9100.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9100.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:Index="2" ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">3. Kamate po osnovu zajmova od drugih nebankarskih preduzeća i zajmodavaca u zemlji</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9101</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9101.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9101.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="2" ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">4. Kamate po osnovu hartija od vrednosti</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9102</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9102.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9102.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="2" ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">5. Zatezne kamate</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9103</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9103.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9103.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">6. Kamate po osnovu kratkoročnih i dugoročnih kredita u inostranstvu</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9104</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9104.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9104.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="2" ss:StyleID="s48"><Data ss:Type="String">7. Kontrolni zbir (9099 + 9100 + 9101 + 9102 + 9103 + 9104)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9105</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9105.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9105.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="187">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">X. DRUGI PRIHODI</Data></Cell>
+            </Row>
+            <Row ss:Index="189">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="191" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">640</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">1. Prihodi od premija, subvencija, dotacija, regresa, kompenzacija i povraćaja poreskih dažbina</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9106</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9106.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9106.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">641</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">2. Prihodi po osnovu uslovljenih donacija</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9107</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9107.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9107.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">65</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">3. Drugi poslovni prihodi</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9108</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9108.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9108.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="String">deo 650</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">4. Prihodi od zakupnina za zemljište</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9109</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9109.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9109.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">651</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">5. Prihodi od članarina</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9110</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9110.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9110.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s22"><Data ss:Type="String">deo 660, deo 661 i deo 669</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">6. Prihodi po osnovu dividendi i učešća u dobitku</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9111</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9111.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9111.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="2" ss:StyleID="s48"><Data ss:Type="String">7. Kontrolni zbir (9106 + 9107 + 9108 + 9109 + 9110 + 9111)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9112</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9112.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9112.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="202">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">XI. PRIHODI OD KAMATA</Data></Cell>
+            </Row>
+            <Row ss:Index="204">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="206" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeDown="3" ss:StyleID="s23"><Data ss:Type="String">Grupa računa 66 (deo)</Data></Cell>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">1. Kamate po depozitima u poslovnim bankama u zemlji</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9113</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9113.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9113.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="2" ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">2. Kamate po osnovu datih kredita i zajmova u zemlji</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9114</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9114.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9114.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="2" ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">3. Kamate po osnovu hartija od vrednosti</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9115</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9115.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9115.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:Index="2" ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">4. Zatezne kamate</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9116</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9116.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9116.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">5. Kamate po osnovu datih kredita i zajmova u inostranstvu</Data></Cell>
+                <Cell ss:StyleID="s25"><Data ss:Type="Number">9117</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9117.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9117.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:StyleID="s17"/>
+                <Cell ss:MergeAcross="2" ss:StyleID="s48"><Data ss:Type="String">6. Kontrolni zbir (9113 + 9114 + 9115 + 9116 + 9117)</Data></Cell>
+                <Cell ss:StyleID="s33"><Data ss:Type="Number">9118</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9118.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9118.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="216">
+                <Cell ss:MergeAcross="5" ss:StyleID="s49"><Data ss:Type="String">XII. OSTALI PODACI</Data></Cell>
+            </Row>
+            <Row ss:Index="218">
+                <Cell ss:MergeAcross="5" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara -</Data></Cell>
+            </Row>
+            <Row ss:Index="220" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="String">OPIS</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Tekuća godina</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Prethodna godina</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">1. Obaveze za akcize (prema godišnjem obračunu akciza)</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">9119</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9119.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9119.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">2. Obračunate carine i druge uvozne dažbine (ukupan godišnji iznos prema obračunu)</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">9120</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9120.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9120.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">3. Kapitalne subvencije i druga državna dodeljivanja za izgradnju i nabavku osnovnih sredstava i nematerijalne imovine</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">9121</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9121.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9121.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">4. Državna dodeljivanja za premije, regres i pokriće tekućih troškova poslovanja</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">9122</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9122.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9122.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">5. Ostala državna dodeljivanja</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">9123</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9123.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9123.last_year}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="2" ss:StyleID="s42"><Data ss:Type="String">6. Primljene donacije iz inostranstva i druga bespovratna sredstva u novcu ili naturi od inostranih pravnih i fizičkih lica</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">9124</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9124.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9124.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s47"><Data ss:Type="String">7. Lična primanja preduzetnika iz neto dobitka (popunjavaju samo preduzetnici)</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">9125</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9125.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9125.last_year}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="2" ss:StyleID="s48"><Data ss:Type="String">8. Kontrolni zbir (9119 + 9120 + 9121 + 9122 + 9123 + 9124 + 9125)</Data></Cell>
+                <Cell ss:StyleID="s36"><Data ss:Type="Number">9126</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9126.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9126.last_year}</Data></Cell>
+            </Row>
+            <Row ss:Index="232">
+                <Cell ss:MergeAcross="6" ss:StyleID="s49"><Data ss:Type="String">XIII. BRUTO POTRAŽIVANJA ZA DATE KREDITE I ZAJMOVE, PRODATE PROIZVODE, ROBU I USLUGE I DATE AVANSE I DRUGA POTRAŽIVANJA</Data></Cell>
+            </Row>
+            <Row ss:Index="234">
+                <Cell ss:MergeAcross="6" ss:StyleID="s50"><Data ss:Type="String" x:Ticked="1">- iznosi u hiljadama dinara'</Data></Cell>
+            </Row>
+            <Row ss:Index="236" ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">Grupa računa, račun</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">FINANSIJSKI INSTRUMENTI</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Ozn. za AOP</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Bruto</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Ispravka vrednosti</Data></Cell>
+                <Cell ss:StyleID="s23"><Data ss:Type="String">Neto (kol. 4 - 5)</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="Number">1</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">2</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">3</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">4</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">5</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">6</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">230 (deo), 231 (deo), 232 (deo), 234 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">1. Kratkoročni finansijski plasmani (dati krediti i zajmovi) fizičkim licima i preduzetnicima</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9127</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9127.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9127.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9127.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">043 (deo), 045 (deo), 050 (deo), 051 (deo), 053 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">2. Dugoročni finansijski plasmani (dati krediti i zajmovi) fizičkim licima i preduzetnicima</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9128</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9128.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9128.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9128.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="30">
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"/>
+                <Cell ss:StyleID="s43"><Data ss:Type="String">3. Prodati proizvodi, roba i usluge i dati avansi (9130 + 9131 + 9132)</Data></Cell>
+                <Cell ss:StyleID="s44"><Data ss:Type="Number">9129</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9129.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9129.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9129.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="60">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">017 (deo), 029 (deo), 038 (deo), 052 (deo), 150 (deo), 152 (deo), 154 (deo), 200 (deo), 202 (deo), 204 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">3.1 Prodati proizvodi, roba i usluge i dati avansi fizičkim licima i preduzetnicima</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9130</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9130.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9130.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9130.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="60">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">017 (deo), 029 (deo), 038 (deo), 052 (deo), 150 (deo), 152 (deo), 154 (deo), 200 (deo), 202 (deo), 204 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">3.2 Prodati proizvodi, roba i usluge i dati avansi državnim organima i institucijama</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9131</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9131.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9131.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9131.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="60">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">017 (deo), 029 (deo), 038 (deo), 052 (deo), 150 (deo), 152 (deo), 154 (deo), 200 (deo), 202 (deo), 204 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">3.3 Prodati proizvodi, roba i usluge i dati avansi organima i institucijama lokalne samouprave</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9132</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9132.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9132.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9132.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"/>
+                <Cell ss:StyleID="s43"><Data ss:Type="String">4. Druga potraživanja (9134 + 9135 + 9136)</Data></Cell>
+                <Cell ss:StyleID="s44"><Data ss:Type="Number">9133</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9133.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9133.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9133.neto}</Data></Cell>
+            </Row>
+            <Row>
+                <Cell ss:MergeAcross="1" ss:StyleID="s18"><Data ss:Type="String">206 (deo), 221, 228 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">4.1 Potraživanja od fizičkih lica i preduzetnika</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9134</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9134.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9134.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9134.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="45">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">206 (deo), 222 (deo), 223, 224 (deo), 225 (deo), 227 (deo), 228 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">4.2 Potraživanja od državnih organa i institucija</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9135</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9135.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9135.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9135.neto}</Data></Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="45">
+                <Cell ss:MergeAcross="1" ss:StyleID="s23"><Data ss:Type="String">206 (deo), 222 (deo), 223, 224 (deo), 225 (deo), 227 (deo), 228 (deo)</Data></Cell>
+                <Cell ss:StyleID="s42"><Data ss:Type="String">4.3 Potraživanja od organa i institucija lokalne samouprave</Data></Cell>
+                <Cell ss:StyleID="s18"><Data ss:Type="Number">9136</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9136.current_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9136.last_year}</Data></Cell>
+                <Cell ss:StyleID="s17"><Data ss:Type="Number">${JSON.saScheme._9136.neto}</Data></Cell>
+            </Row>
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <PageSetup>
+                <Header x:Margin="0.3"/>
+                <Footer x:Margin="0.3"/>
+                <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+            </PageSetup>
+            <Print>
+                <ValidPrinterInfo/>
+                <HorizontalResolution>600</HorizontalResolution>
+                <VerticalResolution>600</VerticalResolution>
+            </Print>
+            <Selected/>
+            <Panes>
+                <Pane>
+                    <Number>3</Number>
+                    <ActiveRow>11</ActiveRow>
+                    <ActiveCol>12</ActiveCol>
+                </Pane>
+            </Panes>
+            <ProtectObjects>False</ProtectObjects>
+            <ProtectScenarios>False</ProtectScenarios>
+        </WorksheetOptions>
+    </Worksheet>
+    <Worksheet ss:Name="Sheet2">
+        <Table x:FullColumns="1"
+               x:FullRows="1" ss:DefaultRowHeight="15">
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <PageSetup>
+                <Header x:Margin="0.3"/>
+                <Footer x:Margin="0.3"/>
+                <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+            </PageSetup>
+            <ProtectObjects>False</ProtectObjects>
+            <ProtectScenarios>False</ProtectScenarios>
+        </WorksheetOptions>
+    </Worksheet>
+    <Worksheet ss:Name="Sheet3">
+        <Table x:FullColumns="1"
+               x:FullRows="1" ss:DefaultRowHeight="15">
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <PageSetup>
+                <Header x:Margin="0.3"/>
+                <Footer x:Margin="0.3"/>
+                <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+            </PageSetup>
+            <ProtectObjects>False</ProtectObjects>
+            <ProtectScenarios>False</ProtectScenarios>
+        </WorksheetOptions>
+    </Worksheet>
+</Workbook>

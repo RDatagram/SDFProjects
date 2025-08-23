@@ -1,0 +1,25 @@
+<workflowactionscript scriptid="customscript_crw_taxrep_xls_wa">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>CRW : TaxReport Excel</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <returnrecordtype></returnrecordtype>
+  <returntype></returntype>
+  <scriptfile>[/SuiteScripts/TAX_REPORT/tax_src/crw_tax_report_xls_wa.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_crw_taxrep_xls_wa">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>[scriptid=customrecord_crw_tax_report]</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</workflowactionscript>

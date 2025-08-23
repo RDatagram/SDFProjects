@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_da_ne">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>DA_NE</name>
+  <customvalues>
+    <customvalue scriptid="val_83953_t2274808_668">
+      <isinactive>F</isinactive>
+      <value>DA</value>
+    </customvalue>
+    <customvalue scriptid="val_83954_t2274808_119">
+      <isinactive>F</isinactive>
+      <value>NE</value>
+    </customvalue>
+  </customvalues>
+</customlist>

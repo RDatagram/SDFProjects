@@ -1,0 +1,34 @@
+Napraviti suitelet koji ce generisati xls file kao izvestaj za prikaz transakcija u odredjenom popdv periodu.
+
+Treba napraviti saved search tipa transaction, primeniti odredjene filtere i vratiti odredjene kolone kao rezultat.
+
+Filteri:
+- Popdv datum (od-do)
+- Taxline is F
+- TaxCode.country is Serbia
+
+Columns:
+- internalid
+- tranid
+- trandate
+- Popdv datum (custom field)
+- amount (osnovica - NOTE! Mislim da je id polja grossamount. Iz nekog razloga su tako namestili)
+- taxamount (pdv)
+- taxcode
+
+
+Napraviti xls file sa sledecim header-om:
+
+internal id transakcije
+tranid
+trandate
+popdv datum
+taxcode
+poreska stopa (nalazi se u taxcode-u) - taxcode.rate
+osnovica
+pdv
+ukupno (osnovica + pdv)
+
+Za kreiranje fajla koristiti N/File modul.
+
+Iskoristiti http.response objekat u Suitelet onRequest entry point funkciji (context.response) i njegovu writeFile() metodu.

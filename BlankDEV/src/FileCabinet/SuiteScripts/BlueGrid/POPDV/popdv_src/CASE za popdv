@@ -1,0 +1,55 @@
+CASE WHEN ({accounttype}='Other Current Liability' OR {accounttype}='Long Term Liability' OR {accounttype}='Deffered Revenue')
+AND {debitamount}>0 THEN {amount}*(-1) 
+
+WHEN ({accounttype}='Bank' OR {accounttype}='Other Current Asset' OR {accounttype}='Fixed Asset' OR {accounttype}='Other Asset' OR {accounttype}='Deffered Expense')
+AND {creditamount}>0 THEN {amount}*(-1)
+
+ELSE {amount}
+
+END
+
+
+------------------
+
+var transactionSearchObj = search.create({
+   type: "transaction",
+   filters:
+   [
+      ["subsidiary","anyof","4"], 
+      "AND", 
+      ["taxline","is","F"], 
+      "AND", 
+      ["custbody_popdv_datum","within","01/02/2020","28/02/2021"]
+   ],
+   columns:
+   [
+      search.createColumn({
+         name: "tranid",
+         sort: search.Sort.DESC,
+         label: "Document Number"
+      }),
+      search.createColumn({name: "trandate", label: "Date"}),
+      search.createColumn({name: "type", label: "Type"}),
+      search.createColumn({name: "taxperiod", label: "Tax Period"}),
+      search.createColumn({name: "postingperiod", label: "Period"}),
+      search.createColumn({name: "entity", label: "Name"}),
+      search.createColumn({name: "memo", label: "Memo"}),
+      search.createColumn({name: "statusref", label: "Status"}),
+      search.createColumn({name: "amount", label: "Amount"}),
+      search.createColumn({name: "taxtotal", label: "Amount (Transaction Tax Total)"}),
+      search.createColumn({name: "creditamount", label: "Amount (Credit)"}),
+      search.createColumn({name: "debitamount", label: "Amount (Debit)"}),
+      search.createColumn({name: "accounttype", label: "Account Type"}),
+      search.createColumn({
+         name: "formulacurrency",
+         formula: "CASE WHEN ({accounttype}='Other Current Liability' OR {accounttype}='Long Term Liability' OR {accounttype}='Deffered Revenue')AND {debitamount}>0 THEN {amount}*(-1)WHEN ({accounttype}='Bank' OR {accounttype}='Other Current Asset' OR {accounttype}='Fixed Asset' OR {accounttype}='Other Asset' OR {accounttype}='Deffered Expense')AND {creditamount}>0 THEN {amount}*(-1)ELSE {amount}END",
+         label: "NOVI AMOUNT"
+      })
+   ]
+});
+var searchResultCount = transactionSearchObj.runPaged().count;
+log.debug("transactionSearchObj result count",searchResultCount);
+transactionSearchObj.run().each(function(result){
+   // .run().each has a limit of 4,000 results
+   return true;
+});

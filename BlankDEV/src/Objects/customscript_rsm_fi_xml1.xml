@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_rsm_fi_xml1">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>rsm_fi_xml1</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/BlueGrid/vladimir_test/rsm_fi_xml.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_fi_xml1">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>rsm_fi_xml1</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

@@ -1,0 +1,23 @@
+<sublist scriptid="custsublist_rsm_soe">
+  <assemblybuild>F</assemblybuild>
+  <customtransactions></customtransactions>
+  <deposit>F</deposit>
+  <depositapplication>F</depositapplication>
+  <expensereport>F</expensereport>
+  <field></field>
+  <fulfillmentrequest>F</fulfillmentrequest>
+  <inventoryadjustment>F</inventoryadjustment>
+  <itemfulfillment>F</itemfulfillment>
+  <itemreceipt>F</itemreceipt>
+  <journal>F</journal>
+  <label>Lista predračuna</label>
+  <opportunity>F</opportunity>
+  <payment>F</payment>
+  <purchase>F</purchase>
+  <sale>T</sale>
+  <savedsearch>[scriptid=customsearch_rsm_sublist_soe]</savedsearch>
+  <storepickup>F</storepickup>
+  <sublisttype>TRANSACTION</sublisttype>
+  <tab>[scriptid=custtab_rsm_soe_tab]</tab>
+  <vendorpayment>F</vendorpayment>
+</sublist>

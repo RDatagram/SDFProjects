@@ -1,0 +1,168 @@
+<html>
+
+<head>
+
+  <style type="text/css">
+      .container {
+          margin-top: 35px;
+      }
+
+      .table-label {
+          font-size: 13px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          color: #6f7373;
+      }
+
+      .table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+
+      .thead {
+          position: sticky;
+          top: 96px;
+          color: #FFF;
+          background-color: #607799;
+      }
+
+      .thead tr th {
+          padding: 5px;
+      }
+
+      .tbody tr td {
+          padding: 4px;
+      }
+
+      .tr-odd {
+          background-color: #e0e6ef;
+      }
+  </style>
+</head>
+
+<body>
+
+  <div class="container" id="table-container">
+    <h2>Podaci kreirani: ${JSON.createdAt}</h2>
+    <h2>Subsidiary: ${JSON.subsidiaryName}</h2>
+    <h2>Za period: ${JSON.dateFrom} - ${JSON.dateTo}</h2>
+    <p class="table-label">Pregled predracuna</p>
+      <div class="table-responsive">
+          <table class="table">
+              <thead id="theadTop" class="thead">
+              <tr>
+                <th id="th-top-1">Sales order br. dokumenta</th>
+                <th id="th-top-2">Sales order poslat?</th>
+                <th id="th-top-3">Sales order transaction date</th>
+                <th id="th-top-4">Sales order status</th>
+                <th id="th-top-5">Subsidiary</th>
+                <th id="th-top-6">Company name</th>
+                <th id="th-top-7">SOE br. dokumenata</th>
+                <th id="th-top-8">SOE poslat?</th>
+                <th id="th-top-9">SOE amount</th>
+                <th id="th-top-10">SOE transaction date</th>
+                <th id="th-top-11">Customer deposit br. dokumenata</th>
+                <th id="th-top-12">Customer Deposit amount</th>
+                <th id="th-top-13">Customer deposit transaction date</th>
+                <th id="th-top-14">Customer deposit status</th>
+                <th id="th-top-15">SOE - Customer Deposit</th>
+                <th id="th-top-16">Invoice br. dokumenata</th>
+                <th id="th-top-17">Invoice amount</th>
+                <th id="th-top-18">Invoice transaction date</th>
+                <th id="th-top-19">Invoice status</th>
+                <th id="th-top-20">SO - Invoices</th>
+              </tr>
+              </thead>
+              <tbody class="tbody">
+              <#assign x = 1>
+              <#list JSON.dataArray as rec>
+              <#if x % 2 == 0>
+              <tr class="tr-odd">
+                  <#else>
+              <tr>
+              </#if>
+              <td><a href="${rec.soUrlToRecord}" target=_blank>${rec.transactionId}</a></td>
+              <td>${rec.soSent}</td>
+              <td>${rec.soTranDate}</td>
+              <td>${rec.soStatus}</td>
+              <td>${rec.subsidiary}</td>
+              <td>${rec.customerName}</td>
+              <td>
+                  <#list rec.salesOrderEstimates as soe>
+                  <a href="${soe.urlToRecord}" target=_blank>${soe.documentNumber}</a><br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.salesOrderEstimates as soe>
+                  ${soe.soeSent}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.salesOrderEstimates as soe>
+                  ${soe.soeAmount}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.salesOrderEstimates as soe>
+                  ${soe.soeTranDate}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.customerDeposits as cd>
+                  <a href="${cd.urlToRecord}" target=_blank>${cd.documentNumber}</a><br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.customerDeposits as cd>
+                  ${cd.amount}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.customerDeposits as cd>
+                  ${cd.trandate}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.customerDeposits as cd>
+                  ${cd.status}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.soeMinusCustDep as soeMinusCD>
+                  ${soeMinusCD}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.invoices as invoice>
+                  <a href="${invoice.urlToRecord}" target=_blank>${invoice.documentNumber}</a><br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.invoices as invoice>
+                  ${invoice.amount}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.invoices as invoice>
+                  ${invoice.trandate}<br>
+              </#list>
+              </td>
+              <td>
+                  <#list rec.invoices as invoice>
+                  ${invoice.status}<br>
+              </#list>
+              </td>
+              <td>
+                  ${rec.soMinusInvoices}<br>
+              </td>
+              </tr>
+              <#assign x += 1>
+              </#list>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+</body>
+
+</html>

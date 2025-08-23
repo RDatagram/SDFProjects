@@ -1,0 +1,667 @@
+<?xml version="1.0"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+    <head>
+        <link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+        <#if .locale == "zh_CN">
+        <link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+        <#elseif .locale == "zh_TW">
+        <link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+        <#elseif .locale == "ja_JP">
+        <link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+        <#elseif .locale == "ko_KR">
+        <link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+        <#elseif .locale == "th_TH">
+        <link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+    </#if>
+
+    <style>
+        * {
+        <#if .locale=="zh_CN">font-family: NotoSans, NotoSansCJKsc, sans-serif;
+        <#elseif .locale=="zh_TW">font-family: NotoSans, NotoSansCJKtc, sans-serif;
+        <#elseif .locale=="ja_JP">font-family: NotoSans, NotoSansCJKjp, sans-serif;
+        <#elseif .locale=="ko_KR">font-family: NotoSans, NotoSansCJKkr, sans-serif;
+        <#elseif .locale=="th_TH">font-family: NotoSans, NotoSansThai, sans-serif;
+        <#else>font-family: NotoSans, sans-serif;
+    </#if>
+            }
+            .title {
+            font-size:20px;
+            font-weight: 700;
+            align:center;
+            }
+            .subtitle {
+            font-size:14px;
+            font-weight: 700;
+            align:center;
+            }
+            .note {
+            font-size: 10px;
+            align: right;
+            }
+            table {
+            margin-bottom: 20px;
+            }
+            td {
+            font-size: 10px !important;
+            }
+            td p {
+            text-align: left;
+            }
+            .center {
+            align: center;
+            valign: middle;
+            }
+            .cell1 {
+            width:80px;
+            align: center;
+            valign: middle;
+            }
+            .cell2 {
+            width:270px;
+            valign: middle;
+            }
+            .cell3 {
+            width:80px;
+            align: center;
+            valign: middle;
+            }
+            .cell4 {
+            width:90px;
+            align: center;
+            valign: middle;
+            }
+            .cell5 {
+            width:142.5px;
+            align: center;
+            valign: middle;
+            }
+            .cell6 {
+            width:142.5px;
+            align: center;
+            valign: middle;
+            }
+</style>
+        </head>
+<body padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
+<table border="0.5" bordercolor="#ccc" cellborder="0.5" cellpadding="5" cellspacing="0" id="heading-table"
+       style="border-collapse:collapse; text-align: center;">
+    <tr>
+        <td style="align:center;" colspan="3"><strong>Popunjava pravno lice - preduzetnik</strong></td>
+    </tr>
+    <tr>
+        <td style="width: 261px;"><strong>Matični broj:</strong> <#if JSON?has_content>${JSON.maticniBroj}</#if></td>
+    <td style="width: 287px;"><strong>Šifra delatnosti:</strong> <#if JSON?has_content>${JSON.sifraDelatnosti}</#if></td>
+<td style="width: 287px;"><strong>PIB:</strong> <#if JSON?has_content>${JSON.pib}</#if></td>
+        </tr>
+<tr>
+<td style="width: 261px;" colspan="3"><strong>Naziv:</strong><#if JSON?has_content>${JSON.naziv}</#if></td>
+        </tr>
+<tr>
+<td style="width: 261px;" colspan="3"><strong>Sedište:</strong><#if JSON?has_content>${JSON.sediste}</#if></td>
+        </tr>
+        </table>
+
+<p class="title">
+BILANS USPEHA
+</p>
+<p class="subtitle">
+za period od <#if JSON?has_content>${JSON.datum_od}</#if> do <#if JSON?has_content>${JSON.datum_do}</#if> godine
+        </p>
+<p class="note">
+-u hiljadam dinara-
+</p>
+
+<table border="0.5" bordercolor="#ccc" cellborder="0.5" cellpadding="5" cellspacing="0" id="heading-table"
+       style="border-collapse:collapse; text-align: center;">
+<tr>
+    <td rowspan="2" class="cell1 center"><strong>Grupa <br/>računa,<br/>račun</strong></td>
+    <td rowspan="2" class="cell2 center"><strong>Pozicija</strong></td>
+    <td rowspan="2" class="cell3 center"><strong>AOP</strong></td>
+    <td rowspan="2" class="cell4 center"><strong>Napomena<br/>broj</strong></td>
+    <td colspan="2" class="center"><strong>Iznos</strong></td>
+</tr>
+<tr>
+    <td class="cell5 center"><strong>Tekuća<br/>godina</strong></td>
+    <td class="cell6 center"><strong>Prethodna godina</strong></td>
+</tr>
+<tr>
+    <td class="cell1">1</td>
+    <td class="cell2 center">2</td>
+    <td class="cell3">3</td>
+    <td class="cell4">4</td>
+    <td class="cell5">5</td>
+    <td class="cell6">6</td>
+</tr>
+<tr>
+    <td class="cell1"></td>
+    <td class="cell2"><#if JSON?has_content>${JSON.buScheme._1001.description}</#if></td>
+<td class="cell3">1001</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1001.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1001.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">60</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1002.description}</#if></td>
+<td class="cell3">1002</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1002.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1002.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">600,  602  i  604</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1003.description}</#if></td>
+<td class="cell3">1003</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1003.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1003.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">601,  603  i  605</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1004.description}</#if></td>
+<td class="cell3">1004</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1004.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1004.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">61</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1005.description}</#if></td>
+<td class="cell3">1005</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1005.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1005.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">610,  612  i  614</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1006.description}</#if></td>
+<td class="cell3">1006</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1006.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1006.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">611,  613  i  615</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1007.description}</#if></td>
+<td class="cell3">1007</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1007.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1007.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">62</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1008.description}</#if></td>
+<td class="cell3">1008</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1008.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1008.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">630</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1009.description}</#if></td>
+<td class="cell3">1009</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1009.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1009.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">631</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1010.description}</#if></td>
+<td class="cell3">1010</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1010.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1010.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">64  i  65</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1011.description}</#if></td>
+<td class="cell3">1011</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1011.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1011.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">68,  osim  683,  685  i  686</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1012.description}</#if></td>
+<td class="cell3">1012</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1012.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1012.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1013.description}</#if></td>
+<td class="cell3">1013</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1013.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1013.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">50</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1014.description}</#if></td>
+<td class="cell3">1014</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1014.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1014.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">51</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1015.description}</#if></td>
+<td class="cell3">1015</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1015.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1015.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">52</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1016.description}</#if></td>
+<td class="cell3">1016</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1016.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1016.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">520</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1017.description}</#if></td>
+<td class="cell3">1017</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1017.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1017.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">521</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1018.description}</#if></td>
+<td class="cell3">1018</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1018.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1018.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">52  osim  520  i  521</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1019.description}</#if></td>
+<td class="cell3">1019</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1019.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1019.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">1</td>
+<td class="cell2 center">2</td>
+<td class="cell3">3</td>
+<td class="cell4">4</td>
+<td class="cell5">5</td>
+<td class="cell6">6</td>
+</tr>
+<tr>
+<td class="cell1">540</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1020.description}</#if></td>
+<td class="cell3">1020</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1020.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1020.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">58,  osim  583,  585  i  586</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1021.description}</#if></td>
+<td class="cell3">1021</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1021.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1021.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">53</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1022.description}</#if></td>
+<td class="cell3">1022</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1022.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1022.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">54,  osim  540</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1023.description}</#if></td>
+<td class="cell3">1023</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1023.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1023.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">55</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1024.description}</#if></td>
+<td class="cell3">1024</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1024.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1024.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1025.description}</#if></td>
+<td class="cell3">1025</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1025.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1025.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1026.description}</#if></td>
+<td class="cell3">1026</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1026.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1026.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1027.description}</#if></td>
+<td class="cell3">1027</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1027.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1027.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">660  i  661</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1028.description}</#if></td>
+<td class="cell3">1028</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1028.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1028.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">662</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1029.description}</#if></td>
+<td class="cell3">1029</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1029.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1029.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">663  i  664</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1030.description}</#if></td>
+<td class="cell3">1030</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1030.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1030.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">665  i  669</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1031.description}</#if></td>
+<td class="cell3">1031</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1031.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1031.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1032.description}</#if></td>
+<td class="cell3">1032</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1032.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1032.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">560  i  561</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1033.description}</#if></td>
+<td class="cell3">1033</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1033.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1033.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">562</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1034.description}</#if></td>
+<td class="cell3">1034</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1034.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1034.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">563  i  564</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1035.description}</#if></td>
+<td class="cell3">1035</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1035.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1035.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">565  i  569</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1036.description}</#if></td>
+<td class="cell3">1036</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1036.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1036.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1037.description}</#if></td>
+<td class="cell3">1037</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1037.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1037.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1038.description}</#if></td>
+<td class="cell3">1038</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1038.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1038.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">683,  685  i  686</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1039.description}</#if></td>
+<td class="cell3">1039</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1039.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1039.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">583,  585  i  586</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1040.description}</#if></td>
+<td class="cell3">1040</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1040.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1040.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">67</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1041.description}</#if></td>
+<td class="cell3">1041</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1041.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1041.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">57</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1042.description}</#if></td>
+<td class="cell3">1042</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1042.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1042.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1043.description}</#if></td>
+<td class="cell3">1043</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1043.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1043.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1044.description}</#if></td>
+<td class="cell3">1044</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1044.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1044.last_year}</#if></td>
+        </tr>
+<tr style="height:50px">
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1045.description}</#if></td>
+<td class="cell3">1045</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1045.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1045.last_year}</#if></td>
+        </tr>
+<tr style="height:50px">
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1046.description}</#if></td>
+<td class="cell3">1046</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1046.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1046.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">1</td>
+<td class="cell2 center">2</td>
+<td class="cell3">3</td>
+<td class="cell4">4</td>
+<td class="cell5">5</td>
+<td class="cell6">6</td>
+</tr>
+<tr>
+<td class="cell1">69-59</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1047.description}</#if></td>
+<td class="cell3">1047</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1047.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1047.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">59-  69</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1048.description}</#if></td>
+<td class="cell3">1048</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1048.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1048.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1049.description}</#if></td>
+<td class="cell3">1049</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1049.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1049.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1050.description}</#if></td>
+<td class="cell3">1050</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1050.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1050.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><strong>S. POREZ NA DOBITAK</strong></td>
+<td class="cell3"></td>
+<td class="cell4"></td>
+<td class="cell5"></td>
+<td class="cell6"></td>
+</tr>
+<tr>
+<td class="cell1">721</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1051.description}</#if></td>
+<td class="cell3">1051</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1051.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1051.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">722  dug.  saldo</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1052.description}</#if></td>
+<td class="cell3">1052</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1052.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1052.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">722  pot.  saldo</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1053.description}</#if></td>
+<td class="cell3">1053</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1053.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1053.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1">723</td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1054.description}</#if></td>
+<td class="cell3">1054</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1054.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1054.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1055.description}</#if></td>
+<td class="cell3">1055</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1055.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1055.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1056.description}</#if></td>
+<td class="cell3">1056</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1056.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1056.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1057.description}</#if></td>
+<td class="cell3">1057</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1057.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1057.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1058.description}</#if></td>
+<td class="cell3">1058</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1058.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1058.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1059.description}</#if></td>
+<td class="cell3">1059</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1059.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1059.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1060.description}</#if></td>
+<td class="cell3">1060</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1060.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1060.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><strong>V. ZARADA PO AKCIJI</strong></td>
+<td class="cell3"></td>
+<td class="cell4"></td>
+<td class="cell5"></td>
+<td class="cell6"></td>
+</tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1061.description}</#if></td>
+<td class="cell3">1061</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1061.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1061.last_year}</#if></td>
+        </tr>
+<tr>
+<td class="cell1"></td>
+<td class="cell2"><#if JSON?has_content>${JSON.buScheme._1062.description}</#if></td>
+<td class="cell3">1062</td>
+<td class="cell4"></td>
+<td class="cell5"><#if JSON?has_content>${JSON.buScheme._1062.current_year}</#if></td>
+<td class="cell6"><#if JSON?has_content>${JSON.buScheme._1062.last_year}</#if></td>
+        </tr>
+        </table>
+
+        </body>
+        </pdf>

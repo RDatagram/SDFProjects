@@ -1,0 +1,5 @@
+<subtab scriptid="custtab_rsm_soe_tab">
+  <parent></parent>
+  <tabtype>TRANSACTION</tabtype>
+  <title>Sales Order Estimates</title>
+</subtab>

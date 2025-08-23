@@ -1,0 +1,208 @@
+<customlist scriptid="customlist_sifra_placanja">
+  <description>Oficijalne šifre plaćanja</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Sifra placanja</name>
+  <customvalues>
+    <customvalue scriptid="val_107798_t2274808_500">
+      <isinactive>F</isinactive>
+      <value>220</value>
+    </customvalue>
+    <customvalue scriptid="val_107799_t2274808_658">
+      <isinactive>F</isinactive>
+      <value>221</value>
+    </customvalue>
+    <customvalue scriptid="val_107800_t2274808_794">
+      <isinactive>F</isinactive>
+      <value>222</value>
+    </customvalue>
+    <customvalue scriptid="val_107801_t2274808_811">
+      <isinactive>F</isinactive>
+      <value>223</value>
+    </customvalue>
+    <customvalue scriptid="val_107802_t2274808_649">
+      <isinactive>F</isinactive>
+      <value>224</value>
+    </customvalue>
+    <customvalue scriptid="val_107803_t2274808_691">
+      <isinactive>F</isinactive>
+      <value>225</value>
+    </customvalue>
+    <customvalue scriptid="val_107804_t2274808_240">
+      <isinactive>F</isinactive>
+      <value>226</value>
+    </customvalue>
+    <customvalue scriptid="val_107805_t2274808_847">
+      <isinactive>F</isinactive>
+      <value>227</value>
+    </customvalue>
+    <customvalue scriptid="val_107806_t2274808_858">
+      <isinactive>F</isinactive>
+      <value>228</value>
+    </customvalue>
+    <customvalue scriptid="val_107807_t2274808_800">
+      <isinactive>F</isinactive>
+      <value>231</value>
+    </customvalue>
+    <customvalue scriptid="val_107808_t2274808_398">
+      <isinactive>F</isinactive>
+      <value>240</value>
+    </customvalue>
+    <customvalue scriptid="val_107809_t2274808_977">
+      <isinactive>F</isinactive>
+      <value>241</value>
+    </customvalue>
+    <customvalue scriptid="val_107810_t2274808_209">
+      <isinactive>F</isinactive>
+      <value>242</value>
+    </customvalue>
+    <customvalue scriptid="val_107811_t2274808_192">
+      <isinactive>F</isinactive>
+      <value>244</value>
+    </customvalue>
+    <customvalue scriptid="val_107812_t2274808_304">
+      <isinactive>F</isinactive>
+      <value>245</value>
+    </customvalue>
+    <customvalue scriptid="val_107813_t2274808_432">
+      <isinactive>F</isinactive>
+      <value>246</value>
+    </customvalue>
+    <customvalue scriptid="val_107814_t2274808_451">
+      <isinactive>F</isinactive>
+      <value>247</value>
+    </customvalue>
+    <customvalue scriptid="val_107815_t2274808_425">
+      <isinactive>F</isinactive>
+      <value>248</value>
+    </customvalue>
+    <customvalue scriptid="val_107816_t2274808_342">
+      <isinactive>F</isinactive>
+      <value>249</value>
+    </customvalue>
+    <customvalue scriptid="val_107817_t2274808_481">
+      <isinactive>F</isinactive>
+      <value>253</value>
+    </customvalue>
+    <customvalue scriptid="val_107818_t2274808_726">
+      <isinactive>F</isinactive>
+      <value>254</value>
+    </customvalue>
+    <customvalue scriptid="val_107819_t2274808_144">
+      <isinactive>F</isinactive>
+      <value>257</value>
+    </customvalue>
+    <customvalue scriptid="val_107820_t2274808_957">
+      <isinactive>F</isinactive>
+      <value>258</value>
+    </customvalue>
+    <customvalue scriptid="val_107821_t2274808_662">
+      <isinactive>F</isinactive>
+      <value>260</value>
+    </customvalue>
+    <customvalue scriptid="val_107822_t2274808_361">
+      <isinactive>F</isinactive>
+      <value>261</value>
+    </customvalue>
+    <customvalue scriptid="val_107823_t2274808_883">
+      <isinactive>F</isinactive>
+      <value>262</value>
+    </customvalue>
+    <customvalue scriptid="val_107824_t2274808_124">
+      <isinactive>F</isinactive>
+      <value>263</value>
+    </customvalue>
+    <customvalue scriptid="val_107825_t2274808_751">
+      <isinactive>F</isinactive>
+      <value>264</value>
+    </customvalue>
+    <customvalue scriptid="val_107826_t2274808_501">
+      <isinactive>F</isinactive>
+      <value>265</value>
+    </customvalue>
+    <customvalue scriptid="val_107827_t2274808_743">
+      <isinactive>F</isinactive>
+      <value>266</value>
+    </customvalue>
+    <customvalue scriptid="val_107828_t2274808_790">
+      <isinactive>F</isinactive>
+      <value>270</value>
+    </customvalue>
+    <customvalue scriptid="val_107829_t2274808_799">
+      <isinactive>F</isinactive>
+      <value>271</value>
+    </customvalue>
+    <customvalue scriptid="val_107830_t2274808_960">
+      <isinactive>F</isinactive>
+      <value>772</value>
+    </customvalue>
+    <customvalue scriptid="val_107831_t2274808_977">
+      <isinactive>F</isinactive>
+      <value>273</value>
+    </customvalue>
+    <customvalue scriptid="val_107832_t2274808_405">
+      <isinactive>F</isinactive>
+      <value>275</value>
+    </customvalue>
+    <customvalue scriptid="val_107833_t2274808_305">
+      <isinactive>F</isinactive>
+      <value>276</value>
+    </customvalue>
+    <customvalue scriptid="val_107834_t2274808_653">
+      <isinactive>F</isinactive>
+      <value>277</value>
+    </customvalue>
+    <customvalue scriptid="val_107835_t2274808_351">
+      <isinactive>F</isinactive>
+      <value>278</value>
+    </customvalue>
+    <customvalue scriptid="val_107836_t2274808_292">
+      <isinactive>F</isinactive>
+      <value>279</value>
+    </customvalue>
+    <customvalue scriptid="val_107837_t2274808_341">
+      <isinactive>F</isinactive>
+      <value>280</value>
+    </customvalue>
+    <customvalue scriptid="val_107838_t2274808_111">
+      <isinactive>F</isinactive>
+      <value>281</value>
+    </customvalue>
+    <customvalue scriptid="val_107839_t2274808_240">
+      <isinactive>F</isinactive>
+      <value>282</value>
+    </customvalue>
+    <customvalue scriptid="val_107840_t2274808_377">
+      <isinactive>F</isinactive>
+      <value>283</value>
+    </customvalue>
+    <customvalue scriptid="val_107841_t2274808_987">
+      <isinactive>F</isinactive>
+      <value>284</value>
+    </customvalue>
+    <customvalue scriptid="val_107842_t2274808_176">
+      <isinactive>F</isinactive>
+      <value>285</value>
+    </customvalue>
+    <customvalue scriptid="val_107843_t2274808_192">
+      <isinactive>F</isinactive>
+      <value>286</value>
+    </customvalue>
+    <customvalue scriptid="val_107844_t2274808_153">
+      <isinactive>F</isinactive>
+      <value>287</value>
+    </customvalue>
+    <customvalue scriptid="val_107845_t2274808_503">
+      <isinactive>F</isinactive>
+      <value>288</value>
+    </customvalue>
+    <customvalue scriptid="val_107846_t2274808_948">
+      <isinactive>F</isinactive>
+      <value>289</value>
+    </customvalue>
+    <customvalue scriptid="val_107847_t2274808_425">
+      <isinactive>F</isinactive>
+      <value>290</value>
+    </customvalue>
+  </customvalues>
+</customlist>

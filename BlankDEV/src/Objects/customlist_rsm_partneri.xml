@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_rsm_partneri">
+  <description>Spisak svih RSM partnera</description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <name>RSM Partneri</name>
+  <customvalues>
+    <customvalue scriptid="val_69539_t2246339_288">
+      <isinactive>F</isinactive>
+      <value>Marko Milojević</value>
+    </customvalue>
+    <customvalue scriptid="val_69538_t2246339_632">
+      <isinactive>F</isinactive>
+      <value>Miroslav Milojević</value>
+    </customvalue>
+    <customvalue scriptid="val_69541_t2246339_740">
+      <isinactive>F</isinactive>
+      <value>Srđan Simić</value>
+    </customvalue>
+    <customvalue scriptid="val_69540_t2246339_175">
+      <isinactive>F</isinactive>
+      <value>Stanimirka Svičević</value>
+    </customvalue>
+  </customvalues>
+</customlist>

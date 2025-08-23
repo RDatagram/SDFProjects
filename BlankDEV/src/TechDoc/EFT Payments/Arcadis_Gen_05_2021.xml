@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Client>
+	<PaketZaSlanje>
+		<Nalog ImeFajla="20210528_Nalog 1">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>254</SifraPlacanja>
+				<SvrhaDoznake>PID-5-2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>4076813.30</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>840000000000484837</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Poreska uprava</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 2">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>254</SifraPlacanja>
+				<SvrhaDoznake>PID-5-2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>305903.94</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>840000000000484837</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>9891000000032451232</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Poreska uprava</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 3">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>106126.02</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160580010011872054</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 4">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>125713.56</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>115038164153468219</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Mobi Banka </NazivKorisnika>
+				<MestoKorisnika>Požarevac</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 5">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>102296.90</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>115038163155962511</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Mobi Banka </NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 6">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>239166.16</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160520010015970588</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 7">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>263606.23</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010263038915</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Smederevo</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 8">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>407862.11</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160560010099740795</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>9891000000032451232</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Smederevo</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 9">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>111076.18</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>360003816345323340</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>MTS  banka</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 10">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>226700.91</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160370010005378316</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 11">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>71788.48</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010355157196</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 12">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>309728.27</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010206473171</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 13">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>254007.33</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>170001048240400028</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Unicredit bank</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 14">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>102542.76</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>265000000076108632</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Raiffeisen Bank</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 15">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>66955.78</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>205900100066798559</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Komercijalna Banka</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 16">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>208161.33</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010352226147</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 17">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>726148.11</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010279752694</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 18">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>726148.11</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>265000000599288705</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Raiffeisen Bank</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 19">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>483301.97</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160000010035433060</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>9891000000032451232</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 20">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>331684.66</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>340000003239893729</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Erste bank</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 21">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>411769.42</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010111328393</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>9891000000032451232</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 22">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>372205.56</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>205900101327642098</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Komercijalna Banka</NazivKorisnika>
+				<MestoKorisnika>Novi Sad</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 23">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>213808.99</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010224220679</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 24">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>125692.79</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>205900101966452961</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Komercijalna Banka</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 25">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>79420.97</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010314560368</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 26">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>222723.14</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160390010000359991</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 27">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>256359.54</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>265000000569323756</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Raiffeisen Bank</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 28">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>113509.44</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>170001044468100098</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Unicredit bank</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 29">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>318148.54</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010041291095</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 30">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>226731.00</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>250145000172155046</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Eurobank</NazivKorisnika>
+				<MestoKorisnika>Kragujevac</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 31">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>126040.81</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010183096171</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 32">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>90785.79</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>115038162162570088</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Mobi Banka </NazivKorisnika>
+				<MestoKorisnika>Novi Sad</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 33">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>137579.06</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010270301790</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 34">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>148877.85</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>115038161184221977</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Mobi Banka </NazivKorisnika>
+				<MestoKorisnika>Nis</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 35">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>78730.06</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>115000000009301782</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Mobi Banka </NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 36">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>270164.08</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>265000000544338205</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Raiffeisen Bank</NazivKorisnika>
+				<MestoKorisnika>Novi Sad</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 37">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>235533.00</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>220823000004807584</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>9891000000032451232</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Procredit banka</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 38">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>118189.03</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>340000003109636794</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Erste bank</NazivKorisnika>
+				<MestoKorisnika>Stara Pazova</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 39">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>109787.26</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>160510010288368622</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Banca Intesa</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 40">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>192075.95</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>265000000443842907</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>9891000000032451232</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Raiffeisen Bank</NazivKorisnika>
+				<MestoKorisnika>Novi Sad</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 41">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>8999.15</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>285253504000324244</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>SBERBANK SRBIJA</NazivKorisnika>
+				<MestoKorisnika>Novi Sad</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+		<Nalog ImeFajla="20210528_Nalog 42">
+			<Data>
+				<SifraProizvodaCORE>501</SifraProizvodaCORE>
+				<TransakcijaID/>
+				<PlacanjeID/>
+				<DatumPrijema/>
+				<RedniBrojNaloga>1</RedniBrojNaloga>
+				<MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+				<VasBrojNaloga/>
+				<SifraPlacanja>240</SifraPlacanja>
+				<SvrhaDoznake>Neto zarada za maj 2021</SvrhaDoznake>
+				<SifraValute>941</SifraValute>
+				<Iznos>14517.71</Iznos>
+				<DatumValute>28.05.2021</DatumValute>
+				<DatumValuteDo>28.05.2021</DatumValuteDo>
+				<RacunNalogodavca>265111031000417390</RacunNalogodavca>
+				<RacunKorisnika>330040010906098223</RacunKorisnika>
+				<ModelNalogodavca/>
+				<PozivNaBrojNalogodavca/>
+				<ModelKorisnika>97</ModelKorisnika>
+				<PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+				<NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+				<MestoNalogodavca>Beograd</MestoNalogodavca>
+				<NazivKorisnika>Credit Agricole</NazivKorisnika>
+				<MestoKorisnika>Beograd</MestoKorisnika>
+				<BrojGrupnogNaloga/>
+				<BrojZbirnogNaloga/>
+				<Status/>
+				<Prioritet>100</Prioritet>
+			</Data>
+		</Nalog>
+	</PaketZaSlanje>
+	<Potpisi>Potpisi</Potpisi>
+</Client>

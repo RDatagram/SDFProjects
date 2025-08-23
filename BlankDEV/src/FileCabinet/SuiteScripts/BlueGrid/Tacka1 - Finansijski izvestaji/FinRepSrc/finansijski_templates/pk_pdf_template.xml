@@ -1,0 +1,609 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+<head>
+	<link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+	<#if .locale == "zh_CN">
+		<link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+	<#elseif .locale == "zh_TW">
+		<link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+	<#elseif .locale == "ja_JP">
+		<link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+	<#elseif .locale == "ko_KR">
+		<link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+	<#elseif .locale == "th_TH">
+		<link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+	</#if>
+    <style type="text/css">* {
+                <#if .locale=="zh_CN">font-family: NotoSans, NotoSansCJKsc, sans-serif;
+                <#elseif .locale=="zh_TW">font-family: NotoSans, NotoSansCJKtc, sans-serif;
+                <#elseif .locale=="ja_JP">font-family: NotoSans, NotoSansCJKjp, sans-serif;
+                <#elseif .locale=="ko_KR">font-family: NotoSans, NotoSansCJKkr, sans-serif;
+                <#elseif .locale=="th_TH">font-family: NotoSans, NotoSansThai, sans-serif;
+                <#else>font-family: NotoSans, sans-serif;
+                </#if>
+        }
+      table.main-table td {
+        border: 1px solid black;
+      }
+</style>
+</head>
+<body padding="0.5in 0.5in 0.5in 0.5in" size="A4-LANDSCAPE">
+    <table border="none" cellpadding="1" cellspacing="1" style="text-align: center; margin-bottom: 30px; padding-top: 5px; width: 100%;"><tr>
+	<td align="center">
+	<p style="font-size: 16px;">IZVE&Scaron;TAJ O PROMENAMA NA KAPITALU</p>
+
+	<p style="font-size: 14px;">u periodu od <#if JSON?has_content>${JSON.datum1}</#if> do <#if JSON?has_content>${JSON.datum2}</#if> godine</p>
+	</td>
+	</tr></table>
+
+<table cellpadding="1" cellspacing="1" class="main-table" style="width:100%; border: 1px solid black; font-size:10px; margin-bottom: 300px;"><tr>
+	<td align="center" rowspan="3" style="width: 30px; height: 200px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">P<br />o<br />z<br />i<br />c<br />i<br />j<br />a</p>
+	</td>
+	<td align="center" colspan="1" rowspan="3" style="vertical-align: middle; width: 250px; background-color: rgb(179, 179, 179);">OPIS</td>
+	<td colspan="10" rowspan="1" style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="center" style="width: 40px; min-width: 40px; max-width: 40px; height: 150px; max-height: 150px; min-height: 150px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Osnovni kapital (grupa 30 bez 306 i 309)</p>
+	</td>
+	<td align="center" style="width: 50px; min-width: 50px; max-width: 50px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Ostali osnovni kapital (rn 309)</p>
+	</td>
+	<td align="center" style="width: 50px; min-width: 50px; max-width: 50px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Upisani a neuplaćeni kapital (grupa 31)</p>
+	</td>
+	<td align="center" style="width: 45px; min-width: 45px; max-width: 45px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Emisiona premija i rezerve (rn 306 i grupa 32)</p>
+	</td>
+	<td align="center" style="width: 60px; min-width: 60px; max-width: 60px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Rev. rez. i ner. dob. i gub. (grupa 33)</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">1</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">2</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">3</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">4</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">5</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">6</td>
+	</tr>
+	<tr style="text-align: center; vertical-align: middle;">
+	<td align="center" style="height: 12px;">1</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Stanje na dan ${JSON.datumLYPocetni} godine</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4001</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4001.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4010</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4010.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4019</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4019.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4028</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4028.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4037</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4037.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">2</p>
+	</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Efekti retroaktivne ispravke materijalno značajnih gre&scaron;aka i promena računovodstvenih politika</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4002</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4002.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4011</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4011.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4020</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4020.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4029</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4029.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4038</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4038.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">3</p>
+	</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Korigovano početno stanje na dan ${JSON.datumLYPocetni} godine (r.br. 1+2)</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4003</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4003.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4012</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4012.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4021</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4021.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4030</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4030.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4039</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4039.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4</p>
+	</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Neto promene u ${JSON.prethodnaGodina} godini</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4004</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4004.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4013</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4013.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4022</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4022.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4031</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4031.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4040</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4040.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">5</p>
+	</td>
+	<td style="height: 12px; font-weight: bold;">Stanje na dan ${JSON.datumLYKrajnji} godine (r.br. 3+4)</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4005</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4005.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4014</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4014.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4023</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4023.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4032</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4032.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4041</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4041.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">6</p>
+	</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Efekti retroaktivne ispravke materijalno značajnih gre&scaron;aka i promena računovodstvenih politika</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4006</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4006.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4015</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4015.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4024</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4024.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4033</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4033.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4042</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4042.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">7</p>
+	</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Korigovano početno stanje na dan ${JSON.datum1} godine (r.br. 5+6)</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4007</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4007.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4016</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4016.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4025</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4025.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4034</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4034.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4043</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4043.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">8</p>
+	</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Neto promene u ${JSON.tekucaGodina} godini</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4008</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4008.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4017</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4017.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4026</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4026.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4035</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4035.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4044</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4044.balance1}</p>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">9</p>
+	</td>
+	<td align="left" style="height: 12px; font-weight: bold;">Stanje na dan ${JSON.datum2} godine (r.br. 7+8)</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4009</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4009.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4018</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4018.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4027</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4027.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4036</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4036.balance1}</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">4045</p>
+	</td>
+	<td align="center" style="height: 12px;">
+	<p style="vertical-align: middle;">${JSON.pkScheme._4045.balance1}</p>
+	</td>
+	</tr></table>
+
+<table cellpadding="1" cellspacing="1" class="main-table" style="width:100%; border: 1px solid black; font-size:10px;"><tr>
+	<td align="center" rowspan="3" style="width: 30px; height: 200px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">P<br />o<br />z<br />i<br />c<br />i<br />j<br />a</p>
+	</td>
+	<td align="center" colspan="1" rowspan="3" style="vertical-align: middle; width: 250px; background-color: rgb(179, 179, 179);">OPIS</td>
+	<td colspan="10" rowspan="1" style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" colspan="1" rowspan="2" style="width: 25px; min-width: 25px; max-width: 25px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle;">AOP</p>
+	</td>
+    <td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	</tr>
+	<tr style="text-align: center; vertical-align: middle;">
+	<td align="center" style="width: 65px; min-width: 65px; max-width: 65px; height: 150px; max-height: 150px; min-height: 150px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Neraspoređeni dobitak (grupa 34)</p>
+	</td>
+	<td align="center" style="width: 60px; min-width: 60px; max-width: 60px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Gubitak (grupa 35)</p>
+	</td>
+	<td align="center" style="width: 70px; min-width: 70px; max-width: 70px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Uče&scaron;će bez prava kontrole</p>
+	</td>
+	<td align="center" style="width: 65px; min-width: 65px; max-width: 65px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Ukupno (odgovara poziciji AOP 0401) (kol. 2+3+4+5+6+7-8+9)&ge;0</p>
+	</td>
+	<td align="center" style="width: 62px; min-width: 62px; max-width: 62px; background-color: rgb(179, 179, 179);">
+	<p style="vertical-align: middle; text-align: center;">Gubitak iznad visine kapitala (odgovara poziciji AOP 0455) (kol 2+3+4+5+6+7-8+9)&lt;0</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">1</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">7</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">8</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">9</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">10</td>
+	<td style="background-color: rgb(179, 179, 179);">&nbsp;</td>
+	<td align="center" style="background-color: rgb(179, 179, 179);">11</td>
+	</tr>
+	<tr style="text-align: center; vertical-align: middle;">
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">1</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Stanje na dan ${JSON.datumLYPocetni} godine</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4046</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4046.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4055</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4055.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4064</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4064.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4073</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4073.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4082</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4082.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">2</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Efekti retroaktivne ispravke materijalno značajnih gre&scaron;aka i promena računovodstvenih politika</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4047</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4047.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4056</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4056.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4065</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4065.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4074</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4074.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4083</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4083.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">3</p></td>
+	<td style="height: 12px; font-weight: bold;">Korigovano početno stanje na dan ${JSON.datumLYPocetni} godine (r.br. 1+2)</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4048</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4048.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4057</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4057.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4066</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4066.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4075</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4075.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4084</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4084.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Neto promene u ${JSON.prethodnaGodina} godini</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4049</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4049.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4058</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4058.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4067</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4067.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4076</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4076.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4085</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4085.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">5</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Stanje na dan ${JSON.datumLYKrajnji} godine (r.br. 3+4)</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4050</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4050.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4059</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4059.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4068</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4068.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4077</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4077.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4086</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4086.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">6</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Efekti retroaktivne ispravke materijalno značajnih gre&scaron;aka i promena računovodstvenih politika</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4051</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4051.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4060</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4060.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4069</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4069.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4078</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4078.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4087</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4087.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">7</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Korigovano početno stanje na dan ${JSON.datum1} godine (r.br. 5+6)</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4052</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4052.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4061</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4061.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4070</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4070.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4079</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4079.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4088</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4088.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">8</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Neto promene u ${JSON.tekucaGodina} godini</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4053</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4053.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4062</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4062.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4071</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4071.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4080</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4080.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4089</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4089.balance1}</p></td>
+	</tr>
+	<tr>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">9</p></td>
+	<td align="left" style="height: 12px; font-weight: bold;">Stanje na dan ${JSON.datum2} godine (r.br. 7+8)</td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4054</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4054.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4063</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4063.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4072</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4072.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4081</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4081.balance1}</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">4090</p></td>
+	<td align="center" style="height: 12px;"><p style="vertical-align: middle;">${JSON.pkScheme._4090.balance1}</p></td>
+	</tr></table>
+</body>
+</pdf>

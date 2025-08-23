@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_rl_bu_report">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM : BU Report Restlet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/BlueGrid/Tacka1 - Finansijski izvestaji/FinRepSrc/Bilans uspeha/rl_bu_report.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rl_bu_report">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>RSM : BU Report Restlet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

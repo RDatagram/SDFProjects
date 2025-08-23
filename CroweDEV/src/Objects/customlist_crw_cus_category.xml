@@ -1,0 +1,39 @@
+<customlist scriptid="customlist_crw_cus_category">
+  <description>Customer category</description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Customer category</name>
+  <customvalues>
+    <customvalue scriptid="val_32898_2366133_835">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Foreign customer- third parties</value>
+    </customvalue>
+    <customvalue scriptid="val_32899_2366133_934">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Domestic customer- third parties</value>
+    </customvalue>
+    <customvalue scriptid="val_32900_2366133_115">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Foreign  customer- related party</value>
+    </customvalue>
+    <customvalue scriptid="val_32901_2366133_761">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Domestic customer- related party</value>
+    </customvalue>
+    <customvalue scriptid="val_32902_2366133_671">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Domestic customer - parent company and subsidiaries</value>
+    </customvalue>
+    <customvalue scriptid="val_32903_2366133_914">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Foreign customer- parent company and subsidiaries </value>
+    </customvalue>
+  </customvalues>
+</customlist>

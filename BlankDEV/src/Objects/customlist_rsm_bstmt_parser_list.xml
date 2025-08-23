@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_rsm_bstmt_parser_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>RSM Parseri</name>
+  <customvalues>
+    <customvalue scriptid="val_98342_t2274808_869">
+      <isinactive>F</isinactive>
+      <value>INTESA</value>
+    </customvalue>
+    <customvalue scriptid="val_98343_t2274808_513">
+      <isinactive>F</isinactive>
+      <value>HALCOM</value>
+    </customvalue>
+  </customvalues>
+</customlist>

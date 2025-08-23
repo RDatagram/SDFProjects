@@ -1,0 +1,23 @@
+<massupdatescript scriptid="customscript_mu_bs_report">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM : BS Report MU</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/BlueGrid/Tacka1 - Finansijski izvestaji/FinRepSrc/Bilans stanja/mu_bs_report.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_mu_bs_report">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <recordtype>ACCOUNT</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</massupdatescript>

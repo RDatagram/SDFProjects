@@ -1,0 +1,1211 @@
+{
+  "_4001": {
+    "description": "Stanje na dan 01.01 tekuće godine (grupa 30 bez 306 i 309)",
+    "aops": [],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4002": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 30 bez 306 i 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4003": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (grupa 30 bez 306 i 309)",
+    "aops": [
+      "+ 4001",
+      "+ 4002"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4004": {
+    "description": "Neto promene u prethodnoj godini (grupa 30 bez 306 i 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4005": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (grupa 30 bez 306 i 309)",
+    "aops": [
+      "+ 4003",
+      "+ 4004"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4006": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 30 bez 306 i 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4007": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (grupa 30 bez 306 i 309)",
+    "aops": [
+      "+ 4005",
+      "+ 4006"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4008": {
+    "description": "Neto promene u tekućoj godini (grupa 30 bez 306 i 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4009": {
+    "description": "Stanje na dan 31.12. tekuće godine (grupa 30 bez 306 i 309)",
+    "aops": [
+      "+ 4007",
+      "+ 4008"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4010": {
+    "description": "Stanje na dan 01.01 tekuće godine (rn 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4011": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (rn 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4012": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (rn 309)",
+    "aops": [
+      "+ 4010",
+      "+ 4011"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4013": {
+    "description": "Neto promene u prethodnoj godini (rn 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4014": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (rn 309)",
+    "aops": [
+      "+ 4012",
+      "+ 4013"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4015": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (rn 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4016": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (rn 309)",
+    "aops": [
+      "+ 4014",
+      "+ 4015"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4017": {
+    "description": "Neto promene u tekućoj godini (rn 309)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4018": {
+    "description": "Stanje na dan 31.12. tekuće godine (rn 309)",
+    "aops": [
+      "+ 4016",
+      "+ 4016"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4019": {
+    "description": "Stanje na dan 01.01 tekuće godine (grupa 31)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4020": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 31)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4021": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (grupa 31)",
+    "aops": [
+      "+ 4019",
+      "+ 4020"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4022": {
+    "description": "Neto promene u prethodnoj godini (grupa 31)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4023": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (grupa 31)",
+    "aops": [
+      "+ 4021",
+      "+ 4022"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4024": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 31)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4025": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (grupa 31)",
+    "aops": [
+      "+ 4023",
+      "+ 4024"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4026": {
+    "description": "Neto promene u tekućoj godini (grupa 31)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4027": {
+    "description": "Stanje na dan 31.12. tekuće godine (grupa 31)",
+    "aops": [
+      "+ 4025",
+      "+ 4026"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4028": {
+    "description": "Stanje na dan 01.01 tekuće godine (rn 306 i grupa 32)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4029": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (rn 306 i grupa 32)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4030": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (rn 306 i grupa 32)",
+    "aops": [
+      "+ 4028",
+      "+ 4029"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4031": {
+    "description": "Neto promene u prethodnoj godini (rn 306 i grupa 32)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4032": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (rn 306 i grupa 32)",
+    "aops": [
+      "+ 4030",
+      "+ 4031"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4033": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (rn 306 i grupa 32)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4034": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (rn 306 i grupa 32)",
+    "aops": [
+      "+ 4032",
+      "+ 4033"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4035": {
+    "description": "Neto promene u tekućoj godini (rn 306 i grupa 32)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4036": {
+    "description": "Stanje na dan 31.12. tekuće godine (rn 306 i grupa 32)",
+    "aops": [
+      "+ 4034",
+      "+ 4035"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4037": {
+    "description": "Stanje na dan 01.01 tekuće godine (grupa 33)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4038": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 33)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4039": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (grupa 33)",
+    "aops": [
+      "+ 4037",
+      "+ 4038"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4040": {
+    "description": "Neto promene u prethodnoj godini (grupa 33)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4041": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (grupa 33)",
+    "aops": [
+      "+ 4039",
+      "+ 4040"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4042": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 33)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4043": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (grupa 33)",
+    "aops": [
+      "+ 4041",
+      "+ 4042"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4044": {
+    "description": "Neto promene u tekućoj godini (grupa 33)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4045": {
+    "description": "Stanje na dan 31.12. tekuće godine (grupa 33)",
+    "aops": [
+      "+ 4043",
+      "+ 4044"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4046": {
+    "description": "Stanje na dan 01.01 tekuće godine (grupa 34)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4047": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 34)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4048": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (grupa 34)",
+    "aops": [
+      "+ 4046",
+      "+ 4047"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4049": {
+    "description": "Neto promene u prethodnoj godini (grupa 34)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4050": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (grupa 34)",
+    "aops": [
+      "+ 4048",
+      "+ 4049"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4051": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 34)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4052": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (grupa 34)",
+    "aops": [
+      "+ 4050",
+      "+ 4051"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4053": {
+    "description": "Neto promene u tekućoj godini (grupa 34)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4054": {
+    "description": "Stanje na dan 31.12. tekuće godine (grupa 34)",
+    "aops": [
+      "+ 4052",
+      "+ 4053"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4055": {
+    "description": "Stanje na dan 01.01 tekuće godine (grupa 35)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4056": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 35)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4057": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (grupa 35)",
+    "aops": [
+      "+ 4055",
+      "+ 4056"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4058": {
+    "description": "Neto promene u prethodnoj godini (grupa 35)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4059": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (grupa 35)",
+    "aops": [
+      "+ 4057",
+      "+ 4058"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4060": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (grupa 35)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4061": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (grupa 35)",
+    "aops": [
+      "+ 4059",
+      "+ 4060"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4062": {
+    "description": "Neto promene u tekućoj godini (grupa 35)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4063": {
+    "description": "Stanje na dan 31.12. tekuće godine (grupa 35)",
+    "aops": [
+      "+ 4061",
+      "+ 4062"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4064": {
+    "description": "Stanje na dan 01.01 tekuće godine (Učešće bez prava kontrole)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4065": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (Učešće bez prava kontrole)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4066": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) (Učešće bez prava kontrole)",
+    "aops": [
+      "+ 4064",
+      "+ 4065"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4067": {
+    "description": "Neto promene u prethodnoj godini (Učešće bez prava kontrole)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4068": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) (Učešće bez prava kontrole)",
+    "aops": [
+      "+ 4066",
+      "+ 4067"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4069": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika (Učešće bez prava kontrole)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4070": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) (Učešće bez prava kontrole)",
+    "aops": [
+      "+ 4068",
+      "+ 4069"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4071": {
+    "description": "Neto promene u tekućoj godini (Učešće bez prava kontrole)",
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4072": {
+    "description": "Stanje na dan 31.12. tekuće godine (Učešće bez prava kontrole)",
+    "aops": [
+      "+ 4070",
+      "+ 4071"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4073": {
+    "description": "Stanje na dan 01.01 tekuće godine ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4001",
+      "+ 4010",
+      "+ 4019",
+      "+ 4028",
+      "+ 4037",
+      "- 4046",
+      "+ 4055",
+      "+ 4064"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4074": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4002",
+      "+ 4011",
+      "+ 4020",
+      "+ 4029",
+      "+ 4038",
+      "- 4047",
+      "+ 4056",
+      "+ 4065"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4075": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4003",
+      "+ 4012",
+      "+ 4021",
+      "+ 4030",
+      "+ 4039",
+      "- 4048",
+      "+ 4057",
+      "+ 4066"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4076": {
+    "description": "Neto promene u prethodnoj godini ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4004",
+      "+ 4013",
+      "+ 4022",
+      "+ 4031",
+      "+ 4040",
+      "- 4049",
+      "+ 4058",
+      "+ 4067"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4077": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4005",
+      "+ 4014",
+      "+ 4023",
+      "+ 4032",
+      "+ 4041",
+      "- 4050",
+      "+ 4059",
+      "+ 4068"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4078": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4006",
+      "+ 4015",
+      "+ 4024",
+      "+ 4033",
+      "+ 4042",
+      "- 4051",
+      "+ 4060",
+      "+ 4069"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4079": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4007",
+      "+ 4016",
+      "+ 4025",
+      "+ 4034",
+      "+ 4043",
+      "- 4052",
+      "+ 4061",
+      "+ 4070"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4080": {
+    "description": "Neto promene u tekućoj godini ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4008",
+      "+ 4017",
+      "+ 4026",
+      "+ 4035",
+      "+ 4044",
+      "- 4053",
+      "+ 4062",
+      "+ 4071"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4081": {
+    "description": "Stanje na dan 31.12. tekuće godine ((kol. 2+3+4+5+6+7-8+9) ≥0)",
+    "aops": [
+      "+ 4009",
+      "+ 4018",
+      "+ 4027",
+      "+ 4036",
+      "+ 4045",
+      "- 4054",
+      "+ 4063",
+      "+ 4072"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4082": {
+    "description": "Stanje na dan 01.01 tekuće godine ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4001",
+      "+ 4010",
+      "+ 4019",
+      "+ 4028",
+      "+ 4037",
+      "- 4046",
+      "+ 4055",
+      "+ 4064"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4083": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4002",
+      "+ 4011",
+      "+ 4020",
+      "+ 4029",
+      "+ 4038",
+      "- 4047",
+      "+ 4056",
+      "+ 4065"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4084": {
+    "description": "Korigovano početno stanje na dan 01.01 tekuće godine (r.br. 1+2) ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4003",
+      "+ 4012",
+      "+ 4021",
+      "+ 4030",
+      "+ 4039",
+      "- 4048",
+      "+ 4057",
+      "+ 4066"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4085": {
+    "description": "Neto promene u prethodnoj godini ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4004",
+      "+ 4013",
+      "+ 4022",
+      "+ 4031",
+      "+ 4040",
+      "- 4049",
+      "+ 4058",
+      "+ 4067"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4086": {
+    "description": "Stanje na dan 31.12 prethodne godine (r.br. 3+4) ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4005",
+      "+ 4014",
+      "+ 4023",
+      "+ 4032",
+      "+ 4041",
+      "- 4050",
+      "+ 4059",
+      "+ 4068"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4087": {
+    "description": "Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4006",
+      "+ 4015",
+      "+ 4024",
+      "+ 4033",
+      "+ 4042",
+      "- 4051",
+      "+ 4060",
+      "+ 4069"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4088": {
+    "description": "Korigovano početno stanje na dan 01.01. tekuće godine (r.br. 5+6) ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4007",
+      "+ 4016",
+      "+ 4025",
+      "+ 4034",
+      "+ 4043",
+      "- 4052",
+      "+ 4061",
+      "+ 4070"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4089": {
+    "description": "Neto promene u tekućoj godini ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4008",
+      "+ 4017",
+      "+ 4026",
+      "+ 4035",
+      "+ 4044",
+      "- 4053",
+      "+ 4062",
+      "+ 4071"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  },
+  "_4090": {
+    "description": "Stanje na dan 31.12. tekuće godine ((kol 2+3+4+5+6+7-8+9) <0)",
+    "aops": [
+      "+ 4009",
+      "+ 4018",
+      "+ 4027",
+      "+ 4036",
+      "+ 4045",
+      "- 4054",
+      "+ 4063",
+      "+ 4072"
+    ],
+    "balance1": 0,
+    "current_year": 0,
+    "debit_current_year": 0,
+    "credit_current_year": 0,
+    "last_year": 0,
+    "debit_last_year": 0,
+    "credit_last_year": 0
+  }
+}

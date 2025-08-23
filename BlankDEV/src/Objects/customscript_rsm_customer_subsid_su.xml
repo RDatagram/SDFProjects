@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_rsm_customer_subsid_su">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM : Customer Subsidiary SU</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/OW_UTILITY/ow_util_src/rsm_custsubsid_su.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rsm_customer_subsid_su">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>RSM : Customer Subsidiary SU</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

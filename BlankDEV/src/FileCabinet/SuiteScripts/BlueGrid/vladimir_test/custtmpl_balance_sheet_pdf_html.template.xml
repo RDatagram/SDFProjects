@@ -1,0 +1,1544 @@
+<?xml version="1.0"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+    <head>
+        <link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+        <#if .locale == "zh_CN">
+            <link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+        <#elseif .locale == "zh_TW">
+            <link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+        <#elseif .locale == "ja_JP">
+            <link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+        <#elseif .locale == "ko_KR">
+            <link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+        <#elseif .locale == "th_TH">
+            <link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+        </#if>
+            
+        <style>
+            * {
+                <#if .locale=="zh_CN">font-family: NotoSans, NotoSansCJKsc, sans-serif;
+                <#elseif .locale=="zh_TW">font-family: NotoSans, NotoSansCJKtc, sans-serif;
+                <#elseif .locale=="ja_JP">font-family: NotoSans, NotoSansCJKjp, sans-serif;
+                <#elseif .locale=="ko_KR">font-family: NotoSans, NotoSansCJKkr, sans-serif;
+                <#elseif .locale=="th_TH">font-family: NotoSans, NotoSansThai, sans-serif;
+                <#else>font-family: NotoSans, sans-serif;
+                </#if>
+            }
+            .title {
+                font-size:20px;
+                font-weight: 700;
+                align:center;
+            }
+            .subtitle {
+                font-size:14px;
+                font-weight: 700;
+                align:center;
+            }
+            .note {
+                font-size: 10px;
+                align: right;
+            }
+            table {
+                margin-bottom: 20px;
+            }
+            td {
+                font-size: 10px !important;
+            }
+            td p {
+                text-align: left;
+            }
+            .center {
+                align: center;
+                valign: middle;
+            }
+            .cell1 {
+                width:100px;
+                align: center;
+                valign: middle;
+            }
+            .cell2 {
+                width:250px;
+                valign: middle;
+            }
+            .cell3 {
+                width:80px;
+                align: center;
+                valign: middle;
+            }
+            .cell4 {
+                width:110px;
+                align: center;
+                valign: middle;
+            }
+            .cell5 {
+                width:120px;
+                align: center;
+                valign: middle;
+            }
+            .cell6 {
+                width:150px;
+                align: center;
+                valign: middle;
+            }
+            .cell7 {
+                width:150px;
+                align: center;
+                valign: middle;
+            }
+        </style>
+    </head>
+    <body padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
+        <table border="0.5" bordercolor="#ccc" cellborder="0.5" cellpadding="5" cellspacing="0" id="heading-table"
+            style="border-collapse:collapse; text-align: center;">
+            <tr>
+            <td style="align:center;" colspan="3"><strong style="font-size:12px;">Попуњава правно лице - предузетник</strong></td>
+            </tr>
+            <tr>
+            <td style="width: 261px;"><strong>Матични број:</strong> <#if JSON?has_content>${JSON.maticniBroj}</#if></td>
+            <td style="width: 287px;"><strong>Шифра делатности:</strong> <#if JSON?has_content>${JSON.sifraDelatnosti}</#if></td>
+            <td style="width: 287px;"><strong>ПИБ:</strong> <#if JSON?has_content>${JSON.pib}</#if></td>
+            </tr>
+            <tr>
+            <td style="width: 261px;" colspan="3"><strong>Назив:</strong> <#if JSON?has_content>${JSON.naziv}</#if></td>
+            </tr>
+            <tr>
+            <td style="width: 261px;" colspan="3"><strong>Седиште:</strong></td>
+            </tr>
+        </table>
+        
+        <p class="title">
+        БИЛАНС СТАЊА
+        </p>
+        <p class="subtitle">
+        на дан <#if JSON?has_content>${JSON.datum}</#if> године
+        </p>
+        <p class="note">
+        -у хиљадама динара-
+        </p>
+        
+        <table border="0.5" bordercolor="#ccc" cellborder="0.5" cellpadding="5" cellspacing="0" id="heading-table"
+            style="border-collapse:collapse; text-align: center;">
+        <tr>
+            <td rowspan="3" class="cell1 center"><strong>Група&nbsp;<br/>рачуна,&nbsp;<br/>рачун</strong></td>
+            <td rowspan="3" class="cell2 center"><strong>Позиција</strong></td>
+            <td rowspan="3" class="cell3 center"><strong>АОП</strong></td>
+            <td rowspan="3" class="cell4 center"><strong>Напомена&nbsp;<br/>број</strong></td>
+            <td colspan="3" style="width:420px;" class="center"><strong>Износ</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="center"><strong>Текућа&nbsp;<br/>година</strong></td>
+            <td colspan="2" class="center"><strong>Претходна година</strong></td>
+        </tr>
+        <tr>
+            <td class="center"><strong>Крајње стање<br/><#if JSON?has_content>${JSON.datumKrajnji}</#if></strong></td>
+            <td class="center"><strong>Почетно стање<br/><#if JSON?has_content>${JSON.datumPocetni}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">1</td>
+            <td class="cell2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4">4</td>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+            <td class="cell7">7</td>
+        </tr>
+        <tr>
+            <td class="cell1"></td>
+            <td class="cell2"><strong>АКТИВА</strong></td>
+            <td class="cell3"></td>
+            <td class="cell4"></td>
+            <td class="cell5"></td>
+            <td class="cell6"></td>
+            <td class="cell7"></td>
+        </tr>
+        <tr>
+            <td class="cell1">00</td>
+            <td class="cell2"><p><#if JSON?has_content>${JSON.bsScheme._0001.description}</#if></p></td>
+            <td class="cell3">0001</td>
+            <td class="cell4"></td>
+            <td class="cell5"><#if JSON?has_content>${JSON.bsScheme._0001.balance1}</#if></td>
+            <td class="cell6"><#if JSON?has_content>${JSON.bsScheme._0001.balance2}</#if></td>
+            <td class="cell7"><#if JSON?has_content>${JSON.bsScheme._0001.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class="cell1"></td>
+            <td class="cell2"><p><strong><#if JSON?has_content>${JSON.bsScheme._0002.description}</#if></strong></p></td>
+            <td class="cell3">0002</td>
+            <td class="cell4"></td>
+            <td class="cell5"><strong><#if JSON?has_content>${JSON.bsScheme._0002.balance1}</#if></strong></td>
+            <td class="cell6"><strong><#if JSON?has_content>${JSON.bsScheme._0002.balance2}</#if></strong></td>
+            <td class="cell7"><strong><#if JSON?has_content>${JSON.bsScheme._0002.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">01&nbsp;и&nbsp;део<br/>019</td>
+            <td class="cell2"><p><strong><#if JSON?has_content>${JSON.bsScheme._0003.description}</#if></strong></p></td>
+            <td class="cell3">0003</td>
+            <td class="cell4"></td>
+            <td class="cell5"><strong><#if JSON?has_content>${JSON.bsScheme._0003.balance1}</#if></strong></td>
+            <td class="cell6"><strong><#if JSON?has_content>${JSON.bsScheme._0003.balance2}</#if></strong></td>
+            <td class="cell7"><strong><#if JSON?has_content>${JSON.bsScheme._0003.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">010&nbsp;и&nbsp;део<br/>019</td>
+            <td class="cell2"><p><#if JSON?has_content>${JSON.bsScheme._0004.description}</#if></p></td>
+            <td class="cell3">0004</td>
+            <td class="cell4"></td>
+            <td class="cell5"><#if JSON?has_content>${JSON.bsScheme._0004.balance1}</#if></td>
+            <td class="cell6"><#if JSON?has_content>${JSON.bsScheme._0004.balance2}</#if></td>
+            <td class="cell7"><#if JSON?has_content>${JSON.bsScheme._0004.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class="cell1">011&nbsp;, 012&nbsp;<br/>и&nbsp; део 019</td>
+            <td class="cell2"><p><#if JSON?has_content>${JSON.bsScheme._0005.description}</#if></p></td>
+            <td class="cell3">0005</td>
+            <td class="cell4"></td>
+            <td class="cell5"><#if JSON?has_content>${JSON.bsScheme._0005.balance1}</#if></td>
+            <td class="cell6"><#if JSON?has_content>${JSON.bsScheme._0005.balance2}</#if></td>
+            <td class="cell7"><#if JSON?has_content>${JSON.bsScheme._0005.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class="cell1">013&nbsp;и&nbsp;део<br/>019</td>
+            <td class="cell2"><p><#if JSON?has_content>${JSON.bsScheme._0006.description}</#if></p></td>
+            <td class="cell3">0006</td>
+            <td class="cell4"></td>
+            <td class="cell5"><#if JSON?has_content>${JSON.bsScheme._0006.balance1}</#if></td>
+            <td class="cell6"><#if JSON?has_content>${JSON.bsScheme._0006.balance2}</#if></td>
+            <td class="cell7"><#if JSON?has_content>${JSON.bsScheme._0006.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>014&nbsp;и&nbsp;део 019</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0007.description}</#if></p></td>
+            <td class='cell3'>0007</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0007.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0007.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0007.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>015&nbsp;и&nbsp;део<br/>019</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0008.description}</#if></p></td>
+            <td class='cell3'>0008</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0008.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0008.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0008.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>016&nbsp;и&nbsp;део<br/>019</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0009.description}</#if></p></td>
+            <td class='cell3'>0009</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0009.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0009.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0009.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>02</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0010.description}</#if></strong></p></td>
+            <td class='cell3'>0010</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0010.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0010.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0010.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>020&nbsp;, 021 и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0011.description}</#if></p></td>
+            <td class='cell3'>0011</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0011.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0011.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0011.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>022&nbsp;и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0012.description}</#if></p></td>
+            <td class='cell3'>0012</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0012.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0012.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0012.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>023&nbsp;и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0013.description}</#if></p></td>
+            <td class='cell3'>0013</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0013.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0013.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0013.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>024&nbsp;и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0014.description}</#if></p></td>
+            <td class='cell3'>0014</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0014.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0014.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0014.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>025&nbsp;и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0015.description}</#if></p></td>
+            <td class='cell3'>0015</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0015.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0015.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0015.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="cell1 center"><strong>Група&nbsp;<br/>рачуна,&nbsp;<br/>рачун</strong></td>
+            <td rowspan="3" class="cell2 center"><strong>Позиција</strong></td>
+            <td rowspan="3" class="cell3 center"><strong>АОП</strong></td>
+            <td rowspan="3" class="cell4 center"><strong>Напомена&nbsp;<br/>број</strong></td>
+            <td colspan="3" style="width:420px;" class="center"><strong>Износ</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="center"><strong>Текућа&nbsp;<br/>година</strong></td>
+            <td colspan="2" class="center"><strong>Претходна година</strong></td>
+        </tr>
+        <tr>
+            <td class="center"><strong>Крајње стање<br/><#if JSON?has_content>${JSON.datumKrajnji}</#if></strong></td>
+            <td class="center"><strong>Почетно стање<br/><#if JSON?has_content>${JSON.datumPocetni}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">1</td>
+            <td class="cell2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4">4</td>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+            <td class="cell7">7</td>
+        </tr>
+        <tr>
+            <td class='cell1'>026&nbsp;и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0016.description}</#if></p></td>
+            <td class='cell3'>0016</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0016.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0016.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0016.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>027&nbsp;и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0017.description}</#if></p></td>
+            <td class='cell3'>0017</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0017.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0017.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0017.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>028&nbsp;и&nbsp;део<br/>029</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0018.description}</#if></p></td>
+            <td class='cell3'>0018</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0018.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0018.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0018.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>03</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0019.description}</#if></strong></p></td>
+            <td class='cell3'>0019</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0019.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0019.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0019.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>030&nbsp;, 031 и&nbsp;део<br/>039</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0020.description}</#if></p></td>
+            <td class='cell3'>0020</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0020.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0020.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0020.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>032&nbsp;и&nbsp;део<br/>039</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0021.description}</#if></p></td>
+            <td class='cell3'>0021</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0021.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0021.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0021.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>037&nbsp;и&nbsp;део<br/>039</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0022.description}</#if></p></td>
+            <td class='cell3'>0022</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0022.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0022.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0022.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>038&nbsp;и&nbsp;део<br/>039</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0023.description}</#if></p></td>
+            <td class='cell3'>0023</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0023.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0023.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0023.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>04&nbsp;, осим<br/>047</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0024.description}</#if></strong></p></td>
+            <td class='cell3'>0024</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0024.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0024.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0024.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>040&nbsp;и&nbsp;део<br/>049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0025.description}</#if></p></td>
+            <td class='cell3'>0025</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0025.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0025.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0025.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>041&nbsp;и&nbsp;део<br/>049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0026.description}</#if></p></td>
+            <td class='cell3'>0026</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0026.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0026.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0026.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>042&nbsp;и&nbsp;део<br/>049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0027.description}</#if></p></td>
+            <td class='cell3'>0027</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0027.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0027.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0027.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>део&nbsp;043<br/>део&nbsp;044<br/>и&nbsp;део&nbsp;049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0028.description}</#if></p></td>
+            <td class='cell3'>0028</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0028.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0028.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0028.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>део&nbsp;043<br/>део&nbsp;044<br/>и&nbsp;део&nbsp;049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0029.description}</#if></p></td>
+            <td class='cell3'>0029</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0029.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0029.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0029.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>део&nbsp;045<br/>и&nbsp;део&nbsp;049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0030.description}</#if></p></td>
+            <td class='cell3'>0030</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0030.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0030.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0030.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>део&nbsp;045<br/>и&nbsp;део&nbsp;049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0031.description}</#if></p></td>
+            <td class='cell3'>0031</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0031.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0031.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0031.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>046&nbsp;и&nbsp;<br/>део&nbsp;049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0032.description}</#if></p></td>
+            <td class='cell3'>0032</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0032.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0032.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0032.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>048&nbsp;и&nbsp;<br/>део&nbsp;049</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0033.description}</#if></p></td>
+            <td class='cell3'>0033</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0033.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0033.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0033.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>05</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0034.description}</#if></strong></p></td>
+            <td class='cell3'>0034</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0034.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0034.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0034.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>050&nbsp;и<br/>део&nbsp;059</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0035.description}</#if></p></td>
+            <td class='cell3'>0035</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0035.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0035.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0035.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="cell1 center"><strong>Група&nbsp;<br/>рачуна,&nbsp;<br/>рачун</strong></td>
+            <td rowspan="3" class="cell2 center"><strong>Позиција</strong></td>
+            <td rowspan="3" class="cell3 center"><strong>АОП</strong></td>
+            <td rowspan="3" class="cell4 center"><strong>Напомена&nbsp;<br/>број</strong></td>
+            <td colspan="3" style="width:420px;" class="center"><strong>Износ</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="center"><strong>Текућа&nbsp;<br/>година</strong></td>
+            <td colspan="2" class="center"><strong>Претходна година</strong></td>
+        </tr>
+        <tr>
+            <td class="center"><strong>Крајње стање<br/><#if JSON?has_content>${JSON.datumKrajnji}</#if></strong></td>
+            <td class="center"><strong>Почетно стање<br/><#if JSON?has_content>${JSON.datumPocetni}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">1</td>
+            <td class="cell2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4">4</td>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+            <td class="cell7">7</td>
+        </tr>
+        <tr>
+            <td class='cell1'>051&nbsp;и<br/>део&nbsp;059</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0036.description}</#if></p></td>
+            <td class='cell3'>0036</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0036.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0036.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0036.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>052&nbsp;и<br/>део&nbsp;059</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0037.description}</#if></p></td>
+            <td class='cell3'>0037</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0037.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0037.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0037.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>053&nbsp;и<br/>део&nbsp;059</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0038.description}</#if></p></td>
+            <td class='cell3'>0038</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0038.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0038.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0038.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>054&nbsp;и<br/>део&nbsp;059</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0039.description}</#if></p></td>
+            <td class='cell3'>0039</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0039.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0039.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0039.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>055&nbsp;и<br/>део&nbsp;059</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0040.description}</#if></p></td>
+            <td class='cell3'>0040</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0040.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0040.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0040.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>056&nbsp;и<br/>део&nbsp;059</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0041.description}</#if></p></td>
+            <td class='cell3'>0041</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0041.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0041.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0041.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>288</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0042.description}</#if></p></td>
+            <td class='cell3'>0042</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0042.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0042.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0042.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'></td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0043.description}</#if></strong></p></td>
+            <td class='cell3'>0043</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0043.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0043.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0043.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>Класа 1</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0044.description}</#if></strong></p></td>
+            <td class='cell3'>0044</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0044.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0044.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0044.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>10</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0045.description}</#if></p></td>
+            <td class='cell3'>0045</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0045.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0045.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0045.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>11</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0046.description}</#if></p></td>
+            <td class='cell3'>0046</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0046.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0046.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0046.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>12</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0047.description}</#if></p></td>
+            <td class='cell3'>0047</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0047.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0047.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0047.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>13</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0048.description}</#if></p></td>
+            <td class='cell3'>0048</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0048.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0048.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0048.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>14</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0049.description}</#if></p></td>
+            <td class='cell3'>0049</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0049.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0049.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0049.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>15</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0050.description}</#if></p></td>
+            <td class='cell3'>0050</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0050.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0050.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0050.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>20</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0051.description}</#if></strong></p></td>
+            <td class='cell3'>0051</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0051.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0051.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0051.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>200&nbsp;и<br/>део&nbsp;209</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0052.description}</#if></p></td>
+            <td class='cell3'>0052</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0052.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0052.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0052.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>201&nbsp;и<br/>део&nbsp;209</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0053.description}</#if></p></td>
+            <td class='cell3'>0053</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0053.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0053.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0053.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>202&nbsp;и<br/>део&nbsp;209</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0054.description}</#if></p></td>
+            <td class='cell3'>0054</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0054.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0054.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0054.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>203&nbsp;и<br/>део&nbsp;209</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0055.description}</#if></p></td>
+            <td class='cell3'>0055</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0055.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0055.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0055.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>204&nbsp;и<br/>део&nbsp;209</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0056.description}</#if></p></td>
+            <td class='cell3'>0056</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0056.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0056.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0056.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>205&nbsp;и<br/>део&nbsp;209</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0057.description}</#if></p></td>
+            <td class='cell3'>0057</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0057.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0057.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0057.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>206&nbsp;и<br/>део&nbsp;209</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0058.description}</#if></p></td>
+            <td class='cell3'>0058</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0058.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0058.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0058.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="cell1 center"><strong>Група&nbsp;<br/>рачуна,&nbsp;<br/>рачун</strong></td>
+            <td rowspan="3" class="cell2 center"><strong>Позиција</strong></td>
+            <td rowspan="3" class="cell3 center"><strong>АОП</strong></td>
+            <td rowspan="3" class="cell4 center"><strong>Напомена&nbsp;<br/>број</strong></td>
+            <td colspan="3" style="width:420px;" class="center"><strong>Износ</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="center"><strong>Текућа&nbsp;<br/>година</strong></td>
+            <td colspan="2" class="center"><strong>Претходна година</strong></td>
+        </tr>
+        <tr>
+            <td class="center"><strong>Крајње стање<br/><#if JSON?has_content>${JSON.datumKrajnji}</#if></strong></td>
+            <td class="center"><strong>Почетно стање<br/><#if JSON?has_content>${JSON.datumPocetni}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">1</td>
+            <td class="cell2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4">4</td>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+            <td class="cell7">7</td>
+        </tr>
+        <tr>
+            <td class='cell1'>21</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0059.description}</#if></p></td>
+            <td class='cell3'>0059</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0059.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0059.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0059.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>22</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0060.description}</#if></p></td>
+            <td class='cell3'>0060</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0060.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0060.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0060.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>236</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0061.description}</#if></p></td>
+            <td class='cell3'>0061</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0061.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0061.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0061.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>23&nbsp;осим<br/>236&nbsp;и&nbsp;237</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0062.description}</#if></strong></p></td>
+            <td class='cell3'>0062</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0062.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0062.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0062.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>230&nbsp;и<br/>део&nbsp;239</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0063.description}</#if></p></td>
+            <td class='cell3'>0063</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0063.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0063.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0063.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>231&nbsp;и<br/>део&nbsp;239</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0064.description}</#if></p></td>
+            <td class='cell3'>0064</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0064.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0064.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0064.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>232&nbsp;и<br/>део&nbsp;239</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0065.description}</#if></p></td>
+            <td class='cell3'>0065</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0065.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0065.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0065.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>233&nbsp;и<br/>део&nbsp;239</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0066.description}</#if></p></td>
+            <td class='cell3'>0066</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0066.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0066.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0066.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>234,&nbsp;235<br/>и&nbsp;део&nbsp;239</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0067.description}</#if></p></td>
+            <td class='cell3'>0067</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0067.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0067.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0067.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>24</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0068.description}</#if></p></td>
+            <td class='cell3'>0068</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0068.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0068.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0068.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>27</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0069.description}</#if></p></td>
+            <td class='cell3'>0069</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0069.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0069.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0069.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>28&nbsp;осим<br/>288</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0070.description}</#if></p></td>
+            <td class='cell3'>0070</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0070.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0070.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0070.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'></td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0071.description}</#if></strong></p></td>
+            <td class='cell3'>0071</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0071.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0071.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0071.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>88</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0072.description}</#if></p></td>
+            <td class='cell3'>0072</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0072.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0072.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0072.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class="cell1"></td>
+            <td class="cell2">ПАСИВА</td>
+            <td class="cell3"></td>
+            <td class="cell4"></td>
+            <td class="cell5"></td>
+            <td class="cell6"></td>
+            <td class="cell7"></td>
+        </tr>
+        <tr>
+            <td class='cell1'></td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0401.description}</#if></strong></p></td>
+            <td class='cell3'>0401</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0401.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0401.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0401.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>30</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0402.description}</#if></strong></p></td>
+            <td class='cell3'>0402</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0402.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0402.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0402.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>300</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0403.description}</#if></p></td>
+            <td class='cell3'>0403</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0403.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0403.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0403.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>301</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0404.description}</#if></p></td>
+            <td class='cell3'>0404</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0404.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0404.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0404.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>302</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0405.description}</#if></p></td>
+            <td class='cell3'>0405</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0405.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0405.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0405.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>303</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0406.description}</#if></p></td>
+            <td class='cell3'>0406</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0406.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0406.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0406.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>304</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0407.description}</#if></p></td>
+            <td class='cell3'>0407</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0407.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0407.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0407.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>305</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0408.description}</#if></p></td>
+            <td class='cell3'>0408</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0408.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0408.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0408.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>306</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0409.description}</#if></p></td>
+            <td class='cell3'>0409</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0409.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0409.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0409.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="cell1 center"><strong>Група&nbsp;<br/>рачуна,&nbsp;<br/>рачун</strong></td>
+            <td rowspan="3" class="cell2 center"><strong>Позиција</strong></td>
+            <td rowspan="3" class="cell3 center"><strong>АОП</strong></td>
+            <td rowspan="3" class="cell4 center"><strong>Напомена&nbsp;<br/>број</strong></td>
+            <td colspan="3" style="width:420px;" class="center"><strong>Износ</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="center"><strong>Текућа&nbsp;<br/>година</strong></td>
+            <td colspan="2" class="center"><strong>Претходна година</strong></td>
+        </tr>
+        <tr>
+            <td class="center"><strong>Крајње стање<br/><#if JSON?has_content>${JSON.datumKrajnji}</#if></strong></td>
+            <td class="center"><strong>Почетно стање<br/><#if JSON?has_content>${JSON.datumPocetni}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">1</td>
+            <td class="cell2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4">4</td>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+            <td class="cell7">7</td>
+        </tr>
+        <tr>
+            <td class='cell1'>309</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0410.description}</#if></p></td>
+            <td class='cell3'>0410</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0410.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0410.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0410.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>31</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0411.description}</#if></p></td>
+            <td class='cell3'>0411</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0411.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0411.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0411.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>047&nbsp;и&nbsp;237</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0412.description}</#if></p></td>
+            <td class='cell3'>0412</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0412.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0412.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0412.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>32</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0413.description}</#if></p></td>
+            <td class='cell3'>0413</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0413.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0413.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0413.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>330</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0414.description}</#if></p></td>
+            <td class='cell3'>0414</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0414.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0414.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0414.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>33&nbsp;осим<br/>330</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0415.description}</#if></p></td>
+            <td class='cell3'>0415</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0415.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0415.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0415.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>33&nbsp;осим<br/>330</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0416.description}</#if></p></td>
+            <td class='cell3'>0416</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0416.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0416.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0416.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>34</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0417.description}</#if></strong></p></td>
+            <td class='cell3'>0417</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0417.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0417.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0417.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>340</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0418.description}</#if></p></td>
+            <td class='cell3'>0418</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0418.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0418.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0418.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>341</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0419.description}</#if></p></td>
+            <td class='cell3'>0419</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0419.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0419.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0419.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'></td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0420.description}</#if></p></td>
+            <td class='cell3'>0420</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0420.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0420.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0420.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>35</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0421.description}</#if></strong></p></td>
+            <td class='cell3'>0421</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0421.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0421.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0421.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>350</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0422.description}</#if></p></td>
+            <td class='cell3'>0422</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0422.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0422.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0422.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>351</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0423.description}</#if></p></td>
+            <td class='cell3'>0423</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0423.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0423.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0423.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'></td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0424.description}</#if></strong></p></td>
+            <td class='cell3'>0424</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0424.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0424.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0424.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>40</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0425.description}</#if></strong></p></td>
+            <td class='cell3'>0425</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0425.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0425.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0425.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>400</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0426.description}</#if></p></td>
+            <td class='cell3'>0426</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0426.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0426.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0426.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>401</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0427.description}</#if></p></td>
+            <td class='cell3'>0427</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0427.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0427.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0427.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>403</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0428.description}</#if></p></td>
+            <td class='cell3'>0428</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0428.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0428.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0428.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>404</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0429.description}</#if></p></td>
+            <td class='cell3'>0429</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0429.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0429.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0429.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>405</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0430.description}</#if></p></td>
+            <td class='cell3'>0430</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0430.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0430.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0430.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>402&nbsp;и&nbsp;409</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0431.description}</#if></p></td>
+            <td class='cell3'>0431</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0431.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0431.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0431.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="cell1 center"><strong>Група&nbsp;<br/>рачуна,&nbsp;<br/>рачун</strong></td>
+            <td rowspan="3" class="cell2 center"><strong>Позиција</strong></td>
+            <td rowspan="3" class="cell3 center"><strong>АОП</strong></td>
+            <td rowspan="3" class="cell4 center"><strong>Напомена&nbsp;<br/>број</strong></td>
+            <td colspan="3" style="width:420px;" class="center"><strong>Износ</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="center"><strong>Текућа&nbsp;<br/>година</strong></td>
+            <td colspan="2" class="center"><strong>Претходна година</strong></td>
+        </tr>
+        <tr>
+            <td class="center"><strong>Крајње стање<br/><#if JSON?has_content>${JSON.datumKrajnji}</#if></strong></td>
+            <td class="center"><strong>Почетно стање<br/><#if JSON?has_content>${JSON.datumPocetni}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">1</td>
+            <td class="cell2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4">4</td>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+            <td class="cell7">7</td>
+        </tr>
+        <tr>
+            <td class='cell1'>41</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0432.description}</#if></strong></p></td>
+            <td class='cell3'>0432</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0432.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0432.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0432.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>410</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0433.description}</#if></p></td>
+            <td class='cell3'>0433</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0433.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0433.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0433.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>411</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0434.description}</#if></p></td>
+            <td class='cell3'>0434</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0434.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0434.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0434.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>412</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0435.description}</#if></p></td>
+            <td class='cell3'>0435</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0435.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0435.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0435.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>413</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0436.description}</#if></p></td>
+            <td class='cell3'>0436</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0436.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0436.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0436.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>414</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0437.description}</#if></p></td>
+            <td class='cell3'>0437</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0437.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0437.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0437.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>415</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0438.description}</#if></p></td>
+            <td class='cell3'>0438</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0438.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0438.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0438.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>416</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0439.description}</#if></p></td>
+            <td class='cell3'>0439</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0439.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0439.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0439.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>419</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0440.description}</#if></p></td>
+            <td class='cell3'>0440</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0440.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0440.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0440.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>498</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0441.description}</#if></p></td>
+            <td class='cell3'>0441</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0441.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0441.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0441.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>42&nbsp;до&nbsp;49<br/>(осим&nbsp;498)</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0442.description}</#if></strong></p></td>
+            <td class='cell3'>0442</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0442.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0442.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0442.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>42</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0443.description}</#if></strong></p></td>
+            <td class='cell3'>0443</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0443.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0443.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0443.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>420</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0444.description}</#if></p></td>
+            <td class='cell3'>0444</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0444.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0444.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0444.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>421</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0445.description}</#if></p></td>
+            <td class='cell3'>0445</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0445.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0445.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0445.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>422</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0446.description}</#if></p></td>
+            <td class='cell3'>0446</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0446.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0446.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0446.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>423</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0447.description}</#if></p></td>
+            <td class='cell3'>0447</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0447.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0447.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0447.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>427</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0448.description}</#if></p></td>
+            <td class='cell3'>0448</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0448.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0448.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0448.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>424,&nbsp;425,<br/>426&nbsp;и&nbsp;429</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0449.description}</#if></p></td>
+            <td class='cell3'>0449</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0449.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0449.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0449.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>430</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0450.description}</#if></p></td>
+            <td class='cell3'>0450</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0450.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0450.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0450.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>43&nbsp;осим<br/>430</td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0451.description}</#if></strong></p></td>
+            <td class='cell3'>0451</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0451.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0451.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0451.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>431</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0452.description}</#if></p></td>
+            <td class='cell3'>0452</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0452.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0452.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0452.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="cell1 center"><strong>Група&nbsp;<br/>рачуна,&nbsp;<br/>рачун</strong></td>
+            <td rowspan="3" class="cell2 center"><strong>Позиција</strong></td>
+            <td rowspan="3" class="cell3 center"><strong>АОП</strong></td>
+            <td rowspan="3" class="cell4 center"><strong>Напомена&nbsp;<br/>број</strong></td>
+            <td colspan="3" style="width:420px;" class="center"><strong>Износ</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="center"><strong>Текућа&nbsp;<br/>година</strong></td>
+            <td colspan="2" class="center"><strong>Претходна година</strong></td>
+        </tr>
+        <tr>
+            <td class="center"><strong>Крајње стање<br/><#if JSON?has_content>${JSON.datumKrajnji}</#if></strong></td>
+            <td class="center"><strong>Почетно стање<br/><#if JSON?has_content>${JSON.datumPocetni}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class="cell1">1</td>
+            <td class="cell2">2</td>
+            <td class="cell3">3</td>
+            <td class="cell4">4</td>
+            <td class="cell5">5</td>
+            <td class="cell6">6</td>
+            <td class="cell7">7</td>
+        </tr>
+        <tr>
+            <td class='cell1'>432</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0453.description}</#if></p></td>
+            <td class='cell3'>0453</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0453.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0453.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0453.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>433</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0454.description}</#if></p></td>
+            <td class='cell3'>0454</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0454.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0454.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0454.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>434</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0455.description}</#if></p></td>
+            <td class='cell3'>0455</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0455.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0455.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0455.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>435</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0456.description}</#if></p></td>
+            <td class='cell3'>0456</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0456.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0456.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0456.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>436</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0457.description}</#if></p></td>
+            <td class='cell3'>0457</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0457.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0457.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0457.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>439</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0458.description}</#if></p></td>
+            <td class='cell3'>0458</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0458.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0458.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0458.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>44,&nbsp;45&nbsp;и<br/>46</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0459.description}</#if></p></td>
+            <td class='cell3'>0459</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0459.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0459.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0459.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>47</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0460.description}</#if></p></td>
+            <td class='cell3'>0460</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0460.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0460.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0460.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>48</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0461.description}</#if></p></td>
+            <td class='cell3'>0461</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0461.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0461.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0461.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'>49&nbsp;осим<br/>498</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0462.description}</#if></p></td>
+            <td class='cell3'>0462</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0462.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0462.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0462.balance3}</#if></td>
+        </tr>
+        <tr>
+            <td class='cell1'></td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0463.description}</#if></strong></p></td>
+            <td class='cell3'>0463</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0463.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0463.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0463.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'></td>
+            <td class='cell2'><p><strong><#if JSON?has_content>${JSON.bsScheme._0464.description}</#if></strong></p></td>
+            <td class='cell3'>0464</td>
+            <td class='cell4'></td>
+            <td class='cell5'><strong><#if JSON?has_content>${JSON.bsScheme._0464.balance1}</#if></strong></td>
+            <td class='cell6'><strong><#if JSON?has_content>${JSON.bsScheme._0464.balance2}</#if></strong></td>
+            <td class='cell7'><strong><#if JSON?has_content>${JSON.bsScheme._0464.balance3}</#if></strong></td>
+        </tr>
+        <tr>
+            <td class='cell1'>89</td>
+            <td class='cell2'><p><#if JSON?has_content>${JSON.bsScheme._0465.description}</#if></p></td>
+            <td class='cell3'>0465</td>
+            <td class='cell4'></td>
+            <td class='cell5'><#if JSON?has_content>${JSON.bsScheme._0465.balance1}</#if></td>
+            <td class='cell6'><#if JSON?has_content>${JSON.bsScheme._0465.balance2}</#if></td>
+            <td class='cell7'><#if JSON?has_content>${JSON.bsScheme._0465.balance3}</#if></td>
+        </tr>
+
+        </table>
+    </body>
+</pdf>

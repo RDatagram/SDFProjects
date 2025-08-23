@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_initial_aop_bu_codes">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM : AOP initial BU codes</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/BlueGrid/Tacka1 - Finansijski izvestaji/FinRepSrc/Bilans uspeha/initial_aop_bu_codes.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_initial_aop_bu_codes">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>initial_aop_bu_codes</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

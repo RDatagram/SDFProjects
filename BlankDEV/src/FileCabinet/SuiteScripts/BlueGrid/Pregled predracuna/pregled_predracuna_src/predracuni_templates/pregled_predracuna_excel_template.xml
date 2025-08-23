@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Vladimir Popovic</Author>
+  <LastAuthor>Vladimir Popovic</LastAuthor>
+  <Created>2021-06-04T08:43:09Z</Created>
+  <LastSaved>2021-06-04T10:40:29Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9180</WindowHeight>
+  <WindowWidth>23040</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s23" ss:Name="Heading 2">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="3"
+            ss:Color="#A2B8E1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="13" ss:Color="#44546A"
+         ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s24" ss:Name="Heading 3">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+            ss:Color="#8EA9DB"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#44546A"
+         ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s67">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s74" ss:Parent="s23">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="13" ss:Color="#000000"
+         ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s76" ss:Parent="s24">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+         ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s77" ss:Parent="s76">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s104">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s105">
+   <Alignment ss:Vertical="Bottom" ss:ShrinkToFit="1" ss:WrapText="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s106">
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Pregled predracuna">
+  <Table x:FullColumns="1"
+         x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:AutoFitWidth="0" ss:Width="138"/>
+   <Column ss:AutoFitWidth="0" ss:Width="145.19999999999999"/>
+   <Column ss:AutoFitWidth="0" ss:Width="103.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="90.6"/>
+   <Column ss:AutoFitWidth="0" ss:Width="96"/>
+   <Column ss:AutoFitWidth="0" ss:Width="108"/>
+   <Column ss:AutoFitWidth="0" ss:Width="92.4"/>
+   <Column ss:AutoFitWidth="0" ss:Width="112.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="86.399999999999991"/>
+   <Column ss:AutoFitWidth="0" ss:Width="81"/>
+   <Column ss:AutoFitWidth="0" ss:Width="69"/>
+   <Column ss:AutoFitWidth="0" ss:Width="139.80000000000001"/>
+   <Column ss:AutoFitWidth="0" ss:Width="99"/>
+   <Column ss:AutoFitWidth="0" ss:Width="96"/>
+   <Column ss:AutoFitWidth="0" ss:Width="69" ss:Span="1"/>
+   <Row>
+    <Cell><Data ss:Type="String">Podaci kreirani:</Data></Cell>
+    <Cell><Data ss:Type="String">${JSON.createdAt}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Subsidiary:</Data></Cell>
+    <Cell><Data ss:Type="String">${JSON.subsidiaryName}</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String"> </Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Za period:</Data></Cell>
+    <Cell><Data ss:Type="String">${JSON.dateFrom} - ${JSON.dateTo}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Customer:</Data></Cell>
+    <Cell><Data ss:Type="String">${JSON.customerName}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="19.8">
+    <Cell ss:MergeAcross="1"><Data ss:Type="String">PREGLED PREDRAČUNA</Data></Cell>
+   </Row>
+   <Row ss:Height="15.600000000000001">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Sales order br. dokumenta</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Sales order poslat?</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Sales order transaction date</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Sales order status</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Subsidiary</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Company name</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SOE br. dokumenta</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SOE poslat?</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SOE amount</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SOE transaction date</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">CD br. Dokumenta</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">CD amount</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">CD transaction date</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">CD status</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SOE - CD</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Invoice br. dokumenta</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Invoice amount</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Invoice transaction date</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Invoice status</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SO - Invoices</Data></Cell>
+   </Row>
+   <#list JSON.dataArray as rec>
+   <Row ss:AutoFitHeight="0" ss:Height="29.4">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">${rec.transactionId}</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">${rec.soSent}</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">${rec.soTranDate}</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">${rec.soStatus}</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">${rec.subsidiary}</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">${rec.customerName}</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.salesOrderEstimates as soe>${soe.documentNumber}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.salesOrderEstimates as soe>${soe.soeSent}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.salesOrderEstimates as soe>${soe.soeAmount}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.salesOrderEstimates as soe>${soe.soeTranDate}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.customerDeposits as cd>${cd.documentNumber}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.customerDeposits as cd>${cd.amount}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.customerDeposits as cd>${cd.trandate}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.customerDeposits as cd>${cd.status}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.soeMinusCustDep as soeMinusCD>${soeMinusCD}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.invoices as invoice>${invoice.documentNumber}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.invoices as invoice>${invoice.amount}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.invoices as invoice>${invoice.trandate}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String"><#list rec.invoices as invoice>${invoice.status}&#10;</#list> </Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">${rec.soMinusInvoices}</Data></Cell>
+   </Row>
+   </#list>
+  </Table>
+<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+<PageSetup>
+ <Header x:Margin="0.3"/>
+ <Footer x:Margin="0.3"/>
+ <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+</PageSetup>
+<Print>
+ <ValidPrinterInfo/>
+ <HorizontalResolution>600</HorizontalResolution>
+ <VerticalResolution>600</VerticalResolution>
+</Print>
+<Selected/>
+<Panes>
+ <Pane>
+  <Number>3</Number>
+  <ActiveRow>13</ActiveRow>
+  <ActiveCol>4</ActiveCol>
+ </Pane>
+</Panes>
+<ProtectObjects>False</ProtectObjects>
+<ProtectScenarios>False</ProtectScenarios>
+</WorksheetOptions>
+        </Worksheet>
+        </Workbook>

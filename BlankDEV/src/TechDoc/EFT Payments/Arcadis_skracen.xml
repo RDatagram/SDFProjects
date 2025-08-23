@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Client>
+    <PaketZaSlanje>
+        <Nalog ImeFajla="20210528_Nalog 1">
+            <Data>
+                <SifraProizvodaCORE>501</SifraProizvodaCORE>
+                <TransakcijaID/>
+                <PlacanjeID/>
+                <DatumPrijema/>
+                <RedniBrojNaloga>1</RedniBrojNaloga>
+                <MaticniBrojNalogodavca>4120937394</MaticniBrojNalogodavca>
+                <VasBrojNaloga/>
+                <SifraPlacanja>254</SifraPlacanja>
+                <SvrhaDoznake>PID-5-2021</SvrhaDoznake>
+                <SifraValute>941</SifraValute>
+                <Iznos>4076813.30</Iznos>
+                <DatumValute>28.05.2021</DatumValute>
+                <DatumValuteDo>28.05.2021</DatumValuteDo>
+                <RacunNalogodavca>265111031000417390</RacunNalogodavca>
+                <RacunKorisnika>840000000000484837</RacunKorisnika>
+                <ModelNalogodavca/>
+                <PozivNaBrojNalogodavca/>
+                <ModelKorisnika>97</ModelKorisnika>
+                <PozivNaBrojKorisnika>3691000000032450509</PozivNaBrojKorisnika>
+                <NazivNalogodavca>Arcaadis Gen doo</NazivNalogodavca>
+                <MestoNalogodavca>Beograd</MestoNalogodavca>
+                <NazivKorisnika>Poreska uprava</NazivKorisnika>
+                <MestoKorisnika>Beograd</MestoKorisnika>
+                <BrojGrupnogNaloga/>
+                <BrojZbirnogNaloga/>
+                <Status/>
+                <Prioritet>100</Prioritet>
+            </Data>
+        </Nalog>
+    </PaketZaSlanje>
+    <Potpisi>Potpisi</Potpisi>
+</Client>

@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_snt_rl_pl_report">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>PL Report Restlet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/FRepRS/rl_pl_report.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_snt_rl_pl_report">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>PL Report Restlet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

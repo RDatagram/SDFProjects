@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_sl_pl_report_pdf">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SuiteLet : PL Report PDF</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/FRepRS/sl_pl_report_pdf.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_pl_report_pdf">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>SuiteLet : PL Report PDF</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

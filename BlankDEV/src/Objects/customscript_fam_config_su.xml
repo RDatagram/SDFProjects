@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_fam_config_su">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM FAM Config suitelet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/RSM FAM scripts/rsm_fam_config_su.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_fam_config_su">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>RSM FAM Config suietlet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

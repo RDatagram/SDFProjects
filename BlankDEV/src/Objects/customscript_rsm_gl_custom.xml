@@ -1,0 +1,13 @@
+<customglplugin scriptid="customscript_rsm_gl_custom">
+  <description></description>
+  <isinactive>F</isinactive>
+  <loglevel>DEBUG</loglevel>
+  <name>RSM : Custom GL Lines</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <runasrole></runasrole>
+  <scriptfile>[/SuiteScripts/BlueGrid/Custom GL Lines plug-in/rsm_custom_gl_lines.js]</scriptfile>
+  <status>RELEASED</status>
+</customglplugin>

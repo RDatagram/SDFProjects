@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_rsm_poreska_stopiranje">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_amortizacija_tab_rsm]</centertab>
+  <label>Stopiranje poreske amortizacije</label>
+  <links>
+    <link>
+      <linklabel>Forma za stopiranje</linklabel>
+      <linkobject>[scriptid=customscript_altdeprstop_form_su.customdeploy_altdeprstop_form_su]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

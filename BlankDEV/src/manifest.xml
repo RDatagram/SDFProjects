@@ -1,0 +1,24 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>nsbob</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+      <feature required="false">CRM</feature>
+      <feature required="false">CREATESUITEBUNDLES</feature>
+      <feature required="false">SUITESIGNON</feature>
+      <feature required="false">PERIODENDJOURNALENTRIES</feature>
+      <feature required="false">EXPREPORTS</feature>
+      <feature required="false">JOBS</feature>
+      <feature required="false">CUSTOMTRANSACTIONS</feature>
+      <feature required="false">ADVANCEDJOBS</feature>
+      <feature required="false">RECEIVABLES</feature>
+      <feature required="true">USR</feature>
+      <feature required="false">ACCOUNTING</feature>
+      <feature required="false">PAYABLES</feature>
+      <feature required="true">CUSTOMRECORDS</feature>
+    </features>
+    <objects>
+    </objects>
+  </dependencies>
+</manifest>

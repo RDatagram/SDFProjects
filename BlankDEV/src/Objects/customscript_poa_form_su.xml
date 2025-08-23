@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_poa_form_su">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>RSM POA form suitelet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/RSM FAM scripts/rsm_poa_form_su.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_poa_form_su">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>RSM POA form suitelet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

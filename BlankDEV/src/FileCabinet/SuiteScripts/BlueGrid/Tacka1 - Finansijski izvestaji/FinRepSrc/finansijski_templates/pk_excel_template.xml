@@ -1,0 +1,531 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2021-10-22T22:43:50Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8016</WindowHeight>
+  <WindowWidth>14808</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>108</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m106500176">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s18">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s21">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s27">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s29">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s31">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s34">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s36">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s38">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="148.19999999999999"/>
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="12" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="14" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="16" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="18" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="20" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Column ss:Index="22" ss:AutoFitWidth="0" ss:Width="61.8"/>
+   <Row ss:Index="2">
+    <Cell ss:MergeAcross="21" ss:StyleID="s20"><Data ss:Type="String">IZVEŠTAJ O PROMENAMA NA KAPITALU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeAcross="21" ss:StyleID="s20"><Data ss:Type="String">u periodu od ${JSON.datum1} do ${JSON.datum2} godine</Data></Cell>
+   </Row>
+   <Row ss:Height="15"/>
+   <Row>
+    <Cell ss:MergeDown="2" ss:StyleID="s38"><Data ss:Type="String">POZICIJA</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s40"><Data ss:Type="String">OPIS</Data></Cell>
+    <Cell ss:MergeAcross="19" ss:StyleID="m106500176"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s21"><Data ss:Type="String">AOP</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="119.25">
+    <Cell ss:Index="4" ss:StyleID="s19"><Data ss:Type="String">Osnovni kapital (grupa 30 bez 306 i 309)</Data></Cell>
+    <Cell ss:Index="6" ss:StyleID="s19"><Data ss:Type="String">Ostali osnovni kapital (rn 309)</Data></Cell>
+    <Cell ss:Index="8" ss:StyleID="s19"><Data ss:Type="String">Upisani a neuplaćeni kapital (grupa 31)</Data></Cell>
+    <Cell ss:Index="10" ss:StyleID="s19"><Data ss:Type="String">Emisiona premija i rezerve (rn 306 i grupa 32)</Data></Cell>
+    <Cell ss:Index="12" ss:StyleID="s19"><Data ss:Type="String">Rev. rez. i ner. dob. i gub. (grupa 33)</Data></Cell>
+    <Cell ss:Index="14" ss:StyleID="s19"><Data ss:Type="String">Neraspoređeni dobitak (grupa 34)</Data></Cell>
+    <Cell ss:Index="16" ss:StyleID="s19"><Data ss:Type="String">Gubitak (grupa 35)</Data></Cell>
+    <Cell ss:Index="18" ss:StyleID="s19"><Data ss:Type="String">Uče&scaron;će bez prava kontrole</Data></Cell>
+    <Cell ss:Index="20" ss:StyleID="s19"><Data ss:Type="String">Ukupno (odgovara poziciji AOP 0401) (kol. 2+3+4+5+6+7-8+9)&ge;0</Data></Cell>
+    <Cell ss:Index="22" ss:StyleID="s28"><Data ss:Type="String">Gubitak iznad visine kapitala (odgovara poziciji AOP 0455) (kol 2+3+4+5+6+7-8+9)&lt;0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">11</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Stanje na dan ${JSON.datumLYPocetni} godine</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4001</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4001.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4010</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4010.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4019</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4019.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4028</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4028.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4037</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4037.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4046</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4046.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4055</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4055.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4064</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4064.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4073</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4073.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4082</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4082.balance1}</Data></Cell>
+   </Row>
+   <Row ss:Height="57.6">
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4002</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4002.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4011</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4011.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4020</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4020.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4029</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4029.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4038</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4038.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4047</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4047.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4056</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4056.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4065</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4065.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4074</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4074.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4083</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4083.balance1}</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Korigovano početno stanje na dan ${JSON.datumLYPocetni} godine (r.br. 1+2)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4003</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4003.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4012</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4012.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4021</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4021.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4030</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4030.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4039</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4039.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4048</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4048.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4057</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4057.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4066</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4066.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4075</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4075.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4084</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4084.balance1}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Neto promene u ${JSON.prethodnaGodina} godini</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4004</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4004.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4013</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4013.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4022</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4022.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4031</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4031.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4040</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4040.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4049</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4049.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4058</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4058.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4067</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4067.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4076</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4076.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4085</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4085.balance1}</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Stanje na dan ${JSON.datumLYKrajnji} godine (r.br. 3+4)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4005</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4005.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4014</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4014.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4023</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4023.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4032</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4032.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4041</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4041.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4050</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4050.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4059</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4059.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4068</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4068.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4077</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4077.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4086</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4086.balance1}</Data></Cell>
+   </Row>
+   <Row ss:Height="57.6">
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Efekti retroaktivne ispravke materijalno značajnih grešaka i promena računovodstvenih politika</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4006</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4006.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4015</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4015.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4024</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4024.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4033</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4033.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4042</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4042.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4051</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4051.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4060</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4060.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4069</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4069.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4078</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4078.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4087</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4087.balance1}</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Korigovano početno stanje na dan ${JSON.datum1} godine (r.br. 5+6)</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4007</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4007.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4016</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4016.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4025</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4025.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4034</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4034.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4043</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4043.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4052</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4052.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4061</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4061.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4070</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4070.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4079</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4079.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4088</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4088.balance1}</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Neto promene u ${JSON.tekucaGodina} godini</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4008</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4008.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4017</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4017.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4026</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4026.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4035</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4035.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4044</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4044.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4053</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4053.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4062</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4062.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4071</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4071.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4080</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">${JSON.pkScheme._4080.balance1}</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="Number">4089</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">${JSON.pkScheme._4089.balance1}</Data></Cell>
+   </Row>
+   <Row ss:Height="29.4">
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Stanje na dan ${JSON.datum2} godine (r.br. 7+8)</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4009</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4009.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4018</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4018.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4027</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4027.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4036</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4036.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4045</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4045.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4054</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4054.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4063</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4063.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4072</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4072.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4081</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">${JSON.pkScheme._4081.balance1}</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">4090</Data></Cell>
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">${JSON.pkScheme._4090.balance1}</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>25</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <Table x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_rsm_config">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_amortizacija_tab_rsm]</centertab>
+  <label>Konfiguracija</label>
+  <links>
+    <link>
+      <linklabel>Konfiguracija</linklabel>
+      <linkobject>[scriptid=customscript_fam_config_su.customdeploy_fam_config_su]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

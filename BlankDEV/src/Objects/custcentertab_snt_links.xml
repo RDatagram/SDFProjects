@@ -1,0 +1,10 @@
+<centertab scriptid="custcentertab_snt_links">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>ALL</center>
+  <label>RSM SDF</label>
+</centertab>

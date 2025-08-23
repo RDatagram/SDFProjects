@@ -1,0 +1,147 @@
+<stmtrslist><stmtrs><rstype>ibank.payment.stmtrs.past</rstype><status><code>0</code><severity>INFO</severity><details /></status><curdef>RSD</curdef>
+<acctid>160-0000000013177-24</acctid><stmtnumber>21</stmtnumber><ledgerbal><balamt>872079.81</balamt>
+<dtasof>2021-02-10T00:00:00</dtasof></ledgerbal><availbal><balamt>871041.71</balamt>
+<dtasof>2021-02-10T00:00:00</dtasof></availbal><reservedfunds>-1038.10</reservedfunds>
+<trnlist count="4">
+<stmttrn>
+ <trntype>ibank.payment.pp3</trntype>
+ <fitid>121PLTR200410082(506327769)</fitid>
+ <trnuid />
+ <benefit>debit</benefit>
+ <payeeinfo><name>Banca Intesa AD Beograd</name>
+ <city>Beograd</city></payeeinfo>
+ <payeeaccountinfo>
+ <acctid>160-0000000090824-77</acctid>
+ <bankid>160</bankid>
+ <bankname>Banca Intesa ad Beograd</bankname>
+ </payeeaccountinfo>
+ <dtposted>2021-02-10T00:00:00</dtposted>
+ <trnamt>1277.50</trnamt>
+ <purpose>OBRAČUN TARIFE NA USLUGE PLATNOG PROMETA ZA PERIOD: OD - 01-feb-2020 DO - 10-feb-2020</purpose>
+ <purposecode>221</purposecode>
+ <curdef>RSD</curdef>
+ <payeerefnumber />
+ <trnplace>005121 Stari Grad, Kolarčeva 5</trnplace>
+ <dtuser>2021-02-10T00:00:00</dtuser>
+ <dtavail>2021-02-10T00:00:00</dtavail>
+ <refnumber>160000000000793245</refnumber>
+ <refmodel />
+ <payeerefmodel />
+ <urgency>INT</urgency>
+ <fee />
+ <statusinfo>
+ <code>80</code>
+ <timeposted>2021-02-10T00:00:00</timeposted>
+ </statusinfo>
+</stmttrn>
+<stmttrn>
+ <trntype>ibank.payment.pp3</trntype>
+ <fitid>955PLIE200410AOE(503341902)</fitid>
+ <trnuid />
+ <benefit>credit</benefit>
+ <payeeinfo>
+ <name>JP SLUŽBENI GLASNIK</name>
+ <city>BEOGRAD-SAVSKI VENAC</city>
+ </payeeinfo><payeeaccountinfo>
+ <acctid>160-0000000014944-58</acctid>
+ <bankid>160</bankid>
+ <bankname>Banca Intesa ad Beograd</bankname>
+ </payeeaccountinfo>
+ <dtposted>2021-02-10T00:00:00</dtposted>
+ <trnamt>239.40</trnamt>
+ <purpose>Promet robe i usluga - finalna potrošnja</purpose>
+ <purposecode>221</purposecode>
+ <curdef>RSD</curdef>
+ <payeerefnumber>05-230</payeerefnumber>
+ <trnplace>999905 OfficeBanking</trnplace>
+ <dtuser>2021-02-10T00:00:00</dtuser>
+ <dtavail>2021-02-10T00:00:00</dtavail>
+ <refnumber />
+ <refmodel />
+ <payeerefmodel />
+ <urgency>INT</urgency>
+ <fee />
+ <statusinfo>
+ <code>80</code>
+ <timeposted>2021-02-10T00:00:00</timeposted>
+ </statusinfo>
+</stmttrn>
+<stmttrn>
+ <trntype>ibank.payment.pp3</trntype>
+ <fitid>955PLIE200410AOE(503341903)</fitid>
+ <trnuid />
+ <benefit>credit</benefit>
+ <payeeinfo>
+ <name>JP SLUŽBENI GLASNIK</name>
+ <city>BEOGRAD-SAVSKI VENAC</city>
+ </payeeinfo><payeeaccountinfo>
+ <acctid>160-0000000014944-58</acctid>
+ <bankid>160</bankid>
+ <bankname>Banca Intesa ad Beograd</bankname>
+ </payeeaccountinfo>
+ <dtposted>2021-02-10T00:00:00</dtposted>
+ <trnamt>239.40</trnamt>
+ <purpose>Promet robe i usluga - finalna potrošnja</purpose>
+ <purposecode>221</purposecode>
+ <curdef>RSD</curdef>
+ <payeerefnumber>136-1</payeerefnumber>
+ <trnplace>999905 OfficeBanking</trnplace>
+ <dtuser>2021-02-10T00:00:00</dtuser>
+ <dtavail>2021-02-10T00:00:00</dtavail>
+ <refnumber />
+ <refmodel />
+ <payeerefmodel />
+ <urgency>INT</urgency>
+ <fee />
+ <statusinfo>
+ <code>80</code>
+ <timeposted>2021-02-10T00:00:00</timeposted>
+ </statusinfo>
+ </stmttrn>
+ <stmttrn>
+ <trntype>ibank.payment.pp3</trntype>
+ <fitid>955PLIE200410AOE(503341904)</fitid>
+ <trnuid />
+ <benefit>credit</benefit>
+ <payeeinfo>
+ <name>JP SLUŽBENI GLASNIK</name>
+ <city>BEOGRAD-SAVSKI VENAC</city>
+ </payeeinfo><payeeaccountinfo>
+ <acctid>160-0000000014944-58</acctid>
+ <bankid>160</bankid>
+ <bankname>Banca Intesa ad Beograd</bankname>
+ </payeeaccountinfo>
+ <dtposted>2021-02-10T00:00:00</dtposted>
+ <trnamt>239.40</trnamt>
+ <purpose>Promet robe i usluga - finalna potrošnja</purpose>
+ <purposecode>221</purposecode>
+ <curdef>RSD</curdef>
+ <payeerefnumber>05-232</payeerefnumber>
+ <trnplace>999905 OfficeBanking</trnplace>
+ <dtuser>2021-02-10T00:00:00</dtuser>
+ <dtavail>2021-02-10T00:00:00</dtavail>
+ <refnumber />
+ <refmodel />
+ <payeerefmodel />
+ <urgency>INT</urgency>
+ <fee />
+ <statusinfo>
+ <code>80</code>
+ <timeposted>2021-02-10T00:00:00</timeposted>
+ </statusinfo>
+ </stmttrn>
+</trnlist>
+<extension>
+<companybankname>Banca Intesa ad Beograd</companybankname>
+<companyname>RSM ADVISORY D.O.O. Beograd</companyname>
+<companyaddress>BULEVAR MIHAILA PUPINA 10 b/1</companyaddress>
+<companycity> BEOGRAD-NOVI BEOGRAD</companycity>
+<companypostalcode>11000</companypostalcode>
+<PID>100134767</PID>
+</extension>
+<overdraftremaining />
+<overdraftused />
+<directdebitreserved />
+<projectedavail>871041.71</projectedavail>
+</stmtrs>
+</stmtrslist>

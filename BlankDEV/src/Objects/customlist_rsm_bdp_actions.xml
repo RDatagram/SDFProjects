@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_rsm_bdp_actions">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <name>RSM : Bank Statement Actions</name>
+  <customvalues>
+    <customvalue scriptid="val_33177_2413634_200">
+      <isinactive>F</isinactive>
+      <value>CC_PAYMENT</value>
+    </customvalue>
+    <customvalue scriptid="val_29240_2413634_231">
+      <isinactive>F</isinactive>
+      <value>CS_PAYMENT</value>
+    </customvalue>
+    <customvalue scriptid="val_98467_t2274808_103">
+      <isinactive>F</isinactive>
+      <value>DEPOSIT</value>
+    </customvalue>
+    <customvalue scriptid="val_98466_t2274808_767">
+      <isinactive>F</isinactive>
+      <value>PAYMENT</value>
+    </customvalue>
+    <customvalue scriptid="val_98465_t2274808_139">
+      <isinactive>F</isinactive>
+      <value>UNDEFINED</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,10 @@
+<centertab scriptid="custcentertab_amortizacija_tab_rsm">
+  <allcustomers>F</allcustomers>
+  <allemployees>T</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>BASIC</center>
+  <label>Amortizacija</label>
+</centertab>
