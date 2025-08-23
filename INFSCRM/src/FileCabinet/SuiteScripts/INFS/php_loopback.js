@@ -17,7 +17,7 @@ function(https) {
      * @since 2015.1
      */
     function doGet(requestParams) {
-    	var headerObj = {'X-API-key' : 'Ra4qgA1eZs7WB5ckndG8KEbfX2WoJJnTq3C9F1BD'};
+    	//var headerObj = { : };
 
     	var response = https.get({
 
