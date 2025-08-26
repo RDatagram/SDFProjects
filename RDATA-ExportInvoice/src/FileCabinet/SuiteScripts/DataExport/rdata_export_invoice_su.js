@@ -226,13 +226,25 @@ define(['N/ui/serverWidget', 'N/task', 'N/log', 'N/url', 'N/redirect', 'N/runtim
                 log.audit('Task Submitted', 'Map/Reduce Task ID: ' + taskId);
 
                 // Show confirmation page
-                showConfirmationPage(context, taskId, fromDate, toDate);
+                //showConfirmationPage(context, taskId, fromDate, toDate);
+                redirectToStatus(context, taskId);
 
             } catch (e) {
                 log.error('processForm Error', e.toString());
                 const form = createErrorForm(e.toString());
                 context.response.writePage(form);
             }
+        }
+
+        function redirectToStatus(context, taskId) {
+            redirect.toSuitelet({
+                scriptId: 'customscript_rdata_export_inv_status',
+                deploymentId: 'customdeploy_rdata_export_inv_status',
+                parameters: {
+                    scriptid : 'customscript_rdata_export_invoices',
+                    executionid : taskId
+                }
+            });
         }
 
         /**

@@ -3,8 +3,8 @@
  * @NScriptType Suitelet
  * @NModuleScope SameAccount
  */
-define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'],
-    function(ui, search, task, log, url, runtime) {
+define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime','N/redirect'],
+    function(ui, search, task, log, url, runtime, redirect) {
 
         function onRequest(context) {
             const request = context.request;
@@ -33,11 +33,12 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
 
         function showStatusList(request, response) {
             const scriptId = request.parameters.scriptid || 'customscript_rdata_export_invoices';
-            const form = createStatusForm(scriptId);
+            const executionId = request.parameters.executionid || 'MAP';
+            const form = createStatusForm(scriptId,executionId);
 
             try {
                 // Get MapReduce executions
-                const executions = getMapReduceExecutions(scriptId);
+                const executions = getMapReduceExecutions(scriptId,executionId);
                 addExecutionsToForm(form, executions, scriptId);
 
             } catch (e) {
@@ -52,18 +53,25 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
             response.writePage(form);
         }
 
-        function createStatusForm(scriptId) {
+        function createStatusForm(scriptId,executionId) {
             const form = ui.createForm({
                 title: 'MapReduce Status Monitor'
             });
 
             // Add script selection field
             const scriptField = form.addField({
-                id: 'script_selector',
+                id: 'custpage_script_selector',
                 type: ui.FieldType.TEXT,
                 label: 'MapReduce Script ID'
             });
             scriptField.defaultValue = scriptId;
+
+            const taskIdField = form.addField({
+                id: 'custpage_task_id',
+                type: ui.FieldType.TEXT,
+                label: 'MapReduce Task ID'
+            });
+            taskIdField.defaultValue = executionId;
 
             // Add refresh button
             form.addSubmitButton({
@@ -76,7 +84,7 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
             return form;
         }
 
-        function getMapReduceExecutions(scriptId) {
+        function getMapReduceExecutions(scriptId,executionId) {
             const executions = [];
 
             try {
@@ -85,6 +93,8 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
                     type: 'scheduledscriptinstance',
                     filters: [
                         ['script.scriptid', 'is', scriptId],
+                        'AND',
+                        ['taskid', search.Operator.CONTAINS, executionId],
                         'AND',
                         ['status', 'anyof', ['COMPLETE', 'FAILED', 'PROCESSING', 'PENDING', 'RETRY']]
                     ],
@@ -149,32 +159,25 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
             const sublist = form.addSublist({
                 id: 'executions',
                 type: ui.SublistType.LIST,
-                label: 'MapReduce Executions (' + executions.length + ' found)'
+                label: 'MapReduce Executions'
             });
 
-            // Add columns
             sublist.addField({
-                id: 'execution_id',
+                id: 'custpage_select',
+                type: ui.FieldType.CHECKBOX,
+                label: 'Select'
+            });
+
+            sublist.addField({
+                id: 'custpage_stage',
                 type: ui.FieldType.TEXT,
-                label: 'Execution ID'
+                label: 'Stage'
             });
 
             sublist.addField({
                 id: 'status',
                 type: ui.FieldType.TEXT,
                 label: 'Status'
-            });
-
-            sublist.addField({
-                id: 'stage',
-                type: ui.FieldType.TEXT,
-                label: 'Stage'
-            });
-
-            sublist.addField({
-                id: 'progress',
-                type: ui.FieldType.TEXT,
-                label: 'Progress %'
             });
 
             sublist.addField({
@@ -189,30 +192,24 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
                 label: 'End Date'
             });
 
+            sublist.addMarkAllButtons();
+
+            executions.sort(function(a, b) {
+                return a.stage.localeCompare(b.stage);
+            })
             // Populate sublist
             executions.forEach(function(execution, index) {
+
                 sublist.setSublistValue({
-                    id: 'execution_id',
+                    id: 'custpage_stage',
                     line: index,
-                    value: execution.scriptId || 'N/A'
+                    value: execution.stage || 'N/A'
                 });
 
                 sublist.setSublistValue({
                     id: 'status',
                     line: index,
                     value: getStatusDisplay(execution.status) || 'N/A'
-                });
-
-                sublist.setSublistValue({
-                    id: 'stage',
-                    line: index,
-                    value: execution.stage || 'N/A'
-                });
-
-                sublist.setSublistValue({
-                    id: 'progress',
-                    line: index,
-                    value: execution.percentComplete + '%' || 'N/A'
                 });
 
                 if (execution.startDate) {
@@ -398,7 +395,7 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
                     });
                 } else if (scriptId) {
                     // Get all executions for script
-                    const executions = getMapReduceExecutions(scriptId);
+                    const executions = getMapReduceExecutions(scriptId,executionId);
                     response.write({
                         output: JSON.stringify({
                             success: true,
@@ -425,8 +422,20 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
         }
 
         function handlePostRequest(request, response) {
-            const scriptId = request.parameters.script_selector;
+            const scriptId = request.parameters.custpage_script_selector;
+            const executionId = request.parameters.custpage_task_id;
 
+
+            redirect.toSuitelet({
+                scriptId: 'customscript_rdata_export_inv_status',
+                deploymentId: 'customdeploy_rdata_export_inv_status',
+                parameters: {
+                    scriptid : scriptId,
+                    executionid : executionId
+                }
+            });
+
+            /*
             // Redirect to GET with the new script ID
             const redirectUrl = url.resolveScript({
                 scriptId: runtime.getCurrentScript().id,
@@ -438,6 +447,8 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
                 type: 'SUITELET',
                 identifier: redirectUrl
             });
+
+             */
         }
 
         // Helper functions
@@ -451,23 +462,6 @@ define(['N/ui/serverWidget', 'N/search', 'N/task', 'N/log', 'N/url', 'N/runtime'
             };
 
             return statusMap[status] || status;
-        }
-
-        function calculateDuration(startDate, endDate) {
-            if (!startDate || !endDate) return 'N/A';
-
-            const start = new Date(startDate);
-            const end = new Date(endDate);
-            const diffMs = end - start;
-
-            const diffMins = Math.floor(diffMs / 60000);
-            const diffSecs = Math.floor((diffMs % 60000) / 1000);
-
-            if (diffMins > 0) {
-                return diffMins + 'm ' + diffSecs + 's';
-            } else {
-                return diffSecs + 's';
-            }
         }
 
         function createExecutionSummary(executions) {
