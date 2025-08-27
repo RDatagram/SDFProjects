@@ -1,0 +1,12 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>L9-sdf</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="false">SUBSIDIARIES</feature>
+      <feature required="false">WEBSERVICES</feature>
+    </features>
+    <objects>
+    </objects>
+  </dependencies>
+</manifest>
