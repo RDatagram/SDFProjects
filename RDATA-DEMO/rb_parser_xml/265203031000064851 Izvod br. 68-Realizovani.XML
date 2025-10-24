@@ -1,0 +1,19 @@
+<TransakcioniRacunPrivredaIzvod>
+    <Zaglavlje VrstaIzvoda="R" IzvodID="416678773794" BrojIzvoda="68" DatumIzvoda="31.08.2025" MaticniBroj="4121659886"
+               KomitentNaziv="R-DATAGRAM DOO" KomitentAdresa="DR IVANA RIBARA 1" KomitentMesto="21102 NOVI SAD"
+               KomitentDinarskoKnjigovodstvo="Dinarsko knjigovodstvo" Partija="265203031000064851"
+               TipRacuna="Transakcioni depoziti preduzeća i drugih pravnih lica" PrethodnoStanje="1783148.71"
+               DugovniPromet="780" PotrazniPromet="0" NovoStanje="1782368.71" StanjeObracunateProvizije="0"
+               TekstPoruke="" DatumOdMinus="" DozvoljeniMinus="0" DatumDoMinus="" NapomenaRezDebitKart=""/>
+    <Stavke NalogKorisnik="Raiffeisen banka a.d. Beograd" Mesto="" VasBrojNaloga="" BrojRacunaPrimaocaPosiljaoca=""
+            Opis="Provizija  banke po osnovu naloga platnog prometa za period od 16.08.25 do 31.08.25 "
+            SifraPlacanja="221" SifraPlacanjaOpis="" Duguje="80" Potrazuje="0" ModelZaduzenjaOdobrenja=""
+            PozivNaBrojZaduzenjaOdobrenja="" ModelKorisnika="" PozivNaBrojKorisnika=""
+            BrojZaReklamaciju="1884252431657499000003//31.08.2025/31.08.2025" Referenca="" Objasnjenje="160331"
+            DatumValute="31.08.2025"/>
+    <Stavke NalogKorisnik="Raiffeisen banka a.d. Beograd" Mesto="" VasBrojNaloga="" BrojRacunaPrimaocaPosiljaoca=""
+            Opis=" Naknada za korišcenje paketa u periodu 01.08.2025 - 31.08.2025" SifraPlacanja="221"
+            SifraPlacanjaOpis="" Duguje="700" Potrazuje="0" ModelZaduzenjaOdobrenja="" PozivNaBrojZaduzenjaOdobrenja=""
+            ModelKorisnika="" PozivNaBrojKorisnika="" BrojZaReklamaciju="1882252437482414000001//31.08.2025/31.08.2025"
+            Referenca="" Objasnjenje="175411" DatumValute="31.08.2025"/>
+</TransakcioniRacunPrivredaIzvod>

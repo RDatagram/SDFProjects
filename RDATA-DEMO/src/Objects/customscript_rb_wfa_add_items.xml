@@ -1,0 +1,25 @@
+<workflowactionscript scriptid="customscript_rb_wfa_add_items">
+  <description>Loads original XML from bank statement record and adds line items to the sublist</description>
+  <isinactive>F</isinactive>
+  <name>RB Parser: Add Items from XML</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <returnrecordtype></returnrecordtype>
+  <returntype></returntype>
+  <scriptfile>[/SuiteScripts/rb_parser/rdata_rb_wfa_add_items.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rb_wfa_add_items">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>[scriptid=customrecord_srb_statement]</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</workflowactionscript>

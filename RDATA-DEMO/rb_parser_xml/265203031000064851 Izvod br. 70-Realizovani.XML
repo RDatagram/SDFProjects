@@ -1,0 +1,14 @@
+<TransakcioniRacunPrivredaIzvod>
+    <Zaglavlje VrstaIzvoda="R" IzvodID="418118142764" BrojIzvoda="70" DatumIzvoda="04.09.2025" MaticniBroj="4121659886"
+               KomitentNaziv="R-DATAGRAM DOO" KomitentAdresa="DR IVANA RIBARA 1" KomitentMesto="21102 NOVI SAD"
+               KomitentDinarskoKnjigovodstvo="Dinarsko knjigovodstvo" Partija="265203031000064851"
+               TipRacuna="Transakcioni depoziti preduzeća i drugih pravnih lica" PrethodnoStanje="1771340.71"
+               DugovniPromet="0" PotrazniPromet="96021.60" NovoStanje="1867362.31" StanjeObracunateProvizije="0"
+               TekstPoruke="" DatumOdMinus="" DozvoljeniMinus="0" DatumDoMinus="" NapomenaRezDebitKart=""/>
+    <Stavke NalogKorisnik="INVIGGO DOO NOVI SAD AUGUSTA CESARCA 18 NOVI SAD" Mesto="" VasBrojNaloga=""
+            BrojRacunaPrimaocaPosiljaoca="160600000072477576" Opis="PROMET ROBE I USLUGA FINALNA POTROŠNJA"
+            SifraPlacanja="221" SifraPlacanjaOpis="Promet robe i usluga-finalna potrošn" Duguje="0" Potrazuje="96021.60"
+            ModelZaduzenjaOdobrenja="99" PozivNaBrojZaduzenjaOdobrenja="" ModelKorisnika="0"
+            PozivNaBrojKorisnika="109-2025" BrojZaReklamaciju="1894252472293847000006//04.09.2025/04.09.2025"
+            Referenca="5894252472271160" Objasnjenje="500251" DatumValute="04.09.2025"/>
+</TransakcioniRacunPrivredaIzvod>
