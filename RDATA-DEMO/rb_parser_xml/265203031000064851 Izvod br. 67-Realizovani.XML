@@ -1,0 +1,14 @@
+<TransakcioniRacunPrivredaIzvod>
+    <Zaglavlje VrstaIzvoda="R" IzvodID="415875058486" BrojIzvoda="67" DatumIzvoda="25.08.2025" MaticniBroj="4121659886"
+               KomitentNaziv="R-DATAGRAM DOO" KomitentAdresa="DR IVANA RIBARA 1" KomitentMesto="21102 NOVI SAD"
+               KomitentDinarskoKnjigovodstvo="Dinarsko knjigovodstvo" Partija="265203031000064851"
+               TipRacuna="Transakcioni depoziti preduzeća i drugih pravnih lica" PrethodnoStanje="1883148.71"
+               DugovniPromet="100000" PotrazniPromet="0" NovoStanje="1783148.71" StanjeObracunateProvizije="0"
+               TekstPoruke="" DatumOdMinus="" DozvoljeniMinus="0" DatumDoMinus="" NapomenaRezDebitKart=""/>
+    <Stavke NalogKorisnik="R-DATAGRAM" Mesto="Novi Sad" VasBrojNaloga=""
+            BrojRacunaPrimaocaPosiljaoca="265205031000316951" Opis="Druge transakcije - interni prenos"
+            SifraPlacanja="290" SifraPlacanjaOpis="Druge transakcije" Duguje="100000" Potrazuje="0"
+            ModelZaduzenjaOdobrenja="" PozivNaBrojZaduzenjaOdobrenja="" ModelKorisnika="" PozivNaBrojKorisnika=""
+            BrojZaReklamaciju="1874252378093878000001//25.08.2025/25.08.2025" Referenca="5874252378093861"
+            Objasnjenje="506214" DatumValute="25.08.2025"/>
+</TransakcioniRacunPrivredaIzvod>

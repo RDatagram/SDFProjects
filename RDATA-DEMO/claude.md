@@ -1,0 +1,9 @@
+- Use NetSuite 2.1 standard for creating scripts
+- scriptid in SDF XML files is limited to 28 characters
+- examples for SDF XML files are stored in the rb_parser_xml folder
+- custom record types are stored in the Objects folder
+- do not add <?xml version="1.0" encoding="UTF-8"?> in SDF XML files
+- pattern for <recordtype>[scriptid=customrecord_]</recordtype>
+- <returntype></returntype> for workflow action scripts
+- The script ID must match the file name (excluding the file extension)
+- log.debug, log.audit, log.error should be used in format log.*({title: 'title'; details: 'details'})

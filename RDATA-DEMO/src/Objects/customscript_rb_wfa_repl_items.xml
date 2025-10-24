@@ -1,0 +1,25 @@
+<workflowactionscript scriptid="customscript_rb_wfa_repl_items">
+  <description>Clears existing line items and reloads them from the original XML stored on the bank statement record</description>
+  <isinactive>F</isinactive>
+  <name>RB Parser: Replace Items from XML</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <returnrecordtype></returnrecordtype>
+  <returntype></returntype>
+  <scriptfile>[/SuiteScripts/rb_parser/rdata_rb_wfa_replace_items.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_rb_wfa_repl_items">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>[scriptid=customrecord_srb_statement]</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</workflowactionscript>
