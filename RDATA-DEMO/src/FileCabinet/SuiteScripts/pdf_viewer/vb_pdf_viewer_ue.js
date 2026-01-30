@@ -21,7 +21,7 @@ define(['N/runtime', 'N/url', 'N/search', 'N/log'],
 
             try {
                 // Only execute on view mode
-                if (context.type !== context.UserEventType.VIEW) {
+                if ((context.type !== context.UserEventType.VIEW) && (context.type !== context.UserEventType.EDIT)) {
                     return;
                 }
 
@@ -132,7 +132,7 @@ define(['N/runtime', 'N/url', 'N/search', 'N/log'],
         position: fixed;
         top: 0;
         left: 0;
-        width: 50%;
+        width: 40%;
         height: 100%;
         background: #525659;
         z-index: 100000;
@@ -204,8 +204,8 @@ define(['N/runtime', 'N/url', 'N/search', 'N/log'],
     
     /* Push entire page content to the right when panel is open */
     body.pdfPanelActive {
-        margin-left: 50% !important;
-        width: 50% !important;
+        margin-left: 40% !important;
+        width: 60% !important;
     }
 </style>
 
@@ -219,7 +219,7 @@ define(['N/runtime', 'N/url', 'N/search', 'N/log'],
         <div class="actions">
             <a href="${suiteletUrl}" target="_blank">🔗 New Tab</a>
             <a href="${suiteletUrl}&download=T">⬇ Download</a>
-            <button class="close-btn" onclick="togglePdfPanel()">✕ Hide</button>
+            <!--<button class="close-btn" onclick="togglePdfPanel()">✕ Hide</button>-->
         </div>
     </div>
     <div id="pdfPanelContent">
