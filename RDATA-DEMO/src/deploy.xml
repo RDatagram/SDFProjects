@@ -3,7 +3,10 @@
         <path>~/AccountConfiguration/*</path>
     </configuration>
     <files>
+        <!--
         <path>~/FileCabinet/*</path>
+        -->
+        <path>~/FileCabinet/SuiteScripts/pdf_viewer/*</path>
     </files>
     <objects>
         <path>~/Objects/empty/*</path>
