@@ -131,12 +131,12 @@ define(['N/runtime', 'N/url', 'N/search', 'N/log'],
         display: none;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         width: 40%;
         height: 100%;
         background: #525659;
         z-index: 100000;
-        box-shadow: 3px 0 10px rgba(0,0,0,0.3);
+        box-shadow: -3px 0 10px rgba(0,0,0,0.3);
         flex-direction: column;
     }
     
@@ -202,9 +202,9 @@ define(['N/runtime', 'N/url', 'N/search', 'N/log'],
         border: none;
     }
     
-    /* Push entire page content to the right when panel is open */
+    /* Push entire page content to the left when panel is open */
     body.pdfPanelActive {
-        margin-left: 40% !important;
+        margin-right: 40% !important;
         width: 60% !important;
     }
 </style>
@@ -243,7 +243,7 @@ function togglePdfPanel() {
         iframe.src = 'about:blank';
         pdfPanelOpen = false;
     } else {
-        // Show panel and push content to right
+        // Show panel and push content to left
         panel.classList.add('open');
         body.classList.add('pdfPanelActive');
         iframe.src = pdfUrl;
