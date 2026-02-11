@@ -3,7 +3,7 @@
  * @NScriptType WorkflowActionScript
  * @description Workflow action to load original XML and add bank statement items
  */
-define(['N/record', 'N/log', './rdata_rb_parser_lib','N/file','N/xml'], (record, log, parserLib,nFile,xml) => {
+define(['N/record', 'N/log', './rdata_rb_parser_lib','N/file','N/xml','N/query'], (record, log, parserLib, nFile, xml, query) => {
 
     /**
      * Workflow action entry point
@@ -66,6 +66,10 @@ define(['N/record', 'N/log', './rdata_rb_parser_lib','N/file','N/xml'], (record,
             statementRec.setValue({ fieldId: 'custrecord_srb_komitent_adresa', value: headerData.komitentAdresa });
             statementRec.setValue({ fieldId: 'custrecord_srb_komitent_mesto', value: headerData.komitentMesto });
             statementRec.setValue({ fieldId: 'custrecord_srb_partija', value: headerData.partija });
+            const glAccountId = parserLib.lookupGLAccount(headerData.partija);
+            if (glAccountId) {
+                statementRec.setValue({ fieldId: 'custrecord_srb_bank_gl_account', value: glAccountId });
+            }
             statementRec.setValue({ fieldId: 'custrecord_srb_tip_racuna', value: headerData.tipRacuna });
             statementRec.setValue({ fieldId: 'custrecord_srb_prethodno_stanje', value: parseFloat(headerData.prethodnoStanje) || 0 });
             statementRec.setValue({ fieldId: 'custrecord_srb_dugovni_promet', value: parseFloat(headerData.dugovniPromet) || 0 });
@@ -85,14 +89,6 @@ define(['N/record', 'N/log', './rdata_rb_parser_lib','N/file','N/xml'], (record,
                 };
             }
 
-            // Load the record in dynamic mode to add line items
-            /*
-            const statementRecLoaded = record.load({
-                type: 'customrecord_srb_statement',
-                id: recordId,
-                isDynamic: true
-            });
-*/
             const statementRecLoaded = statementRec;
 
             // Get current line count
