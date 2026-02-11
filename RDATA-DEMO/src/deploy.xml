@@ -6,7 +6,7 @@
         <!--
         <path>~/FileCabinet/*</path>
         -->
-        <path>~/FileCabinet/SuiteScripts/pdf_viewer/*</path>
+        <path>~/FileCabinet/SuiteScripts/rb_parser/*</path>
     </files>
     <objects>
         <path>~/Objects/empty/*</path>

@@ -5,7 +5,7 @@
  * This module provides functions to parse Serbian bank statement XML files
  * and create records in NetSuite
  */
-define(['N/record', 'N/xml', 'N/log', 'N/search'], (record, xml, log, search) => {
+define(['N/record', 'N/xml', 'N/log', 'N/search', 'N/query'], (record, xml, log, search, query) => {
 
     /**
      * Parses Serbian bank statement XML and creates records
@@ -177,6 +177,10 @@ define(['N/record', 'N/xml', 'N/log', 'N/search'], (record, xml, log, search) =>
             statementRec.setValue({ fieldId: 'custrecord_srb_komitent_adresa', value: headerData.komitentAdresa });
             statementRec.setValue({ fieldId: 'custrecord_srb_komitent_mesto', value: headerData.komitentMesto });
             statementRec.setValue({ fieldId: 'custrecord_srb_partija', value: headerData.partija });
+            const glAccountId = lookupGLAccount(headerData.partija);
+            if (glAccountId) {
+                statementRec.setValue({ fieldId: 'custrecord_srb_bank_gl_account', value: glAccountId });
+            }
             statementRec.setValue({ fieldId: 'custrecord_srb_tip_racuna', value: headerData.tipRacuna });
             statementRec.setValue({ fieldId: 'custrecord_srb_prethodno_stanje', value: parseFloat(headerData.prethodnoStanje) || 0 });
             statementRec.setValue({ fieldId: 'custrecord_srb_dugovni_promet', value: parseFloat(headerData.dugovniPromet) || 0 });
@@ -305,6 +309,30 @@ define(['N/record', 'N/xml', 'N/log', 'N/search'], (record, xml, log, search) =>
         }
     }
 
+    function lookupGLAccount(partija) {
+        try {
+            if (!partija) return null;
+
+            const results = query.runSuiteQL({
+                query: `SELECT custrecord_srb_bank_acc_map_to
+                        FROM customrecord_srb_bank_acc_mapping
+                        WHERE NAME = ?`,
+                params: [partija]
+            }).asMappedResults();
+
+            if (results.length > 0 && results[0].custrecord_srb_bank_acc_map_to) {
+                log.debug({title: 'GL Account Found', details: 'Partija: ' + partija + ', GL ID: ' + results[0].custrecord_srb_bank_acc_map_to});
+                return results[0].custrecord_srb_bank_acc_map_to;
+            }
+
+            log.debug({title: 'GL Account Not Found', details: 'No mapping for Partija: ' + partija});
+            return null;
+        } catch (e) {
+            log.error({title: 'lookupGLAccount Error', details: e.message});
+            return null;
+        }
+    }
+
     /**
      * Validates XML structure
      * @param {string} xmlString - XML content to validate
@@ -346,6 +374,7 @@ define(['N/record', 'N/xml', 'N/log', 'N/search'], (record, xml, log, search) =>
         createStatementWithLines: createStatementWithLines,
         createHeaderRecord: updateHeaderRecord,
         parseSerbianDate: parseSerbianDate,
-        validateXml: validateXml
+        validateXml: validateXml,
+        lookupGLAccount: lookupGLAccount
     };
 });
