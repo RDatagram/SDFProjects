@@ -39,6 +39,4 @@ Thumbs.db
 # Output of 'npm pack'
 *.tgz
 
-# Claude global skills
-~/.claude/skills
 /skills/
