@@ -5,8 +5,9 @@
     <files>
         <!--
         <path>~/FileCabinet/*</path>
+         <path>~/FileCabinet/SuiteScripts/rb_parser/*</path>
         -->
-        <path>~/FileCabinet/SuiteScripts/rb_parser/*</path>
+        <path>~/FileCabinet/SuiteScripts/rdata-demo/*</path>
     </files>
     <objects>
         <path>~/Objects/empty/*</path>
