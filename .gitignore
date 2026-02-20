@@ -1,7 +1,7 @@
 **/.gitignore
 
 # IDEs and editors
-.idea
+.idea/
 *.iml
 
 # System Files
