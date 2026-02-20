@@ -1,0 +1,25 @@
+<scheduledscript scriptid="customscript_ss_get_externalid_frm_creed">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SS Set External Id In Vendor Evaluation</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/ss_get_vendor_external_id.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ss_get_externalid_frm_creed">
+      <isdeployed>F</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>SS Get Vendor External Id From Creednz</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT15M</repeat>
+          <startdate>2024-09-09</startdate>
+          <starttime>07:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

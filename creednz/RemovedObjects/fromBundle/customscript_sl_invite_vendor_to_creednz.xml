@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_sl_invite_vendor_to_creednz">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SL Invite Vendor To CreedNz</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/sl_vendor_invite_dialog.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_invite_vendor_to_creednz">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>SL Invite Vendor To Creednz</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

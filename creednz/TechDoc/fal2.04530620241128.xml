@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CompanyID="FAL2" PmtRecCount="2" PmtRecTotal="91.18">
+    <PmtRec PmtCrDr="C" PmtFormat="CTX" PmtMethod="DAC" TranHandlingCode="D">
+        <PmtID>P241128045304287</PmtID>
+        <CurCode>USD</CurCode>
+        <ValueDate>2024-11-28</ValueDate>
+        <RefInfo RefType="WC">
+            <RefID>OUR</RefID>
+        </RefInfo>
+        <Message MsgType="ACH">
+            <MsgText>2727</MsgText>
+        </Message>
+        <OrgnrParty>
+            <Name>
+                <Name1>Fairlife LLC</Name1>
+            </Name>
+            <PostAddr>
+                <Addr1>1001 W. Adams Street</Addr1>
+                <City>Chicago</City>
+                <StateProv>IL</StateProv>
+                <PostalCode>60607</PostalCode>
+                <Country>US</Country>
+            </PostAddr>
+        </OrgnrParty>
+        <OrgnrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctID="4945751220" AcctType="D">
+                <BankInfo BankIDType="ABA" Name="Wells Fargo">
+                    <BankID>121000248</BankID>
+                    <RefInfo RefType="ACH">
+                        <RefID>4800864026</RefID>
+                    </RefInfo>
+                </BankInfo>
+            </DepAcctID>
+        </OrgnrDepAcctID>
+        <RcvrParty>
+            <Name>
+                <Name1>GRAINGER</Name1>
+            </Name>
+            <RefInfo RefType="VN">
+                <RefID>2727</RefID>
+            </RefInfo>
+            <PostAddr/>
+        </RcvrParty>
+        <RcvrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctID="12442221" AcctType="D">
+                <BankInfo BankIDType="ABA">
+                    <BankID>021052053</BankID>
+                </BankInfo>
+            </DepAcctID>
+        </RcvrDepAcctID>
+        <PmtDetail>
+            <InvoiceInfo DiscountCurAmt="0.00" EffDt="2024-10-09" InvoiceNum="9276431468" InvoiceType="IV"
+                         NetCurAmt="10.67" TotalCurAmt="10.67">
+                <Note NoteType="INV">
+                    <NoteText>Dexter</NoteText>
+                </Note>
+            </InvoiceInfo>
+        </PmtDetail>
+        <DocDelivery>
+            <FileOut>
+                <Delivery/>
+            </FileOut>
+        </DocDelivery>
+        <CurAmt>10.67</CurAmt>
+    </PmtRec>
+    <PmtRec PmtCrDr="C" PmtFormat="CTX" PmtMethod="DAC" TranHandlingCode="D">
+        <PmtID>P241128045301611</PmtID>
+        <CurCode>USD</CurCode>
+        <ValueDate>2024-11-28</ValueDate>
+        <RefInfo RefType="WC">
+            <RefID>OUR</RefID>
+        </RefInfo>
+        <Message MsgType="ACH">
+            <MsgText>2717</MsgText>
+        </Message>
+        <OrgnrParty>
+            <Name>
+                <Name1>Fairlife LLC</Name1>
+            </Name>
+            <PostAddr>
+                <Addr1>1001 W. Adams Street</Addr1>
+                <City>Chicago</City>
+                <StateProv>IL</StateProv>
+                <PostalCode>60607</PostalCode>
+                <Country>US</Country>
+            </PostAddr>
+        </OrgnrParty>
+        <OrgnrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctID="4945751220" AcctType="D">
+                <BankInfo BankIDType="ABA" Name="Wells Fargo">
+                    <BankID>121000248</BankID>
+                    <RefInfo RefType="ACH">
+                        <RefID>4800864026</RefID>
+                    </RefInfo>
+                </BankInfo>
+            </DepAcctID>
+        </OrgnrDepAcctID>
+        <RcvrParty>
+            <Name>
+                <Name1>DEXTER HARDWARE</Name1>
+            </Name>
+            <RefInfo RefType="VN">
+                <RefID>2717</RefID>
+            </RefInfo>
+            <PostAddr/>
+        </RcvrParty>
+        <RcvrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctID="1240015593" AcctType="D">
+                <BankInfo BankIDType="ABA">
+                    <BankID>107002192</BankID>
+                </BankInfo>
+            </DepAcctID>
+        </RcvrDepAcctID>
+        <PmtDetail>
+            <InvoiceInfo DiscountCurAmt="0.00" EffDt="2024-10-23" InvoiceNum="1-214497" InvoiceType="IV"
+                         NetCurAmt="26.87" TotalCurAmt="26.87"/>
+            <InvoiceInfo DiscountCurAmt="0.00" EffDt="2024-10-28" InvoiceNum="1-214878" InvoiceType="IV"
+                         NetCurAmt="17.12" TotalCurAmt="17.12"/>
+            <InvoiceInfo DiscountCurAmt="0.00" EffDt="2024-10-31" InvoiceNum="1-215156" InvoiceType="IV"
+                         NetCurAmt="36.52" TotalCurAmt="36.52"/>
+        </PmtDetail>
+        <DocDelivery>
+            <FileOut>
+                <Delivery/>
+            </FileOut>
+        </DocDelivery>
+        <CurAmt>80.51</CurAmt>
+    </PmtRec>
+    <FileInfoGrp FileControlNumber="FILE2411285311" FileDate="2024-11-28"/>
+</File>

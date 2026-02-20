@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Heebo|Roboto" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
+
+		<style>
+			.container-fluid {
+				font-size: 10px !important;
+				font-family: "Roboto", sans-serif !important;
+				margin-top: -20px !important;
+			}
+
+			.container-fluid ul {
+				list-style: none !important;
+				margin: 0px;
+				display: initial;
+			}
+			ul.pagination {
+				margin: 2px 0 !important;
+				white-space: nowrap !important;
+				justify-content: flex-end !important;
+				display: -ms-flexbox !important;
+				display: flex !important;
+				padding-left: 0;
+				list-style: none;
+				border-radius: 0.25rem;
+			}
+			.ica-label {
+				font-weight: bold;
+				font-size: 9px !important;
+				text-transform: uppercase;
+				/* color: #343434; */
+			}
+
+			.enable-text {
+				font-weight: bold;
+			}
+			.disable-text {
+				color: #a1a1a1;
+			}
+			.normal-text {
+				font-weight: normal;
+			}
+
+			#fail,
+			#success,
+			#spinner {
+				display: none;
+			}
+
+			.red-text {
+				color: red;
+				font-weight: bold;
+			}
+			.popover-header {
+				font-weight: bold;
+				font-size: 12px !important;
+				text-transform: uppercase;
+				color: #454545;
+			}
+
+			.popover-label {
+				font-weight: bold;
+				font-size: 10px !important;
+				text-transform: uppercase;
+				color: #676767;
+			}
+
+			.popover-text {
+				font-size: 10px !important;
+				color: #454545;
+			}
+
+			.ica-thead {
+				color: #fff;
+				background-color: #798fb2;
+				border-color: #1361a0;
+			}
+			.ica-cell {
+				font-size: 12px !important;
+				font-family: "Roboto", sans-serif !important;
+			}
+
+			.big {
+				font-size: 13px;
+			}
+
+			.ica-h-label {
+				font-size: 11px !important;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
+
+			.dropdown-menu {
+				font-size: 13px !important;
+			}
+			.dataTables_paginate,
+			paginate_button {
+				margin: 0px !important  ;
+				padding: 0px !important;
+			}
+
+			.page-link {
+				margin-left: 0px !important;
+			}
+			.dataTables_paginate .paginate_button {
+				padding: 0 !important;
+				margin-left: 0 !important;
+			}
+
+
+			.badge-ica {
+				background: #dfeccb;
+				padding: 6px !important;
+				border-radius: 4px;
+			}
+			/* .dataTables_filter {
+            display: none; 
+        } */
+
+			#success-notification-row {
+				display: none;
+			}
+
+			.ica-button {
+				color: #fff !important;
+			}
+
+			.dropdown-toggle {
+				font-size: 10px !important;
+			}
+			.ica-button {
+				font-weight: bold;
+				text-transform: uppercase;
+				color: white !important;
+				font-size: 10px;
+			}
+
+			#table-row {
+				table-layout: auto !important;
+			}
+			table.dataTable thead .sorting,
+			table.dataTable thead .sorting_asc,
+			table.dataTable thead .sorting_desc {
+				background: none;
+			}
+
+			.select-css {
+				display: block;
+				font-size: 12px;
+				font-family: sans-serif;
+				font-weight: 400;
+				color: #111;
+				line-height: 1.3;
+				padding: 0.6em 1.2em 0.5em 0.6em;
+				width: 100%;
+				max-width: 100%;
+				box-sizing: border-box;
+				margin: 0;
+				border: 1px solid #aaa;
+				box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+				border-radius: 0.2em;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				appearance: none;
+				background-color: #fff;
+				background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
+					linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+				background-repeat: no-repeat, repeat;
+				background-position: right 0.7em top 50%, 0 0;
+				background-size: 0.65em auto, 100%;
+			}
+			.select-css::-ms-expand {
+				display: none;
+			}
+			.select-css:hover {
+				border-color: #888;
+			}
+			.select-css:focus {
+				border-color: #aaa;
+				box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+				box-shadow: 0 0 0 3px -moz-mac-focusring;
+				color: #222;
+				outline: none;
+			}
+			.select-css option {
+				font-weight: normal;
+			}
+
+                        .smaller {
+                                font-size: 9px;
+                                height: 24px;
+                        }
+                        
+		</style>
+		<title>iCloudAuthority - Payment Module</title>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row mb-2">
+				<div class="col-12">
+					<a id="btn_createPayments" class="ica-button btn btn-sm btn-primary" onclick="createPayments()">Create Payments</a>
+					<a class="ica-button btn btn-sm btn-secondary" onclick="downloadCSV()">Download CSV</a>
+				</div>
+			</div>
+
+			<div id="success-notification-row" class="row mb-2" style="padding: 4px 16px; border-bottom: 0px">
+				<div class="col-12">
+					<div class="alert alert-success alert-dismissible fade show" role="alert">
+						<p>Successfully deployed a scheduled script.</p>
+						<h5>List of Transactions</h5>
+						<br />
+						<div id="transactions-list"></div>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<hr />
+						<p class="mb-0">You will receive an email notification shortly.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="balance-amount-row" class="row mb-2">
+				<div class="col-9">
+					<div class="card mb-1">
+						<div class="card-body" style="padding: 0px 16px">
+							<table class="table table-borderless table-sm" style="margin: 0px 0px">
+								<tr>
+									<td>
+										<div class="ica-label">Date</div>
+										<input
+											style="border: 1px solid #d3d3d3; font-size: 11px !important"
+											class="form-inline form-control-sm"
+											id="defaultdate"
+											name="defaultdate"
+											value=""
+										/>
+									</td>
+									<!-- <td>
+										<div class="ica-label">Start Date</div>
+										<input
+											style="border: 1px solid #d3d3d3; font-size: 11px !important"
+											class="form-inline form-control-sm"
+											id="startdate"
+											name="startdate"
+											value=""
+										/>
+									</td>
+									<td>
+										<div class="ica-label">End Date</div>
+										<input
+											style="border: 1px solid #d3d3d3; font-size: 11px !important"
+											class="form-inline form-control-sm"
+											id="enddate"
+											name="enddate"
+											value=""
+										/>
+									</td> -->
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="card mb-1" style="padding: 0px 16px">
+						<table class="table table-borderless table-sm" style="margin: 0px 0px">
+							<tr>
+								<td>
+									<div class="ica-label">A/P Account</div>
+									<!-- reloadPage('apaccount', this) -->
+									<select
+										class="select-css form-control form-control-sm"
+										id="filterapaccount"
+										name="filterapaccount"
+										data-size="8"
+										onchange="reload()"
+									>
+										{{#each apaccounts}}
+										<option data-balance="{{balance}}" data-internalid="{{id}}" value="{{id}}">{{name}}</option>
+										{{/each}}
+									</select>
+								</td>
+								<td style="width: 5%"></td>
+								<td>
+									<div class="ica-label">Account</div>
+									<select
+										class="select-css form-control form-control-sm"
+										id="filteraccount"
+										name="filteraccount"
+										data-size="8"
+										onchange="reload()"
+									>
+										{{#each accounts}}
+										<option
+											data-balance="{{balance}}"
+											data-subsidiary="{{subsidiary}}"
+											data-subsidiaryname="{{subsidiaryname}}"
+											data-internalid="{{id}}"
+											value="{{id}}"
+										>
+											{{name}}
+										</option>
+										{{/each}}
+									</select>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="card mb-1">
+						<div class="card-header ica-thead" style="padding: 4px 16px; border-bottom: 0px">
+							<span class="ica-label">OPTIONS</span>
+						</div>
+						<div class="card-body" style="padding: 0px 16px">
+							<table class="table table-borderless table-sm">
+								<tr>
+									<td style="width: 25%">
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="createbillpaymentsperbill" />
+											<label class="form-check-label ica-label" for="createbillpaymentsperbill"
+												>Create Bill Payments Per Bill</label
+											>
+										</div>
+									</td>
+									<td style="width: 10%"></td>
+									<td style="width: 25%">
+										<div class="form-check">
+											<input
+												type="checkbox"
+												class="form-check-input"
+												id="togglebillpaymentsprinted"
+												onchange="reload()"
+											/>
+											<label class="form-check-label ica-label" for="togglebillpaymentsprinted"
+												>Create Manual Check</label
+											>
+										</div>
+									</td>
+									<td style="width: 10%"></td>
+									<td style="width: 25%">
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="usecustomchecknumbering" />
+											<label class="form-check-label ica-label" for="usecustomchecknumbering"
+												>Use Custom Check Numbering</label
+											>
+										</div>
+									</td>
+									<td style="width: 5%"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="card mb-1">
+						<div class="card-header ica-thead" style="padding: 4px 16px; border-bottom: 0px">
+							<a
+								class="ica-label"
+								style="color: #fff !important"
+								role="button"
+								href="#filterCard"
+								data-toggle="collapse"
+								aria-expanded="true"
+								aria-controls="filterCard"
+								>Filters</a
+							>
+						</div>
+						<div class="collapse show" id="filterCard">
+							<div class="card-body" style="padding: 4px 16px; border-bottom: 0px">
+								<table class="table table-borderless table-sm">
+									<tr>
+										<td style="width: 30%">
+											<div class="ica-label">Transaction Type</div>
+											<select
+												class="selectpicker show-tick form-control form-control-sm"
+												style="font-size: 10px !important"
+												data-style="btn-secondary"
+												data-size="8"
+												id="filtertype"
+												name="filtertype"
+												onchange="reload()"
+											>
+												<option value="ALL">All</option>
+												<option value="VendBill">Vendor Bills</option>
+												<!-- <option value="VendCred">Vendor Credits</option> -->
+												<option value="ExpRept">Employee Expenses</option>
+												<option value="LiabPymt">Payroll Liability Check</option>
+                                                                                                <option value="Check">Check</option>
+											</select>
+										</td>
+										<td style="width: 5%"></td>
+										<td style="width: 30%"></td>
+										<td style="width: 5%"></td>
+										<td style="width: 30%"></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="ica-label">Payee</div>
+											<select
+												class="form-control form-control-sm select-css"
+												data-style="btn-light"
+												data-size="8"
+												id="filterpayees"
+												name="filterpayees"
+												onchange="reload()"
+											>
+												<!-- <select class="selectpicker show-tick form-control form-control-sm" data-live-search="false" data-style="btn-light" data-size="8" id="filterpayees" name="filterpayees" onchange="reload()">                                             -->
+												<option value=""></option>
+												{{#each payees}}
+												<option data-internalid="{{id}}" value="{{id}}">{{text}}</option>
+												{{/each}}
+											</select>
+										</td>
+										<td></td>
+										<td>
+											<div class="ica-label">Payment Method</div>
+											<!-- <select class="selectpicker show-tick form-control form-control-sm" data-style="btn-light" data-size="8" id="filterpaymentmethod" name="filterpaymentmethod" onchange="reload()"> -->
+											<select
+												class="form-control form-control-sm select-css"
+												data-style="btn-light"
+												data-size="8"
+												id="filterpaymentmethod"
+												name="filterpaymentmethod"
+												onchange="reload()"
+											>
+												<option value=""></option>
+												{{#each paymentmethods}}
+												<option data-internalid="{{id}}" value="{{id}}">{{text}}</option>
+												{{/each}}
+											</select>
+										</td>
+										<td></td>
+										<td>
+											<!-- <div class="ica-label">Posting Period</div>
+											<select
+												class="form-control form-control-sm select-css"
+												id="filterpostingperiod"
+												name="filterpostingperiod"
+												data-size="8"
+											>
+												<option value=""></option>
+												{{#each postingperiods}}
+												<option value="{{id}}">{{name}}</option>
+												{{/each}}
+											</select> -->
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="ica-label">Currency</div>
+											<select
+												class="show-tick form-control form-control-sm select-css"
+												data-size="8"
+												id="filtercurrency"
+												name="filtercurrency"
+												onchange="reload()"
+											>
+												<option value=""></option>
+												{{#each currencies}}
+												<option data-internalid="{{id}}" value="{{id}}">{{text}}</option>
+												{{/each}}
+											</select>
+										</td>
+										<td></td>
+										<td>
+											<div class="ica-label">Location</div>
+											<select
+												class="select-css show-tick form-control form-control-sm"
+												data-size="8"
+												id="filterlocation"
+												name="filterlocation"
+												onchange="reload()"
+											>
+												<option value=""></option>
+												{{#each locations}}
+												<option data-internalid="{{id}}" value="{{id}}">{{text}}</option>
+												{{/each}}
+											</select>
+										</td>
+										<td></td>
+										<td>
+											<div class="ica-label">Vendor Category</div>
+											<select
+												class="select-css show-tick form-control form-control-sm"
+												data-style="btn-light"
+												data-size="8"
+												id="filtervendorcategory"
+												name="filtervendorcategory"
+												onchange="reload()"
+											>
+												<option value=""></option>
+												{{#each vendorcategories}}
+												<option data-internalid="{{id}}" value="{{id}}">{{text}}</option>
+												{{/each}}
+											</select>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- <div class="card-footer">
+                        <button class="btn btn-sm btn-warning">Search</button>
+                        <button class="btn btn-sm btn-outline-dark">Reset</button>
+                        <span id="spinner">
+                            <i class="fa fa-refresh fa-spin fa-lg fa-fw"></i>
+                        </span>
+            
+                        <span class="float-right">
+                            <input type="checkbox" class="form-online" name="updateonfilter" />
+                            <span class="ica-h-label">Update on filter change</span>
+                        </span>
+                    </div>                     -->
+					</div>
+
+					<div class="card">
+						<div class="card-header ica-thead" style="padding: 4px 16px; border-bottom: 0px">
+							<a
+								class="ica-label"
+								style="color: #fff !important"
+								role="button"
+								href="#dynamicfilterCard"
+								data-toggle="collapse"
+								aria-expanded="true"
+								aria-controls="dynamicfilterCard"
+								>Dynamic Filters</a
+							>
+						</div>
+						<div class="collapse show" id="dynamicfilterCard">
+							<div class="card-body" style="padding: 4px 16px; border-bottom: 0px">
+								<table class="table table-borderless table-sm">
+									{{{dynamicfilters}}}
+									<!-- <tr>
+                                    <td style="width: 30%">
+                                        <div class="ica-label">Transaction Type</div>
+                                        <select class="selectpicker show-tick form-control form-control-sm" style="font-size: 10px !important" data-style="btn-secondary" data-size="8" id="filtertype" name="filtertype" onchange="reload()">
+                                            <option value="">All</option>
+                                            <option value="VendBill">Vendor Bills</option>                                            
+                                            <option value="VendCred">Vendor Credits</option>
+                                            <option value="ExpRept">Employee Expenses</option>
+                                            <option value="LiabPymt">Payroll Liability Check</option>
+                                        </select>                                        
+                                    </td>
+
+                                    <td style="width: 5%"></td>
+                                    <td style="width: 30%">
+                                        
+                                    </td>
+                                    <td style="width: 5%"></td>
+                                    <td style="width: 30%">
+                                    </td>
+                                </tr> -->
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card bg-light mb-3" style="max-width: 24rem; min-width: 22rem; float: right">
+						<div class="card-header" style="padding: 4px 16px; border-bottom: 0px"><span class="ica-label">Summary</span></div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<span class="ica-h-label">Subsidiary</span><span class="float-right" id="subsidiarypage">-</span>
+							</li>
+							<li class="list-group-item">
+								<span class="ica-h-label">Balance</span><span class="float-right" id="balancenumber">-</span>
+							</li>
+							<li class="list-group-item">
+								<span class="ica-h-label">Total Amount of selected</span><span class="float-right" id="totalamount">0.00</span>
+							</li>
+						</ul>
+						<div class="card-footer">
+							<span class="ica-h-label">Transactions Selected</span><span class="float-right" id="txnsselected">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="table-row" class="row mb-2">
+				<div class="col-12">
+					<table id="maintable" class="table table-striped table-sm" style="width: 100% !important">
+						<thead class="ica-thead">
+							<tr>
+								<th class="ica-label" style="width: 20px">
+									<input type="checkbox" style="margin: 0px; padding: 0px; line-height: 0px" onchange="selectAll(this)" />
+								</th>
+								<th class="ica-label">Due Date</th>
+								<th class="ica-label">Type</th>
+								<th class="ica-label">ID</th>
+								<!-- <th class="ica-label">Company Name</th> -->
+								<th class="ica-label">Payee</th>
+								<th class="ica-label">Payment Method</th>
+								<th class="ica-label">Ref No</th>
+								<th class="ica-label">Currency</th>
+								<th class="ica-label">Original Amount</th>
+								<th class="ica-label">Amount Due</th>
+								<!-- <th class="ica-label">Priority</th> -->
+								<th class="ica-label">Vendor Category</th>
+								<th class="ica-label">Disc. Date</th>
+								<th class="ica-label">Disc. Avail</th>
+								<th class="ica-label">Disc. Taken</th>
+								<th class="ica-label">Payment</th>
+							</tr>
+						</thead>
+						<tbody id="table-body-pm">
+							<tr>
+								<td colspan="15">
+									<i id="spinnerreload" class="fa fa-cog fa-spin fa-fw fa-3x" onclick="reload()"></i>
+                                                                        <div id="delaymessage" class="red-text"></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="row mb-4">
+				<div class="col-12">
+					<a id="btn_createPayments_2" class="ica-button btn btn-sm btn-primary" onclick="createPayments()">Create Payments</a>
+					<a class="ica-button btn btn-sm btn-secondary" onclick="downloadCSV()">Download CSV</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+			integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/numeral@2.0.6/numeral.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script> -->
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+
+		<script>
+			   var dt;
+			   var searchValues = {};
+			   function reload() {
+			       try {
+			           var ns = loadModules();
+			           var today = moment();
+			           var userRole = ns.runtime.getCurrentUser().role;
+
+			           if (ns.runtime.getCurrentScript().getRemainingUsage()<50) {
+			               var myMsg = ns.message.create({
+			                   title: "ERROR - Governance Units has exceeded limit",
+			                   message: "Refresh Page. If issue persists, contact your administrator.",
+			                   type: ns.message.Type.ERROR
+			               });
+
+			               myMsg.show();
+			               return;
+			           }
+
+			           console.log('here');
+
+			           var toggleBillsPrinted = $('#togglebillpaymentsprinted').prop('checked');
+			           var filterPaymentMethod = $("#filterpaymentmethod").val(); // ,.find(":selected").data('internalid');
+			           if (toggleBillsPrinted) {
+			               filterPaymentMethod = 6; //CHK
+			           }
+
+			           var searchParams = {
+			               filterapaccount: $('#filterapaccount').val(),
+			               filteraccount: $('#filteraccount').val(),
+			               filtervendorcategory : $("#filtervendorcategory").val(), //.find(":selected").data('internalid'),
+			               filterpaymentmethod : filterPaymentMethod,
+			               filtertype: $('#filtertype').val(),
+			               filterpayee: $('#filterpayees').val(), //.find(":selected").data('internalid'),
+			               filtercurrency: $('#filtercurrency').val(), //.find(":selected").data('internalid'),
+			               filterlocation: $('#filterlocation').val(), //.find(":selected").data('internalid')
+			               {{{searchdynamicfilters}}}
+			           };
+
+                                   searchParams.basesavedsearch = '{{basesavedsearch}}';
+
+
+
+			           console.log(searchParams);
+
+			           var link = ns.url.resolveScript({
+			                   scriptId: 'customscript_ica_pm_service',
+			                   deploymentId: 'customdeploy_ica_pm_service',
+			                   returnExternalUrl: true,
+			                   params: {
+			                       "action" : "getbillsv2",
+			                       "filters" : JSON.stringify(searchParams)
+			                   }
+			           });
+
+			           jQuery('#spinnerreload').show();
+			           ns.https.get.promise({
+			               url: link
+			           }).then(function(response){
+			               // console.log(JSON.stringify(response));
+			               try {
+			                   if ($.fn.DataTable.isDataTable("#maintable")) {
+			                       $("#maintable").DataTable().clear().destroy();
+			                   }
+			               } catch (e) {}
+
+			               //Update body.
+			               var data = JSON.parse(response.body);
+			               console.log(data.length);
+			               var bodyhtml = ``;
+
+			               for (var i=0; i<data.length; i++) {
+			                   var d = data[i];
+			                   // console.log(d);
+			                   if (d != undefined) {
+
+			                       // var custbody_bill_discount_date = moment(d.custbody_bill_discount_date.id, 'MM/DD/YYYY').format('MM/DD/YYYY') || "";
+			                       // if (custbody_bill_discount_date=="Invalid Date") custbody_bill_discount_date = "";
+			                       var f = {
+			                           fxamountremaining: numeral(d.fxamountremaining.text).format('$0,0.00'),
+			                           fxamount: numeral(d.fxamount.text).format('$0,0.00')
+			                       };
+
+			                       bodyhtml += `
+			                       <tr>
+			                           <td class="ica-cell selected">
+			                               <input type="checkbox" class="cbdata" data-payeetext="${d.entity.text}" data-currencytext="${d.currency.text}" data-memo="${d.memo.id}" data-amtdue="${d.fxamountremaining.text}" data-paymentmethod="${d.employee_custentity_paymentmethod.text}${d.vendor_custentity_paymentmethod.text}" data-discamt="${d.custbody_bill_discount_amount.id}" data-payee="${d.entity.id}" data-currency="${d.currency.id}" data-tranid="${d.tranid.id}" data-trannum="${d.trannum.id}" data-duedate="${d.duedate.text}" data-trantype="${d.type.text}" data-origamt="${d.fxamount.text}" data-payment="${d.fxamount.text}" data-internalid="${d.internalid.text}" id="cb_${d.internalid.text}}" name="cb_${d.internalid.text}" onchange="computeTotal()" />
+			                           </td>
+			                           <td class="ica-cell">${d.duedate.text}</td>
+			                           <td class="ica-cell"><a class="badge-pill badge badge-secondary big" target="_blank" href="${d.url}">${d.type.text}</a></td>
+			                           <td class="ica-cell">${d.internalid.text}</td>
+			                           <td class="ica-cell"><a class="badge big badge-ica" target="_blank" href="${d.entityurl}" data-category="${d.vendor_category.text}" data-id="${d.entity.id}" id="entity_${d.entity.id}">${d.entity.text}</a></td>
+			                           <td class="ica-cell"><span id="paymentmethod_${d.internalid.text}">${d.employee_custentity_paymentmethod.text}${d.vendor_custentity_paymentmethod.text}</span></td>
+			                           <td class="ica-cell"><span id="tranid_${d.internalid.text}" data-id="${d.tranid.id}">${d.tranid.id}</span></td>
+			                           <td class="ica-cell"><span id="currency_${d.internalid.text}" data-id="${d.currency.id}}">${d.currency.text}</span></td>
+			                           <td class="ica-cell">${f.fxamount}</td>
+			                           <td class="ica-cell">${f.fxamountremaining}</td>
+			                           <td class="ica-cell">${d.vendor_category.text}</td>
+			                           <td class="ica-cell">${d.custbody_bill_discount_date.id}</td>
+			                           <td class="ica-cell"><span id="discamt_${d.internalid.text}" data-id="${d.custbody_bill_discount_amount.id}">${d.custbody_bill_discount_amount.text}</span></td>
+			                           <td class="ica-cell"><input type="text" class="form-control form-control-sm smaller" id="taken_${d.internalid.text}"></td>
+			                           <td class="ica-cell"><input type="text" class="form-control form-control-sm smaller" id="payment_${d.internalid.text}"></td>
+
+			                       </tr>
+			                       `;
+			                   }
+			               }
+			               jQuery('#table-body-pm').html(bodyhtml);
+
+
+			               //Update Filters.
+			               var objects = {};
+			               objects.payees = _.sortBy(_.uniqBy((_.map(data, 'entity')), 'id'), 'text');
+			               objects.vendorpaymentmethods = _.uniqBy(_.map(data, 'vendor_custentity_paymentmethod'), "id");
+			               objects.employeepaymentmethods = _.uniqBy(_.map(data, 'employee_custentity_paymentmethod'), "id");
+			               objects.paymentmethods = _.sortBy(_.values(_.pickBy(_.uniqBy(
+			                       objects.vendorpaymentmethods.concat(objects.employeepaymentmethods), 'id'), 'id'
+			                   )), 'text');
+			               // log.audit('objects.paymentmethods', JSON.stringify(objects.paymentmethods));
+			               objects.locations = _.sortBy(_.uniqBy((_.map(data, 'locationnohierarchy')), 'id'), 'text');
+			               objects.currencies = _.sortBy(_.uniqBy((_.map(data, 'currency')), 'id'), 'text');
+			               objects.vendorcategories = _.sortBy(_.uniqBy((_.map(data, 'vendor_category')), 'id'), 'text');
+
+			               console.log(objects);
+
+			               //Update payees
+			               var selected = $('#filterpayees').val();
+			               var arr = objects.payees;
+			               var html = '<option value="">-</option>';
+			               for (var i=0; i<arr.length; i++) {
+			                   var d = arr[i];
+			                   if ((d.id!='') && (d.id!=null)) {
+			                       if (d.id==selected) {
+			                       html += `<option selected value="${d.id}">${d.text}</option>`;
+			                       } else {
+			                           html += `<option value="${d.id}">${d.text}</option>`;
+			                       }
+			                   }
+			               }
+			               jQuery('#filterpayees').html(html);
+
+			               var selected = $('#filterpaymentmethod').val();
+			               var arr = objects.paymentmethods;
+			               var html = '<option value="">-</option>';
+			               for (var i=0; i<arr.length; i++) {
+			                   var d = arr[i];
+			                   if ((d.id!='') && (d.id!=null)) {
+			                       if (d.id==selected) {
+			                       html += `<option selected value="${d.id}">${d.text}</option>`;
+			                       } else {
+			                           html += `<option value="${d.id}">${d.text}</option>`;
+			                       }
+			                   }
+			               }
+			               jQuery('#filterpaymentmethod').html(html);
+
+			               var selected = $('#filterlocation').val();
+			               var arr = objects.locations;
+			               var html = '<option value="">-</option>';
+			               for (var i=0; i<arr.length; i++) {
+			                   var d = arr[i];
+			                   if ((d.id!='') && (d.id!=null)) {
+			                       if (d.id==selected) {
+			                       html += `<option selected value="${d.id}">${d.text}</option>`;
+			                       } else {
+			                           html += `<option value="${d.id}">${d.text}</option>`;
+			                       }
+			                   }
+			               }
+			               jQuery('#filterlocation').html(html);
+
+			               var selected = $('#filtercurrency').val();
+			               var arr = objects.currencies;
+			               var html = '<option value="">-</option>';
+			               for (var i=0; i<arr.length; i++) {
+			                   var d = arr[i];
+			                   if ((d.id!='') && (d.id!=null)) {
+			                       if (d.id==selected) {
+			                       html += `<option selected value="${d.id}">${d.text}</option>`;
+			                       } else {
+			                           html += `<option value="${d.id}">${d.text}</option>`;
+			                       }
+			                   }
+			               }
+			               jQuery('#filtercurrency').html(html);
+
+			               var selected = $('#filtervendorcategory').val();
+			               var arr = objects.vendorcategories;
+			               var html = '<option value="">-</option>';
+			               for (var i=0; i<arr.length; i++) {
+			                   var d = arr[i];
+			                   if ((d.id!='') && (d.id!=null)) {
+			                       if (d.id==selected) {
+			                       html += `<option selected value="${d.id}">${d.text}</option>`;
+			                       } else {
+			                           html += `<option value="${d.id}">${d.text}</option>`;
+			                       }
+			                   }
+			               }
+			               jQuery('#filtervendorcategory').html(html);
+
+
+
+
+			               //Update Summary
+			               var subsidiaryname = jQuery('#filteraccount').find(":selected").data('subsidiaryname');
+			               var balance = jQuery('#filteraccount').find(":selected").data('balance');
+
+			               jQuery('#subsidiarypage').html(subsidiaryname);
+			               jQuery('#balancenumber').html(numeral(balance).format('$0,0.00'));
+
+
+
+
+
+			               jQuery('#spinnerreload').hide();
+
+			               dt = $('#maintable').DataTable({
+			                   "ordering": true,
+			                   "search" : {
+			                       "regex" : true,
+			                       "smart" : true
+			                   },
+			                   "pageLength": 50,
+			                   // "sDom": '<"top"i>rt<"bottom"lp><"clear">',
+			                   "language": {
+			                       "search": "<span class=\"ica-label\">Quick Filter</span>",
+			                       "sLengthMenu": "<span class=\"ica-label\">Display</span> _MENU_ <span class=\"ica-label\">records</span>",
+			                       "info": "<span class=\"ica-label\">Showing _START_ to _END_ of _TOTAL_ entries</span> ",
+			                   },
+			                   "columnDefs": [
+			                       {
+			                           "targets": [0,10,11,12,13],
+			                           "searchable": false
+			                       },
+			                   ]
+			               });
+
+
+			           });
+
+
+
+
+
+
+			       }
+			       catch(e) {
+
+			       }
+			   }
+
+			   $(document).ready(function() {
+
+			       require(
+			           ['N/url',
+			           'N/runtime',
+			           'N/ui/dialog',
+			           'N/https',
+			           'N/ui/message'
+			       ]);
+
+			       // $('select').selectpicker();
+
+			       $('input[name="defaultdate"]').daterangepicker({singleDatePicker: true});
+			       $('input[name="startdate"]').daterangepicker({
+			           singleDatePicker: true,
+			           autoUpdateInput: false
+			       }, function(chosen_date) {
+			           $('input[name="startdate"]').val(chosen_date.format('MM/DD/YYYY'));
+			       });
+			       $('input[name="enddate"]').daterangepicker({
+			           singleDatePicker: true,
+			           autoUpdateInput: false
+			       }, function(chosen_date) {
+			           $('input[name="enddate"]').val(chosen_date.format('MM/DD/YYYY'));
+			       });
+
+			       $(function () {
+			           $('[data-toggle="popover"]').popover({
+			               html: true,
+			               trigger: 'hover',
+			               delay: 2,
+			           })
+			       });
+
+			       $('#filterapaccount').val('{{apaccount}}').change();
+			       $('#filteraccount').val('{{account}}').change();
+
+			       // $('#balancenumber').html(numeral($('#filteraccount option:selected').data('balance')).format('$0,0.00'));
+			       // $('#subsidiarypage').html($('#filteraccount option:selected').data('subsidiaryname'));
+
+			       //Update Summary
+			       var subsidiaryname = jQuery('#filteraccount').find(":selected").data('subsidiaryname');
+			       var balance = jQuery('#filteraccount').find(":selected").data('balance');
+
+			       console.log(subsidiaryname);
+			       console.log(balance);
+
+			       jQuery('#subsidiarypage').html(subsidiaryname);
+			       jQuery('#balancenumber').html(numeral(balance).format('$0,0.00'));
+
+                               if ('{{delayresults}}'=='true') {
+                                        jQuery('#spinnerreload').hide();
+                                        jQuery('#delaymessage').html('Delay Results enabled. Select Transaction Type to load results.');
+                               } else {
+                                        setTimeout(function(){ reload(); },500);
+                               }
+			       
+			   });
+
+			   function loadModules() {
+			       return {
+			           "url" : require('N/url'),
+			           "runtime" : require('N/runtime'),
+			           "dialog" : require('N/ui/dialog'),
+			           "https" : require('N/https'),
+			           "message" : require('N/ui/message'),
+			           "file" : require('N/file')
+			       };
+			   }
+
+			   function downloadCSV() {
+			       try {
+			           var ns = loadModules();
+			           var today = moment();
+			           var userRole = ns.runtime.getCurrentUser().role;
+
+			           if (ns.runtime.getCurrentScript().getRemainingUsage()<50) {
+			               var myMsg = ns.message.create({
+			                   title: "ERROR - Governance Units has exceeded limit",
+			                   message: "Refresh Page. If issue persists, contact your administrator.",
+			                   type: ns.message.Type.ERROR
+			               });
+
+			               myMsg.show();
+			               return;
+			           }
+
+			           var toggleBillsPrinted = $('#togglebillpaymentsprinted').prop('checked');
+			           var filterPaymentMethod = $("#filterpaymentmethod").find(":selected").data('internalid');
+			           if (toggleBillsPrinted) {
+			               filterPaymentMethod = 6; //CHK
+			           }
+
+			           var searchParams = {
+			               filterapaccount: $('#filterapaccount').val(),
+			               filteraccount: $('#filteraccount').val(),
+			               filtervendorcategory : $("#filtervendorcategory").val(), //.find(":selected").data('internalid'),
+			               filterpaymentmethod : filterPaymentMethod || "",
+			               filtertype: $('#filtertype').val(),
+			               filterpayee: $('#filterpayees').val(), //.find(":selected").data('internalid'),
+			               filtercurrency: $('#filtercurrency').val(), //.find(":selected").data('internalid'),
+			               filterlocation: $('#filterlocation').val(), //.find(":selected").data('internalid')
+			               {{{searchdynamicfilters}}}
+			           };
+
+                                   searchParams.basesavedsearch = '{{basesavedsearch}}';
+
+			           console.log(searchParams);
+
+			           var link = ns.url.resolveScript({
+			                   scriptId: 'customscript_ica_pm_service',
+			                   deploymentId: 'customdeploy_ica_pm_service',
+			                   returnExternalUrl: true,
+			                   params: {
+			                       "action" : "downloadcsv",
+			                       "filters" : JSON.stringify(searchParams)
+			                   }
+			           });
+
+			           jQuery('#spinnerreload').show();
+			           ns.https.get.promise({
+			               url: link
+			           }).then(function(response) {
+			               var win = window.open(response.body, '_blank');
+			               win.focus();
+			               jQuery('#spinnerreload').hide();
+			           });
+			       }
+			       catch(e) {
+
+			       }
+
+			   }
+
+
+
+			   function reloadPage(from, v) {
+			       if (from=='apaccount') {
+			           if (v.value!='{{apaccount}}') {
+			               var url = '';
+			               url = nlapiResolveURL('SUITELET', 'customscript_ica_pm_main_screen', 'customdeploy_ica_pm_main_screen');
+			               url += "&apaccount=" + $('#filterapaccount option:selected').data('internalid');
+			               url += "&account=" + $('#filteraccount option:selected').data('internalid');
+			               window.location = url;
+			           }
+			       }
+			       if (from=='account') {
+			           if (v.value!='{{account}}') {
+			               var url = '';
+			               url = nlapiResolveURL('SUITELET', 'customscript_ica_pm_main_screen', 'customdeploy_ica_pm_main_screen');
+			               url += "&apaccount=" + $('#filterapaccount option:selected').data('internalid');
+			               url += "&account=" + $('#filteraccount option:selected').data('internalid');
+			               window.location = url;
+			           }
+			       }
+
+			   }
+
+			   function updatebalance() {
+			       $('#balancenumber').html(numeral($('#filteraccount option:selected').data('balance')).format('$0,0.00'));
+			       $('#subsidiarypage').html($('#filteraccount option:selected').data('subsidiaryname'));
+			   }
+
+			   function selectAll(v) {
+			       var checkboxes = jQuery('.cbdata');
+			       if (v.checked) {
+			           for (var i = 0; i < checkboxes.length; i++) {
+			               if (!checkboxes[i].disabled) {
+			                   checkboxes[i].checked = true;
+			               }
+			           }
+			       } else {
+			           for (var i = 0; i < checkboxes.length; i++) {
+			               checkboxes[i].checked = false;
+			           }
+			       }
+			       computeTotal();
+			   }
+
+			   function computeTotal() {
+			       var allcheckbox = dt.rows().nodes().to$().find('.cbdata:checkbox');
+			       var checked = dt.rows().nodes().to$().find('.cbdata:checkbox:checked');
+			       var totalpymt = 0;
+			       for (var i=0; i<allcheckbox.length; i++) {
+			           var internalid = jQuery(allcheckbox[i]).data('internalid');
+			           var pymt = 0;
+			           var selected = '';
+			           if (allcheckbox[i].checked==true) {
+			               pymt = numeral(jQuery(allcheckbox[i]).data('amtdue')).format('0.00');
+			               selected = 'selected';
+			           } else if (allcheckbox[i].checked==false) {
+			               pymt = '';
+			               selected = '';
+			           }
+			           totalpymt += Number(pymt);
+			           $('#payment_' + internalid).val(pymt);
+			           $('#selected_' + internalid).html(selected);
+			       }
+			       console.log(totalpymt);
+
+			       $('#totalamount').html(numeral(totalpymt).format('$0,0.00'));
+			       $('#txnsselected').html(Number(checked.length));
+			   }
+
+			   function createPayments() {
+			       var ns = loadModules();
+			       var context = nlapiGetContext();
+
+			       var arrBillsSelected = [];
+
+			       var checked = dt.rows().nodes().to$().find('.cbdata:checkbox:checked');
+
+			       var TRANTYPE = {
+			           "Bill" : "vendorbill",
+			           "Bill Credit" : "vendorcredit",
+			           "Expense Report" : "expensereport",
+			           "Payroll Liability Check" : "liabpymt",
+			       };
+
+			       for (var i=0; i<checked.length; i++) {
+			           var internalid = jQuery(checked[i]).data('internalid');
+			           var trantype = jQuery(checked[i]).data('trantype');
+
+			           arrBillsSelected.push({
+			               id : String(internalid),
+                                        type : TRANTYPE[trantype],
+                                        duedate : jQuery(checked[i]).data('duedate'),
+                                        origamt : jQuery(checked[i]).data('origamt'),
+			               amtdue : jQuery(checked[i]).data('amtdue'),
+			               discamt: jQuery('#taken_' + internalid).val(), //jQuery(checked[i]).data('payment'),taken_114182
+			               pay : jQuery('#payment_' + internalid).val(), //jQuery(checked[i]).data('payment'),
+			               paymethod : jQuery(checked[i]).data('paymentmethod'),
+			               // discamt : jQuery(checked[i]).data('discamt'),
+			               payee : String(jQuery(checked[i]).data('payee')),
+			               payeetext : String(jQuery(checked[i]).data('payeetext')),
+			               curr : String(jQuery(checked[i]).data('currency')),
+			               currtext : String(jQuery(checked[i]).data('currencytext')),
+			               billnum : String(jQuery(checked[i]).data('tranid')),
+			               trannum : String(jQuery(checked[i]).data('trannum')),
+			               memo: String(jQuery(checked[i]).data('memo')),
+                			sub : String(jQuery('#filteraccount option:selected').data('subsidiary'))
+			           });
+			       }
+
+			       if (arrBillsSelected.length==0) {
+			           ns.dialog.alert({
+			               title : 'NOTE',
+			               message : 'Please select at least one record.'
+			           });
+			           return;
+			       }
+
+			       var createBillPaymentsPerBill = $("#createbillpaymentsperbill").prop("checked") ? true : false;
+			       var createManualCheck = $("#togglebillpaymentsprinted").prop("checked") ? true : false;
+			       var useCustomCheckNumbering = $("#usecustomchecknumbering").prop("checked") ? true : false;
+
+
+			       var optionsData = {
+			           create_bill_pymts_per_bill: createBillPaymentsPerBill,
+			           create_manual_check: createManualCheck,
+			           use_custom_check_numbering: useCustomCheckNumbering,
+			           bpm_date: $("#defaultdate").val(),
+			           account: $("#filteraccount").find(":selected").data('internalid'),
+			           ap_account: $("#filterapaccount").find(":selected").data('internalid'),
+			           subsidiary: String(jQuery('#filteraccount option:selected').data('subsidiary')),
+			       };
+
+			       var params = {
+			           options_data: optionsData,
+			           bills_data: arrBillsSelected
+			       };
+
+                               console.log(params);
+
+
+			//        var link = ns.url.resolveScript({
+			//            scriptId: 'customscript_ica_pm_service',
+			//            deploymentId: 'customdeploy_ica_pm_service',
+			//            returnExternalUrl: true,
+			//            params: {
+			//                "action" : "deploymapreduce",
+			//                "user" : ns.runtime.getCurrentUser().id,
+			//                "data" : JSON.stringify(params)
+			//            }
+			//        });
+
+
+			//        $("#btn_createPayments").attr("disabled", true);
+			//        $("#btn_createPayments_2").attr("disabled", true);
+			//        ns.https.get.promise({
+			//            url: link
+			//        }).then(function(response){
+			//            $("#btn_createPayments").attr("disabled", false);
+			//            $("#btn_createPayments_2").attr("disabled", false);
+
+			//            var myMsg = ns.message.create({
+			//                title: "Background Process Initiated",
+			//                message: "A script is deployed to process " + arrBillsSelected.length + " records. You will receive an email notification when it is finished.",
+			//                type: ns.message.Type.CONFIRMATION
+			//            });
+
+			//            for (var i=0; i<checked.length; i++) {
+			//                checked[i].parentElement.parentElement.remove();
+			//            }
+
+			//            myMsg.show({
+			//                duration: 6000
+			//            });
+
+			//        });
+			   }
+		</script>
+	</body>
+</html>

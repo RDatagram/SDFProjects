@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_sl_call_scheduled_script_cr">
+  <description>used to execute the scheduled script</description>
+  <isinactive>F</isinactive>
+  <name>SL Call Scheduled Script To Creednz</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/sl_call_scheduled_script.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_call_scheduled_script_cr">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>adSL Call Scheduled Script To Creednz</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

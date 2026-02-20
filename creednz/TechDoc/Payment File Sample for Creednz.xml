@@ -1,0 +1,144 @@
+
+	<PmtRec PmtCrDr="C" PmtMethod="MTS" TranHandlingCode="D">
+		<PmtID>P250306090018695</PmtID>
+		<CurCode>USD</CurCode>
+		<ValueDate>2025-03-07</ValueDate>
+		<RefInfo RefType="WC">
+			<RefID>OUR</RefID>
+		</RefInfo>
+		<Message MsgType="OBI">
+			<MsgText>12050</MsgText>
+		</Message>
+		<OrgnrParty>
+			<Name>
+				<Name1>Fairlife LLC</Name1>
+			</Name>
+			<PostAddr>
+				<Addr1>1001 W. Adams Street</Addr1>
+				<City>Chicago</City>
+				<StateProv>IL</StateProv>
+				<PostalCode>60607</PostalCode>
+				<Country>US</Country>
+			</PostAddr>
+		</OrgnrParty>
+		<OrgnrDepAcctID>
+			<DepAcctID AcctCur="USD" AcctID="4945751220" AcctType="D">
+				<BankInfo BankIDType="ABA" Name="Wells Fargo">
+					<BankID>121000248</BankID>
+					<RefInfo RefType="OBI"/>
+				</BankInfo>
+			</DepAcctID>
+		</OrgnrDepAcctID>
+		<RcvrParty>
+			<Name>
+				<Name1>Biolan Microbiosensores</Name1>
+			</Name>
+			<RefInfo RefType="VN">
+				<RefID>12050</RefID>
+			</RefInfo>
+			<PostAddr>
+				<Addr1>Parque Cientifico y Tecnologico</Addr1>
+				<Addr2>Bizkaia Edif 409</Addr2>
+				<City>Zamudio</City>
+				<PostalCode>48170</PostalCode>
+				<Country>ES</Country>
+				<CountryName>Spain</CountryName>
+			</PostAddr>
+		</RcvrParty>
+		<RcvrDepAcctID>
+			<DepAcctID AcctCur="USD" AcctID="ES2701821215872012224031" AcctType="D">
+				<BankInfo BankIDType="SWT" Name="Banco Bilbao Vizcaya Argentaria SA">
+					<PostAddr>
+						<Addr1>C/Sauceda 28</Addr1>
+						<City>Madrid</City>
+						<PostalCode>28050</PostalCode>
+						<Country>ES</Country>
+					</PostAddr>
+					<BankID>BBVAESMMXXX</BankID>
+				</BankInfo>
+			</DepAcctID>
+		</RcvrDepAcctID>
+		<PmtDetail>
+			<InvoiceInfo DiscountCurAmt="0.00" InvoiceNum="FV2025/00109" InvoiceType="IV" NetCurAmt="6930.00" TotalCurAmt="6930.00">
+				<POInfo POType="PO">
+					<PONum>PO-0061446</PONum>
+				</POInfo>
+			</InvoiceInfo>
+		</PmtDetail>
+		<DocDelivery>
+			<FileOut>
+				<Delivery/>
+			</FileOut>
+		</DocDelivery>
+		<CurAmt>6930.00</CurAmt>
+	</PmtRec>
+	<PmtRec PmtCrDr="C" PmtMethod="MTS" TranHandlingCode="D">
+		<PmtID>P250306085926428</PmtID>
+		<CurCode>USD</CurCode>
+		<ValueDate>2025-03-07</ValueDate>
+		<RefInfo RefType="WC">
+			<RefID>OUR</RefID>
+		</RefInfo>
+		<Message MsgType="OBI">
+			<MsgText>5055</MsgText>
+		</Message>
+		<OrgnrParty>
+			<Name>
+				<Name1>Fairlife LLC</Name1>
+			</Name>
+			<PostAddr>
+				<Addr1>1001 W. Adams Street</Addr1>
+				<City>Chicago</City>
+				<StateProv>IL</StateProv>
+				<PostalCode>60607</PostalCode>
+				<Country>US</Country>
+			</PostAddr>
+		</OrgnrParty>
+		<OrgnrDepAcctID>
+			<DepAcctID AcctCur="USD" AcctID="4945751220" AcctType="D">
+				<BankInfo BankIDType="ABA" Name="Wells Fargo">
+					<BankID>121000248</BankID>
+					<RefInfo RefType="OBI"/>
+				</BankInfo>
+			</DepAcctID>
+		</OrgnrDepAcctID>
+		<RcvrParty>
+			<Name>
+				<Name1>iCloudAuthority Inc.</Name1>
+			</Name>
+			<RefInfo RefType="VN">
+				<RefID>5055</RefID>
+			</RefInfo>
+			<PostAddr>
+				<City>Burlington</City>
+				<PostalCode>L7M4V1</PostalCode>
+				<Country>CA</Country>
+				<CountryName>Canada</CountryName>
+			</PostAddr>
+		</RcvrParty>
+		<RcvrDepAcctID>
+			<DepAcctID AcctCur="USD" AcctID="4001608" AcctType="D">
+				<BankInfo BankIDType="SWT" BranchID="000300752" Name="Royal Bank of Canada">
+					<PostAddr>
+						<City>Toronto</City>
+						<Country>CA</Country>
+					</PostAddr>
+					<BankID>ROYCCAT2</BankID>
+				</BankInfo>
+			</DepAcctID>
+		</RcvrDepAcctID>
+		<PmtDetail>
+			<InvoiceInfo DiscountCurAmt="0.00" InvoiceNum="iCloud2559" InvoiceType="IV" NetCurAmt="3217.50" TotalCurAmt="3217.50">
+				<Note NoteType="INV">
+					<NoteText>HQ</NoteText>
+				</Note>
+			</InvoiceInfo>
+		</PmtDetail>
+		<DocDelivery>
+			<FileOut>
+				<Delivery/>
+			</FileOut>
+		</DocDelivery>
+		<CurAmt>3217.50</CurAmt>
+	</PmtRec>
+	

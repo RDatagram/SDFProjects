@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<EddDeliveryRequest xmlns='http://wellsfargo.com/edd/deliveryRequest/2010'>
+	<BillerID>{{BillerID}}</BillerID>
+    {{#each DeliveryItems}}
+	<DeliveryItem>
+		<PartnerInfo>
+			<Name>{{{PartnerInfo.Name}}}</Name>
+			<PartnerID>{{PartnerInfo.PartnerID}}</PartnerID>                        
+			<Address>
+				{{#if PartnerInfo.Address.Address1}}<Address1>{{PartnerInfo.Address.Address1}}</Address1>{{/if}}
+                {{#if PartnerInfo.Address.City}}<City>{{PartnerInfo.Address.City}}</City>{{/if}}
+                {{#if PartnerInfo.Address.StateOrProvince}}<StateOrProvince>{{PartnerInfo.Address.StateOrProvince}}</StateOrProvince>{{/if}}
+                {{#if PartnerInfo.Address.ZipCode}}<ZipCode>{{PartnerInfo.Address.ZipCode}}</ZipCode>{{/if}}
+			</Address>
+			<DocInfo>
+				<DocDeliveryCode>{{PartnerInfo.DocInfo.DocDeliveryCode}}</DocDeliveryCode>
+			</DocInfo>
+		</PartnerInfo>
+		<FileInfo>
+			<FileName>{{FileInfo.FileName}}</FileName>
+			<FileType>{{FileInfo.FileType}}</FileType>
+			<DocumentName>{{FileInfo.DocumentName}}</DocumentName>
+			<DocumentDate>{{FileInfo.DocumentDate}}</DocumentDate>
+		</FileInfo>
+		<Delivery RecipientName='{{{RecipientName}}}'>
+			<PrintAndMailDelivery>
+				<Address>
+					<Address1>{{Delivery.PrintAndMailDelivery.Address.Address1}}</Address1>
+					<City>{{Delivery.PrintAndMailDelivery.Address.City}}</City>
+					<StateOrProvince>{{Delivery.PrintAndMailDelivery.Address.StateOrProvince}}</StateOrProvince>
+					<ZipCode>{{Delivery.PrintAndMailDelivery.Address.ZipCode}}</ZipCode>
+				</Address>
+			</PrintAndMailDelivery>
+		</Delivery>
+	</DeliveryItem>
+    {{/each}}
+</EddDeliveryRequest>

@@ -1,0 +1,340 @@
+{
+  "element": {
+    "PmtID": [
+      {
+        "element": {
+          "text": "P241128045301611"
+        },
+        "attributes": {}
+      }
+    ],
+    "CurCode": [
+      {
+        "element": {
+          "text": "USD"
+        },
+        "attributes": {}
+      }
+    ],
+    "ValueDate": [
+      {
+        "element": {
+          "text": "2024-11-28"
+        },
+        "attributes": {}
+      }
+    ],
+    "RefInfo": [
+      {
+        "element": {
+          "RefID": [
+            {
+              "element": {
+                "text": "OUR"
+              },
+              "attributes": {}
+            }
+          ]
+        },
+        "attributes": {
+          "RefType": "WC"
+        }
+      }
+    ],
+    "Message": [
+      {
+        "element": {
+          "MsgText": [
+            {
+              "element": {
+                "text": "2717"
+              },
+              "attributes": {}
+            }
+          ]
+        },
+        "attributes": {
+          "MsgType": "ACH"
+        }
+      }
+    ],
+    "OrgnrParty": [
+      {
+        "element": {
+          "Name": [
+            {
+              "element": {
+                "Name1": [
+                  {
+                    "element": {
+                      "text": "Fairlife LLC"
+                    },
+                    "attributes": {}
+                  }
+                ]
+              },
+              "attributes": {}
+            }
+          ],
+          "PostAddr": [
+            {
+              "element": {
+                "Addr1": [
+                  {
+                    "element": {
+                      "text": "1001 W. Adams Street"
+                    },
+                    "attributes": {}
+                  }
+                ],
+                "City": [
+                  {
+                    "element": {
+                      "text": "Chicago"
+                    },
+                    "attributes": {}
+                  }
+                ],
+                "StateProv": [
+                  {
+                    "element": {
+                      "text": "IL"
+                    },
+                    "attributes": {}
+                  }
+                ],
+                "PostalCode": [
+                  {
+                    "element": {
+                      "text": "60607"
+                    },
+                    "attributes": {}
+                  }
+                ],
+                "Country": [
+                  {
+                    "element": {
+                      "text": "US"
+                    },
+                    "attributes": {}
+                  }
+                ]
+              },
+              "attributes": {}
+            }
+          ]
+        },
+        "attributes": {}
+      }
+    ],
+    "OrgnrDepAcctID": [
+      {
+        "element": {
+          "DepAcctID": [
+            {
+              "element": {
+                "BankInfo": [
+                  {
+                    "element": {
+                      "BankID": [
+                        {
+                          "element": {
+                            "text": "121000248"
+                          },
+                          "attributes": {}
+                        }
+                      ],
+                      "RefInfo": [
+                        {
+                          "element": {
+                            "RefID": [
+                              {
+                                "element": {
+                                  "text": "4800864026"
+                                },
+                                "attributes": {}
+                              }
+                            ]
+                          },
+                          "attributes": {
+                            "RefType": "ACH"
+                          }
+                        }
+                      ]
+                    },
+                    "attributes": {
+                      "BankIDType": "ABA",
+                      "Name": "Wells Fargo"
+                    }
+                  }
+                ]
+              },
+              "attributes": {
+                "AcctCur": "USD",
+                "AcctID": "4945751220",
+                "AcctType": "D"
+              }
+            }
+          ]
+        },
+        "attributes": {}
+      }
+    ],
+    "RcvrParty": [
+      {
+        "element": {
+          "Name": [
+            {
+              "element": {
+                "Name1": [
+                  {
+                    "element": {
+                      "text": "DEXTER HARDWARE"
+                    },
+                    "attributes": {}
+                  }
+                ]
+              },
+              "attributes": {}
+            }
+          ],
+          "RefInfo": [
+            {
+              "element": {
+                "RefID": [
+                  {
+                    "element": {
+                      "text": "2717"
+                    },
+                    "attributes": {}
+                  }
+                ]
+              },
+              "attributes": {
+                "RefType": "VN"
+              }
+            }
+          ],
+          "PostAddr": [
+            {
+              "element": {},
+              "attributes": {}
+            }
+          ]
+        },
+        "attributes": {}
+      }
+    ],
+    "RcvrDepAcctID": [
+      {
+        "element": {
+          "DepAcctID": [
+            {
+              "element": {
+                "BankInfo": [
+                  {
+                    "element": {
+                      "BankID": [
+                        {
+                          "element": {
+                            "text": "107002192"
+                          },
+                          "attributes": {}
+                        }
+                      ]
+                    },
+                    "attributes": {
+                      "BankIDType": "ABA"
+                    }
+                  }
+                ]
+              },
+              "attributes": {
+                "AcctCur": "USD",
+                "AcctID": "1240015593",
+                "AcctType": "D"
+              }
+            }
+          ]
+        },
+        "attributes": {}
+      }
+    ],
+    "PmtDetail": [
+      {
+        "element": {
+          "InvoiceInfo": [
+            {
+              "element": {},
+              "attributes": {
+                "DiscountCurAmt": "0.00",
+                "EffDt": "2024-10-23",
+                "InvoiceNum": "1-214497",
+                "InvoiceType": "IV",
+                "NetCurAmt": "26.87",
+                "TotalCurAmt": "26.87"
+              }
+            },
+            {
+              "element": {},
+              "attributes": {
+                "DiscountCurAmt": "0.00",
+                "EffDt": "2024-10-28",
+                "InvoiceNum": "1-214878",
+                "InvoiceType": "IV",
+                "NetCurAmt": "17.12",
+                "TotalCurAmt": "17.12"
+              }
+            },
+            {
+              "element": {},
+              "attributes": {
+                "DiscountCurAmt": "0.00",
+                "EffDt": "2024-10-31",
+                "InvoiceNum": "1-215156",
+                "InvoiceType": "IV",
+                "NetCurAmt": "36.52",
+                "TotalCurAmt": "36.52"
+              }
+            }
+          ]
+        },
+        "attributes": {}
+      }
+    ],
+    "DocDelivery": [
+      {
+        "element": {
+          "FileOut": [
+            {
+              "element": {
+                "Delivery": [
+                  {
+                    "element": {},
+                    "attributes": {}
+                  }
+                ]
+              },
+              "attributes": {}
+            }
+          ]
+        },
+        "attributes": {}
+      }
+    ],
+    "CurAmt": [
+      {
+        "element": {
+          "text": "80.51"
+        },
+        "attributes": {}
+      }
+    ]
+  },
+  "attributes": {
+    "PmtCrDr": "C",
+    "PmtFormat": "CTX",
+    "PmtMethod": "DAC",
+    "TranHandlingCode": "D"
+  }
+}

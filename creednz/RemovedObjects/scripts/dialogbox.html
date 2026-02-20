@@ -1,0 +1,188 @@
+<html>
+<head>
+	<title>Send Vendor Evaluation</title>
+	<style>
+	body{
+			background-color: #FFF;
+			font-family: Arial, Helvetica, sans-serif
+		}
+		fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+		.description{
+			background-color: #ffffff;
+			width: 450px;
+			height: 150px;
+			border-radius: 18px;
+			padding-top:20px;
+
+		}
+
+			
+		fieldset:last-of-type {
+		border-bottom: none;
+		}
+		ul {
+		list-style: none;
+		}
+
+		/*ul li:before {
+			color: #2E37FE;
+		content:'✓';
+		
+		}
+		/*.content{
+			position: fixed;
+			content: '✓';
+			padding:18px;
+			margin: 4px;
+			top:100px;
+			left: 440px;
+			width: 450px;
+			border:2px solid #2E37FE;
+			border-radius: 25px;
+			box-shadow: 3px 5px blue;
+			background-color: white;
+		}*/
+		font{
+			font-size: 24px;
+			color: #2E37FE;
+		}
+		form{
+			font-size: 14px;
+		}
+		.content input[type="text"]{
+			height: 30px;
+			width: 350px;
+			box-sizing: border-box;
+			border:1px solid #ababb3;
+			/*border-radius: 25px;*/
+			text-align: left;
+			font-size: 12px;
+		}
+		.content input::placeholder{
+			color:#CCC;
+			font-size: 12px;
+		}
+		textarea{
+			font-size: 16px;
+			width: 440px;
+		}
+		select{
+			width:140px;
+			height: 25px;
+		}
+		
+		.content input[type="submit"]{
+			font-size: 13px;
+			text-align:center;
+			font-weight: bold;
+			float: left;
+			padding: 4px 8px;
+			/*width: 120px;*/
+			border:1px solid blue;
+			border-radius: 3px;
+			/*background-color:white;*/
+			background-color: #006aff;
+			color: #FFFF;
+			cursor: pointer;
+			box-sizing: content-box;
+			width: auto;
+			line-height: 18px !important;
+			height: 18px !important;
+			/*margin-top: 50px;*/
+			
+		}
+		.content input[type="reset"]{
+			font-size: 13px;
+			text-align:center;
+			font-weight: bold;
+			float: left;
+			padding: 4px 8px;;
+			border: 8px;
+			/*width: 120px;*/
+			border: 1px solid #c9c9c9;
+			/*border:1px solid rgb(119, 119, 124);*/
+			border-radius: 3px;
+			background-color: #e4e4e4;
+			color: #080814;
+			cursor: pointer;
+			box-sizing: content-box;
+			width: auto;
+			line-height: 18px !important;
+			height: 18px !important;
+			margin-left: 20px;
+			/*margin-top: 10px;*/
+		}
+		.content input[type="submit"]:hover{
+			color:white;
+			background-color: #2E37FE;
+		}
+		.content input[type="reset"]:hover{
+			color:white;
+			background-color: #2E37FE;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		 var suiteletUrl = url.resolveScript({
+            scriptId: 'customscript_sl_invite_vendor_to_creednz',
+            deploymentId: 'customdeploy_sl_invite_vendor_to_creednz',
+            returnExternalUrl: true
+         });
+		 document.getElementById("form_id").action =suiteletUrl;
+	
+</script>
+	<div class="head">
+		<h3>Send Vendor Evaluation Request</h3>
+	</div>
+    <div class="subtitle"> <h4> Vendor will receive an email with a link to insert their details. Please note that the link will expire within 7 days</h4></div>
+	<div class="content">
+	<!--	<font><b>Registration form</b></font> -->
+        <br>
+		<form method="post" id="form_id" class="form-horizontal"> 
+			<fieldset>
+			<!--<b>Student name</b><br> <input type="text" name="uname"  placeholder="Student name" required><br><br>-->
+            <input type="text" name="emailid" id="emailid" placeholder="Email*" required><br><br>
+            <input type="text" name="vendorname" id="vendorname" placeholder="Vendor Name*" required><br><br>
+            <input type="text" name="primarycontact" id="primarycontact" placeholder="Primary Contact Name*" required><br><br>
+		
+
+			<!--<div class="description">
+				<label><b>&nbsp;&nbsp;&nbsp;   Evaluation will include</b></label>
+				<ul>
+					<li>   Bank Account Validation</li>
+					<li>   Sanction</li>
+					<li>   Cyber</li>
+				</ul>
+			</div> --> 
+			  </fieldset>
+	
+			<fieldset>
+          <!--  <div class="inputfield terms">
+                <label class="check">
+                  <input type="checkbox" name="checkallow" id="checkallow">
+                  <span class="checkmark">Allow Creednz Connect to vendor</span>
+                </label>
+              
+             </div> <br>-->
+			<input type="submit" name="submit" value="Invite" class="btn btn-inverse">
+			<input type="reset" name="reset" value="Cancel" onclick="myFunction()">
+			</fieldset>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function myFunction() {
+    alert("Vendor Invite Cancelled!");
+	window.close();
+	}
+	
+</script>
+
+</body>
+</html>

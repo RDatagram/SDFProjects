@@ -1,0 +1,12 @@
+<workflowactionscript scriptid="customscript_wfa_creednz_updinv_vendor">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>CRDNZ: Update-Invite Vendor</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <returnrecordtype></returnrecordtype>
+  <returntype></returntype>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/wfa/wfa_creednz_update_vendor.js]</scriptfile>
+</workflowactionscript>

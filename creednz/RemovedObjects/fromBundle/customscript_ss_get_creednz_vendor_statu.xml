@@ -1,0 +1,24 @@
+<scheduledscript scriptid="customscript_ss_get_creednz_vendor_statu">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SS Get Vendor Status From Creednz</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/ss_get_vendor_status_from_creednz.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ss_get_creednz_vendor_statu">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>SS Get Vendor Status From Creednz</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2024-07-13</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>
