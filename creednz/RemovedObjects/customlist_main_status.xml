@@ -1,0 +1,19 @@
+<customlist scriptid="customlist_main_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>CSV  Action</name>
+  <customvalues>
+    <customvalue scriptid="val_61179_t1255519_636">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Dormant</value>
+    </customvalue>
+    <customvalue scriptid="val_61180_t1255519_248">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Escheated</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,55 @@
+<workflow scriptid="customworkflow_wf_creednz_eval_sublist">
+  <description></description>
+  <initcontexts>USERINTERFACE</initcontexts>
+  <initeventtypes>VIEW</initeventtypes>
+  <initlocalizationcontext></initlocalizationcontext>
+  <initoncreate>F</initoncreate>
+  <initonvieworupdate>T</initonvieworupdate>
+  <initsavedsearchcondition></initsavedsearchcondition>
+  <inittriggertype>BEFORELOAD</inittriggertype>
+  <isinactive>F</isinactive>
+  <islogenabled>T</islogenabled>
+  <keephistory>ALWAYS</keephistory>
+  <name>CRDNZ : WF Evaluation sublist</name>
+  <recordtypes>[scriptid=customrecord_vendor_evaluation_table]</recordtypes>
+  <releasestatus>RELEASED</releasestatus>
+  <runasadmin>F</runasadmin>
+  <initcondition>
+    <formula></formula>
+    <type>VISUAL_BUILDER</type>
+  </initcondition>
+  <workflowstates>
+    <workflowstate scriptid="workflowstate7">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>State 1</name>
+      <positionx>243</positionx>
+      <positiony>133</positiony>
+      <workflowactions triggertype="ONENTRY">
+        <customaction scriptid="workflowaction11">
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes>USERINTERFACE</contexttypes>
+          <eventtypes></eventtypes>
+          <isinactive>F</isinactive>
+          <resultfield></resultfield>
+          <scheduledelay></scheduledelay>
+          <schedulemode>DELAY</schedulemode>
+          <schedulerecurrence></schedulerecurrence>
+          <scheduletimeofday></scheduletimeofday>
+          <scheduletimeunit></scheduletimeunit>
+          <scripttype>[scriptid=customscript_wfa_creednz_eval_sublist]</scripttype>
+          <initcondition>
+            <formula><![CDATA[isEmpty("Vendor ExternalID") = 'F']]></formula>
+            <type>VISUAL_BUILDER</type>
+            <parameters>
+              <parameter>
+                <name>Vendor ExternalID</name>
+                <value>[scriptid=customrecord_vendor_evaluation_table.custrecord_vendor_externalid]</value>
+              </parameter>
+            </parameters>
+          </initcondition>
+        </customaction>
+      </workflowactions>
+    </workflowstate>
+  </workflowstates>
+</workflow>

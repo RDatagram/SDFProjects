@@ -1,0 +1,1273 @@
+{
+	"info": {
+		"_postman_id": "99690560-6b7c-41c8-b444-fbe4f7edf301",
+		"name": "Creednz External ERP API",
+		"description": "Creednz endpoints for ERP Integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26891018"
+	},
+	"item": [
+		{
+			"name": "external/erp",
+			"item": [
+				{
+					"name": "Vendor - Analyze Vendors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"analyzeVendorDtos\":[{\"internalId\":\"2\",\"name\":\"Tax Agency IL\",\"dateCreated\":\"2012-12-01T23:52:00.000Z\",\"lastModified\":\"2024-09-07T18:41:00.000Z\"}]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor/analyze",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor",
+								"analyze"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"analyzeVendorDtos\": [\n    {\n      \"name\": \"qui\",\n      \"internalId\": -58984718.24130067,\n      \"registrationCode\": \"Ut Lorem\",\n      \"primarySubsidiary\": \"mollit adipisicing\",\n      \"dateCreated\": \"1969-04-09T14:30:19.169Z\",\n      \"lastModified\": \"1995-03-12T14:32:24.423Z\",\n      \"email\": \"pariatur ut mollit\",\n      \"phone\": \"aliqua in\",\n      \"primaryContact\": \"reprehenderit\",\n      \"vendorPaymentMethod\": \"officia ea minim\",\n      \"taxpayerID\": \"sint exercitation est nulla\",\n      \"currency\": \"eiusmod minim veniam mollit\",\n      \"bankAccountName\": \"anim magna Ut ex\",\n      \"bankAccountType\": \"velit exercitation ipsum nisi\",\n      \"bankNumber\": \"do Excepteur anim\",\n      \"branchName\": \"dolor\",\n      \"branchNumber\": \"cupidatat Duis ex\",\n      \"bankCode\": \"aliquip commodo\",\n      \"bankAccountNumber\": \"in proident anim elit\",\n      \"bankAddress\": \"ullamco magna elit\",\n      \"bankDetailsUpdate\": \"deserunt et laboris\",\n      \"eftBankDetailsUpdate\": \"Duis dolore nisi in\",\n      \"eftBillPayment\": \"elit magna dolore\",\n      \"iban\": \"sunt consectetur qui\",\n      \"swift\": \"aliqua cillum\",\n      \"abaNumber\": \"irure et\",\n      \"paypalAccount\": \"minim officia velit\",\n      \"address\": \"ut laboris magna ex\",\n      \"billingCountry\": \"eiusmod consequat magna commodo\",\n      \"billingCity\": \"eu amet ex sint\",\n      \"billingRegion\": \"deserunt n\",\n      \"billingZip\": \"laborum\"\n    },\n    {\n      \"name\": \"amet in irure incididunt\",\n      \"internalId\": -42661641.17441993,\n      \"registrationCode\": \"velit Lorem dolore\",\n      \"primarySubsidiary\": \"id\",\n      \"dateCreated\": \"2016-02-03T19:33:20.280Z\",\n      \"lastModified\": \"1994-05-13T15:46:21.038Z\",\n      \"email\": \"sunt pariatur nulla exercitation\",\n      \"phone\": \"Excepteur\",\n      \"primaryContact\": \"sunt irure in\",\n      \"vendorPaymentMethod\": \"elit culpa\",\n      \"taxpayerID\": \"aliqua sint cupidatat in\",\n      \"currency\": \"incididunt est\",\n      \"bankAccountName\": \"sunt ut\",\n      \"bankAccountType\": \"in dolor\",\n      \"bankNumber\": \"et nulla deserunt\",\n      \"branchName\": \"commodo ullamco consequat occa\",\n      \"branchNumber\": \"temp\",\n      \"bankCode\": \"irure\",\n      \"bankAccountNumber\": \"officia sed irure\",\n      \"bankAddress\": \"in consectetur velit ullamco Duis\",\n      \"bankDetailsUpdate\": \"nostrud id Excepteur dolor velit\",\n      \"eftBankDetailsUpdate\": \"do\",\n      \"eftBillPayment\": \"adipisicing ullamco eiusmod sit\",\n      \"iban\": \"laboris officia culpa commodo voluptate\",\n      \"swift\": \"elit qui ipsum\",\n      \"abaNumber\": \"et laboris nisi\",\n      \"paypalAccount\": \"Duis Ut\",\n      \"address\": \"dolor ea\",\n      \"billingCountry\": \"consequat\",\n      \"billingCity\": \"anim\",\n      \"billingRegion\": \"pariatur in ad adipisicing\",\n      \"billingZip\": \"dolor\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/analyze-vendors",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"analyze-vendors"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"vendorExternalId\": \"commodo non Exce\"\n  },\n  {\n    \"vendorExternalId\": \"nostrud in aliqua\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Vendor - Vendor Findings By External Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor/findings/externalId/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor",
+								"findings",
+								"externalId",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/vendor-findings/:vendorExternalId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"vendor-findings",
+										":vendorExternalId"
+									],
+									"variable": [
+										{
+											"key": "vendorExternalId",
+											"value": "elit velit",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"value\": \"reference #/components/schemas/FindingDto not found in the OpenAPI spec\"\n  },\n  {\n    \"value\": \"reference #/components/schemas/FindingDto not found in the OpenAPI spec\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Vendor - Vendor Findings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor/findings/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor",
+								"findings",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/vendor-findings/:vendorExternalId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"vendor-findings",
+										":vendorExternalId"
+									],
+									"variable": [
+										{
+											"key": "vendorExternalId",
+											"value": "elit velit",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"value\": \"reference #/components/schemas/FindingDto not found in the OpenAPI spec\"\n  },\n  {\n    \"value\": \"reference #/components/schemas/FindingDto not found in the OpenAPI spec\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Vendor - Vendor Status by external ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor/status/:vendorExternalId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor",
+								"status",
+								":vendorExternalId"
+							],
+							"variable": [
+								{
+									"key": "vendorExternalId",
+									"value": "elit velit",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/vendor-status/:vendorExternalId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"vendor-status",
+										":vendorExternalId"
+									],
+									"variable": [
+										{
+											"key": "vendorExternalId",
+											"value": "elit velit",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"Pending\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Vendor - Vendors status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"entitiesStatusInputDtos\": [\n    {\n      \"externalId\": \"1234\"\n    },\n     {\n      \"externalId\": \"0000\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor/status",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"analyzeVendorDtos\": [\n    {\n      \"name\": \"qui\",\n      \"internalId\": -58984718.24130067,\n      \"registrationCode\": \"Ut Lorem\",\n      \"primarySubsidiary\": \"mollit adipisicing\",\n      \"dateCreated\": \"1969-04-09T14:30:19.169Z\",\n      \"lastModified\": \"1995-03-12T14:32:24.423Z\",\n      \"email\": \"pariatur ut mollit\",\n      \"phone\": \"aliqua in\",\n      \"primaryContact\": \"reprehenderit\",\n      \"vendorPaymentMethod\": \"officia ea minim\",\n      \"taxpayerID\": \"sint exercitation est nulla\",\n      \"currency\": \"eiusmod minim veniam mollit\",\n      \"bankAccountName\": \"anim magna Ut ex\",\n      \"bankAccountType\": \"velit exercitation ipsum nisi\",\n      \"bankNumber\": \"do Excepteur anim\",\n      \"branchName\": \"dolor\",\n      \"branchNumber\": \"cupidatat Duis ex\",\n      \"bankCode\": \"aliquip commodo\",\n      \"bankAccountNumber\": \"in proident anim elit\",\n      \"bankAddress\": \"ullamco magna elit\",\n      \"bankDetailsUpdate\": \"deserunt et laboris\",\n      \"eftBankDetailsUpdate\": \"Duis dolore nisi in\",\n      \"eftBillPayment\": \"elit magna dolore\",\n      \"iban\": \"sunt consectetur qui\",\n      \"swift\": \"aliqua cillum\",\n      \"abaNumber\": \"irure et\",\n      \"paypalAccount\": \"minim officia velit\",\n      \"address\": \"ut laboris magna ex\",\n      \"billingCountry\": \"eiusmod consequat magna commodo\",\n      \"billingCity\": \"eu amet ex sint\",\n      \"billingRegion\": \"deserunt n\",\n      \"billingZip\": \"laborum\"\n    },\n    {\n      \"name\": \"amet in irure incididunt\",\n      \"internalId\": -42661641.17441993,\n      \"registrationCode\": \"velit Lorem dolore\",\n      \"primarySubsidiary\": \"id\",\n      \"dateCreated\": \"2016-02-03T19:33:20.280Z\",\n      \"lastModified\": \"1994-05-13T15:46:21.038Z\",\n      \"email\": \"sunt pariatur nulla exercitation\",\n      \"phone\": \"Excepteur\",\n      \"primaryContact\": \"sunt irure in\",\n      \"vendorPaymentMethod\": \"elit culpa\",\n      \"taxpayerID\": \"aliqua sint cupidatat in\",\n      \"currency\": \"incididunt est\",\n      \"bankAccountName\": \"sunt ut\",\n      \"bankAccountType\": \"in dolor\",\n      \"bankNumber\": \"et nulla deserunt\",\n      \"branchName\": \"commodo ullamco consequat occa\",\n      \"branchNumber\": \"temp\",\n      \"bankCode\": \"irure\",\n      \"bankAccountNumber\": \"officia sed irure\",\n      \"bankAddress\": \"in consectetur velit ullamco Duis\",\n      \"bankDetailsUpdate\": \"nostrud id Excepteur dolor velit\",\n      \"eftBankDetailsUpdate\": \"do\",\n      \"eftBillPayment\": \"adipisicing ullamco eiusmod sit\",\n      \"iban\": \"laboris officia culpa commodo voluptate\",\n      \"swift\": \"elit qui ipsum\",\n      \"abaNumber\": \"et laboris nisi\",\n      \"paypalAccount\": \"Duis Ut\",\n      \"address\": \"dolor ea\",\n      \"billingCountry\": \"consequat\",\n      \"billingCity\": \"anim\",\n      \"billingRegion\": \"pariatur in ad adipisicing\",\n      \"billingZip\": \"dolor\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/analyze-vendors",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"analyze-vendors"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"vendorExternalId\": \"commodo non Exce\"\n  },\n  {\n    \"vendorExternalId\": \"nostrud in aliqua\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Payments - Payments analyze",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"analyzePaymentDtos\": [\n    {\n      \"amount\": 91150851.25061363,\n      \"currencyCode\": \"TRY\",\n      \"paymentDate\": \"1973-12-10T09:51:12.026Z\",\n      \"abaNumber\": \"irure pariatur eu\",\n      \"type\": \"pariatur nostrud\",\n      \"payerBankAccountNumber\": \"cupidatat in sit anim\",\n      \"payeeBankAccountNumber\": \"esse sed\",\n      \"payerName\": \"dolore officia ex\",\n      \"payeeName\": \"Ut in\",\n      \"description\": \"esse consectetur ad\"\n    },\n    {\n      \"amount\": -24537107.734057218,\n      \"currencyCode\": \"CLP\",\n      \"paymentDate\": \"1974-04-28T01:44:07.980Z\",\n      \"abaNumber\": \"pariatur ut\",\n      \"type\": \"dolore cupidatat culpa\",\n      \"payerBankAccountNumber\": \"dolor magna\",\n      \"payeeBankAccountNumber\": \"et\",\n      \"payerName\": \"consectetur pariatur Lorem\",\n      \"payeeName\": \"officia in\",\n      \"description\": \"sed ad deserunt esse\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/payment/analyze",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"payment",
+								"analyze"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"analyzePaymentDtos\": [\n    {\n      \"amount\": 62625824.97741458,\n      \"currencyCode\": \"PHP\",\n      \"paymentDate\": \"1997-08-13T22:10:17.248Z\",\n      \"abaNumber\": \"dolor \",\n      \"type\": \"voluptate id adipisicing\",\n      \"payerBankAccountNumber\": \"Excepteur ea cupidatat\",\n      \"payeeBankAccountNumber\": \"culpa ullamco id aliquip\",\n      \"payerName\": \"aliqua et laboris\",\n      \"payeeName\": \"aliquip ut aute\",\n      \"description\": \"ea velit\"\n    },\n    {\n      \"amount\": 69146846.25438493,\n      \"currencyCode\": \"PLN\",\n      \"paymentDate\": \"1945-08-20T04:31:01.606Z\",\n      \"abaNumber\": \"officia consectetur\",\n      \"type\": \"est mollit nisi\",\n      \"payerBankAccountNumber\": \"Ut\",\n      \"payeeBankAccountNumber\": \"velit consectetur\",\n      \"payerName\": \"o\",\n      \"payeeName\": \"labore ad\",\n      \"description\": \"commodo dolor culpa\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/analyze-payments",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"analyze-payments"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"paymentExternalId\": \"voluptate\"\n  },\n  {\n    \"paymentExternalId\": \"sit ex ut officia\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Payment - Payment Status by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/payment/status/:paymentExternalId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"payment",
+								"status",
+								":paymentExternalId"
+							],
+							"variable": [
+								{
+									"key": "paymentExternalId",
+									"value": "elit velit",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/payment-status/:paymentExternalId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"payment-status",
+										":paymentExternalId"
+									],
+									"variable": [
+										{
+											"key": "paymentExternalId",
+											"value": "elit velit",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"Pending\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Vendor Evaluation - Invite Vendor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"\",\n  \"primaryContact\": \"\",\n  \"vendorName\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor-evaluation/invite",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor-evaluation",
+								"invite"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"occaecat amet ex non sed\",\n  \"primaryContact\": \"mollit\",\n  \"vendorName\": \"et cillum dolor\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/invite-vendor",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"invite-vendor"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": 98855699.79087809\n}"
+						}
+					]
+				},
+				{
+					"name": "Vendor Evaluation - Update And Invite Vendor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"\",\n  \"primaryContact\": \"\",\n  \"vendorName\": \"\",\n  \"vendorExternalId\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor-evaluation/update-and-invite",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor-evaluation",
+								"update-and-invite"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"quis ipsum proident enim sed\",\n  \"primaryContact\": \"Duis in dolore\",\n  \"vendorName\": \"exercitation anim deserunt dolor magna\",\n  \"vendorExternalId\": \"enim voluptate\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/update-and-invite-vendor",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"update-and-invite-vendor"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": 98855699.79087809\n}"
+						}
+					]
+				},
+				{
+					"name": "Vendor Evaluation -  Status by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor-evaluation/status/:vendorEvaluationId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor-evaluation",
+								"status",
+								":vendorEvaluationId"
+							],
+							"variable": [
+								{
+									"key": "vendorEvaluationId",
+									"value": "-65330662.62309095",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/vendor-evaluation-status/:vendorEvaluationId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"vendor-evaluation-status",
+										":vendorEvaluationId"
+									],
+									"variable": [
+										{
+											"key": "vendorEvaluationId",
+											"value": "-65330662.62309095",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"Invite Sent\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Vendor Evaluation -  All Invite data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor-evaluation",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor-evaluation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendor Evaluation - Vendor Data by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor-evaluation/:vendorEvaluationId/vendor",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor-evaluation",
+								":vendorEvaluationId",
+								"vendor"
+							],
+							"variable": [
+								{
+									"key": "vendorEvaluationId",
+									"value": "-65330662.62309095",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/vendor-evaluation-status/:vendorEvaluationId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"vendor-evaluation-status",
+										":vendorEvaluationId"
+									],
+									"variable": [
+										{
+											"key": "vendorEvaluationId",
+											"value": "-65330662.62309095",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"Invite Sent\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Vendor Evaluation - Send Results",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/external/erp/vendor-evaluation/:vendorEvaluationId/send-results",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"external",
+								"erp",
+								"vendor-evaluation",
+								":vendorEvaluationId",
+								"send-results"
+							],
+							"variable": [
+								{
+									"key": "vendorEvaluationId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer <token>",
+										"description": "Added as a part of security scheme: bearer"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"occaecat amet ex non sed\",\n  \"primaryContact\": \"mollit\",\n  \"vendorName\": \"et cillum dolor\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/external/microsoft-dynamics/invite-vendor",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"external",
+										"microsoft-dynamics",
+										"invite-vendor"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": 98855699.79087809\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjBDQURVdzIwQUJYNnJvMm1uaU5jXyJ9.eyJpc3MiOiJodHRwczovL2NyZWVkbnotdGVzdC51cy5hdXRoMC5jb20vIiwic3ViIjoiRnVUSWs5S0paaUYwdVQxMjRCckU1TnpHM1FxVGh1RWhAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vY3JlZWRuei1keW5hbWljcy1pbnRlZ3JhdGlvbiIsImlhdCI6MTcyMTgwNDg2MSwiZXhwIjoxNzIxODkxMjYxLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJGdVRJazlLSlppRjB1VDEyNEJyRTVOekczUXFUaHVFaCJ9.kRARI4soml1H8Gil6ruQwzjg1Yh7aoZkWUC-U6NXOqyZ-oh6aec-a41_2OmrYcawUXYpj3x7cxrQVIMIIEM7IFMwk2TR6HR0Bb8mz6NudUY-jemzjV9KWpP6u7Gc6x_CMgffgBYGOOqfTdeIIxKK9kBHg_tCjGVwIfhdyPYhX43uDIvpNaJW9IM9unAUxdx5qEbluyzskL_HQoAgsLmFWJ1gsmgnjc7p5ioXUTieLv4yrzKv64K6oN_x_NMbYQ_aQjNoaN_B22DMBA4y7pm3dVm0jsfxHlDaJ6-tNt5LxN-2H9baPdbUYBdkzttM9KpcJGDmccPFL_nSmUNXKhpAzw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"client_id\": \"ggU6zAOHM2h9CpIOqbI2AMqWHYeuTpBa\",\n    \"client_secret\": \"6Qg_Xg3ULFIuyOQWzOGkriQAgtRryz74trC39O2AxuJf6PQkcuzlum0Py8eFL4Vy\",\n    \"grant_type\": \"client_credentials\",\n    \"audience\" : \"https://creednz-dynamics-integration\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://creednz-test.us.auth0.com/oauth/token",
+							"protocol": "https",
+							"host": [
+								"creednz-test",
+								"us",
+								"auth0",
+								"com"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "audience",
+				"value": {
+					"e28d1b89-b612-44c7-abda-0142bf0cbc1f": "https://creednz-dynamics-integration"
+				},
+				"type": "any"
+			},
+			{
+				"key": "scope",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "nhED-aN8hRKoOtn9B4LhB4Kag8vZQwdcs7Zz01b-rzKFqGto80Y9ZHB9QeBF-ckD",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "FuTIk9KJZiF0uT124BrE5NzG3QqThuEh",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://creednz-test.us.auth0.com/oauth/token",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "Creednz Token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://edge.staging.creednz.com",
+			"type": "string"
+		}
+	]
+}

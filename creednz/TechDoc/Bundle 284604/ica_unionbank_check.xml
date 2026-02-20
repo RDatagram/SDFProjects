@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+   <CstmrCdtTrfInitn>
+      <GrpHdr>
+         <MsgId>{{MsgId}}</MsgId>
+         <CreDtTm>{{CreDtTm}}</CreDtTm>
+         <Authstn>
+          <Cd>FDET</Cd>
+         </Authstn>
+         <NbOfTxs>{{NbOfTxs}}</NbOfTxs>
+         <CtrlSum>{{CtrlSum}}</CtrlSum>
+         <InitgPty>
+          <Nm>{{InitgPty.Nm}}</Nm>
+         </InitgPty>
+      </GrpHdr>
+      {{#each PmtInf}}
+      <PmtInf>
+         <PmtInfId>{{PmtInfId}}</PmtInfId>
+         <PmtMtd>{{PmtMtd}}</PmtMtd>
+         <BtchBookg>false</BtchBookg>
+         <NbOfTxs>{{NbOfTxs}}</NbOfTxs>
+         <CtrlSum>{{CtrlSum}}</CtrlSum>
+         {{#if PmtTpInf}}
+         <PmtTpInf>         
+            <SvcLvl>
+                {{#if PmtTpInf.SvcLvl.Prtry}}<Prtry>{{PmtTpInf.SvcLvl.Prtry}}</Prtry>{{/if}}                
+                {{#if PmtTpInf.SvcLvl.Cd}}<Cd>{{PmtTpInf.SvcLvl.Cd}}</Cd>{{/if}}                
+            </SvcLvl>
+            {{#if PmtTpInf.LclInstrm}}
+            <LclInstrm>
+                <Cd>{{PmtTpInf.LclInstrm.Cd}}</Cd>
+            </LclInstrm>
+            {{/if}}
+         </PmtTpInf>
+         {{/if}}
+         <ReqdExctnDt><Dt>{{ReqdExctnDt}}</Dt></ReqdExctnDt>
+         <Dbtr>
+            {{#if Dbtr.Nm}}<Nm>{{Dbtr.Nm}}</Nm>{{/if}}
+         </Dbtr>
+         <DbtrAcct>
+            <Id>
+               <Othr>
+                  <Id>{{DbtrAcct.Id.Othr.Id}}</Id>
+               </Othr>
+            </Id>            
+         </DbtrAcct>
+         <DbtrAgt>            
+            <FinInstnId>
+                {{#if DbtrAgt.Bic}}
+                <BICFI>{{DbtrAgt.Bic}}</BICFI>
+                {{/if}}
+            </FinInstnId>
+         </DbtrAgt>         
+            {{#each CdtTrfTxInf}}
+            <CdtTrfTxInf>
+               <PmtId>                  
+                  <EndToEndId>{{PmtId.EndToEndId}}</EndToEndId>
+               </PmtId>
+               <Amt>
+                  {{#if Amt.value}}<InstdAmt{{#if Amt.Ccy}} Ccy="{{Amt.Ccy}}"{{/if}}>{{Amt.value}}</InstdAmt>{{/if}}
+               </Amt>
+               {{#if ChqInstr}}
+               <ChqInstr>
+                  <ChqTp>CCHQ</ChqTp>
+                  <ChqNb>{{ChqInstr.ChqNb}}</ChqNb>                  
+                  <DlvryMtd>
+                      <Cd>MLCD</Cd>                     
+                  </DlvryMtd>                  
+               </ChqInstr>
+               {{/if}}
+               {{#if ChrgBr}}<ChrgBr>{{ChrgBr}}</ChrgBr>{{/if}}
+               {{#if CdtrAgt}}
+                <CdtrAgt>
+                        <FinInstnId>                  
+                        <ClrSysMmbId>
+                                {{#if ClrSysId.Id}}
+                                <ClrSysId>
+                                        <Cd>CACPA</Cd>
+                                </ClrSysId> 
+                                {{/if}}
+                                <MmbId>{{CdtrAgt.FinInstnId.ClrSysMmbId.MmbId}}</MmbId>
+                        </ClrSysMmbId>
+                        <Nm>{{CdtrAgt.FinInstnId.Nm}}</Nm>                     
+                        {{#if CdtrAgt.FinInstnId.PstlAdr}}
+                        <PstlAdr>                                                
+                                {{#if CdtrAgt.FinInstnId.PstlAdr.StrtNm}}<StrtNm>{{CdtrAgt.FinInstnId.PstlAdr.StrtNm}}</StrtNm>{{/if}}
+                                {{#if CdtrAgt.FinInstnId.PstlAdr.PstCd}}<PstCd>{{CdtrAgt.FinInstnId.PstlAdr.PstCd}}</PstCd>{{/if}}
+                                {{#if CdtrAgt.FinInstnId.PstlAdr.TwnNm}}<TwnNm>{{CdtrAgt.FinInstnId.PstlAdr.TwnNm}}</TwnNm>{{/if}}
+                                {{#if CdtrAgt.FinInstnId.PstlAdr.CtrySubDvsn}}<CtrySubDvsn>{{CdtrAgt.FinInstnId.PstlAdr.CtrySubDvsn}}</CtrySubDvsn>{{/if}}
+                                {{#if CdtrAgt.FinInstnId.PstlAdr.Ctry}}<Ctry>{{CdtrAgt.FinInstnId.PstlAdr.Ctry}}</Ctry>{{/if}}                                
+                        </PstlAdr>
+                        {{/if}}
+                        </FinInstnId>
+                        {{#if CdtrAgt.InstrForCdtrAgt.InstrInf}}
+                                <InstrForCdtrAgt>
+                                        <InstrInf>{{CdtrAgt.InstrForCdtrAgt.InstrInf}}</InstrInf>
+                                </InstrForCdtrAgt>
+                        {{/if}}
+                </CdtrAgt>
+                {{/if}}
+                {{#if Cdtr}}
+                <Cdtr>
+                        {{#if Cdtr.Nm}}<Nm>{{Cdtr.Nm}}</Nm>{{/if}}
+                        
+                        <PstlAdr>                                          
+                        {{#if Cdtr.PstlAdr.Addressee}}<AdrLine>{{Cdtr.PstlAdr.Addressee}}</AdrLine>{{/if}}
+                        {{#if Cdtr.PstlAdr.Addr1}}<AdrLine>{{Cdtr.PstlAdr.Addr1}}</AdrLine>{{/if}}
+                        {{#if Cdtr.PstlAdr.Addr2}}<AdrLine>{{Cdtr.PstlAdr.Addr2}}</AdrLine>{{/if}}
+                        {{#if Cdtr.PstlAdr.City}}<TwnNm>{{Cdtr.PstlAdr.City}}</TwnNm>{{/if}}
+                        {{#if Cdtr.PstlAdr.State}}<CtrySubDvsn>{{Cdtr.PstlAdr.State}}</CtrySubDvsn>{{/if}}
+                        {{#if Cdtr.PstlAdr.Zip}}<PstCd>{{Cdtr.PstlAdr.Zip}}</PstCd>{{/if}}
+                        {{#if Cdtr.PstlAdr.Country}}<Ctry>{{Cdtr.PstlAdr.Country}}</Ctry>{{/if}}
+                        </PstlAdr>
+                        
+                        <Id>
+                          <OrgId>
+                            <Othr>
+                              <Id>{{Cdtr.Id.OrgId.Othr.Id}}</Id>
+                              <SchmeNm>
+                                <Prtry>AP7VENDORSID</Prtry>
+                              </SchmeNm>
+                              <Issr>FE_SVCF.dbo.AP7VENDORS</Issr>
+                            </Othr>
+                          </OrgId>
+                        </Id>
+                        <CtryOfRes>US</CtryOfRes>
+                </Cdtr>
+                <InstrForDbtrAgt>{{InstrForDbtrAgt}}</InstrForDbtrAgt>
+                {{/if}}               
+                {{#if RmtInf}}
+                <RmtInf>
+                        {{#if RmtInf.Ustrd}}
+                                <Ustrd>{{RmtInf.Ustrd}}</Ustrd>
+                        {{/if}}
+                        {{#each RmtInf.Strd}}
+                        <Strd>
+                                <RfrdDocInf>
+                                        <Tp>
+                                                {{#if RfrdDocInf.Tp.CdOrPrtry.Cd}}
+                                                <CdOrPrtry>
+                                                        <Cd>{{RfrdDocInf.Tp.CdOrPrtry.Cd}}</Cd>
+                                                </CdOrPrtry>
+                                                {{/if}}
+                                        </Tp>                                        
+                                        {{#if RfrdDocInf.Nb}}
+                                        <Nb>{{RfrdDocInf.Nb}}</Nb>
+                                        {{/if}}
+                                        <RltdDt>{{RfrdDocInf.RltdDt}}</RltdDt>
+                                </RfrdDocInf>
+                                <RfrdDocAmt>
+                                        {{#if RfrdDocAmt.DuePyblAmt.value}}<DuePyblAmt Ccy="{{RfrdDocAmt.DuePyblAmt.Ccy}}">{{RfrdDocAmt.DuePyblAmt.value}}</DuePyblAmt>{{/if}}
+                                        {{#if RfrdDocAmt.CdtNoteAmt.value}}<CdtNoteAmt Ccy="{{RfrdDocAmt.CdtNoteAmt.Ccy}}">{{RfrdDocAmt.CdtNoteAmt.value}}</CdtNoteAmt>{{/if}}
+                                        {{#if RfrdDocAmt.DscntApldAmt.value}}<DscntApldAmt Ccy="{{RfrdDocAmt.DscntApldAmt.Ccy}}">{{RfrdDocAmt.DscntApldAmt.value}}</DscntApldAmt>{{/if}}
+                                        {{#if RfrdDocAmt.RmtdAmt.value}}<RmtdAmt Ccy="{{RfrdDocAmt.RmtdAmt.Ccy}}">{{RfrdDocAmt.RmtdAmt.value}}</RmtdAmt>{{/if}}
+                                </RfrdDocAmt>
+                                {{#if AddtlRmtInf}}
+                                <AddtlRmtInf>{{AddtlRmtInf}}</AddtlRmtInf>
+                                {{/if}}
+                        </Strd>
+                        {{/each}}
+                </RmtInf>     
+                {{/if}}
+            </CdtTrfTxInf>
+            {{/each}}         
+      </PmtInf>
+      {{/each}}         
+   </CstmrCdtTrfInitn>
+</Document>

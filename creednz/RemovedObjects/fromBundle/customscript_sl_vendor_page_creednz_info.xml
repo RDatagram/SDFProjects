@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_sl_vendor_page_creednz_info">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SL Vendor Page Creednz Information</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/sl_vendor_page_creednz_information.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_vendor_page_creednz_info">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>SL Vendor Page Creednz Information</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

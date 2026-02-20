@@ -1,0 +1,360 @@
+{
+  "file": {
+    "File": [
+      {
+        "PmtRec": [
+          {
+            "PmtID": [
+              {
+                "text": "P250123043445662"
+              }
+            ],
+            "CurCode": [
+              {
+                "text": "USD"
+              }
+            ],
+            "ValueDate": [
+              {
+                "text": "2025-01-23"
+              }
+            ],
+            "RefInfo": [
+              {
+                "RefID": [
+                  {
+                    "text": "OUR"
+                  }
+                ]
+              }
+            ],
+            "Message": [
+              {
+                "MsgText": [
+                  {
+                    "text": "2543"
+                  }
+                ]
+              }
+            ],
+            "OrgnrParty": [
+              {
+                "Name": [
+                  {
+                    "Name1": [
+                      {
+                        "text": "Fairlife LLC"
+                      }
+                    ]
+                  }
+                ],
+                "PostAddr": [
+                  {
+                    "Addr1": [
+                      {
+                        "text": "1001 W. Adams Street"
+                      }
+                    ],
+                    "City": [
+                      {
+                        "text": "Chicago"
+                      }
+                    ],
+                    "StateProv": [
+                      {
+                        "text": "IL"
+                      }
+                    ],
+                    "PostalCode": [
+                      {
+                        "text": "60607"
+                      }
+                    ],
+                    "Country": [
+                      {
+                        "text": "US"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "OrgnrDepAcctID": [
+              {
+                "DepAcctID": [
+                  {
+                    "BankInfo": [
+                      {
+                        "BankID": [
+                          {
+                            "text": "121000248"
+                          }
+                        ],
+                        "RefInfo": [
+                          {
+                            "RefID": [
+                              {
+                                "text": "4800864026"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "RcvrParty": [
+              {
+                "Name": [
+                  {
+                    "Name1": [
+                      {
+                        "text": "FIRMENICH"
+                      }
+                    ]
+                  }
+                ],
+                "RefInfo": [
+                  {
+                    "RefID": [
+                      {
+                        "text": "2543"
+                      }
+                    ]
+                  }
+                ],
+                "PostAddr": [
+                  {}
+                ]
+              }
+            ],
+            "RcvrDepAcctID": [
+              {
+                "DepAcctID": [
+                  {
+                    "BankInfo": [
+                      {
+                        "BankID": [
+                          {
+                            "text": "021000089"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "PmtDetail": [
+              {
+                "InvoiceInfo": [
+                  {
+                    "POInfo": [
+                      {
+                        "PONum": [
+                          {
+                            "text": "PO-0056467"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "DocDelivery": [
+              {
+                "FileOut": [
+                  {
+                    "Delivery": [
+                      {}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "CurAmt": [
+              {
+                "text": "170985.80"
+              }
+            ]
+          },
+          {
+            "IDInfo": [
+              {
+                "ID": [
+                  {
+                    "text": "0025043510"
+                  }
+                ]
+              },
+              {
+                "ID": [
+                  {
+                    "text": "HONGMC10"
+                  }
+                ]
+              }
+            ],
+            "PmtID": [
+              {
+                "text": "P250123043452302"
+              }
+            ],
+            "CurCode": [
+              {
+                "text": "USD"
+              }
+            ],
+            "ValueDate": [
+              {
+                "text": "2025-01-23"
+              }
+            ],
+            "RefInfo": [
+              {
+                "RefID": [
+                  {
+                    "text": "OUR"
+                  }
+                ]
+              }
+            ],
+            "Message": [
+              {
+                "MsgText": [
+                  {
+                    "text": "2562"
+                  }
+                ]
+              }
+            ],
+            "OrgnrParty": [
+              {
+                "ContactInfo": [
+                  {
+                    "PhoneNum": [
+                      {}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "OrgnrDepAcctID": [
+              {
+                "DepAcctID": [
+                  {
+                    "BankInfo": [
+                      {
+                        "BankID": [
+                          {
+                            "text": "121000248"
+                          }
+                        ],
+                        "RefInfo": [
+                          {}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "RcvrParty": [
+              {
+                "Name": [
+                  {
+                    "Name1": [
+                      {
+                        "text": "MCMASTER-CARR SUPPLY CO"
+                      }
+                    ]
+                  }
+                ],
+                "RefInfo": [
+                  {
+                    "RefID": [
+                      {
+                        "text": "2562"
+                      }
+                    ]
+                  }
+                ],
+                "PostAddr": [
+                  {
+                    "PostalCode": [
+                      {
+                        "text": "60607"
+                      }
+                    ]
+                  }
+                ],
+                "ContactInfo": [
+                  {
+                    "EmailAddr": [
+                      {
+                        "text": "sales@mcmaster.com"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "PmtSuppCCR": [
+              {
+                "MerchantID": [
+                  {
+                    "text": "2562"
+                  }
+                ],
+                "Division": [
+                  {
+                    "text": "11001"
+                  }
+                ]
+              }
+            ],
+            "RcvrDepAcctID": [
+              {
+                "DepAcctID": [
+                  {
+                    "BankInfo": [
+                      {}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "PmtDetail": [
+              {
+                "InvoiceInfo": [
+                  {
+                    "Note": [
+                      {
+                        "NoteText": [
+                          {
+                            "text": "Dexter"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "CurAmt": [
+              {
+                "text": "377.17"
+              }
+            ]
+          }
+        ],
+        "FileInfoGrp": [
+          {}
+        ]
+      }
+    ]
+  }
+}

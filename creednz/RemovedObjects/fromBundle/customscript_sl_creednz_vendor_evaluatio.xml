@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_sl_creednz_vendor_evaluatio">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SL Creednz Vendor Evaluation</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/sl_creednz_vendor_evaluation.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_creednz_vendor_evaluatio">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>sl creednz vendor evaluation</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

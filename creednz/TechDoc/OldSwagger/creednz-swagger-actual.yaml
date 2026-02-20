@@ -1,0 +1,1093 @@
+openapi: 3.0.0
+paths:
+  /external/erp/vendor/analyze:
+    post:
+      operationId: ExternalVendorController_analyzeVendors
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AnalyzeVendorsDto'
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VendorAnalysisCallbackDto'
+      tags:
+        - external/erp/vendor
+      security:
+        - bearer: []
+  /external/erp/vendor/findings/externalId/{vendorExternalId}:
+    get:
+      operationId: ExternalVendorController_vendorFindingsByExternalId
+      parameters:
+        - name: vendorExternalId
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FindingDto'
+      tags:
+        - external/erp/vendor
+      security:
+        - bearer: []
+  /external/erp/vendor/findings/id/{vendorId}:
+    get:
+      operationId: ExternalVendorController_vendorFindingsById
+      parameters:
+        - name: vendorId
+          required: true
+          in: path
+          schema:
+            type: number
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FindingDto'
+      tags:
+        - external/erp/vendor
+      security:
+        - bearer: []
+  /external/erp/vendor/status/{vendorExternalId}:
+    get:
+      operationId: ExternalVendorController_vendorStatus
+      parameters:
+        - name: vendorExternalId
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityStatusDto'
+      tags:
+        - external/erp/vendor
+      security:
+        - bearer: []
+  /external/erp/vendor/status:
+    post:
+      operationId: ExternalVendorController_vendorsStatus
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EntitiesStatusInputDto'
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EntityStatusDto'
+      tags:
+        - external/erp/vendor
+      security:
+        - bearer: []
+  /external/erp/vendor/delta:
+    get:
+      operationId: ExternalVendorController_vendorsDelta
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VendorDto'
+      tags:
+        - external/erp/vendor
+      security:
+        - bearer: []
+  /external/erp/vendor/with-different-data-points:
+    get:
+      operationId: ExternalVendorController_vendorsWithDifferentDataPoints
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VendorDto'
+      tags:
+        - external/erp/vendor
+      security:
+        - bearer: []
+  /external/erp/payment/analyze:
+    post:
+      operationId: ExternalPaymentController_analyzePayments
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AnalyzePaymentsDto'
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PaymentAnalysisCallbackDto'
+      tags:
+        - external/erp/payment
+      security:
+        - bearer: []
+  /external/erp/payment/findings/externalId/{paymentExternalId}:
+    get:
+      operationId: ExternalPaymentController_paymentFindingsByExternalId
+      parameters:
+        - name: paymentExternalId
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FindingDto'
+      tags:
+        - external/erp/payment
+      security:
+        - bearer: []
+  /external/erp/payment/status/{paymentExternalId}:
+    get:
+      operationId: ExternalPaymentController_paymentStatus
+      parameters:
+        - name: paymentExternalId
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityStatusDto'
+      tags:
+        - external/erp/payment
+      security:
+        - bearer: []
+  /external/erp/payment/status:
+    post:
+      operationId: ExternalPaymentController_paymentsStatus
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EntitiesStatusInputDto'
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EntityStatusDto'
+      tags:
+        - external/erp/payment
+      security:
+        - bearer: []
+  /external/erp/vendor-evaluation/invite:
+    post:
+      operationId: ExternalVendorEvaluationController_inviteVendor
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExternalInviteVendorEvaluationDto'
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InviteVendorResponseDto'
+      tags:
+        - external/erp/vendor-evaluation
+      security:
+        - bearer: []
+  /external/erp/vendor-evaluation/update-and-invite:
+    post:
+      operationId: ExternalVendorEvaluationController_updateAndInviteVendor
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExternalUpdateAndInviteVendorEvaluationDto'
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InviteVendorResponseDto'
+      tags:
+        - external/erp/vendor-evaluation
+      security:
+        - bearer: []
+  /external/erp/vendor-evaluation/status/{vendorEvaluationId}:
+    get:
+      operationId: ExternalVendorEvaluationController_vendorEvaluationStatus
+      parameters:
+        - name: vendorEvaluationId
+          required: true
+          in: path
+          schema:
+            type: number
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VendorEvaluationStatusDto'
+      tags:
+        - external/erp/vendor-evaluation
+      security:
+        - bearer: []
+  /external/erp/vendor-evaluation:
+    get:
+      operationId: ExternalVendorEvaluationController_vendorsEvaluation
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExternalVendorEvaluationDto'
+      tags:
+        - external/erp/vendor-evaluation
+      security:
+        - bearer: []
+  /external/erp/vendor-evaluation/{vendorEvaluationId}:
+    get:
+      operationId: ExternalVendorEvaluationController_vendorEvaluation
+      parameters:
+        - name: vendorEvaluationId
+          required: true
+          in: path
+          schema:
+            type: number
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VendorEvaluationDto'
+      tags:
+        - external/erp/vendor-evaluation
+      security:
+        - bearer: []
+  /external/erp/vendor-evaluation/{vendorEvaluationId}/vendor:
+    get:
+      operationId: ExternalVendorEvaluationController_vendorEvaluationData
+      parameters:
+        - name: vendorEvaluationId
+          required: true
+          in: path
+          schema:
+            type: number
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VendorDto'
+      tags:
+        - external/erp/vendor-evaluation
+      security:
+        - bearer: []
+  /external/erp/vendor-evaluation/{vendorEvaluationId}/send-results:
+    post:
+      operationId: ExternalVendorEvaluationController_sendVendorEvaluationResult
+      parameters:
+        - name: vendorEvaluationId
+          required: true
+          in: path
+          schema:
+            type: number
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InviteVendorResponseDto'
+      tags:
+        - external/erp/vendor-evaluation
+      security:
+        - bearer: []
+  /external/erp/dashboard:
+    get:
+      operationId: ExternalDashboardController_dashboard
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExternalDashboardDto'
+      tags:
+        - external/erp/dashboard
+      security:
+        - bearer: []
+info:
+  title: edge service
+  description: Creednz platform edge service
+  version: '1.0'
+  contact: {}
+tags:
+  - name: edge
+    description: ''
+servers: []
+components:
+  securitySchemes:
+    bearer:
+      scheme: bearer
+      bearerFormat: JWT
+      type: http
+  schemas:
+    FindingDto:
+      type: object
+      properties:
+        id:
+          type: number
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+        ruleId:
+          type: number
+        type:
+          enum:
+            - Alert
+            - Gap
+            - Insight
+          type: string
+        category:
+          enum:
+            - CyberRisk
+            - PaymentOperations
+            - BankAccount
+            - Sanctions
+            - VendorsNetwork
+          type: string
+        examinedEntity:
+          enum:
+            - Vendor
+            - Payment
+            - Ledger
+            - Email
+          type: string
+        examinedEntityId:
+          type: number
+        title:
+          type: string
+        description:
+          type: string
+        remediation:
+          type: string
+      required:
+        - id
+        - createdAt
+        - updatedAt
+        - ruleId
+        - type
+        - category
+        - examinedEntity
+        - examinedEntityId
+        - title
+        - description
+        - remediation
+    EnrichedVendorDto:
+      type: object
+      properties:
+        companyId:
+          type: number
+        bankName:
+          type: string
+          nullable: true
+        bankAddress:
+          type: string
+          nullable: true
+        bankZipCode:
+          type: string
+          nullable: true
+        bankCountry:
+          type: string
+          nullable: true
+        naics4:
+          type: number
+          nullable: true
+        inactive:
+          type: boolean
+          nullable: true
+        revenueRange:
+          type: string
+          nullable: true
+        employeeRange:
+          type: string
+          nullable: true
+        isSmallBusiness:
+          type: boolean
+          nullable: true
+        phone:
+          type: string
+          nullable: true
+        city:
+          type: string
+          nullable: true
+        state:
+          type: string
+          nullable: true
+        street:
+          type: string
+          nullable: true
+        country:
+          type: string
+          nullable: true
+        jpmConfirmCode:
+          type: string
+          nullable: true
+        jpmConfirmDescription:
+          type: string
+          nullable: true
+        jpmConfirmValue:
+          type: string
+          nullable: true
+        jpmAcctTrnActivity:
+          type: string
+          nullable: true
+        jpmNmMatch:
+          type: string
+          nullable: true
+        bankAccountVerified:
+          type: boolean
+          nullable: true
+        phoneVerified:
+          type: boolean
+          nullable: true
+        addressVerified:
+          type: boolean
+          nullable: true
+      required:
+        - companyId
+    VendorDto:
+      type: object
+      properties:
+        id:
+          type: number
+        companyId:
+          type: number
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+        analyzedAt:
+          format: date-time
+          type: string
+          nullable: true
+        atRisk:
+          type: boolean
+        origin:
+          enum:
+            - WEB
+            - ERP
+            - VENDOR_EVALUATION
+          type: string
+        externalId:
+          type: string
+          nullable: true
+        name:
+          type: string
+        mvfFileId:
+          type: number
+        internalId:
+          type: string
+        registrationCode:
+          type: string
+        dateCreated:
+          format: date-time
+          type: string
+        lastModified:
+          format: date-time
+          type: string
+        accountingEmail:
+          type: string
+        purchaseEmail:
+          type: string
+        paymentRemittanceEmail:
+          type: string
+        phone:
+          type: string
+        accountingContact:
+          type: string
+        purchaseContact:
+          type: string
+        vendorPaymentMethod:
+          type: string
+        taxpayerID:
+          type: string
+        currency:
+          type: string
+        bankAccountName:
+          type: string
+        bankAccountType:
+          type: string
+        bankName:
+          type: string
+        bankNumber:
+          type: string
+        bankCode:
+          type: string
+        bankAccountNumber:
+          type: string
+        bankAddress:
+          type: string
+        iban:
+          type: string
+        swift:
+          type: string
+        infsc:
+          type: string
+        routingNumber:
+          type: string
+        billingStreet:
+          type: string
+        billingAddress:
+          type: string
+        shippingAddress:
+          type: string
+        billingCountry:
+          type: string
+        normalizedBillingCountry:
+          type: object
+        billingCity:
+          type: string
+        billingRegion:
+          type: string
+        billingZip:
+          type: string
+        isFlaggedWithSanctions:
+          type: boolean
+        isIndividual:
+          type: boolean
+        reportingTax1099:
+          type: boolean
+        taxpayerIdType:
+          type: string
+        creditLimit:
+          type: number
+        inactive:
+          type: boolean
+        duplicate:
+          type: boolean
+        internalCategory:
+          type: string
+        url:
+          type: string
+        comments:
+          type: string
+        paymentTerms:
+          type: string
+        unbilledOrders:
+          type: number
+        balance:
+          type: number
+        bankAccountCheckApproval:
+          type: boolean
+        paymentFormat:
+          type: string
+        paymentCategory:
+          type: string
+        usWireInternationalData:
+          type: string
+        payeeName:
+          type: string
+        enrichedVendorDto:
+          $ref: '#/components/schemas/EnrichedVendorDto'
+      required:
+        - id
+        - companyId
+        - createdAt
+        - updatedAt
+        - analyzedAt
+        - atRisk
+        - origin
+        - externalId
+        - bankAccountCheckApproval
+    InviteVendorResponseDto:
+      type: object
+      properties:
+        id:
+          type: number
+      required:
+        - id
+    VendorEvaluationDto:
+      type: object
+      properties:
+        id:
+          type: number
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+        approvedAt:
+          format: date-time
+          type: string
+          nullable: true
+        createdById:
+          type: number
+          nullable: true
+        approverEmail:
+          type: string
+          nullable: true
+        origin:
+          enum:
+            - ERP
+            - WEB
+          type: string
+        status:
+          enum:
+            - Invite Sent
+            - Pending Approval
+            - Approved
+            - Completed
+            - Expired
+          type: string
+        email:
+          type: string
+        vendorName:
+          type: string
+        vendorDto:
+          $ref: '#/components/schemas/VendorDto'
+        primaryContact:
+          type: string
+      required:
+        - id
+        - createdAt
+        - updatedAt
+        - approvedAt
+        - createdById
+        - approverEmail
+        - origin
+        - status
+        - email
+        - vendorName
+        - vendorDto
+        - primaryContact
+    AnalyzeVendorDto:
+      type: object
+      properties:
+        name:
+          type: string
+        internalId:
+          type: string
+        registrationCode:
+          type: string
+        dateCreated:
+          format: date-time
+          type: string
+        lastModified:
+          format: date-time
+          type: string
+        accountingEmail:
+          type: string
+        purchaseEmail:
+          type: string
+        paymentRemittanceEmail:
+          type: string
+        phone:
+          type: string
+        url:
+          type: string
+        accountingContact:
+          type: string
+        purchaseContact:
+          type: string
+        vendorPaymentMethod:
+          type: string
+        taxpayerID:
+          type: string
+        taxpayerIdType:
+          type: string
+        currency:
+          type: string
+        bankAccountName:
+          type: string
+        bankAccountType:
+          type: string
+        bankName:
+          type: string
+        bankNumber:
+          type: string
+        bankCode:
+          type: string
+        bankAccountNumber:
+          type: string
+        bankAddress:
+          type: string
+        iban:
+          type: string
+        swift:
+          type: string
+        routingNumber:
+          type: string
+        billingAddress:
+          type: string
+        billingStreet:
+          type: string
+        billingCity:
+          type: string
+        billingRegion:
+          type: string
+        billingZip:
+          type: string
+        billingCountry:
+          type: string
+        reportingTax1099:
+          type: boolean
+        paymentTerms:
+          type: string
+        createdByFpVisitorId:
+          type: string
+        createdByFpRequestId:
+          type: string
+        shippingAddress:
+          type: string
+        bankAccountCheckApproval:
+          type: boolean
+        isIndividual:
+          type: boolean
+        paymentFormat:
+          type: string
+        paymentCategory:
+          type: string
+        usWireInternationalData:
+          type: string
+        payeeName:
+          type: string
+        creditLimit:
+          type: number
+      required:
+        - name
+    AnalyzeVendorsDto:
+      type: object
+      properties:
+        analyzeVendorDtos:
+          type: array
+          items:
+            $ref: '#/components/schemas/AnalyzeVendorDto'
+      required:
+        - analyzeVendorDtos
+    VendorAnalysisCallbackDto:
+      type: object
+      properties:
+        vendorExternalId:
+          type: string
+      required:
+        - vendorExternalId
+    EntityStatusDto:
+      type: object
+      properties:
+        externalId:
+          type: string
+        status:
+          enum:
+            - Pending
+            - Validated
+            - AtRisk
+          type: string
+      required:
+        - externalId
+        - status
+    EntityStatusInputDto:
+      type: object
+      properties:
+        externalId:
+          type: string
+      required:
+        - externalId
+    EntitiesStatusInputDto:
+      type: object
+      properties:
+        entitiesStatusInputDtos:
+          type: array
+          items:
+            $ref: '#/components/schemas/EntityStatusInputDto'
+      required:
+        - entitiesStatusInputDtos
+    AnalyzePaymentDto:
+      type: object
+      properties:
+        paymentDate:
+          format: date-time
+          type: string
+        amount:
+          type: number
+        currencyCode:
+          type: string
+          enum:
+            - ARS
+            - AUD
+            - BRL
+            - GBP
+            - CAD
+            - CLP
+            - COP
+            - HRK
+            - CZK
+            - EGP
+            - EUR
+            - HKD
+            - HUF
+            - ISK
+            - INR
+            - IDR
+            - ILS
+            - JMD
+            - JPY
+            - KWD
+            - MYR
+            - MXN
+            - TWD
+            - NZD
+            - NGN
+            - NOK
+            - PKR
+            - PEN
+            - PHP
+            - PLN
+            - QAR
+            - CNY
+            - RON
+            - RUB
+            - SAR
+            - SGD
+            - ZAR
+            - KRW
+            - SEK
+            - CHF
+            - THB
+            - TRY
+            - UAH
+            - AED
+            - USD
+            - VND
+        routingNumber:
+          type: string
+        type:
+          type: string
+        payerBankAccountNumber:
+          type: string
+        payeeBankAccountNumber:
+          type: string
+        payerName:
+          type: string
+        payeeName:
+          type: string
+        description:
+          type: string
+      required:
+        - amount
+        - currencyCode
+    AnalyzePaymentsDto:
+      type: object
+      properties:
+        analyzePaymentDtos:
+          type: array
+          items:
+            $ref: '#/components/schemas/AnalyzePaymentDto'
+      required:
+        - analyzePaymentDtos
+    PaymentAnalysisCallbackDto:
+      type: object
+      properties:
+        paymentExternalId:
+          type: string
+      required:
+        - paymentExternalId
+    ExternalInviteVendorEvaluationDto:
+      type: object
+      properties:
+        email:
+          type: string
+        primaryContact:
+          type: string
+        vendorName:
+          type: string
+      required:
+        - email
+        - primaryContact
+        - vendorName
+    ExternalUpdateAndInviteVendorEvaluationDto:
+      type: object
+      properties:
+        vendorExternalId:
+          type: string
+        email:
+          type: string
+        primaryContact:
+          type: string
+        vendorName:
+          type: string
+      required:
+        - vendorExternalId
+        - email
+        - primaryContact
+        - vendorName
+    VendorEvaluationStatusDto:
+      type: object
+      properties:
+        status:
+          type: string
+          enum:
+            - Invite Sent
+            - Pending Approval
+            - Approved
+            - Completed
+            - Expired
+      required:
+        - status
+    ExternalVendorEvaluationDto:
+      type: object
+      properties:
+        id:
+          type: number
+        email:
+          type: string
+        primaryContact:
+          type: string
+        name:
+          type: string
+        riskAssessmentStatus:
+          type: string
+          enum:
+            - Invite Sent
+            - Pending Approval
+            - Approved
+            - Completed
+            - Expired
+        riskStatus:
+          type: string
+          nullable: true
+          enum:
+            - Pending
+            - Validated
+            - AtRisk
+      required:
+        - id
+        - email
+        - primaryContact
+        - name
+        - riskAssessmentStatus
+        - riskStatus
+    ExternalVendorEvaluationStatsDto:
+      type: object
+      properties:
+        inviteSent:
+          type: number
+        pendingApproval:
+          type: number
+        approved:
+          type: number
+        completed:
+          type: number
+        expired:
+          type: number
+      required:
+        - inviteSent
+        - pendingApproval
+        - approved
+        - completed
+        - expired
+    ExternalFindingStatsDto:
+      type: object
+      properties:
+        alerts:
+          type: number
+        gaps:
+          type: number
+        insights:
+          type: number
+      required:
+        - alerts
+        - gaps
+        - insights
+    ExternalDashboardDto:
+      type: object
+      properties:
+        vendorsEvaluated:
+          type: number
+        vendorsAtRisk:
+          type: number
+        vendorEvaluationStats:
+          $ref: '#/components/schemas/ExternalVendorEvaluationStatsDto'
+        findingsStats:
+          $ref: '#/components/schemas/ExternalFindingStatsDto'
+      required:
+        - vendorsEvaluated
+        - vendorsAtRisk
+        - vendorEvaluationStats
+        - findingsStats

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CompanyID="FAL2" PmtRecCount="2" PmtRecTotal="171362.97">
+    <PmtRec PmtCrDr="C" PmtFormat="CTX" PmtMethod="DAC" TranHandlingCode="D">
+        <PmtID>P250123043445662</PmtID>
+        <CurCode>USD</CurCode>
+        <ValueDate>2025-01-23</ValueDate>
+        <RefInfo RefType="WC">
+            <RefID>OUR</RefID>
+        </RefInfo>
+        <Message MsgType="ACH">
+            <MsgText>2543</MsgText>
+        </Message>
+        <OrgnrParty>
+            <Name>
+                <Name1>Fairlife LLC</Name1>
+            </Name>
+            <PostAddr>
+                <Addr1>1001 W. Adams Street</Addr1>
+                <City>Chicago</City>
+                <StateProv>IL</StateProv>
+                <PostalCode>60607</PostalCode>
+                <Country>US</Country>
+            </PostAddr>
+        </OrgnrParty>
+        <OrgnrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctID="4945751220" AcctType="D">
+                <BankInfo BankIDType="ABA" Name="Wells Fargo">
+                    <BankID>121000248</BankID>
+                    <RefInfo RefType="ACH">
+                        <RefID>4800864026</RefID>
+                    </RefInfo>
+                </BankInfo>
+            </DepAcctID>
+        </OrgnrDepAcctID>
+        <RcvrParty>
+            <Name>
+                <Name1>FIRMENICH</Name1>
+            </Name>
+            <RefInfo RefType="VN">
+                <RefID>2543</RefID>
+            </RefInfo>
+            <PostAddr/>
+        </RcvrParty>
+        <RcvrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctID="40806383" AcctType="D">
+                <BankInfo BankIDType="ABA">
+                    <BankID>021000089</BankID>
+                </BankInfo>
+            </DepAcctID>
+        </RcvrDepAcctID>
+        <PmtDetail>
+            <InvoiceInfo DiscountCurAmt="0.00" EffDt="2024-08-02" InvoiceNum="90251584" InvoiceType="IV"
+                         NetCurAmt="170985.80" TotalCurAmt="170985.80">
+                <POInfo POType="PO">
+                    <PONum>PO-0056467</PONum>
+                </POInfo>
+            </InvoiceInfo>
+        </PmtDetail>
+        <DocDelivery>
+            <FileOut>
+                <Delivery/>
+            </FileOut>
+        </DocDelivery>
+        <CurAmt>170985.80</CurAmt>
+    </PmtRec>
+    <PmtRec PmtCrDr="C" PmtMethod="CCR">
+        <IDInfo IDType="BatchID">
+            <ID>0025043510</ID>
+        </IDInfo>
+        <IDInfo IDType="CustomerID">
+            <ID>HONGMC10</ID>
+        </IDInfo>
+        <PmtID>P250123043452302</PmtID>
+        <CurCode>USD</CurCode>
+        <ValueDate>2025-01-23</ValueDate>
+        <RefInfo RefType="WC">
+            <RefID>OUR</RefID>
+        </RefInfo>
+        <Message MsgType="OBI">
+            <MsgText>2562</MsgText>
+        </Message>
+        <OrgnrParty>
+            <ContactInfo Name="Maritza Montenegro">
+                <PhoneNum Phone="3123654837" PhoneType="TE"/>
+            </ContactInfo>
+        </OrgnrParty>
+        <OrgnrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctID="4945751220" AcctType="D">
+                <BankInfo BankIDType="ABA" Name="Wells Fargo">
+                    <BankID>121000248</BankID>
+                    <RefInfo RefType="OBI"/>
+                </BankInfo>
+            </DepAcctID>
+        </OrgnrDepAcctID>
+        <RcvrParty>
+            <Name>
+                <Name1>MCMASTER-CARR SUPPLY CO</Name1>
+            </Name>
+            <RefInfo RefType="VN">
+                <RefID>2562</RefID>
+            </RefInfo>
+            <PostAddr>
+                <PostalCode>60607</PostalCode>
+            </PostAddr>
+            <ContactInfo>
+                <EmailAddr>sales@mcmaster.com</EmailAddr>
+            </ContactInfo>
+        </RcvrParty>
+        <PmtSuppCCR>
+            <MerchantID>2562</MerchantID>
+            <Division>11001</Division>
+        </PmtSuppCCR>
+        <RcvrDepAcctID>
+            <DepAcctID AcctCur="USD" AcctType="D">
+                <BankInfo/>
+            </DepAcctID>
+        </RcvrDepAcctID>
+        <PmtDetail>
+            <InvoiceInfo DiscountCurAmt="0.00" EffDt="2024-10-31" InvoiceNum="35722973" InvoiceType="IV"
+                         NetCurAmt="377.17" TotalCurAmt="377.17">
+                <Note NoteType="INV">
+                    <NoteText>Dexter</NoteText>
+                </Note>
+            </InvoiceInfo>
+        </PmtDetail>
+        <CurAmt>377.17</CurAmt>
+    </PmtRec>
+    <FileInfoGrp FileControlNumber="FILE2501233510" FileDate="2025-01-23"/>
+</File>

@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_sl_send_vendor_to_creed_ns">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SL Send Vendor To Creednz</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/sl_send_vendor_to_creed_ns.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_send_vendor_to_creed_ns">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>SL Send Vendor To Creed NS</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

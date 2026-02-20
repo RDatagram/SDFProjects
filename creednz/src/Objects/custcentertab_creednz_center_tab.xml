@@ -1,0 +1,42 @@
+<centertab scriptid="custcentertab_creednz_center_tab">
+  <allcustomers>T</allcustomers>
+  <allemployees>T</allemployees>
+  <allpartners>T</allpartners>
+  <allroles>T</allroles>
+  <allvendors>T</allvendors>
+  <audslctrole></audslctrole>
+  <center>BASIC</center>
+  <label>Creednz</label>
+  <portlets>
+    <portlet scriptid="portlet_32_td2950916_478">
+      <isportletshown>T</isportletshown>
+      <portlet>ANALYTICS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_37_td2950916_187">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_38_td2950916_574">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_40_td2950916_534">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_41_td2950916_521">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_42_td2950916_871">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

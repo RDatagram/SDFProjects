@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+		<style>
+			.ica-label {
+				font-weight: bold;
+				font-size: 11px !important;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			.ica-refund-label {
+				font-weight: bold;
+				font-size: 14px !important;
+				text-transform: uppercase;
+				color: #304768;
+			}
+			.input-size {
+				font-weight: bold;
+				font-size: 14px !important;
+			}
+			.override-ul {
+				list-style-type: none !important;
+				margin-left: 0px !important;
+			}
+			#recmgr_wrapper {
+				width: 100% !important;
+			}
+			.list-group-item {
+				list-style-type: none !important;
+			}
+
+			#notification {
+				display: none;
+			}
+
+			table.dataTable.no-footer {
+				border-bottom: 0px solid #111 !important;
+			}
+			table.dataTable thead th,
+			table.dataTable thead td {
+				border-bottom: 0px solid #111 !important;
+			}
+
+			.dataTables_wrapper .dataTables_paginate .paginate_button {
+				box-sizing: border-box;
+				display: inline-block;
+				min-width: 1.5em;
+				padding: 0.5em 1em;
+				margin-left: 2px;
+				text-align: center;
+				text-decoration: none !important;
+				cursor: pointer;
+				*cursor: hand;
+				color: #333 !important;
+				border: 1px solid transparent;
+				border-radius: 8px !important;
+			}
+			.dataTables_filter input {
+				border-style: solid;
+				border-width: 1px;
+				border-radius: 4px !important;
+				padding: 2px;
+			}
+
+			table.dataTable a {
+				color: #003b60;
+				font-weight: bold;
+				text-decoration: none;
+				background-color: transparent;
+			}
+			.container-fluid ul {
+				padding-left: 0em;
+			}
+		</style>
+
+		<title>iCA Receivables Manager</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row pt-2 pb-2 border border-light rounded" style="background: #f5f5f5" id="groupHeaderButtons">
+				<div class="col-6">
+					<button type="button" class="ica-label btn btn-primary btn-sm header-button" id="submitbutton" onclick="createPayments()">Submit</button>
+					<button type="button" class="ica-label btn btn-danger btn-sm header-button" id="resetform" onclick="resetForm()">Reset</button>
+					<button type="button" class="ica-label btn btn-secondary btn-sm header-button" id="downloadcsv" onclick="downloadCSV()">Download CSV</button>
+					<i id="spinnerreload" class="fa fa-circle-o-notch fa-spin fa-fw fa-2x" style="display: none"></i>
+				</div>
+			</div>
+
+			<div class="row mb-2 pt-2 pb-2 border border-light rounded" style="background: #ececec" id="groupFilters">
+				<div class="col-2" id="groupSubFilter">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">Date</b>
+					<input style="border: 1px solid #d3d3d3; font-size: 11px !important" class="form-inline form-control-sm input-size" id="dateFilter" name="dateFilter" value="" />
+				</div>
+				<div class="col-2">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">Bank Account*</b>
+					<select class="form-control form-control-sm input-size" id="bankaccountFilter" onchange="reload(); updateSub()">
+						{{#each accounts}}
+						<option data-internalid="{{id}}" data-subsidiary="{{bankaccount.subsidiary}}" data-subsidiarytext="{{bankaccount.subsidiaryname}}" value="{{bankaccount.id}}" {{selected}}>{{name}}</option>
+						{{/each}}
+					</select>
+				</div>
+				<div class="col-2">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">Subsidiary</b>
+					<br />
+					<input class="form-control form-control-sm input-size" type="text" disabled value="" id="subsidiarylabel" />
+				</div>
+			</div>
+
+			<div class="row mb-2 pt-2 pb-2 border border-light rounded" style="background: #egegeg" id="groupFilters2">
+				<div class="col-2" id="groupSubFilter">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">Start Date</b>
+					<input style="border: 1px solid #d3d3d3; font-size: 11px !important" class="form-inline form-control-sm input-size" id="startdate" name="startdate" value="" onchange="reload()" />
+				</div>
+				<div class="col-2" id="groupSubFilter">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">End Date</b>
+					<input style="border: 1px solid #d3d3d3; font-size: 11px !important" class="form-inline form-control-sm input-size" id="enddate" name="enddate" value="" onchange="reload()" />
+				</div>
+				<div class="col-4"></div>
+				<div class="col-4">
+					<div class="card">
+						<ul class="list-group list-group-flush override-ul">
+							<li class="list-group-item">
+								<b class="text-uppercase" style="font-size: 11px; color: #607798">Total Number of Transactions selected</b>
+								<span id="refundcount" class="float-right ica-refund-label">-</span>
+							</li>
+							<li class="list-group-item">
+								<b class="text-uppercase" style="font-size: 11px; color: #607798">Total Amount Due</b>
+								<span id="refundamount" class="float-right ica-refund-label">-</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-2 pt-2 pb-2 border border-light rounded" style="background: #egegeg" id="groupFilters3">
+				<div class="col-2" id="groupSubFilter">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">Payment Method</b>
+					<select class="form-control form-control-sm input-size" id="paymentmethodFilter" onchange="reload()">
+						<option value="">-</option>
+						{{#each paymentmethods}}
+						<option value="{{value}}">{{text}}</option>
+						{{/each}}
+					</select>
+				</div>
+
+				<div class="col-2" id="groupSubFilter">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">Buyer Category</b>
+					<select class="form-control form-control-sm input-size" id="categoryFilter" onchange="reload()">
+						{{#each categories}}
+						<option data-internalid="{{value}}" value="{{value}}">{{text}}</option>
+						{{/each}}
+					</select>
+				</div>
+
+				<div class="col-2" id="groupSubFilter">
+					<b class="text-uppercase" style="font-size: 11px; color: #607798">Currency</b>
+					<select class="form-control form-control-sm" id="currencyFilter" onchange="reload()">
+						{{#each currencies}}
+						<option data-internalid="{{value}}" value="{{value}}" {{selected}}>{{text}}</option>
+						{{/each}}
+					</select>
+				</div>
+			</div>
+
+			<div class="row" id="main-table">
+				<table id="recmgr" class="table table-striped table-hover table-bordered table-sm">
+					<thead style="background: #e5e5e5 !important">
+						<tr>
+							<th scope="col">
+								<input type="checkbox" style="margin: 0px; padding: 0px; line-height: 0px" onchange="selectAll(this)" />
+							</th>
+							<th class="ica-label" scope="col">Customer Name</th>
+							<th class="ica-label" scope="col">Due Date</th>
+							<th class="ica-label" scope="col">Type</th>
+
+							<th class="ica-label" scope="col">Invoice Number</th>
+							<th class="ica-label" scope="col">PO #</th>
+							<th class="ica-label" scope="col">Memo</th>
+							<th class="ica-label" scope="col">Currency</th>
+							<th class="ica-label" scope="col">Balance on Invoice</th>
+							<th class="ica-label" scope="col">Amount Due</th>
+						</tr>
+					</thead>
+					<tbody id="data">
+						{{#each transactions}}
+						<tr>
+							<td scope="row">
+								<input class="cbdata" type="checkbox" id="cb_{{[Internal ID].value}}" data-customerid="{{[Customer Name].value}}" data-internalid="{{[Internal ID].value}}" data-tranid="{{tranid.value}}" tranid onclick="updateHeaderValues()" />
+							</td>
+							<td style="text-align: left"><a href="{{entityurl}}" target="_blank">{{[Customer Name].text}}</a></td>
+							<td>
+                {{#if [Due Date].value}}
+                  {{[Due Date].value}}
+                {{else}}
+                  {{[Date].value}}
+                {{/if}}
+
+              </td>
+							<td>{{Type.text}}</td>
+							<td><a href="{{txnurl}}" target="_blank">{{[Invoice Number].value}}</a></td>
+							<td>{{[PO Num].value}}</td>
+							<td>{{[Memo].value}}</td>
+							<td>{{Currency.text}}</td>
+							<!-- <td>{{Amount.value}}</td> -->
+							<td>
+								<input
+									disabled
+									style="font-weight: normal; font-size: 11px; border: none; padding: none; display: inline"
+									type="number"
+									data-max="{{Amount.value}}"
+                  data-amtdue="{{[Amount Remaining].value}}"
+                  data-txntype="{{Type.text}}"
+                  data-trandate="{{#if [Due Date].value}}{{[Due Date].value}}{{else}}{{[Date].value}}{{/if}}"
+									value="{{Amount.value}}"
+									id="amt_{{[Internal ID].value}}"
+									onchange="checkMaxValue(this); updateHeaderValues()"
+								/>
+							</td>
+							<td>{{[Amount Remaining].value}}</td>
+						</tr>
+
+						{{/each}}
+					</tbody>
+				</table>
+			</div>
+
+			<div class="row pt-2 pb-2 border border-light rounded" style="background: #f5f5f5" id="groupFooterButtons">
+				<div class="col-6">
+					<button type="button" class="ica-label btn btn-primary btn-sm header-button" id="submitbutton" onclick="createPayments()">Submit</button>
+					<button type="button" class="ica-label btn btn-danger btn-sm header-button" id="resetform" onclick="resetForm()">Reset</button>
+					<button type="button" class="ica-label btn btn-secondary btn-sm header-button" id="downloadcsv" onclick="downloadCSV()">Download CSV</button>
+				</div>
+			</div>
+
+			<div id="notification">
+				<div class="row pb-2">
+					<div class="col-6">
+						<b class="h6">The following Transactions are being processed:</b>
+					</div>
+				</div>
+				<div class="row pt-2 pb-2">
+					<div class="col-6">
+						<ul class="list-group" id="refund-list"></ul>
+					</div>
+				</div>
+
+				<div class="row pb-2">
+					<div class="col-6"><b class="h6">You will receive an email once done.</b> <a href="#" onclick="window.location.reload()">Return back to iCA eReceivables</a></div>
+				</div>
+
+				<div class="row pt-2 pb-2 border border-light rounded" style="background: #f5f5f5" id="submitFooter">
+					<div class="col-6"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/plug-ins/1.10.20/sorting/natural.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				require(['N/url', 'N/runtime', 'N/ui/dialog', 'N/https', 'N/ui/message']);
+
+				$('input[name="dateFilter"]').daterangepicker(
+					{
+						singleDatePicker: true,
+						autoUpdateInput: false,
+						autoApply: true,
+					},
+					function (chosen_date) {
+						var runtime = require('N/runtime');
+						var dpf = runtime.getCurrentUser().getPreference({
+							name: 'DATEFORMAT',
+						});
+						var d = returnProperDateFormat(dpf);
+
+						$('input[name="dateFilter"]').val(moment(chosen_date).format(d));
+					}
+				);
+
+				$('input[name="startdate"]').daterangepicker(
+					{
+						singleDatePicker: true,
+						autoUpdateInput: false,
+						autoApply: true,
+					},
+					function (chosen_date) {
+						var runtime = require('N/runtime');
+						var dpf = runtime.getCurrentUser().getPreference({
+							name: 'DATEFORMAT',
+						});
+						var d = returnProperDateFormat(dpf);
+
+						$('input[name="startdate"]').val(moment(chosen_date).format(d));
+						reload();
+					}
+				);
+				$('input[name="enddate"]').daterangepicker(
+					{
+						singleDatePicker: true,
+						autoUpdateInput: false,
+						autoApply: true,
+					},
+					function (chosen_date) {
+						var runtime = require('N/runtime');
+						var dpf = runtime.getCurrentUser().getPreference({
+							name: 'DATEFORMAT',
+						});
+						var d = returnProperDateFormat(dpf);
+						$('input[name="enddate"]').val(moment(chosen_date).format(d));
+						reload();
+					}
+				);
+				$('#recmgr').DataTable({
+					lengthMenu: [
+						[10, 25, 50, -1],
+						[10, 25, 50, 'All'],
+					],
+				});
+
+				setTimeout(function () {
+					var runtime = require('N/runtime');
+					var dpf = runtime.getCurrentUser().getPreference({
+						name: 'DATEFORMAT',
+					});
+					var d = returnProperDateFormat(dpf);
+					$('#dateFilter').val(moment().format(d));
+					updateSub();
+				}, 1000);
+			});
+
+			function updateSub() {
+				$('#subsidiarylabel').val($('#bankaccountFilter option:selected').data('subsidiarytext'));
+			}
+
+			function createPayments() {
+				let ns = loadModules();
+
+				let bf = $('#bankaccountFilter').val();
+				if (!bf) {
+					ns.dialog.alert({
+						title: 'Mandatory Field is Required',
+						message: 'You need to select a bank account to proceed.',
+					});
+					return;
+				}
+				let subsidiary = $('#bankaccountFilter').find(':selected').data('subsidiary') || 0;
+
+				let arrPaymentsSelected = [];
+				let checked = $('.cbdata:checkbox:checked');
+				for (let i = 0; i < checked.length; i++) {
+					let internalid = $('#' + checked[i].id).data('internalid');
+					let tranid = $('#' + checked[i].id).data('tranid');
+					let customerid = $('#' + checked[i].id).data('customerid');
+          let type = $('#amt_' + internalid).data('txntype');
+          let trandate = $('#amt_' + internalid).data('trandate');
+					let amount = jQuery('#amt_' + internalid).val();
+					arrPaymentsSelected.push({
+						internalid: internalid,
+						tranid: tranid,
+						customerid: customerid,
+						amount: amount,
+            type: type,
+            trandate: trandate
+					});
+				}
+				console.log(arrPaymentsSelected);
+
+
+        // return;
+
+				if (arrPaymentsSelected.length == 0) {
+					ns.dialog.alert({
+						title: 'NOTE',
+						message: 'Please select at least one record.',
+					});
+					return;
+				}
+
+				let filters = {
+					paymentIds: JSON.stringify(arrPaymentsSelected),
+				};
+				let pageFilters = {
+					startdate: $('#startdate').val(),
+					enddate: $('#enddate').val(),
+					araccountFilter: $('#araccountFilter').val(),
+					bankaccountFilter: $('#bankaccountFilter').val(),
+					paymentmethodFilter: $('#paymentmethodFilter').val(),
+					categoryFilter: $('#categoryFilter').val(),
+					currencyFilter: $('#currencyFilter').val(),
+					locationFilter: $('#locationFilter').val(),
+					dateFilter: $('#dateFilter').val(),
+					subsidiary: subsidiary,
+				};
+				console.log(filters);
+				console.log(pageFilters);
+
+				//Script Parameters. Do we actually need this?
+				let scriptParameters = {
+					baseSavedSearch: '{{basesavedsearch}}' || '',
+					fileNamePrefix: '{{sp.fileNamePrefix}}' || '',
+					folderID: '{{sp.folderID}}' || '',
+					connectorFolderID: '{{sp.connectorFolderID}}' || '',
+					sendSummaryEmail: '{{sp.sendSummaryEmail}}' || '',
+					WFNoAccountInformation: '{{sp.WFNoAccountInformation}}' || '',
+					wireFees: '{{sp.wireFees}}' || '',
+					vendorOrigMsgType: '{{sp.vendorOrigMsgType}}' || '',
+					includeCheckZip: '{{sp.includeCheckZip}}',
+					checkZipDeploymentID: '{{sp.checkZipDeploymentID}}',
+					checkZipColumns: '{{sp.checkZipColumns}}',
+          companyId: '{{sp.companyId}}',
+				};
+
+				var link = ns.url.resolveScript({
+					scriptId: 'customscript_ica_rec_mgr_service',
+					deploymentId: 'customdeploy_ica_rec_mgr_service',
+					params: {
+						action: 'deploymapreduce',
+						// filters: JSON.stringify(filters),
+						// pageFilters: JSON.stringify(pageFilters),
+						// scriptParameters: JSON.stringify(scriptParameters),
+					},
+				});
+
+				ns.https.post
+					.promise({
+						url: link,
+            body: {
+						// action: 'deploymapreduce',
+						filters: JSON.stringify(filters),
+						pageFilters: JSON.stringify(pageFilters),
+						scriptParameters: JSON.stringify(scriptParameters),
+					}
+					})
+					.then(function (response) {
+						var myMsg = ns.message.create({
+							title: 'Backend Processing Initiated',
+							message: 'A script has been deployed to create customer payments, and create xml file.',
+							type: ns.message.Type.CONFIRMATION,
+						});
+
+						myMsg.show({
+							duration: 5000,
+						});
+
+						$('#groupFilters').hide();
+						$('#groupFilters').hide();
+						$('#groupFilters2').hide();
+						$('#groupFilters3').hide();
+						$('#main-table').hide();
+						$('#groupHeaderButtons').hide();
+						$('#groupFooterButtons').hide();
+
+						$('#notification').show();
+						for (var i = 0; i < arrPaymentsSelected.length; i++) {
+							var label = arrPaymentsSelected[i].tranid || arrPaymentsSelected[i].internalid;
+							$('#refund-list').append('<li class="list-group-item"><a target="_blank" href="/app/accounting/transactions/transaction.nl?id=' + arrPaymentsSelected[i].internalid + '">' + label + '</a></li>');
+						}
+
+						return;
+					});
+			}
+
+			const loadModules = () => {
+				return {
+					url: require('N/url'),
+					runtime: require('N/runtime'),
+					dialog: require('N/ui/dialog'),
+					https: require('N/https'),
+					message: require('N/ui/message'),
+				};
+			};
+
+			function reloadPage() {
+				window.location.reload();
+			}
+
+			function returnProperDateFormat(d) {
+				if (d == 'D-Mon-YYYY') return 'D-MMM-YYYY';
+				else if (d == 'D-Mon-YYYY') return 'D-MMM-YYYY';
+				else if (d == 'DD-Mon-YYYY') return 'DD-MMM-YYYY';
+				else if (d == 'D-MONTH-YYYY') return 'D-MMMM-YYYY';
+				else if (d == 'DD-MONTH-YYYY') return 'DD-MMMM-YYYY';
+				else if (d == 'D MONTH, YYYY') return 'D MMMM, YYYY';
+				else if (d == 'DD MONTH, YYYY') return 'DD MMMM, YYYY';
+				else return d;
+			}
+
+			function selectAll(v) {
+				var checkboxes = jQuery('.cbdata');
+				if (v.checked) {
+					for (var i = 0; i < checkboxes.length; i++) {
+						if (!checkboxes[i].disabled) {
+							checkboxes[i].checked = true;
+						}
+					}
+				} else {
+					for (var i = 0; i < checkboxes.length; i++) {
+						checkboxes[i].checked = false;
+					}
+				}
+				updateHeaderValues();
+			}
+
+			function updateHeaderValues() {
+				var checkboxes = jQuery('.cbdata');
+				var count = 0;
+				var amount = 0;
+				for (var i = 0; i < checkboxes.length; i++) {
+					if (checkboxes[i].checked) {
+						count++;
+						// var cbAmount = $('#amt_' + $('#' + checkboxes[i].id).data('internalid')).val();
+            var cbAmount = $('#amt_' + $('#' + checkboxes[i].id).data('internalid')).data('amtdue');
+            var type = $('#amt_' + $('#' + checkboxes[i].id).data('internalid')).data('txntype');
+            if (type=='Invoice') {
+              amount += Number(cbAmount);
+            } else {
+              amount -= Number(cbAmount);
+            }
+						
+					}
+				}
+
+				$('#refundcount').html(numeral(count).format('0,0'));
+				$('#refundamount').html(numeral(amount).format('$0,0.00'));
+			}
+
+			function downloadCSV() {
+				let ns = loadModules();
+				let today = moment();
+				let userRole = ns.runtime.getCurrentUser().role;
+				try {
+					if (ns.runtime.getCurrentScript().getRemainingUsage() < 50) {
+						let myMsg = ns.message.create({
+							title: 'ERROR - Governance Units has exceeded limit',
+							message: 'Refresh Page. If issue persists, contact your administrator.',
+							type: ns.message.Type.ERROR,
+						});
+
+						myMsg.show();
+						return;
+					}
+
+					let checkboxes = jQuery('.cbdata');
+					let internalids = [];
+					for (let i = 0; i < checkboxes.length; i++) {
+						if (checkboxes[i].checked) {
+							internalids.push($('#' + checkboxes[i].id).data('internalid'));
+						}
+					}
+
+					let searchParams = {
+						startdate: $('#startdate').val(),
+						enddate: $('#enddate').val(),
+						// bankaccountFilter: $('#bankaccountFilter').val(),
+						paymentmethodFilter: $('#paymentmethodFilter').val(),
+						categoryFilter: $('#categoryFilter').val(),
+						currencyFilter: $('#currencyFilter').val(),
+						internalids: internalids,
+					};
+
+					searchParams.searchid = '{{basesavedsearch}}';
+
+					let link = ns.url.resolveScript({
+						scriptId: 'customscript_ica_rec_mgr_service',
+						deploymentId: 'customdeploy_ica_rec_mgr_service',
+						returnExternalUrl: true,
+						params: {
+							action: 'downloadcsv',
+							filters: JSON.stringify(searchParams),
+						},
+					});
+
+					jQuery('#spinnerreload').show();
+
+					ns.https.get.promise({ url: link }).then(function (response) {
+						let win = window.open(response.body, '_blank');
+						win.focus();
+						jQuery('#spinnerreload').hide();
+					});
+				} catch (e) {
+					ns.message.create({
+						title: 'UNEXPECTED ERROR OCCURRED',
+						message: 'Refresh Page. If issue persists, contact your administrator.',
+						type: ns.message.Type.ERROR,
+					});
+				}
+			}
+
+			function reload() {
+				try {
+					let ns = loadModules();
+					let userRole = ns.runtime.getCurrentUser().role;
+
+					if (ns.runtime.getCurrentScript().getRemainingUsage() < 50) {
+						var myMsg = ns.message.create({
+							title: 'ERROR - Governance Units has exceeded limit',
+							message: 'Refresh Page. If issue persists, contact your administrator.',
+							type: ns.message.Type.ERROR,
+						});
+
+						myMsg.show();
+						return;
+					}
+
+					let searchParams = {
+						startdate: $('#startdate').val(),
+						enddate: $('#enddate').val(),
+						araccountFilter: $('#araccountFilter').val(),
+						bankaccountFilter: $('#bankaccountFilter').val(),
+						categoryFilter: $('#categoryFilter').val(),
+						paymentmethodFilter: $('#paymentmethodFilter').val(),
+						currencyFilter: $('#currencyFilter').val(),
+					};
+
+					searchParams.searchid = '{{basesavedsearch}}';
+
+					console.log(searchParams);
+
+					let link = ns.url.resolveScript({
+						scriptId: 'customscript_ica_rec_mgr_service',
+						deploymentId: 'customdeploy_ica_rec_mgr_service',
+						params: {
+							action: 'getResultsJSON',
+							filters: JSON.stringify(searchParams),
+						},
+					});
+
+					$('#data').html('<tr><td colspan="10"><i  class="fa fa-cog fa-spin fa-fw fa-2x"></i></td></tr>');
+
+					ns.https.get
+						.promise({
+							url: link,
+						})
+						.then(function (response) {
+							if ($.fn.DataTable.isDataTable('#recmgr')) {
+								$('#recmgr').DataTable().clear().destroy();
+							}
+
+							let data = JSON.parse(response.body);
+							console.log(data);
+							console.log(data.length);
+
+							let bodyhtml = ``;
+							data.forEach((d) => {
+                let defaultDate = d['Due Date'].value;
+                if (d.Type.text=='Credit Memo') {
+                  defaultDate = d['Date'].value;
+                }
+								bodyhtml += `<tr>
+                      <td scope="row">
+                        <input class="cbdata" type="checkbox" id="cb_${d['Internal ID'].value}" data-customerid="${d['Customer Name'].value}" data-internalid="${d['Internal ID'].value}" data-tranid="${d.tranid.value}" tranid onclick="updateHeaderValues()" />
+                      </td>
+                      <td style="text-align: left"><a href="${d.entityurl}" target="_blank">${d['Customer Name'].text}</a></td>
+                      <td>${defaultDate}</td>
+                      <td>${d.Type.text}</td>
+                      <td><a href="${d.txnurl}" target="_blank">${d['Invoice Number'].value}</a></td>
+                      <td>${d['PO Num'].value}</td>
+                      <td>${d['Memo'].value}</td>
+                      <td>${d.Currency.text}</td>
+                      <td>
+                        <input
+                          disabled
+                          style="font-weight: normal; font-size: 11px; border: none; padding: none; display: inline"
+                          type="number"
+                          data-max="${d.Amount.value}"
+                          data-amtdue="${d['Amount Remaining'].value}"
+                          data-txntype="${d.Type.text}"
+                          data-trandate="${defaultDate}"
+                          value="${d.Amount.value}"
+                          id="amt_${d['Internal ID'].value}"
+                          onchange="checkMaxValue(this); updateHeaderValues()"
+                        />
+                      </td>
+                      <td>${d['Amount Remaining'].value}</td>
+                    </tr>            
+              `;
+							});
+							$('#data').html(bodyhtml);
+							$('#recmgr').DataTable({
+                lengthMenu: [
+                  [10, 25, 50, -1],
+                  [10, 25, 50, 'All'],
+                ],
+              });              
+						});
+				} catch (e) {
+					console.error(e);
+				}
+			}
+		</script>
+	</body>
+</html>

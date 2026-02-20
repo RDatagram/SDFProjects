@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_creednz_process_cat">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_creednz_center_tab]</centertab>
+  <label>Creednz Process</label>
+  <links>
+    <link>
+      <linklabel>Vendor Evaluation</linklabel>
+      <linkobject>[scriptid=customrecord_vendor_evaluation_table]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

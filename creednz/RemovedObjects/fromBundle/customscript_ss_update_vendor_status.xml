@@ -1,0 +1,25 @@
+<scheduledscript scriptid="customscript_ss_update_vendor_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SS Update Creednz Vendor Status</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/ss_update_vendor_status.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ss_update_vendor_status">
+      <isdeployed>F</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>SS Update Creednz Vendor Status</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT15M</repeat>
+          <startdate>2024-09-09</startdate>
+          <starttime>07:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

@@ -1,0 +1,25 @@
+<workflowactionscript scriptid="customscript_wfa_creednz_mr_send_vendors">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>CRDNZ : WFA Start MR Send Vendors</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <returnrecordtype></returnrecordtype>
+  <returntype></returntype>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/wfa/wfa_creednz_init_wf_send_vendors.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_wfa_creednz_mr_send_vendors">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>[scriptid=customrecord_creednz_details]</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</workflowactionscript>

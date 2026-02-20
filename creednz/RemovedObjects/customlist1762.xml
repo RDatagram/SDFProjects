@@ -1,0 +1,39 @@
+<customlist scriptid="customlist1762">
+  <description>_Approval_status</description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>AP 05</name>
+  <customvalues>
+    <customvalue scriptid="val_142957_t1255519_416">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Submit for Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_142958_t1255519_223">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Pending Approval 1</value>
+    </customvalue>
+    <customvalue scriptid="val_142959_t1255519_454">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Pending Approval 2</value>
+    </customvalue>
+    <customvalue scriptid="val_142960_t1255519_854">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Pending Approval 3</value>
+    </customvalue>
+    <customvalue scriptid="val_142961_t1255519_646">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Approved</value>
+    </customvalue>
+    <customvalue scriptid="val_142962_t1255519_769">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Rejected</value>
+    </customvalue>
+  </customvalues>
+</customlist>

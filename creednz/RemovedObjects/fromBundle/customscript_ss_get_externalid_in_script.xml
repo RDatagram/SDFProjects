@@ -1,0 +1,24 @@
+<scheduledscript scriptid="customscript_ss_get_externalid_in_script">
+  <description>used in suitelet script</description>
+  <isinactive>F</isinactive>
+  <name>SS Get Vendor External Id In Script</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/creednz/cnzsrc/ss_get_vendor_external_id_on_script.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ss_get_externalid_in_script">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>SS Get Vendor ExternalId In Script</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2024-08-31</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>
