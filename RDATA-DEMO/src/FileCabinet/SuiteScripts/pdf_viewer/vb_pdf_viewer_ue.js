@@ -54,7 +54,7 @@ define(['N/runtime', 'N/url', 'N/search', 'N/log'],
                 // Add the button
                 form.addButton({
                     id: 'custpage_toggle_pdf',
-                    label: 'Hide / Show PDF',
+                    label: 'Prikaz/Skloni PDF',
                     functionName: 'togglePdfPanel'
                 });
 

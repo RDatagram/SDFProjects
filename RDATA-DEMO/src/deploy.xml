@@ -7,10 +7,10 @@
         <path>~/FileCabinet/*</path>
          <path>~/FileCabinet/SuiteScripts/rb_parser/*</path>
         -->
-        <path>~/FileCabinet/SuiteScripts/rdata-demo/*</path>
+        <path>~/FileCabinet/SuiteScripts/pdf_viewer/*</path>
     </files>
     <objects>
-        <path>~/Objects/empty/*</path>
+        <path>~/Objects/pdf-viewer/*</path>
     </objects>
     <translationimports>
         <path>~/Translations/*</path>
