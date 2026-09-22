@@ -1,0 +1,28 @@
+<eventsubscriber scriptid="custevsub_test">
+    <scriptfilepath>[/SuiteScripts/event_subscribe/rdata-eventsub.js]</scriptfilepath>
+    <criteria>
+        <criterion>
+            <domain>RECORD</domain>
+            <type>CREATED</type>
+            <parameters>
+                <parameter>
+                    <name>RECORDTYPE</name>
+                    <operator>EQ</operator>
+                    <value>SALESORDER</value>
+                </parameter>
+            </parameters>
+        </criterion>
+        <criterion>
+            <domain>RECORD</domain>
+            <type>CREATED</type>
+            <parameters>
+                <parameter>
+                    <name>RECORDTYPE</name>
+                    <operator>EQ</operator>
+                    <value>CUSTOMER</value>
+                </parameter>
+            </parameters>
+        </criterion>
+    </criteria>
+</eventsubscriber>
+
